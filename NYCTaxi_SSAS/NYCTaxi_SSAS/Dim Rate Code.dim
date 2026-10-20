@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="a96916f8-e6df-4261-b7e1-370957472a7b" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine" dwd:design-time-name="a96916f8-e6df-4261-b7e1-370957472a7b">
   <ID>Dim Rate Code</ID>
   <Name>Dim Rate Code</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -43,7 +43,7 @@
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
   <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="fe1266ef-fd5b-4be3-af9e-5927ca0f7611">
-    <DataSourceViewID>DSV_NYCTaxi</DataSourceViewID>
+    <DataSourceViewID>DSV_NYCTaxi_DWH</DataSourceViewID>
   </Source>
   <ErrorConfiguration dwd:design-time-name="4463c6af-4e81-4a43-b6ef-858c8cdef8ae">
     <KeyNotFound>ReportAndStop</KeyNotFound>
@@ -63,11 +63,12 @@
             <TableID>dbo_Dim_RateCode</TableID>
             <ColumnID>RateCodeKey</ColumnID>
           </Source>
+          <NullProcessing>ZeroOrBlank</NullProcessing>
         </KeyColumn>
       </KeyColumns>
       <NameColumn dwd:design-time-name="4cc7acc0-8240-4271-a272-ccb5610d16de">
         <DataType>WChar</DataType>
-        <DataSize>200</DataSize>
+        <DataSize>400</DataSize>
         <Source xsi:type="ColumnBinding" dwd:design-time-name="5ef70cad-baed-4498-b75e-f64df9ba01c0">
           <TableID>dbo_Dim_RateCode</TableID>
           <ColumnID>RateCodeDescription</ColumnID>
@@ -92,6 +93,7 @@
             <TableID>dbo_Dim_RateCode</TableID>
             <ColumnID>RateCodeID</ColumnID>
           </Source>
+          <NullProcessing>ZeroOrBlank</NullProcessing>
         </KeyColumn>
       </KeyColumns>
       <OrderBy>Key</OrderBy>
@@ -100,4 +102,6 @@
     </Attribute>
   </Attributes>
   <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+  <UnknownMember>Visible</UnknownMember>
+  <UnknownMemberName>Unknown (unresolved key)</UnknownMemberName>
 </Dimension>

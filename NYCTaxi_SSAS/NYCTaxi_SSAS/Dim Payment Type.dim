@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="d148405a-78a4-4196-b70a-6b567e7cc4ff" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine" dwd:design-time-name="d148405a-78a4-4196-b70a-6b567e7cc4ff">
   <ID>Dim Payment Type</ID>
   <Name>Dim Payment Type</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -43,7 +43,7 @@
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
   <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="86fc4a05-b524-4e50-8930-44c10e90b32e">
-    <DataSourceViewID>DSV_NYCTaxi</DataSourceViewID>
+    <DataSourceViewID>DSV_NYCTaxi_DWH</DataSourceViewID>
   </Source>
   <ErrorConfiguration dwd:design-time-name="def682fa-fbda-488a-84df-4f867ab80190">
     <KeyNotFound>ReportAndStop</KeyNotFound>
@@ -63,11 +63,12 @@
             <TableID>dbo_Dim_PaymentType</TableID>
             <ColumnID>PaymentTypeKey</ColumnID>
           </Source>
+          <NullProcessing>ZeroOrBlank</NullProcessing>
         </KeyColumn>
       </KeyColumns>
       <NameColumn dwd:design-time-name="31a2c8fc-6216-4434-8cb2-1f06189753b4">
         <DataType>WChar</DataType>
-        <DataSize>200</DataSize>
+        <DataSize>400</DataSize>
         <Source xsi:type="ColumnBinding" dwd:design-time-name="bb7b1034-2ecf-4e17-a368-2c8a887c7669">
           <TableID>dbo_Dim_PaymentType</TableID>
           <ColumnID>PaymentTypeDescription</ColumnID>
@@ -78,4 +79,6 @@
     </Attribute>
   </Attributes>
   <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+  <UnknownMember>Visible</UnknownMember>
+  <UnknownMemberName>Unknown (unresolved key)</UnknownMemberName>
 </Dimension>

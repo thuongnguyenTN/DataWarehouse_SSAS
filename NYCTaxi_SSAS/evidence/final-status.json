@@ -1,0 +1,347 @@
+﻿{
+    "CapturedAt":  "2026-10-20T15:37:34",
+    "Server":  "THUONGNGUYEN\\MSSQLSV",
+    "ServerMode":  "Multidimensional",
+    "Edition":  "Developer64",
+    "Database":  "NYCTaxi_SSAS",
+    "DatabaseState":  "Processed",
+    "Cube":  "NYC Taxi Analysis",
+    "CubeState":  "Processed",
+    "DimensionCount":  15,
+    "MeasureGroups":  6,
+    "PartitionCount":  45,
+    "Dimensions":  [
+                       {
+                           "ID":  "Dim Time",
+                           "State":  "Processed"
+                       },
+                       {
+                           "ID":  "Dim Date",
+                           "State":  "Processed"
+                       },
+                       {
+                           "ID":  "Dim Location",
+                           "State":  "Processed"
+                       },
+                       {
+                           "ID":  "Dim Service Type",
+                           "State":  "Processed"
+                       },
+                       {
+                           "ID":  "Dim Vendor",
+                           "State":  "Processed"
+                       },
+                       {
+                           "ID":  "Dim Base",
+                           "State":  "Processed"
+                       },
+                       {
+                           "ID":  "Dim HVFHS Provider",
+                           "State":  "Processed"
+                       },
+                       {
+                           "ID":  "Dim Rate Code",
+                           "State":  "Processed"
+                       },
+                       {
+                           "ID":  "Dim Payment Type",
+                           "State":  "Processed"
+                       },
+                       {
+                           "ID":  "Dim Trip Type",
+                           "State":  "Processed"
+                       },
+                       {
+                           "ID":  "Dim Taxi Flags",
+                           "State":  "Processed"
+                       },
+                       {
+                           "ID":  "Dim FHV Flags",
+                           "State":  "Processed"
+                       },
+                       {
+                           "ID":  "Dim HVFHV Flags",
+                           "State":  "Processed"
+                       },
+                       {
+                           "ID":  "Dim Passenger Group",
+                           "State":  "Processed"
+                       },
+                       {
+                           "ID":  "Dim Load Batch",
+                           "State":  "Processed"
+                       }
+                   ],
+    "Partitions":  [
+                       {
+                           "Group":  "Fact FHV Trips",
+                           "Partition":  "Fact FHV Trips 202501",
+                           "State":  "Processed",
+                           "LastProcessed":  "\/Date(1792416951983)\/"
+                       },
+                       {
+                           "Group":  "Fact FHV Trips",
+                           "Partition":  "Fact FHV Trips 202502",
+                           "State":  "Processed",
+                           "LastProcessed":  "\/Date(1792416949690)\/"
+                       },
+                       {
+                           "Group":  "Fact FHV Trips",
+                           "Partition":  "Fact FHV Trips 202503",
+                           "State":  "Processed",
+                           "LastProcessed":  "\/Date(1792416949843)\/"
+                       },
+                       {
+                           "Group":  "Fact FHV Trips",
+                           "Partition":  "Fact FHV Trips 202504",
+                           "State":  "Processed",
+                           "LastProcessed":  "\/Date(1792416951160)\/"
+                       },
+                       {
+                           "Group":  "Fact FHV Trips",
+                           "Partition":  "Fact FHV Trips 202505",
+                           "State":  "Processed",
+                           "LastProcessed":  "\/Date(1792416949540)\/"
+                       },
+                       {
+                           "Group":  "Fact FHV Trips",
+                           "Partition":  "Fact FHV Trips 202506",
+                           "State":  "Processed",
+                           "LastProcessed":  "\/Date(1792416948463)\/"
+                       },
+                       {
+                           "Group":  "Fact FHV Trips",
+                           "Partition":  "Fact FHV Trips 202507",
+                           "State":  "Processed",
+                           "LastProcessed":  "\/Date(1792416950173)\/"
+                       },
+                       {
+                           "Group":  "Fact FHV Trips",
+                           "Partition":  "Fact FHV Trips 202508",
+                           "State":  "Processed",
+                           "LastProcessed":  "\/Date(1792416950913)\/"
+                       },
+                       {
+                           "Group":  "Fact FHV Trips",
+                           "Partition":  "Fact FHV Trips 202509",
+                           "State":  "Processed",
+                           "LastProcessed":  "\/Date(1792416949143)\/"
+                       },
+                       {
+                           "Group":  "Fact FHV Trips",
+                           "Partition":  "Fact FHV Trips 202510",
+                           "State":  "Processed",
+                           "LastProcessed":  "\/Date(1792416948670)\/"
+                       },
+                       {
+                           "Group":  "Fact FHV Trips",
+                           "Partition":  "Fact FHV Trips 202511",
+                           "State":  "Processed",
+                           "LastProcessed":  "\/Date(1792416950480)\/"
+                       },
+                       {
+                           "Group":  "Fact FHV Trips",
+                           "Partition":  "Fact FHV Trips 202512",
+                           "State":  "Processed",
+                           "LastProcessed":  "\/Date(1792416950690)\/"
+                       },
+                       {
+                           "Group":  "Fact FHV Trips",
+                           "Partition":  "Fact FHV Trips Other Dates",
+                           "State":  "Processed",
+                           "LastProcessed":  "\/Date(1792416948686)\/"
+                       },
+                       {
+                           "Group":  "Fact HVFHV Trips",
+                           "Partition":  "Fact HVFHV Trips 202501",
+                           "State":  "Processed",
+                           "LastProcessed":  "\/Date(1792416948856)\/"
+                       },
+                       {
+                           "Group":  "Fact HVFHV Trips",
+                           "Partition":  "Fact HVFHV Trips 202502",
+                           "State":  "Processed",
+                           "LastProcessed":  "\/Date(1792416951390)\/"
+                       },
+                       {
+                           "Group":  "Fact HVFHV Trips",
+                           "Partition":  "Fact HVFHV Trips 202503",
+                           "State":  "Processed",
+                           "LastProcessed":  "\/Date(1792416951850)\/"
+                       },
+                       {
+                           "Group":  "Fact HVFHV Trips",
+                           "Partition":  "Fact HVFHV Trips 202504",
+                           "State":  "Processed",
+                           "LastProcessed":  "\/Date(1792416951170)\/"
+                       },
+                       {
+                           "Group":  "Fact HVFHV Trips",
+                           "Partition":  "Fact HVFHV Trips 202505",
+                           "State":  "Processed",
+                           "LastProcessed":  "\/Date(1792416949323)\/"
+                       },
+                       {
+                           "Group":  "Fact HVFHV Trips",
+                           "Partition":  "Fact HVFHV Trips 202506",
+                           "State":  "Processed",
+                           "LastProcessed":  "\/Date(1792416951623)\/"
+                       },
+                       {
+                           "Group":  "Fact HVFHV Trips",
+                           "Partition":  "Fact HVFHV Trips 202507",
+                           "State":  "Processed",
+                           "LastProcessed":  "\/Date(1792416951766)\/"
+                       },
+                       {
+                           "Group":  "Fact HVFHV Trips",
+                           "Partition":  "Fact HVFHV Trips 202508",
+                           "State":  "Processed",
+                           "LastProcessed":  "\/Date(1792416950583)\/"
+                       },
+                       {
+                           "Group":  "Fact HVFHV Trips",
+                           "Partition":  "Fact HVFHV Trips 202509",
+                           "State":  "Processed",
+                           "LastProcessed":  "\/Date(1792416949696)\/"
+                       },
+                       {
+                           "Group":  "Fact HVFHV Trips",
+                           "Partition":  "Fact HVFHV Trips 202510",
+                           "State":  "Processed",
+                           "LastProcessed":  "\/Date(1792416951396)\/"
+                       },
+                       {
+                           "Group":  "Fact HVFHV Trips",
+                           "Partition":  "Fact HVFHV Trips 202511",
+                           "State":  "Processed",
+                           "LastProcessed":  "\/Date(1792416950023)\/"
+                       },
+                       {
+                           "Group":  "Fact HVFHV Trips",
+                           "Partition":  "Fact HVFHV Trips 202512",
+                           "State":  "Processed",
+                           "LastProcessed":  "\/Date(1792416950336)\/"
+                       },
+                       {
+                           "Group":  "Fact HVFHV Trips",
+                           "Partition":  "Fact HVFHV Trips Other Dates",
+                           "State":  "Processed",
+                           "LastProcessed":  "\/Date(1792416949343)\/"
+                       },
+                       {
+                           "Group":  "Fact Yellow Green Trips",
+                           "Partition":  "Fact Yellow Green Trips 200812",
+                           "State":  "Processed",
+                           "LastProcessed":  "\/Date(1792416950343)\/"
+                       },
+                       {
+                           "Group":  "Fact Yellow Green Trips",
+                           "Partition":  "Fact Yellow Green Trips 202412",
+                           "State":  "Processed",
+                           "LastProcessed":  "\/Date(1792416948050)\/"
+                       },
+                       {
+                           "Group":  "Fact Yellow Green Trips",
+                           "Partition":  "Fact Yellow Green Trips 202501",
+                           "State":  "Processed",
+                           "LastProcessed":  "\/Date(1792416951546)\/"
+                       },
+                       {
+                           "Group":  "Fact Yellow Green Trips",
+                           "Partition":  "Fact Yellow Green Trips 202502",
+                           "State":  "Processed",
+                           "LastProcessed":  "\/Date(1792416952256)\/"
+                       },
+                       {
+                           "Group":  "Fact Yellow Green Trips",
+                           "Partition":  "Fact Yellow Green Trips 202503",
+                           "State":  "Processed",
+                           "LastProcessed":  "\/Date(1792416950810)\/"
+                       },
+                       {
+                           "Group":  "Fact Yellow Green Trips",
+                           "Partition":  "Fact Yellow Green Trips 202504",
+                           "State":  "Processed",
+                           "LastProcessed":  "\/Date(1792416948833)\/"
+                       },
+                       {
+                           "Group":  "Fact Yellow Green Trips",
+                           "Partition":  "Fact Yellow Green Trips 202505",
+                           "State":  "Processed",
+                           "LastProcessed":  "\/Date(1792416951903)\/"
+                       },
+                       {
+                           "Group":  "Fact Yellow Green Trips",
+                           "Partition":  "Fact Yellow Green Trips 202506",
+                           "State":  "Processed",
+                           "LastProcessed":  "\/Date(1792416952210)\/"
+                       },
+                       {
+                           "Group":  "Fact Yellow Green Trips",
+                           "Partition":  "Fact Yellow Green Trips 202507",
+                           "State":  "Processed",
+                           "LastProcessed":  "\/Date(1792416950330)\/"
+                       },
+                       {
+                           "Group":  "Fact Yellow Green Trips",
+                           "Partition":  "Fact Yellow Green Trips 202508",
+                           "State":  "Processed",
+                           "LastProcessed":  "\/Date(1792416948983)\/"
+                       },
+                       {
+                           "Group":  "Fact Yellow Green Trips",
+                           "Partition":  "Fact Yellow Green Trips 202509",
+                           "State":  "Processed",
+                           "LastProcessed":  "\/Date(1792416952056)\/"
+                       },
+                       {
+                           "Group":  "Fact Yellow Green Trips",
+                           "Partition":  "Fact Yellow Green Trips 202510",
+                           "State":  "Processed",
+                           "LastProcessed":  "\/Date(1792416952123)\/"
+                       },
+                       {
+                           "Group":  "Fact Yellow Green Trips",
+                           "Partition":  "Fact Yellow Green Trips 202511",
+                           "State":  "Processed",
+                           "LastProcessed":  "\/Date(1792416950103)\/"
+                       },
+                       {
+                           "Group":  "Fact Yellow Green Trips",
+                           "Partition":  "Fact Yellow Green Trips 202512",
+                           "State":  "Processed",
+                           "LastProcessed":  "\/Date(1792416949466)\/"
+                       },
+                       {
+                           "Group":  "Fact Yellow Green Trips",
+                           "Partition":  "Fact Yellow Green Trips 202601",
+                           "State":  "Processed",
+                           "LastProcessed":  "\/Date(1792416951636)\/"
+                       },
+                       {
+                           "Group":  "Fact Yellow Green Trips",
+                           "Partition":  "Fact Yellow Green Trips Other Dates",
+                           "State":  "Processed",
+                           "LastProcessed":  "\/Date(1792416949336)\/"
+                       },
+                       {
+                           "Group":  "Daily Financial Snapshot",
+                           "Partition":  "Daily Financial Snapshot All",
+                           "State":  "Processed",
+                           "LastProcessed":  "\/Date(1792416948073)\/"
+                       },
+                       {
+                           "Group":  "Zone Traffic Snapshot",
+                           "Partition":  "Zone Traffic Snapshot All",
+                           "State":  "Processed",
+                           "LastProcessed":  "\/Date(1792416949396)\/"
+                       },
+                       {
+                           "Group":  "Base Performance Snapshot",
+                           "Partition":  "Base Performance Snapshot All",
+                           "State":  "Processed",
+                           "LastProcessed":  "\/Date(1792416949036)\/"
+                       }
+                   ]
+}

@@ -1,0 +1,26 @@
+﻿"Query","Cells","Passed"
+"-- Analysis Services database: NYCTaxi_SSAS
+SELECT {
+ [Measures].[Total Trips All Services],
+ [Measures].[YellowGreen Average Trip Distance],
+ [Measures].[HVFHV Average Trip Duration Minutes],
+ [Measures].[YellowGreen Average Speed MPH],
+ [Measures].[HVFHV Average Waiting Minutes],
+ [Measures].[Shared Request Rate],
+ [Measures].[WAV Match Rate]
+} ON COLUMNS FROM [NYC Taxi Analysis]","7","True"
+"SELECT {[Measures].[Total Trips All Services]} ON COLUMNS,
+ NON EMPTY [Dim Service Type].[Service Code].[Service Code].Members ON ROWS
+FROM [NYC Taxi Analysis]","6","True"
+"SELECT {[Measures].[Total Trips All Services]} ON COLUMNS,
+ NON EMPTY [Pickup Date].[Calendar].Members ON ROWS
+FROM [NYC Taxi Analysis]","6129","True"
+"SELECT {[Measures].[Total Trips All Services]} ON COLUMNS,
+ NON EMPTY [Pickup Location].[Geography].Members ON ROWS
+FROM [NYC Taxi Analysis]","277","True"
+"SELECT {
+ [Measures].[Zone Traffic Snapshot TotalPickups],
+ [Measures].[Zone Traffic Snapshot TotalDropoffs]
+} ON COLUMNS,
+ NON EMPTY [Snapshot Date].[Calendar].Members ON ROWS
+FROM [NYC Taxi Analysis]","794","True"

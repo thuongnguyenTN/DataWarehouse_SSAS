@@ -3,7 +3,7 @@
     <DataSources>
       <DataSource>
         <ID>DS_NYCTaxi_DWH</ID>
-        <ConnectionString>Provider=SQLOLEDB.1;Data Source=THUONGNGUYEN\MSSQLSV;Integrated Security=SSPI;Initial Catalog=NYCTaxi_DWH</ConnectionString>
+        <ConnectionString>Provider=MSOLEDBSQL;Data Source=THUONGNGUYEN\MSSQLSV;Integrated Security=SSPI;Initial Catalog=NYCTaxi_DWH</ConnectionString>
         <ImpersonationInfo>
           <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">ImpersonateServiceAccount</ImpersonationMode>
           <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
@@ -53,6 +53,9 @@
       <Dimension>
         <ID>Dim Passenger Group</ID>
       </Dimension>
+      <Dimension>
+        <ID>Dim Load Batch</ID>
+      </Dimension>
     </Dimensions>
     <Cubes>
       <Cube>
@@ -62,7 +65,43 @@
             <ID>Fact FHV Trips</ID>
             <Partitions>
               <Partition>
-                <ID>Fact FHV Trips</ID>
+                <ID>Fact FHV Trips 202501</ID>
+              </Partition>
+              <Partition>
+                <ID>Fact FHV Trips 202502</ID>
+              </Partition>
+              <Partition>
+                <ID>Fact FHV Trips 202503</ID>
+              </Partition>
+              <Partition>
+                <ID>Fact FHV Trips 202504</ID>
+              </Partition>
+              <Partition>
+                <ID>Fact FHV Trips 202505</ID>
+              </Partition>
+              <Partition>
+                <ID>Fact FHV Trips 202506</ID>
+              </Partition>
+              <Partition>
+                <ID>Fact FHV Trips 202507</ID>
+              </Partition>
+              <Partition>
+                <ID>Fact FHV Trips 202508</ID>
+              </Partition>
+              <Partition>
+                <ID>Fact FHV Trips 202509</ID>
+              </Partition>
+              <Partition>
+                <ID>Fact FHV Trips 202510</ID>
+              </Partition>
+              <Partition>
+                <ID>Fact FHV Trips 202511</ID>
+              </Partition>
+              <Partition>
+                <ID>Fact FHV Trips 202512</ID>
+              </Partition>
+              <Partition>
+                <ID>Fact FHV Trips Other Dates</ID>
               </Partition>
             </Partitions>
           </MeasureGroup>
@@ -70,7 +109,43 @@
             <ID>Fact HVFHV Trips</ID>
             <Partitions>
               <Partition>
-                <ID>Fact HVFHV Trips</ID>
+                <ID>Fact HVFHV Trips 202501</ID>
+              </Partition>
+              <Partition>
+                <ID>Fact HVFHV Trips 202502</ID>
+              </Partition>
+              <Partition>
+                <ID>Fact HVFHV Trips 202503</ID>
+              </Partition>
+              <Partition>
+                <ID>Fact HVFHV Trips 202504</ID>
+              </Partition>
+              <Partition>
+                <ID>Fact HVFHV Trips 202505</ID>
+              </Partition>
+              <Partition>
+                <ID>Fact HVFHV Trips 202506</ID>
+              </Partition>
+              <Partition>
+                <ID>Fact HVFHV Trips 202507</ID>
+              </Partition>
+              <Partition>
+                <ID>Fact HVFHV Trips 202508</ID>
+              </Partition>
+              <Partition>
+                <ID>Fact HVFHV Trips 202509</ID>
+              </Partition>
+              <Partition>
+                <ID>Fact HVFHV Trips 202510</ID>
+              </Partition>
+              <Partition>
+                <ID>Fact HVFHV Trips 202511</ID>
+              </Partition>
+              <Partition>
+                <ID>Fact HVFHV Trips 202512</ID>
+              </Partition>
+              <Partition>
+                <ID>Fact HVFHV Trips Other Dates</ID>
               </Partition>
             </Partitions>
           </MeasureGroup>
@@ -78,7 +153,76 @@
             <ID>Fact Yellow Green Trips</ID>
             <Partitions>
               <Partition>
-                <ID>Fact Yellow Green Trips</ID>
+                <ID>Fact Yellow Green Trips 200812</ID>
+              </Partition>
+              <Partition>
+                <ID>Fact Yellow Green Trips 202412</ID>
+              </Partition>
+              <Partition>
+                <ID>Fact Yellow Green Trips 202501</ID>
+              </Partition>
+              <Partition>
+                <ID>Fact Yellow Green Trips 202502</ID>
+              </Partition>
+              <Partition>
+                <ID>Fact Yellow Green Trips 202503</ID>
+              </Partition>
+              <Partition>
+                <ID>Fact Yellow Green Trips 202504</ID>
+              </Partition>
+              <Partition>
+                <ID>Fact Yellow Green Trips 202505</ID>
+              </Partition>
+              <Partition>
+                <ID>Fact Yellow Green Trips 202506</ID>
+              </Partition>
+              <Partition>
+                <ID>Fact Yellow Green Trips 202507</ID>
+              </Partition>
+              <Partition>
+                <ID>Fact Yellow Green Trips 202508</ID>
+              </Partition>
+              <Partition>
+                <ID>Fact Yellow Green Trips 202509</ID>
+              </Partition>
+              <Partition>
+                <ID>Fact Yellow Green Trips 202510</ID>
+              </Partition>
+              <Partition>
+                <ID>Fact Yellow Green Trips 202511</ID>
+              </Partition>
+              <Partition>
+                <ID>Fact Yellow Green Trips 202512</ID>
+              </Partition>
+              <Partition>
+                <ID>Fact Yellow Green Trips 202601</ID>
+              </Partition>
+              <Partition>
+                <ID>Fact Yellow Green Trips Other Dates</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Daily Financial Snapshot</ID>
+            <Partitions>
+              <Partition>
+                <ID>Daily Financial Snapshot All</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Zone Traffic Snapshot</ID>
+            <Partitions>
+              <Partition>
+                <ID>Zone Traffic Snapshot All</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Base Performance Snapshot</ID>
+            <Partitions>
+              <Partition>
+                <ID>Base Performance Snapshot All</ID>
               </Partition>
             </Partitions>
           </MeasureGroup>

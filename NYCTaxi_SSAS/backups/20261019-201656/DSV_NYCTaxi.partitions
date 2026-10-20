@@ -1,0 +1,65 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="57ec6d44-8d1e-4348-b3f5-9cbc36b7200d" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DSV_NYCTaxi</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Fact FHV Trips</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="03fe4a69-8df2-41e5-8470-2540cc4dbaee">
+          <ID>Fact FHV Trips</ID>
+          <Name>Fact FHV Trips</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="c5f5de4f-dd72-4be1-bb21-dabb5e0f498e">
+            <DataSourceViewID>DSV_NYCTaxi</DataSourceViewID>
+            <TableID>dbo_Fact_FHV_Trips</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact HVFHV Trips</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="85559d38-5ec2-4162-b47b-02643809b45e">
+          <ID>Fact HVFHV Trips</ID>
+          <Name>Fact HVFHV Trips</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="026640c2-9c9a-423e-b7e9-4117f302cd4f">
+            <DataSourceViewID>DSV_NYCTaxi</DataSourceViewID>
+            <TableID>dbo_Fact_HVFHV_Trips</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Yellow Green Trips</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="a641aed3-4c16-4a5e-9ea8-da9606fed3ba">
+          <ID>Fact Yellow Green Trips</ID>
+          <Name>Fact Yellow Green Trips</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="6456eebd-8e2c-4561-8244-0c92bce842ec">
+            <DataSourceViewID>DSV_NYCTaxi</DataSourceViewID>
+            <TableID>dbo_Fact_YellowGreen_Trips</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

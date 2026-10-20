@@ -1,0 +1,95 @@
+<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine" dwd:design-time-name="57ec6d44-8d1e-4348-b3f5-9cbc36b7200d">
+  <ID>DSV_NYCTaxi</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Fact FHV Trips</ID>
+      <Partitions>
+        <Partition>
+          <ID>Fact FHV Trips</ID>
+          <Name>Fact FHV Trips</Name>
+          <Source xsi:type="DsvTableBinding">
+            <DataSourceViewID>DSV_NYCTaxi_DWH</DataSourceViewID>
+            <TableID>dbo_Fact_FHV_Trips</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact HVFHV Trips</ID>
+      <Partitions>
+        <Partition>
+          <ID>Fact HVFHV Trips</ID>
+          <Name>Fact HVFHV Trips</Name>
+          <Source xsi:type="DsvTableBinding">
+            <DataSourceViewID>DSV_NYCTaxi_DWH</DataSourceViewID>
+            <TableID>dbo_Fact_HVFHV_Trips</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Yellow Green Trips</ID>
+      <Partitions>
+        <Partition>
+          <ID>Fact Yellow Green Trips</ID>
+          <Name>Fact Yellow Green Trips</Name>
+          <Source xsi:type="DsvTableBinding">
+            <DataSourceViewID>DSV_NYCTaxi_DWH</DataSourceViewID>
+            <TableID>dbo_Fact_YellowGreen_Trips</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Daily Financial Snapshot</ID>
+      <Partitions>
+        <Partition>
+          <ID>Daily Financial Snapshot</ID>
+          <Name>Daily Financial Snapshot</Name>
+          <Source xsi:type="DsvTableBinding">
+            <DataSourceViewID>DSV_NYCTaxi_DWH</DataSourceViewID>
+            <TableID>dbo_Fact_Daily_Financial_Snapshot</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Zone Traffic Snapshot</ID>
+      <Partitions>
+        <Partition>
+          <ID>Zone Traffic Snapshot</ID>
+          <Name>Zone Traffic Snapshot</Name>
+          <Source xsi:type="DsvTableBinding">
+            <DataSourceViewID>DSV_NYCTaxi_DWH</DataSourceViewID>
+            <TableID>dbo_Fact_Zone_Traffic_Snapshot</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Base Performance Snapshot</ID>
+      <Partitions>
+        <Partition>
+          <ID>Base Performance Snapshot</ID>
+          <Name>Base Performance Snapshot</Name>
+          <Source xsi:type="DsvTableBinding">
+            <DataSourceViewID>DSV_NYCTaxi_DWH</DataSourceViewID>
+            <TableID>dbo_Fact_Base_Performance_Snapshot</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

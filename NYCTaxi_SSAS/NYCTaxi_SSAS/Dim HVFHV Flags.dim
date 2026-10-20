@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="d037f478-d388-4255-95a6-47cbee36e9d6" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine" dwd:design-time-name="d037f478-d388-4255-95a6-47cbee36e9d6">
   <ID>Dim HVFHV Flags</ID>
   <Name>Dim HVFHV Flags</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -43,7 +43,7 @@
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
   <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="a97b0bd5-bc95-4906-aefe-136b2134eb83">
-    <DataSourceViewID>DSV_NYCTaxi</DataSourceViewID>
+    <DataSourceViewID>DSV_NYCTaxi_DWH</DataSourceViewID>
   </Source>
   <ErrorConfiguration dwd:design-time-name="1cf56606-fc35-4663-b194-a1499558d89a">
     <KeyNotFound>ReportAndStop</KeyNotFound>
@@ -63,6 +63,7 @@
             <TableID>dbo_Dim_HVFHVFlags</TableID>
             <ColumnID>HVFHVFlagKey</ColumnID>
           </Source>
+          <NullProcessing>ZeroOrBlank</NullProcessing>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
@@ -97,11 +98,12 @@
       <KeyColumns>
         <KeyColumn dwd:design-time-name="8f74a4c6-a3ef-44a2-b6e7-5b2369075dd2">
           <DataType>WChar</DataType>
-          <DataSize>5</DataSize>
+          <DataSize>10</DataSize>
           <Source xsi:type="ColumnBinding" dwd:design-time-name="b9946a06-bff4-4a05-a192-cae95e7f0a36">
             <TableID>dbo_Dim_HVFHVFlags</TableID>
             <ColumnID>IsSharedRequest</ColumnID>
           </Source>
+          <NullProcessing>ZeroOrBlank</NullProcessing>
         </KeyColumn>
       </KeyColumns>
       <OrderBy>Key</OrderBy>
@@ -114,11 +116,12 @@
       <KeyColumns>
         <KeyColumn dwd:design-time-name="59aa90a2-1431-4fc4-9b5b-76d34d0338da">
           <DataType>WChar</DataType>
-          <DataSize>5</DataSize>
+          <DataSize>10</DataSize>
           <Source xsi:type="ColumnBinding" dwd:design-time-name="87bafc18-5da9-4843-8d77-96d8cda539ac">
             <TableID>dbo_Dim_HVFHVFlags</TableID>
             <ColumnID>IsSharedMatch</ColumnID>
           </Source>
+          <NullProcessing>ZeroOrBlank</NullProcessing>
         </KeyColumn>
       </KeyColumns>
       <OrderBy>Key</OrderBy>
@@ -131,11 +134,12 @@
       <KeyColumns>
         <KeyColumn dwd:design-time-name="c7a4ebdb-f381-447c-a01c-9b99a433f60c">
           <DataType>WChar</DataType>
-          <DataSize>5</DataSize>
+          <DataSize>10</DataSize>
           <Source xsi:type="ColumnBinding" dwd:design-time-name="e5742fbe-6e09-428c-b3cd-cd77dc71b23c">
             <TableID>dbo_Dim_HVFHVFlags</TableID>
             <ColumnID>IsAccessARide</ColumnID>
           </Source>
+          <NullProcessing>ZeroOrBlank</NullProcessing>
         </KeyColumn>
       </KeyColumns>
       <OrderBy>Key</OrderBy>
@@ -148,11 +152,12 @@
       <KeyColumns>
         <KeyColumn dwd:design-time-name="70b1045e-4f1f-449f-a8b0-852fee9f6f06">
           <DataType>WChar</DataType>
-          <DataSize>5</DataSize>
+          <DataSize>10</DataSize>
           <Source xsi:type="ColumnBinding" dwd:design-time-name="9be4b6e5-8531-45d0-bbfe-f91a58337654">
             <TableID>dbo_Dim_HVFHVFlags</TableID>
             <ColumnID>IsWAVRequest</ColumnID>
           </Source>
+          <NullProcessing>ZeroOrBlank</NullProcessing>
         </KeyColumn>
       </KeyColumns>
       <OrderBy>Key</OrderBy>
@@ -165,11 +170,12 @@
       <KeyColumns>
         <KeyColumn dwd:design-time-name="292821a0-e733-4a87-91ae-501435ce6d48">
           <DataType>WChar</DataType>
-          <DataSize>5</DataSize>
+          <DataSize>10</DataSize>
           <Source xsi:type="ColumnBinding" dwd:design-time-name="2c520ad5-747b-45c8-bfed-d4e73133e01c">
             <TableID>dbo_Dim_HVFHVFlags</TableID>
             <ColumnID>IsWAVMatch</ColumnID>
           </Source>
+          <NullProcessing>ZeroOrBlank</NullProcessing>
         </KeyColumn>
       </KeyColumns>
       <OrderBy>Key</OrderBy>
@@ -178,4 +184,6 @@
     </Attribute>
   </Attributes>
   <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+  <UnknownMember>Visible</UnknownMember>
+  <UnknownMemberName>Unknown (unresolved key)</UnknownMemberName>
 </Dimension>

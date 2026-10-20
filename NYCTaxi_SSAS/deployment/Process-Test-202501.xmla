@@ -1,0 +1,31 @@
+<Batch xmlns="http://schemas.microsoft.com/analysisservices/2003/engine" Transaction="true">
+  <Parallel MaxParallel="2">
+    <Process>
+      <Object>
+        <DatabaseID>NYCTaxi_SSAS</DatabaseID>
+        <CubeID>DSV_NYCTaxi</CubeID>
+        <MeasureGroupID>Fact FHV Trips</MeasureGroupID>
+        <PartitionID>Fact FHV Trips 202501</PartitionID>
+      </Object>
+      <Type>ProcessFull</Type>
+    </Process>
+    <Process>
+      <Object>
+        <DatabaseID>NYCTaxi_SSAS</DatabaseID>
+        <CubeID>DSV_NYCTaxi</CubeID>
+        <MeasureGroupID>Fact HVFHV Trips</MeasureGroupID>
+        <PartitionID>Fact HVFHV Trips 202501</PartitionID>
+      </Object>
+      <Type>ProcessFull</Type>
+    </Process>
+    <Process>
+      <Object>
+        <DatabaseID>NYCTaxi_SSAS</DatabaseID>
+        <CubeID>DSV_NYCTaxi</CubeID>
+        <MeasureGroupID>Fact Yellow Green Trips</MeasureGroupID>
+        <PartitionID>Fact Yellow Green Trips 202501</PartitionID>
+      </Object>
+      <Type>ProcessFull</Type>
+    </Process>
+  </Parallel>
+</Batch>

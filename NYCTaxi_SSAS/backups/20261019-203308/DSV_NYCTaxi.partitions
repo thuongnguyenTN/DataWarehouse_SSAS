@@ -1,0 +1,530 @@
+<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine" dwd:design-time-name="57ec6d44-8d1e-4348-b3f5-9cbc36b7200d">
+  <ID>DSV_NYCTaxi</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Fact FHV Trips</ID>
+      <Partitions>
+        <Partition>
+          <ID>Fact FHV Trips 202501</ID>
+          <Name>Fact FHV Trips 202501</Name>
+          <Source xsi:type="QueryBinding">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_FHV_Trips] WHERE PickupDateKey &gt;= 20250101 AND PickupDateKey &lt; 20250201</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition>
+          <ID>Fact FHV Trips 202502</ID>
+          <Name>Fact FHV Trips 202502</Name>
+          <Source xsi:type="QueryBinding">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_FHV_Trips] WHERE PickupDateKey &gt;= 20250201 AND PickupDateKey &lt; 20250301</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition>
+          <ID>Fact FHV Trips 202503</ID>
+          <Name>Fact FHV Trips 202503</Name>
+          <Source xsi:type="QueryBinding">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_FHV_Trips] WHERE PickupDateKey &gt;= 20250301 AND PickupDateKey &lt; 20250401</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition>
+          <ID>Fact FHV Trips 202504</ID>
+          <Name>Fact FHV Trips 202504</Name>
+          <Source xsi:type="QueryBinding">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_FHV_Trips] WHERE PickupDateKey &gt;= 20250401 AND PickupDateKey &lt; 20250501</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition>
+          <ID>Fact FHV Trips 202505</ID>
+          <Name>Fact FHV Trips 202505</Name>
+          <Source xsi:type="QueryBinding">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_FHV_Trips] WHERE PickupDateKey &gt;= 20250501 AND PickupDateKey &lt; 20250601</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition>
+          <ID>Fact FHV Trips 202506</ID>
+          <Name>Fact FHV Trips 202506</Name>
+          <Source xsi:type="QueryBinding">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_FHV_Trips] WHERE PickupDateKey &gt;= 20250601 AND PickupDateKey &lt; 20250701</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition>
+          <ID>Fact FHV Trips 202507</ID>
+          <Name>Fact FHV Trips 202507</Name>
+          <Source xsi:type="QueryBinding">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_FHV_Trips] WHERE PickupDateKey &gt;= 20250701 AND PickupDateKey &lt; 20250801</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition>
+          <ID>Fact FHV Trips 202508</ID>
+          <Name>Fact FHV Trips 202508</Name>
+          <Source xsi:type="QueryBinding">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_FHV_Trips] WHERE PickupDateKey &gt;= 20250801 AND PickupDateKey &lt; 20250901</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition>
+          <ID>Fact FHV Trips 202509</ID>
+          <Name>Fact FHV Trips 202509</Name>
+          <Source xsi:type="QueryBinding">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_FHV_Trips] WHERE PickupDateKey &gt;= 20250901 AND PickupDateKey &lt; 20251001</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition>
+          <ID>Fact FHV Trips 202510</ID>
+          <Name>Fact FHV Trips 202510</Name>
+          <Source xsi:type="QueryBinding">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_FHV_Trips] WHERE PickupDateKey &gt;= 20251001 AND PickupDateKey &lt; 20251101</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition>
+          <ID>Fact FHV Trips 202511</ID>
+          <Name>Fact FHV Trips 202511</Name>
+          <Source xsi:type="QueryBinding">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_FHV_Trips] WHERE PickupDateKey &gt;= 20251101 AND PickupDateKey &lt; 20251201</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition>
+          <ID>Fact FHV Trips 202512</ID>
+          <Name>Fact FHV Trips 202512</Name>
+          <Source xsi:type="QueryBinding">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_FHV_Trips] WHERE PickupDateKey &gt;= 20251201 AND PickupDateKey &lt; 20260101</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition>
+          <ID>Fact FHV Trips Other Dates</ID>
+          <Name>Fact FHV Trips Other Dates</Name>
+          <Source xsi:type="QueryBinding">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_FHV_Trips] WHERE NOT ((PickupDateKey &gt;= 20250101 AND PickupDateKey &lt; 20250201) OR (PickupDateKey &gt;= 20250201 AND PickupDateKey &lt; 20250301) OR (PickupDateKey &gt;= 20250301 AND PickupDateKey &lt; 20250401) OR (PickupDateKey &gt;= 20250401 AND PickupDateKey &lt; 20250501) OR (PickupDateKey &gt;= 20250501 AND PickupDateKey &lt; 20250601) OR (PickupDateKey &gt;= 20250601 AND PickupDateKey &lt; 20250701) OR (PickupDateKey &gt;= 20250701 AND PickupDateKey &lt; 20250801) OR (PickupDateKey &gt;= 20250801 AND PickupDateKey &lt; 20250901) OR (PickupDateKey &gt;= 20250901 AND PickupDateKey &lt; 20251001) OR (PickupDateKey &gt;= 20251001 AND PickupDateKey &lt; 20251101) OR (PickupDateKey &gt;= 20251101 AND PickupDateKey &lt; 20251201) OR (PickupDateKey &gt;= 20251201 AND PickupDateKey &lt; 20260101))</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact HVFHV Trips</ID>
+      <Partitions>
+        <Partition>
+          <ID>Fact HVFHV Trips 202501</ID>
+          <Name>Fact HVFHV Trips 202501</Name>
+          <Source xsi:type="QueryBinding">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_HVFHV_Trips] WHERE PickupDateKey &gt;= 20250101 AND PickupDateKey &lt; 20250201</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition>
+          <ID>Fact HVFHV Trips 202502</ID>
+          <Name>Fact HVFHV Trips 202502</Name>
+          <Source xsi:type="QueryBinding">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_HVFHV_Trips] WHERE PickupDateKey &gt;= 20250201 AND PickupDateKey &lt; 20250301</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition>
+          <ID>Fact HVFHV Trips 202503</ID>
+          <Name>Fact HVFHV Trips 202503</Name>
+          <Source xsi:type="QueryBinding">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_HVFHV_Trips] WHERE PickupDateKey &gt;= 20250301 AND PickupDateKey &lt; 20250401</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition>
+          <ID>Fact HVFHV Trips 202504</ID>
+          <Name>Fact HVFHV Trips 202504</Name>
+          <Source xsi:type="QueryBinding">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_HVFHV_Trips] WHERE PickupDateKey &gt;= 20250401 AND PickupDateKey &lt; 20250501</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition>
+          <ID>Fact HVFHV Trips 202505</ID>
+          <Name>Fact HVFHV Trips 202505</Name>
+          <Source xsi:type="QueryBinding">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_HVFHV_Trips] WHERE PickupDateKey &gt;= 20250501 AND PickupDateKey &lt; 20250601</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition>
+          <ID>Fact HVFHV Trips 202506</ID>
+          <Name>Fact HVFHV Trips 202506</Name>
+          <Source xsi:type="QueryBinding">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_HVFHV_Trips] WHERE PickupDateKey &gt;= 20250601 AND PickupDateKey &lt; 20250701</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition>
+          <ID>Fact HVFHV Trips 202507</ID>
+          <Name>Fact HVFHV Trips 202507</Name>
+          <Source xsi:type="QueryBinding">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_HVFHV_Trips] WHERE PickupDateKey &gt;= 20250701 AND PickupDateKey &lt; 20250801</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition>
+          <ID>Fact HVFHV Trips 202508</ID>
+          <Name>Fact HVFHV Trips 202508</Name>
+          <Source xsi:type="QueryBinding">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_HVFHV_Trips] WHERE PickupDateKey &gt;= 20250801 AND PickupDateKey &lt; 20250901</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition>
+          <ID>Fact HVFHV Trips 202509</ID>
+          <Name>Fact HVFHV Trips 202509</Name>
+          <Source xsi:type="QueryBinding">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_HVFHV_Trips] WHERE PickupDateKey &gt;= 20250901 AND PickupDateKey &lt; 20251001</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition>
+          <ID>Fact HVFHV Trips 202510</ID>
+          <Name>Fact HVFHV Trips 202510</Name>
+          <Source xsi:type="QueryBinding">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_HVFHV_Trips] WHERE PickupDateKey &gt;= 20251001 AND PickupDateKey &lt; 20251101</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition>
+          <ID>Fact HVFHV Trips 202511</ID>
+          <Name>Fact HVFHV Trips 202511</Name>
+          <Source xsi:type="QueryBinding">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_HVFHV_Trips] WHERE PickupDateKey &gt;= 20251101 AND PickupDateKey &lt; 20251201</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition>
+          <ID>Fact HVFHV Trips 202512</ID>
+          <Name>Fact HVFHV Trips 202512</Name>
+          <Source xsi:type="QueryBinding">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_HVFHV_Trips] WHERE PickupDateKey &gt;= 20251201 AND PickupDateKey &lt; 20260101</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition>
+          <ID>Fact HVFHV Trips Other Dates</ID>
+          <Name>Fact HVFHV Trips Other Dates</Name>
+          <Source xsi:type="QueryBinding">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_HVFHV_Trips] WHERE NOT ((PickupDateKey &gt;= 20250101 AND PickupDateKey &lt; 20250201) OR (PickupDateKey &gt;= 20250201 AND PickupDateKey &lt; 20250301) OR (PickupDateKey &gt;= 20250301 AND PickupDateKey &lt; 20250401) OR (PickupDateKey &gt;= 20250401 AND PickupDateKey &lt; 20250501) OR (PickupDateKey &gt;= 20250501 AND PickupDateKey &lt; 20250601) OR (PickupDateKey &gt;= 20250601 AND PickupDateKey &lt; 20250701) OR (PickupDateKey &gt;= 20250701 AND PickupDateKey &lt; 20250801) OR (PickupDateKey &gt;= 20250801 AND PickupDateKey &lt; 20250901) OR (PickupDateKey &gt;= 20250901 AND PickupDateKey &lt; 20251001) OR (PickupDateKey &gt;= 20251001 AND PickupDateKey &lt; 20251101) OR (PickupDateKey &gt;= 20251101 AND PickupDateKey &lt; 20251201) OR (PickupDateKey &gt;= 20251201 AND PickupDateKey &lt; 20260101))</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Yellow Green Trips</ID>
+      <Partitions>
+        <Partition>
+          <ID>Fact Yellow Green Trips 200812</ID>
+          <Name>Fact Yellow Green Trips 200812</Name>
+          <Source xsi:type="QueryBinding">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_YellowGreen_Trips] WHERE PickupDateKey &gt;= 20081201 AND PickupDateKey &lt; 20090101</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition>
+          <ID>Fact Yellow Green Trips 202412</ID>
+          <Name>Fact Yellow Green Trips 202412</Name>
+          <Source xsi:type="QueryBinding">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_YellowGreen_Trips] WHERE PickupDateKey &gt;= 20241201 AND PickupDateKey &lt; 20250101</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition>
+          <ID>Fact Yellow Green Trips 202501</ID>
+          <Name>Fact Yellow Green Trips 202501</Name>
+          <Source xsi:type="QueryBinding">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_YellowGreen_Trips] WHERE PickupDateKey &gt;= 20250101 AND PickupDateKey &lt; 20250201</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition>
+          <ID>Fact Yellow Green Trips 202502</ID>
+          <Name>Fact Yellow Green Trips 202502</Name>
+          <Source xsi:type="QueryBinding">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_YellowGreen_Trips] WHERE PickupDateKey &gt;= 20250201 AND PickupDateKey &lt; 20250301</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition>
+          <ID>Fact Yellow Green Trips 202503</ID>
+          <Name>Fact Yellow Green Trips 202503</Name>
+          <Source xsi:type="QueryBinding">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_YellowGreen_Trips] WHERE PickupDateKey &gt;= 20250301 AND PickupDateKey &lt; 20250401</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition>
+          <ID>Fact Yellow Green Trips 202504</ID>
+          <Name>Fact Yellow Green Trips 202504</Name>
+          <Source xsi:type="QueryBinding">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_YellowGreen_Trips] WHERE PickupDateKey &gt;= 20250401 AND PickupDateKey &lt; 20250501</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition>
+          <ID>Fact Yellow Green Trips 202505</ID>
+          <Name>Fact Yellow Green Trips 202505</Name>
+          <Source xsi:type="QueryBinding">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_YellowGreen_Trips] WHERE PickupDateKey &gt;= 20250501 AND PickupDateKey &lt; 20250601</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition>
+          <ID>Fact Yellow Green Trips 202506</ID>
+          <Name>Fact Yellow Green Trips 202506</Name>
+          <Source xsi:type="QueryBinding">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_YellowGreen_Trips] WHERE PickupDateKey &gt;= 20250601 AND PickupDateKey &lt; 20250701</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition>
+          <ID>Fact Yellow Green Trips 202507</ID>
+          <Name>Fact Yellow Green Trips 202507</Name>
+          <Source xsi:type="QueryBinding">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_YellowGreen_Trips] WHERE PickupDateKey &gt;= 20250701 AND PickupDateKey &lt; 20250801</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition>
+          <ID>Fact Yellow Green Trips 202508</ID>
+          <Name>Fact Yellow Green Trips 202508</Name>
+          <Source xsi:type="QueryBinding">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_YellowGreen_Trips] WHERE PickupDateKey &gt;= 20250801 AND PickupDateKey &lt; 20250901</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition>
+          <ID>Fact Yellow Green Trips 202509</ID>
+          <Name>Fact Yellow Green Trips 202509</Name>
+          <Source xsi:type="QueryBinding">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_YellowGreen_Trips] WHERE PickupDateKey &gt;= 20250901 AND PickupDateKey &lt; 20251001</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition>
+          <ID>Fact Yellow Green Trips 202510</ID>
+          <Name>Fact Yellow Green Trips 202510</Name>
+          <Source xsi:type="QueryBinding">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_YellowGreen_Trips] WHERE PickupDateKey &gt;= 20251001 AND PickupDateKey &lt; 20251101</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition>
+          <ID>Fact Yellow Green Trips 202511</ID>
+          <Name>Fact Yellow Green Trips 202511</Name>
+          <Source xsi:type="QueryBinding">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_YellowGreen_Trips] WHERE PickupDateKey &gt;= 20251101 AND PickupDateKey &lt; 20251201</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition>
+          <ID>Fact Yellow Green Trips 202512</ID>
+          <Name>Fact Yellow Green Trips 202512</Name>
+          <Source xsi:type="QueryBinding">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_YellowGreen_Trips] WHERE PickupDateKey &gt;= 20251201 AND PickupDateKey &lt; 20260101</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition>
+          <ID>Fact Yellow Green Trips 202601</ID>
+          <Name>Fact Yellow Green Trips 202601</Name>
+          <Source xsi:type="QueryBinding">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_YellowGreen_Trips] WHERE PickupDateKey &gt;= 20260101 AND PickupDateKey &lt; 20260201</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition>
+          <ID>Fact Yellow Green Trips Other Dates</ID>
+          <Name>Fact Yellow Green Trips Other Dates</Name>
+          <Source xsi:type="QueryBinding">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_YellowGreen_Trips] WHERE NOT ((PickupDateKey &gt;= 20081201 AND PickupDateKey &lt; 20090101) OR (PickupDateKey &gt;= 20241201 AND PickupDateKey &lt; 20250101) OR (PickupDateKey &gt;= 20250101 AND PickupDateKey &lt; 20250201) OR (PickupDateKey &gt;= 20250201 AND PickupDateKey &lt; 20250301) OR (PickupDateKey &gt;= 20250301 AND PickupDateKey &lt; 20250401) OR (PickupDateKey &gt;= 20250401 AND PickupDateKey &lt; 20250501) OR (PickupDateKey &gt;= 20250501 AND PickupDateKey &lt; 20250601) OR (PickupDateKey &gt;= 20250601 AND PickupDateKey &lt; 20250701) OR (PickupDateKey &gt;= 20250701 AND PickupDateKey &lt; 20250801) OR (PickupDateKey &gt;= 20250801 AND PickupDateKey &lt; 20250901) OR (PickupDateKey &gt;= 20250901 AND PickupDateKey &lt; 20251001) OR (PickupDateKey &gt;= 20251001 AND PickupDateKey &lt; 20251101) OR (PickupDateKey &gt;= 20251101 AND PickupDateKey &lt; 20251201) OR (PickupDateKey &gt;= 20251201 AND PickupDateKey &lt; 20260101) OR (PickupDateKey &gt;= 20260101 AND PickupDateKey &lt; 20260201))</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Daily Financial Snapshot</ID>
+      <Partitions>
+        <Partition>
+          <ID>Daily Financial Snapshot All</ID>
+          <Name>Daily Financial Snapshot All</Name>
+          <Source xsi:type="DsvTableBinding">
+            <DataSourceViewID>DSV_NYCTaxi_DWH</DataSourceViewID>
+            <TableID>dbo_Fact_Daily_Financial_Snapshot</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Zone Traffic Snapshot</ID>
+      <Partitions>
+        <Partition>
+          <ID>Zone Traffic Snapshot All</ID>
+          <Name>Zone Traffic Snapshot All</Name>
+          <Source xsi:type="DsvTableBinding">
+            <DataSourceViewID>DSV_NYCTaxi_DWH</DataSourceViewID>
+            <TableID>dbo_Fact_Zone_Traffic_Snapshot</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Base Performance Snapshot</ID>
+      <Partitions>
+        <Partition>
+          <ID>Base Performance Snapshot All</ID>
+          <Name>Base Performance Snapshot All</Name>
+          <Source xsi:type="DsvTableBinding">
+            <DataSourceViewID>DSV_NYCTaxi_DWH</DataSourceViewID>
+            <TableID>dbo_Fact_Base_Performance_Snapshot</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

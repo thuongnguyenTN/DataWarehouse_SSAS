@@ -1,0 +1,204 @@
+﻿-- FHV trips
+SELECT {[Measures].[Trip Count]} ON COLUMNS FROM [NYC Taxi Analysis];
+-- FHV date 20250101
+SELECT {[Measures].[Trip Count]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Pickup Date].[Date Key].&[20250101]);
+-- FHV date 20250115
+SELECT {[Measures].[Trip Count]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Pickup Date].[Date Key].&[20250115]);
+-- FHV pickup location 0
+SELECT {[Measures].[Trip Count]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Pickup Location].[Location Key].&[0]);
+-- FHV pickup location 1
+SELECT {[Measures].[Trip Count]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Pickup Location].[Location Key].&[1]);
+-- FHV pickup location 132
+SELECT {[Measures].[Trip Count]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Pickup Location].[Location Key].&[132]);
+-- FHV pickup location 138
+SELECT {[Measures].[Trip Count]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Pickup Location].[Location Key].&[138]);
+-- FHV borough Manhattan
+SELECT {[Measures].[Trip Count]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Pickup Location].[Borough].&[Manhattan]);
+-- FHV borough Queens
+SELECT {[Measures].[Trip Count]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Pickup Location].[Borough].&[Queens]);
+-- FHV avg duration
+SELECT {[Measures].[FHV Average Trip Duration Minutes]} ON COLUMNS FROM [NYC Taxi Analysis];
+-- HVFHV trips
+SELECT {[Measures].[Trip Count - Fact HVFHV Trips]} ON COLUMNS FROM [NYC Taxi Analysis];
+-- HVFHV date 20250101
+SELECT {[Measures].[Trip Count - Fact HVFHV Trips]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Pickup Date].[Date Key].&[20250101]);
+-- HVFHV date 20250115
+SELECT {[Measures].[Trip Count - Fact HVFHV Trips]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Pickup Date].[Date Key].&[20250115]);
+-- HVFHV pickup location 0
+SELECT {[Measures].[Trip Count - Fact HVFHV Trips]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Pickup Location].[Location Key].&[0]);
+-- HVFHV pickup location 1
+SELECT {[Measures].[Trip Count - Fact HVFHV Trips]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Pickup Location].[Location Key].&[1]);
+-- HVFHV pickup location 132
+SELECT {[Measures].[Trip Count - Fact HVFHV Trips]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Pickup Location].[Location Key].&[132]);
+-- HVFHV pickup location 138
+SELECT {[Measures].[Trip Count - Fact HVFHV Trips]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Pickup Location].[Location Key].&[138]);
+-- HVFHV borough Manhattan
+SELECT {[Measures].[Trip Count - Fact HVFHV Trips]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Pickup Location].[Borough].&[Manhattan]);
+-- HVFHV borough Queens
+SELECT {[Measures].[Trip Count - Fact HVFHV Trips]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Pickup Location].[Borough].&[Queens]);
+-- HVFHV avg duration
+SELECT {[Measures].[HVFHV Average Trip Duration Minutes]} ON COLUMNS FROM [NYC Taxi Analysis];
+-- HVFHV avg distance
+SELECT {[Measures].[HVFHV Average Trip Distance]} ON COLUMNS FROM [NYC Taxi Analysis];
+-- HVFHV speed
+SELECT {[Measures].[HVFHV Average Speed MPH]} ON COLUMNS FROM [NYC Taxi Analysis];
+-- HVFHV avg fare
+SELECT {[Measures].[HVFHV Average Fare Per Trip]} ON COLUMNS FROM [NYC Taxi Analysis];
+-- HVFHV avg tip
+SELECT {[Measures].[HVFHV Average Tip Per Trip]} ON COLUMNS FROM [NYC Taxi Analysis];
+-- HVFHV tip percentage
+SELECT {[Measures].[HVFHV Tip Percentage]} ON COLUMNS FROM [NYC Taxi Analysis];
+-- YellowGreen trips
+SELECT {[Measures].[Trip Count - Fact Yellow Green Trips]} ON COLUMNS FROM [NYC Taxi Analysis];
+-- YellowGreen date 20250101
+SELECT {[Measures].[Trip Count - Fact Yellow Green Trips]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Pickup Date].[Date Key].&[20250101]);
+-- YellowGreen date 20250115
+SELECT {[Measures].[Trip Count - Fact Yellow Green Trips]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Pickup Date].[Date Key].&[20250115]);
+-- YellowGreen pickup location 0
+SELECT {[Measures].[Trip Count - Fact Yellow Green Trips]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Pickup Location].[Location Key].&[0]);
+-- YellowGreen pickup location 1
+SELECT {[Measures].[Trip Count - Fact Yellow Green Trips]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Pickup Location].[Location Key].&[1]);
+-- YellowGreen pickup location 132
+SELECT {[Measures].[Trip Count - Fact Yellow Green Trips]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Pickup Location].[Location Key].&[132]);
+-- YellowGreen pickup location 138
+SELECT {[Measures].[Trip Count - Fact Yellow Green Trips]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Pickup Location].[Location Key].&[138]);
+-- YellowGreen borough Manhattan
+SELECT {[Measures].[Trip Count - Fact Yellow Green Trips]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Pickup Location].[Borough].&[Manhattan]);
+-- YellowGreen borough Queens
+SELECT {[Measures].[Trip Count - Fact Yellow Green Trips]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Pickup Location].[Borough].&[Queens]);
+-- YellowGreen avg duration
+SELECT {[Measures].[YellowGreen Average Trip Duration Minutes]} ON COLUMNS FROM [NYC Taxi Analysis];
+-- YellowGreen avg distance
+SELECT {[Measures].[YellowGreen Average Trip Distance]} ON COLUMNS FROM [NYC Taxi Analysis];
+-- YellowGreen speed
+SELECT {[Measures].[YellowGreen Average Speed MPH]} ON COLUMNS FROM [NYC Taxi Analysis];
+-- YellowGreen avg fare
+SELECT {[Measures].[YellowGreen Average Fare Per Trip]} ON COLUMNS FROM [NYC Taxi Analysis];
+-- YellowGreen avg tip
+SELECT {[Measures].[YellowGreen Average Tip Per Trip]} ON COLUMNS FROM [NYC Taxi Analysis];
+-- YellowGreen tip percentage
+SELECT {[Measures].[YellowGreen Tip Percentage]} ON COLUMNS FROM [NYC Taxi Analysis];
+-- Service YELLOW
+SELECT {[Measures].[Total Trips All Services]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Dim Service Type].[Service Type Key].&[1]);
+-- Service GREEN
+SELECT {[Measures].[Total Trips All Services]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Dim Service Type].[Service Type Key].&[2]);
+-- Service FHV
+SELECT {[Measures].[Total Trips All Services]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Dim Service Type].[Service Type Key].&[3]);
+-- Service FHVHV
+SELECT {[Measures].[Total Trips All Services]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Dim Service Type].[Service Type Key].&[4]);
+-- YellowGreen revenue
+SELECT {[Measures].[Total Amount]} ON COLUMNS FROM [NYC Taxi Analysis];
+-- HVFHV driver pay
+SELECT {[Measures].[Driver Pay Amount]} ON COLUMNS FROM [NYC Taxi Analysis];
+-- HVFHV avg waiting
+SELECT {[Measures].[HVFHV Average Waiting Minutes]} ON COLUMNS FROM [NYC Taxi Analysis];
+-- Daily Financial Snapshot TotalTrips
+SELECT {[Measures].[Daily Financial Snapshot TotalTrips]} ON COLUMNS FROM [NYC Taxi Analysis];
+-- Daily Financial Snapshot TotalDistanceMiles
+SELECT {[Measures].[Daily Financial Snapshot TotalDistanceMiles]} ON COLUMNS FROM [NYC Taxi Analysis];
+-- Daily Financial Snapshot TotalPassengerCharges
+SELECT {[Measures].[Daily Financial Snapshot TotalPassengerCharges]} ON COLUMNS FROM [NYC Taxi Analysis];
+-- Daily Financial Snapshot TotalTips
+SELECT {[Measures].[Daily Financial Snapshot TotalTips]} ON COLUMNS FROM [NYC Taxi Analysis];
+-- Daily Financial Snapshot TotalTaxesAndFees
+SELECT {[Measures].[Daily Financial Snapshot TotalTaxesAndFees]} ON COLUMNS FROM [NYC Taxi Analysis];
+-- Daily Financial Snapshot TotalDriverPay
+SELECT {[Measures].[Daily Financial Snapshot TotalDriverPay]} ON COLUMNS FROM [NYC Taxi Analysis];
+-- Zone Traffic Snapshot TotalPickups
+SELECT {[Measures].[Zone Traffic Snapshot TotalPickups]} ON COLUMNS FROM [NYC Taxi Analysis];
+-- Zone Traffic Snapshot TotalDropoffs
+SELECT {[Measures].[Zone Traffic Snapshot TotalDropoffs]} ON COLUMNS FROM [NYC Taxi Analysis];
+-- Base Performance Snapshot TotalTrips
+SELECT {[Measures].[Base Performance Snapshot TotalTrips]} ON COLUMNS FROM [NYC Taxi Analysis];
+-- Base Performance Snapshot TotalTripDurationSeconds
+SELECT {[Measures].[Base Performance Snapshot TotalTripDurationSeconds]} ON COLUMNS FROM [NYC Taxi Analysis];
+-- Base Performance Snapshot DurationTripCount
+SELECT {[Measures].[Base Performance Snapshot DurationTripCount]} ON COLUMNS FROM [NYC Taxi Analysis];
+-- Base Performance Snapshot TotalWaitingTimeSeconds
+SELECT {[Measures].[Base Performance Snapshot TotalWaitingTimeSeconds]} ON COLUMNS FROM [NYC Taxi Analysis];
+-- Base Performance Snapshot WaitingTripCount
+SELECT {[Measures].[Base Performance Snapshot WaitingTripCount]} ON COLUMNS FROM [NYC Taxi Analysis];
+-- Base Performance Snapshot TotalSharedRequests
+SELECT {[Measures].[Base Performance Snapshot TotalSharedRequests]} ON COLUMNS FROM [NYC Taxi Analysis];
+-- Base Performance Snapshot TotalSharedMatches
+SELECT {[Measures].[Base Performance Snapshot TotalSharedMatches]} ON COLUMNS FROM [NYC Taxi Analysis];
+-- Base Performance Snapshot TotalWAVRequests
+SELECT {[Measures].[Base Performance Snapshot TotalWAVRequests]} ON COLUMNS FROM [NYC Taxi Analysis];
+-- Base Performance Snapshot TotalWAVMatches
+SELECT {[Measures].[Base Performance Snapshot TotalWAVMatches]} ON COLUMNS FROM [NYC Taxi Analysis];
+-- Base Performance Snapshot TotalDriverPay
+SELECT {[Measures].[Base Performance Snapshot TotalDriverPay]} ON COLUMNS FROM [NYC Taxi Analysis];
+-- Shared request rate
+SELECT {[Measures].[Shared Request Rate]} ON COLUMNS FROM [NYC Taxi Analysis];
+-- WAV match rate
+SELECT {[Measures].[WAV Match Rate]} ON COLUMNS FROM [NYC Taxi Analysis];
+-- Dispatch base 0
+SELECT {[Measures].[Base Performance Snapshot TotalTrips]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Dispatch Base].[Base Key].&[0]);
+-- Dispatch base 1
+SELECT {[Measures].[Base Performance Snapshot TotalTrips]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Dispatch Base].[Base Key].&[1]);
+-- Dispatch base 2
+SELECT {[Measures].[Base Performance Snapshot TotalTrips]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Dispatch Base].[Base Key].&[2]);
+-- Dispatch base 3
+SELECT {[Measures].[Base Performance Snapshot TotalTrips]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Dispatch Base].[Base Key].&[3]);
+-- Base avg duration
+SELECT {[Measures].[Base Average Duration Minutes]} ON COLUMNS FROM [NYC Taxi Analysis];
+-- Base avg waiting
+SELECT {[Measures].[Base Average Waiting Minutes]} ON COLUMNS FROM [NYC Taxi Analysis];
+-- Snapshot pickups date 20250101
+SELECT {[Measures].[Zone Traffic Snapshot TotalPickups]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Snapshot Date].[Date Key].&[20250101]);
+-- Snapshot pickups date 20250115
+SELECT {[Measures].[Zone Traffic Snapshot TotalPickups]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Snapshot Date].[Date Key].&[20250115]);
+-- Snapshot dropoffs location 0
+SELECT {[Measures].[Zone Traffic Snapshot TotalDropoffs]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Snapshot Location].[Location Key].&[0]);
+-- Snapshot dropoffs location 1
+SELECT {[Measures].[Zone Traffic Snapshot TotalDropoffs]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Snapshot Location].[Location Key].&[1]);
+-- Snapshot dropoffs location 132
+SELECT {[Measures].[Zone Traffic Snapshot TotalDropoffs]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Snapshot Location].[Location Key].&[132]);
+-- Fact_FHV_Trips Unknown batch
+SELECT {[Measures].[Trip Count]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Dim Load Batch].[Load Batch Key].&[0]);
+-- Fact_FHV_Trips Unknown time
+SELECT {[Measures].[Trip Count]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Pickup Time].[Time Key].&[0]);
+-- Fact_FHV_Trips Unknown date
+SELECT {[Measures].[Trip Count]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Pickup Date].[Date Key].&[0]);
+-- Fact_FHV_Trips hour 0
+SELECT {[Measures].[Trip Count]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Pickup Time].[Hour Number].&[Night]&[0]);
+-- Fact_FHV_Trips hour 8
+SELECT {[Measures].[Trip Count]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Pickup Time].[Hour Number].&[Morning]&[8]);
+-- Fact_FHV_Trips hour 17
+SELECT {[Measures].[Trip Count]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Pickup Time].[Hour Number].&[Afternoon]&[17]);
+-- Fact_FHV_Trips calendar Jan2025
+SELECT {[Measures].[Trip Count]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Pickup Date].[Month Number].&[2025]&[1]);
+-- Fact_FHV_Trips calendar Q12025
+SELECT {[Measures].[Trip Count]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Pickup Date].[Quarter Number].&[2025]&[1]);
+-- Fact_HVFHV_Trips Unknown batch
+SELECT {[Measures].[Trip Count - Fact HVFHV Trips]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Dim Load Batch].[Load Batch Key].&[0]);
+-- Fact_HVFHV_Trips Unknown time
+SELECT {[Measures].[Trip Count - Fact HVFHV Trips]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Pickup Time].[Time Key].&[0]);
+-- Fact_HVFHV_Trips Unknown date
+SELECT {[Measures].[Trip Count - Fact HVFHV Trips]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Pickup Date].[Date Key].&[0]);
+-- Fact_HVFHV_Trips hour 0
+SELECT {[Measures].[Trip Count - Fact HVFHV Trips]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Pickup Time].[Hour Number].&[Night]&[0]);
+-- Fact_HVFHV_Trips hour 8
+SELECT {[Measures].[Trip Count - Fact HVFHV Trips]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Pickup Time].[Hour Number].&[Morning]&[8]);
+-- Fact_HVFHV_Trips hour 17
+SELECT {[Measures].[Trip Count - Fact HVFHV Trips]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Pickup Time].[Hour Number].&[Afternoon]&[17]);
+-- Fact_HVFHV_Trips calendar Jan2025
+SELECT {[Measures].[Trip Count - Fact HVFHV Trips]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Pickup Date].[Month Number].&[2025]&[1]);
+-- Fact_HVFHV_Trips calendar Q12025
+SELECT {[Measures].[Trip Count - Fact HVFHV Trips]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Pickup Date].[Quarter Number].&[2025]&[1]);
+-- Fact_YellowGreen_Trips Unknown batch
+SELECT {[Measures].[Trip Count - Fact Yellow Green Trips]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Dim Load Batch].[Load Batch Key].&[0]);
+-- Fact_YellowGreen_Trips Unknown time
+SELECT {[Measures].[Trip Count - Fact Yellow Green Trips]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Pickup Time].[Time Key].&[0]);
+-- Fact_YellowGreen_Trips Unknown date
+SELECT {[Measures].[Trip Count - Fact Yellow Green Trips]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Pickup Date].[Date Key].&[0]);
+-- Fact_YellowGreen_Trips hour 0
+SELECT {[Measures].[Trip Count - Fact Yellow Green Trips]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Pickup Time].[Hour Number].&[Night]&[0]);
+-- Fact_YellowGreen_Trips hour 8
+SELECT {[Measures].[Trip Count - Fact Yellow Green Trips]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Pickup Time].[Hour Number].&[Morning]&[8]);
+-- Fact_YellowGreen_Trips hour 17
+SELECT {[Measures].[Trip Count - Fact Yellow Green Trips]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Pickup Time].[Hour Number].&[Afternoon]&[17]);
+-- Fact_YellowGreen_Trips calendar Jan2025
+SELECT {[Measures].[Trip Count - Fact Yellow Green Trips]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Pickup Date].[Month Number].&[2025]&[1]);
+-- Fact_YellowGreen_Trips calendar Q12025
+SELECT {[Measures].[Trip Count - Fact Yellow Green Trips]} ON COLUMNS FROM [NYC Taxi Analysis] WHERE ([Pickup Date].[Quarter Number].&[2025]&[1]);

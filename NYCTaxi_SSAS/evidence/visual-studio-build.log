@@ -1,0 +1,8 @@
+Command executed:
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\devenv.com" "E:\NYCTaxi\NYCTaxi_SSAS\NYCTaxi_SSAS.sln" /Build Development /Out "E:\NYCTaxi\NYCTaxi_SSAS\evidence\visual-studio-build.log"
+
+Captured console output:
+Invalid license data. Repair Visual Studio from the Control Panel.
+
+Exit code: 1.
+No successful Visual Studio build is claimed. AMO validation and XMLA deployment were executed separately.

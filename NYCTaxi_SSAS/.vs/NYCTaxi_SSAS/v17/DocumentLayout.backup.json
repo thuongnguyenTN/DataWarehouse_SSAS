@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "E:\\NYCTaxi\\NYCTaxi_SSAS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B35E5662-0AF0-402D-B134-0D9C0A0FFF23}|NYCTaxi_SSAS\\NYCTaxi_SSAS.dwproj|E:\\NYCTaxi\\NYCTaxi_SSAS\\NYCTaxi_SSAS\\DSV_NYCTaxi.dsv||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
-      "RelativeMoniker": "D:0:0:{B35E5662-0AF0-402D-B134-0D9C0A0FFF23}|NYCTaxi_SSAS\\NYCTaxi_SSAS.dwproj|solutionrelative:NYCTaxi_SSAS\\DSV_NYCTaxi.dsv||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B35E5662-0AF0-402D-B134-0D9C0A0FFF23}|NYCTaxi_SSAS\\NYCTaxi_SSAS.dwproj|E:\\NYCTaxi\\NYCTaxi_SSAS\\NYCTaxi_SSAS\\DSV_NYCTaxi.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
-      "RelativeMoniker": "D:0:0:{B35E5662-0AF0-402D-B134-0D9C0A0FFF23}|NYCTaxi_SSAS\\NYCTaxi_SSAS.dwproj|solutionrelative:NYCTaxi_SSAS\\DSV_NYCTaxi.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+      "AbsoluteMoniker": "D:0:0:{B35E5662-0AF0-402D-B134-0D9C0A0FFF23}|NYCTaxi_SSAS\\NYCTaxi_SSAS.dwproj|E:\\NYCTaxi\\NYCTaxi_SSAS\\NYCTaxi_SSAS\\Dim Date.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{B35E5662-0AF0-402D-B134-0D9C0A0FFF23}|NYCTaxi_SSAS\\NYCTaxi_SSAS.dwproj|solutionrelative:NYCTaxi_SSAS\\Dim Date.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B35E5662-0AF0-402D-B134-0D9C0A0FFF23}|NYCTaxi_SSAS\\NYCTaxi_SSAS.dwproj|E:\\NYCTaxi\\NYCTaxi_SSAS\\NYCTaxi_SSAS\\Dim Time.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
       "RelativeMoniker": "D:0:0:{B35E5662-0AF0-402D-B134-0D9C0A0FFF23}|NYCTaxi_SSAS\\NYCTaxi_SSAS.dwproj|solutionrelative:NYCTaxi_SSAS\\Dim Time.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B35E5662-0AF0-402D-B134-0D9C0A0FFF23}|NYCTaxi_SSAS\\NYCTaxi_SSAS.dwproj|E:\\NYCTaxi\\NYCTaxi_SSAS\\NYCTaxi_SSAS\\Dim Date.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
-      "RelativeMoniker": "D:0:0:{B35E5662-0AF0-402D-B134-0D9C0A0FFF23}|NYCTaxi_SSAS\\NYCTaxi_SSAS.dwproj|solutionrelative:NYCTaxi_SSAS\\Dim Date.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+      "AbsoluteMoniker": "D:0:0:{B35E5662-0AF0-402D-B134-0D9C0A0FFF23}|NYCTaxi_SSAS\\NYCTaxi_SSAS.dwproj|E:\\NYCTaxi\\NYCTaxi_SSAS\\NYCTaxi_SSAS\\DSV_NYCTaxi.dsv||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{B35E5662-0AF0-402D-B134-0D9C0A0FFF23}|NYCTaxi_SSAS\\NYCTaxi_SSAS.dwproj|solutionrelative:NYCTaxi_SSAS\\DSV_NYCTaxi.dsv||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B35E5662-0AF0-402D-B134-0D9C0A0FFF23}|NYCTaxi_SSAS\\NYCTaxi_SSAS.dwproj|E:\\NYCTaxi\\NYCTaxi_SSAS\\NYCTaxi_SSAS\\DSV_NYCTaxi.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{B35E5662-0AF0-402D-B134-0D9C0A0FFF23}|NYCTaxi_SSAS\\NYCTaxi_SSAS.dwproj|solutionrelative:NYCTaxi_SSAS\\DSV_NYCTaxi.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B35E5662-0AF0-402D-B134-0D9C0A0FFF23}|NYCTaxi_SSAS\\NYCTaxi_SSAS.dwproj|E:\\NYCTaxi\\NYCTaxi_SSAS\\NYCTaxi_SSAS\\Dim Location.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
@@ -74,23 +74,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 16,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DSV_NYCTaxi.cube [Design]",
-              "DocumentMoniker": "E:\\NYCTaxi\\NYCTaxi_SSAS\\NYCTaxi_SSAS\\DSV_NYCTaxi.cube",
-              "RelativeDocumentMoniker": "NYCTaxi_SSAS\\DSV_NYCTaxi.cube",
-              "ToolTip": "E:\\NYCTaxi\\NYCTaxi_SSAS\\NYCTaxi_SSAS\\DSV_NYCTaxi.cube [Design]",
-              "RelativeToolTip": "NYCTaxi_SSAS\\DSV_NYCTaxi.cube [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-10-11T18:48:58.957Z",
-              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -124,6 +112,51 @@
               "RelativeToolTip": "NYCTaxi_SSAS\\Dim FHV Flags.dim [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2026-10-11T18:43:14.828Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Dim Time.dim [Design]",
+              "DocumentMoniker": "E:\\NYCTaxi\\NYCTaxi_SSAS\\NYCTaxi_SSAS\\Dim Time.dim",
+              "RelativeDocumentMoniker": "NYCTaxi_SSAS\\Dim Time.dim",
+              "ToolTip": "E:\\NYCTaxi\\NYCTaxi_SSAS\\NYCTaxi_SSAS\\Dim Time.dim [Design]",
+              "RelativeToolTip": "NYCTaxi_SSAS\\Dim Time.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-10-11T18:06:16.318Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Dim Date.dim [Design]",
+              "DocumentMoniker": "E:\\NYCTaxi\\NYCTaxi_SSAS\\NYCTaxi_SSAS\\Dim Date.dim",
+              "RelativeDocumentMoniker": "NYCTaxi_SSAS\\Dim Date.dim",
+              "ToolTip": "E:\\NYCTaxi\\NYCTaxi_SSAS\\NYCTaxi_SSAS\\Dim Date.dim [Design]",
+              "RelativeToolTip": "NYCTaxi_SSAS\\Dim Date.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-10-11T18:15:04.235Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DSV_NYCTaxi.cube [Design]",
+              "DocumentMoniker": "E:\\NYCTaxi\\NYCTaxi_SSAS\\NYCTaxi_SSAS\\DSV_NYCTaxi.cube",
+              "RelativeDocumentMoniker": "NYCTaxi_SSAS\\DSV_NYCTaxi.cube",
+              "ToolTip": "E:\\NYCTaxi\\NYCTaxi_SSAS\\NYCTaxi_SSAS\\DSV_NYCTaxi.cube [Design]",
+              "RelativeToolTip": "NYCTaxi_SSAS\\DSV_NYCTaxi.cube [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-10-11T18:48:58.957Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DSV_NYCTaxi.dsv [Design]",
+              "DocumentMoniker": "E:\\NYCTaxi\\NYCTaxi_SSAS\\NYCTaxi_SSAS\\DSV_NYCTaxi.dsv",
+              "RelativeDocumentMoniker": "NYCTaxi_SSAS\\DSV_NYCTaxi.dsv",
+              "ToolTip": "E:\\NYCTaxi\\NYCTaxi_SSAS\\NYCTaxi_SSAS\\DSV_NYCTaxi.dsv [Design]*",
+              "RelativeToolTip": "NYCTaxi_SSAS\\DSV_NYCTaxi.dsv [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-10-11T17:44:39.353Z"
             },
             {
               "$type": "Document",
@@ -223,40 +256,6 @@
               "RelativeToolTip": "NYCTaxi_SSAS\\Dim Location.dim [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2026-10-11T18:21:44.064Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Dim Date.dim [Design]",
-              "DocumentMoniker": "E:\\NYCTaxi\\NYCTaxi_SSAS\\NYCTaxi_SSAS\\Dim Date.dim",
-              "RelativeDocumentMoniker": "NYCTaxi_SSAS\\Dim Date.dim",
-              "ToolTip": "E:\\NYCTaxi\\NYCTaxi_SSAS\\NYCTaxi_SSAS\\Dim Date.dim [Design]",
-              "RelativeToolTip": "NYCTaxi_SSAS\\Dim Date.dim [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-10-11T18:15:04.235Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Dim Time.dim [Design]",
-              "DocumentMoniker": "E:\\NYCTaxi\\NYCTaxi_SSAS\\NYCTaxi_SSAS\\Dim Time.dim",
-              "RelativeDocumentMoniker": "NYCTaxi_SSAS\\Dim Time.dim",
-              "ToolTip": "E:\\NYCTaxi\\NYCTaxi_SSAS\\NYCTaxi_SSAS\\Dim Time.dim [Design]",
-              "RelativeToolTip": "NYCTaxi_SSAS\\Dim Time.dim [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-10-11T18:06:16.318Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DSV_NYCTaxi.dsv [Design]",
-              "DocumentMoniker": "E:\\NYCTaxi\\NYCTaxi_SSAS\\NYCTaxi_SSAS\\DSV_NYCTaxi.dsv",
-              "RelativeDocumentMoniker": "NYCTaxi_SSAS\\DSV_NYCTaxi.dsv",
-              "ToolTip": "E:\\NYCTaxi\\NYCTaxi_SSAS\\NYCTaxi_SSAS\\DSV_NYCTaxi.dsv [Design]",
-              "RelativeToolTip": "NYCTaxi_SSAS\\DSV_NYCTaxi.dsv [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-10-11T17:44:39.353Z",
-              "EditorCaption": " [Design]"
             }
           ]
         }

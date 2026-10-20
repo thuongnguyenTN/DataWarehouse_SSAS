@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="03c482bb-a283-4462-9773-2b3fc5358b4a" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine" dwd:design-time-name="03c482bb-a283-4462-9773-2b3fc5358b4a">
   <ID>Dim Service Type</ID>
   <Name>Dim Service Type</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -10,25 +10,25 @@
         <dds xmlns="">
           <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2485" scrolltop="-6447" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8132" y="14781" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
-              <ddsxmlobjectstreamwrapper binary="01000000900180380100065461686f6d61" />
+              <ddsxmlobjectstreamwrapper binary="01000000900180380100065461686f6d61"/>
             </font>
             <mouseicon>
-              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000"/>
             </mouseicon>
           </diagram>
           <layoutmanager>
-            <ddsxmlobj />
+            <ddsxmlobj/>
           </layoutmanager>
           <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Dim_ServiceType" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3122" height="1887" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
-              <ddsxmlobjectstreaminitwrapper binary="000e0000320c00005f070000" />
+              <ddsxmlobjectstreaminitwrapper binary="000e0000320c00005f070000"/>
             </control>
             <layoutobject>
               <ddsxmlobj>
-                <property name="LogicalObject" value="dbo_Dim_ServiceType" vartype="8" />
+                <property name="LogicalObject" value="dbo_Dim_ServiceType" vartype="8"/>
               </ddsxmlobj>
             </layoutobject>
-            <shape groupshapeid="0" groupnode="0" />
+            <shape groupshapeid="0" groupnode="0"/>
           </ddscontrol>
         </dds>
       </Value>
@@ -69,7 +69,7 @@
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
   <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="246a52e7-8d4c-416a-bc86-a1c0ce93f570">
-    <DataSourceViewID>DSV_NYCTaxi</DataSourceViewID>
+    <DataSourceViewID>DSV_NYCTaxi_DWH</DataSourceViewID>
   </Source>
   <ErrorConfiguration dwd:design-time-name="67cb36d6-e08d-438e-8568-fb1e204d60b9">
     <KeyNotFound>ReportAndStop</KeyNotFound>
@@ -89,11 +89,12 @@
             <TableID>dbo_Dim_ServiceType</TableID>
             <ColumnID>ServiceTypeKey</ColumnID>
           </Source>
+          <NullProcessing>ZeroOrBlank</NullProcessing>
         </KeyColumn>
       </KeyColumns>
       <NameColumn dwd:design-time-name="cb677083-0af3-489e-9e68-6c60b6fa17d6">
         <DataType>WChar</DataType>
-        <DataSize>100</DataSize>
+        <DataSize>200</DataSize>
         <Source xsi:type="ColumnBinding" dwd:design-time-name="273dc703-8dba-4af6-8474-33a9bece30d5">
           <TableID>dbo_Dim_ServiceType</TableID>
           <ColumnID>ServiceName</ColumnID>
@@ -118,11 +119,12 @@
       <KeyColumns>
         <KeyColumn dwd:design-time-name="21b8d830-872f-4523-842a-fb60a9a7257b">
           <DataType>WChar</DataType>
-          <DataSize>10</DataSize>
+          <DataSize>20</DataSize>
           <Source xsi:type="ColumnBinding" dwd:design-time-name="1b11bd0c-395c-437f-b9df-5bf1e9af20c5">
             <TableID>dbo_Dim_ServiceType</TableID>
             <ColumnID>ServiceCode</ColumnID>
           </Source>
+          <NullProcessing>ZeroOrBlank</NullProcessing>
         </KeyColumn>
       </KeyColumns>
       <OrderBy>Key</OrderBy>
@@ -135,11 +137,12 @@
       <KeyColumns>
         <KeyColumn dwd:design-time-name="5740aee4-1d9e-4236-9f4f-992c488a4dd7">
           <DataType>WChar</DataType>
-          <DataSize>100</DataSize>
+          <DataSize>200</DataSize>
           <Source xsi:type="ColumnBinding" dwd:design-time-name="64784fad-fd70-465c-9e87-6106fa556bf9">
             <TableID>dbo_Dim_ServiceType</TableID>
             <ColumnID>ServiceName</ColumnID>
           </Source>
+          <NullProcessing>ZeroOrBlank</NullProcessing>
         </KeyColumn>
       </KeyColumns>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
@@ -147,4 +150,6 @@
     </Attribute>
   </Attributes>
   <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+  <UnknownMember>Visible</UnknownMember>
+  <UnknownMemberName>Unknown (unresolved key)</UnknownMemberName>
 </Dimension>

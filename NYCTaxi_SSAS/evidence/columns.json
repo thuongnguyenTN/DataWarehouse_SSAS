@@ -1,0 +1,1649 @@
+﻿[
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_Base",
+        "ColumnName":  "BaseKey",
+        "Ordinal":  1,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_Base",
+        "ColumnName":  "BaseNumber",
+        "Ordinal":  2,
+        "DataType":  "varchar",
+        "MaxLength":  30,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_Base",
+        "ColumnName":  "BaseName",
+        "Ordinal":  3,
+        "DataType":  "nvarchar",
+        "MaxLength":  400,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_Base",
+        "ColumnName":  "BaseCategory",
+        "Ordinal":  4,
+        "DataType":  "varchar",
+        "MaxLength":  50,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_Date",
+        "ColumnName":  "DateKey",
+        "Ordinal":  1,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_Date",
+        "ColumnName":  "FullDate",
+        "Ordinal":  2,
+        "DataType":  "date",
+        "MaxLength":  3,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_Date",
+        "ColumnName":  "DayOfWeekNumber",
+        "Ordinal":  3,
+        "DataType":  "tinyint",
+        "MaxLength":  1,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_Date",
+        "ColumnName":  "DayOfWeekName",
+        "Ordinal":  4,
+        "DataType":  "nvarchar",
+        "MaxLength":  40,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_Date",
+        "ColumnName":  "DayOfMonth",
+        "Ordinal":  5,
+        "DataType":  "tinyint",
+        "MaxLength":  1,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_Date",
+        "ColumnName":  "MonthNumber",
+        "Ordinal":  6,
+        "DataType":  "tinyint",
+        "MaxLength":  1,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_Date",
+        "ColumnName":  "MonthName",
+        "Ordinal":  7,
+        "DataType":  "nvarchar",
+        "MaxLength":  40,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_Date",
+        "ColumnName":  "QuarterNumber",
+        "Ordinal":  8,
+        "DataType":  "tinyint",
+        "MaxLength":  1,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_Date",
+        "ColumnName":  "YearNumber",
+        "Ordinal":  9,
+        "DataType":  "smallint",
+        "MaxLength":  2,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_Date",
+        "ColumnName":  "IsWeekend",
+        "Ordinal":  10,
+        "DataType":  "bit",
+        "MaxLength":  1,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_Date",
+        "ColumnName":  "IsHoliday",
+        "Ordinal":  11,
+        "DataType":  "bit",
+        "MaxLength":  1,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_FHVFlags",
+        "ColumnName":  "FHVFlagKey",
+        "Ordinal":  1,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_FHVFlags",
+        "ColumnName":  "IsSharedRide",
+        "Ordinal":  2,
+        "DataType":  "varchar",
+        "MaxLength":  5,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_HVFHSProvider",
+        "ColumnName":  "HVFHSProviderKey",
+        "Ordinal":  1,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_HVFHSProvider",
+        "ColumnName":  "LicenseNumber",
+        "Ordinal":  2,
+        "DataType":  "varchar",
+        "MaxLength":  30,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_HVFHSProvider",
+        "ColumnName":  "ProviderName",
+        "Ordinal":  3,
+        "DataType":  "nvarchar",
+        "MaxLength":  400,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_HVFHVFlags",
+        "ColumnName":  "HVFHVFlagKey",
+        "Ordinal":  1,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_HVFHVFlags",
+        "ColumnName":  "IsSharedRequest",
+        "Ordinal":  2,
+        "DataType":  "varchar",
+        "MaxLength":  5,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_HVFHVFlags",
+        "ColumnName":  "IsSharedMatch",
+        "Ordinal":  3,
+        "DataType":  "varchar",
+        "MaxLength":  5,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_HVFHVFlags",
+        "ColumnName":  "IsAccessARide",
+        "Ordinal":  4,
+        "DataType":  "varchar",
+        "MaxLength":  5,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_HVFHVFlags",
+        "ColumnName":  "IsWAVRequest",
+        "Ordinal":  5,
+        "DataType":  "varchar",
+        "MaxLength":  5,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_HVFHVFlags",
+        "ColumnName":  "IsWAVMatch",
+        "Ordinal":  6,
+        "DataType":  "varchar",
+        "MaxLength":  5,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_LoadBatch",
+        "ColumnName":  "LoadBatchKey",
+        "Ordinal":  1,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_LoadBatch",
+        "ColumnName":  "BatchID",
+        "Ordinal":  2,
+        "DataType":  "varchar",
+        "MaxLength":  50,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_LoadBatch",
+        "ColumnName":  "DatasetName",
+        "Ordinal":  3,
+        "DataType":  "varchar",
+        "MaxLength":  30,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_LoadBatch",
+        "ColumnName":  "SourceFileName",
+        "Ordinal":  4,
+        "DataType":  "nvarchar",
+        "MaxLength":  1000,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_LoadBatch",
+        "ColumnName":  "SourceYear",
+        "Ordinal":  5,
+        "DataType":  "smallint",
+        "MaxLength":  2,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_LoadBatch",
+        "ColumnName":  "SourceMonth",
+        "Ordinal":  6,
+        "DataType":  "tinyint",
+        "MaxLength":  1,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_LoadBatch",
+        "ColumnName":  "LoadedAt",
+        "Ordinal":  7,
+        "DataType":  "datetime2",
+        "MaxLength":  6,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_LoadBatch",
+        "ColumnName":  "BatchStatus",
+        "Ordinal":  8,
+        "DataType":  "varchar",
+        "MaxLength":  20,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_Location",
+        "ColumnName":  "LocationKey",
+        "Ordinal":  1,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_Location",
+        "ColumnName":  "LocationID",
+        "Ordinal":  2,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_Location",
+        "ColumnName":  "Borough",
+        "Ordinal":  3,
+        "DataType":  "nvarchar",
+        "MaxLength":  200,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_Location",
+        "ColumnName":  "ZoneName",
+        "Ordinal":  4,
+        "DataType":  "nvarchar",
+        "MaxLength":  400,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_Location",
+        "ColumnName":  "ServiceZone",
+        "Ordinal":  5,
+        "DataType":  "nvarchar",
+        "MaxLength":  200,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_PassengerGroup",
+        "ColumnName":  "PassengerGroupKey",
+        "Ordinal":  1,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_PassengerGroup",
+        "ColumnName":  "PassengerGroupCode",
+        "Ordinal":  2,
+        "DataType":  "varchar",
+        "MaxLength":  20,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_PassengerGroup",
+        "ColumnName":  "MinCount",
+        "Ordinal":  3,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_PassengerGroup",
+        "ColumnName":  "MaxCount",
+        "Ordinal":  4,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_PassengerGroup",
+        "ColumnName":  "GroupName",
+        "Ordinal":  5,
+        "DataType":  "nvarchar",
+        "MaxLength":  200,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_PaymentType",
+        "ColumnName":  "PaymentTypeKey",
+        "Ordinal":  1,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_PaymentType",
+        "ColumnName":  "PaymentTypeID",
+        "Ordinal":  2,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_PaymentType",
+        "ColumnName":  "PaymentTypeDescription",
+        "Ordinal":  3,
+        "DataType":  "nvarchar",
+        "MaxLength":  400,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_RateCode",
+        "ColumnName":  "RateCodeKey",
+        "Ordinal":  1,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_RateCode",
+        "ColumnName":  "RateCodeID",
+        "Ordinal":  2,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_RateCode",
+        "ColumnName":  "RateCodeDescription",
+        "Ordinal":  3,
+        "DataType":  "nvarchar",
+        "MaxLength":  400,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_ServiceType",
+        "ColumnName":  "ServiceTypeKey",
+        "Ordinal":  1,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_ServiceType",
+        "ColumnName":  "ServiceCode",
+        "Ordinal":  2,
+        "DataType":  "varchar",
+        "MaxLength":  10,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_ServiceType",
+        "ColumnName":  "ServiceName",
+        "Ordinal":  3,
+        "DataType":  "nvarchar",
+        "MaxLength":  200,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_TaxiFlags",
+        "ColumnName":  "TaxiFlagKey",
+        "Ordinal":  1,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_TaxiFlags",
+        "ColumnName":  "StoreAndFwd",
+        "Ordinal":  2,
+        "DataType":  "varchar",
+        "MaxLength":  5,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_Time",
+        "ColumnName":  "TimeKey",
+        "Ordinal":  1,
+        "DataType":  "smallint",
+        "MaxLength":  2,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_Time",
+        "ColumnName":  "MinuteOfDay",
+        "Ordinal":  2,
+        "DataType":  "smallint",
+        "MaxLength":  2,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_Time",
+        "ColumnName":  "HourNumber",
+        "Ordinal":  3,
+        "DataType":  "tinyint",
+        "MaxLength":  1,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_Time",
+        "ColumnName":  "MinuteNumber",
+        "Ordinal":  4,
+        "DataType":  "tinyint",
+        "MaxLength":  1,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_Time",
+        "ColumnName":  "TimeLabel",
+        "Ordinal":  5,
+        "DataType":  "char",
+        "MaxLength":  5,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_Time",
+        "ColumnName":  "TimeBand",
+        "Ordinal":  6,
+        "DataType":  "varchar",
+        "MaxLength":  20,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_Time",
+        "ColumnName":  "IsPeakHour",
+        "Ordinal":  7,
+        "DataType":  "bit",
+        "MaxLength":  1,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_TripType",
+        "ColumnName":  "TripTypeKey",
+        "Ordinal":  1,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_TripType",
+        "ColumnName":  "TripTypeID",
+        "Ordinal":  2,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_TripType",
+        "ColumnName":  "TripTypeDescription",
+        "Ordinal":  3,
+        "DataType":  "nvarchar",
+        "MaxLength":  400,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_Vendor",
+        "ColumnName":  "VendorKey",
+        "Ordinal":  1,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_Vendor",
+        "ColumnName":  "VendorID",
+        "Ordinal":  2,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Dim_Vendor",
+        "ColumnName":  "VendorName",
+        "Ordinal":  3,
+        "DataType":  "nvarchar",
+        "MaxLength":  400,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_Base_Performance_Snapshot",
+        "ColumnName":  "DateKey",
+        "Ordinal":  1,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_Base_Performance_Snapshot",
+        "ColumnName":  "DispatchBaseKey",
+        "Ordinal":  2,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_Base_Performance_Snapshot",
+        "ColumnName":  "ServiceTypeKey",
+        "Ordinal":  3,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_Base_Performance_Snapshot",
+        "ColumnName":  "HVFHSProviderKey",
+        "Ordinal":  4,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_Base_Performance_Snapshot",
+        "ColumnName":  "TotalTrips",
+        "Ordinal":  5,
+        "DataType":  "bigint",
+        "MaxLength":  8,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_Base_Performance_Snapshot",
+        "ColumnName":  "TotalTripDurationSeconds",
+        "Ordinal":  6,
+        "DataType":  "bigint",
+        "MaxLength":  8,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_Base_Performance_Snapshot",
+        "ColumnName":  "DurationTripCount",
+        "Ordinal":  7,
+        "DataType":  "bigint",
+        "MaxLength":  8,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_Base_Performance_Snapshot",
+        "ColumnName":  "AverageTripDurationSeconds",
+        "Ordinal":  8,
+        "DataType":  "decimal",
+        "MaxLength":  9,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_Base_Performance_Snapshot",
+        "ColumnName":  "TotalWaitingTimeSeconds",
+        "Ordinal":  9,
+        "DataType":  "bigint",
+        "MaxLength":  8,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_Base_Performance_Snapshot",
+        "ColumnName":  "WaitingTripCount",
+        "Ordinal":  10,
+        "DataType":  "bigint",
+        "MaxLength":  8,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_Base_Performance_Snapshot",
+        "ColumnName":  "AverageWaitingTimeSeconds",
+        "Ordinal":  11,
+        "DataType":  "decimal",
+        "MaxLength":  9,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_Base_Performance_Snapshot",
+        "ColumnName":  "TotalSharedRequests",
+        "Ordinal":  12,
+        "DataType":  "bigint",
+        "MaxLength":  8,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_Base_Performance_Snapshot",
+        "ColumnName":  "TotalSharedMatches",
+        "Ordinal":  13,
+        "DataType":  "bigint",
+        "MaxLength":  8,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_Base_Performance_Snapshot",
+        "ColumnName":  "TotalWAVRequests",
+        "Ordinal":  14,
+        "DataType":  "bigint",
+        "MaxLength":  8,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_Base_Performance_Snapshot",
+        "ColumnName":  "TotalWAVMatches",
+        "Ordinal":  15,
+        "DataType":  "bigint",
+        "MaxLength":  8,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_Base_Performance_Snapshot",
+        "ColumnName":  "TotalDriverPay",
+        "Ordinal":  16,
+        "DataType":  "decimal",
+        "MaxLength":  13,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_Base_Performance_Snapshot",
+        "ColumnName":  "SnapshotUpdatedAt",
+        "Ordinal":  17,
+        "DataType":  "datetime2",
+        "MaxLength":  6,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_Daily_Financial_Snapshot",
+        "ColumnName":  "DateKey",
+        "Ordinal":  1,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_Daily_Financial_Snapshot",
+        "ColumnName":  "ServiceTypeKey",
+        "Ordinal":  2,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_Daily_Financial_Snapshot",
+        "ColumnName":  "TotalTrips",
+        "Ordinal":  3,
+        "DataType":  "bigint",
+        "MaxLength":  8,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_Daily_Financial_Snapshot",
+        "ColumnName":  "TotalDistanceMiles",
+        "Ordinal":  4,
+        "DataType":  "decimal",
+        "MaxLength":  13,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_Daily_Financial_Snapshot",
+        "ColumnName":  "TotalPassengerCharges",
+        "Ordinal":  5,
+        "DataType":  "decimal",
+        "MaxLength":  13,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_Daily_Financial_Snapshot",
+        "ColumnName":  "TotalTips",
+        "Ordinal":  6,
+        "DataType":  "decimal",
+        "MaxLength":  13,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_Daily_Financial_Snapshot",
+        "ColumnName":  "TotalTaxesAndFees",
+        "Ordinal":  7,
+        "DataType":  "decimal",
+        "MaxLength":  13,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_Daily_Financial_Snapshot",
+        "ColumnName":  "TotalDriverPay",
+        "Ordinal":  8,
+        "DataType":  "decimal",
+        "MaxLength":  13,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_Daily_Financial_Snapshot",
+        "ColumnName":  "SnapshotUpdatedAt",
+        "Ordinal":  9,
+        "DataType":  "datetime2",
+        "MaxLength":  6,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_FHV_Trips",
+        "ColumnName":  "TripKey",
+        "Ordinal":  1,
+        "DataType":  "bigint",
+        "MaxLength":  8,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_FHV_Trips",
+        "ColumnName":  "PickupDateKey",
+        "Ordinal":  2,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_FHV_Trips",
+        "ColumnName":  "DropoffDateKey",
+        "Ordinal":  3,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_FHV_Trips",
+        "ColumnName":  "PickupTimeKey",
+        "Ordinal":  4,
+        "DataType":  "smallint",
+        "MaxLength":  2,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_FHV_Trips",
+        "ColumnName":  "DropoffTimeKey",
+        "Ordinal":  5,
+        "DataType":  "smallint",
+        "MaxLength":  2,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_FHV_Trips",
+        "ColumnName":  "PickupLocationKey",
+        "Ordinal":  6,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_FHV_Trips",
+        "ColumnName":  "DropoffLocationKey",
+        "Ordinal":  7,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_FHV_Trips",
+        "ColumnName":  "ServiceTypeKey",
+        "Ordinal":  8,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_FHV_Trips",
+        "ColumnName":  "DispatchBaseKey",
+        "Ordinal":  9,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_FHV_Trips",
+        "ColumnName":  "AffiliatedBaseKey",
+        "Ordinal":  10,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_FHV_Trips",
+        "ColumnName":  "FHVFlagKey",
+        "Ordinal":  11,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_FHV_Trips",
+        "ColumnName":  "LoadBatchKey",
+        "Ordinal":  12,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_FHV_Trips",
+        "ColumnName":  "TripCount",
+        "Ordinal":  13,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_FHV_Trips",
+        "ColumnName":  "TripDurationSeconds",
+        "Ordinal":  14,
+        "DataType":  "bigint",
+        "MaxLength":  8,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_FHV_Trips",
+        "ColumnName":  "RecordHash",
+        "Ordinal":  15,
+        "DataType":  "binary",
+        "MaxLength":  32,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_FHV_Trips",
+        "ColumnName":  "LoadedAt",
+        "Ordinal":  16,
+        "DataType":  "datetime2",
+        "MaxLength":  6,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_HVFHV_Trips",
+        "ColumnName":  "TripKey",
+        "Ordinal":  1,
+        "DataType":  "bigint",
+        "MaxLength":  8,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_HVFHV_Trips",
+        "ColumnName":  "RequestDateKey",
+        "Ordinal":  2,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_HVFHV_Trips",
+        "ColumnName":  "OnSceneDateKey",
+        "Ordinal":  3,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_HVFHV_Trips",
+        "ColumnName":  "PickupDateKey",
+        "Ordinal":  4,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_HVFHV_Trips",
+        "ColumnName":  "DropoffDateKey",
+        "Ordinal":  5,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_HVFHV_Trips",
+        "ColumnName":  "RequestTimeKey",
+        "Ordinal":  6,
+        "DataType":  "smallint",
+        "MaxLength":  2,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_HVFHV_Trips",
+        "ColumnName":  "OnSceneTimeKey",
+        "Ordinal":  7,
+        "DataType":  "smallint",
+        "MaxLength":  2,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_HVFHV_Trips",
+        "ColumnName":  "PickupTimeKey",
+        "Ordinal":  8,
+        "DataType":  "smallint",
+        "MaxLength":  2,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_HVFHV_Trips",
+        "ColumnName":  "DropoffTimeKey",
+        "Ordinal":  9,
+        "DataType":  "smallint",
+        "MaxLength":  2,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_HVFHV_Trips",
+        "ColumnName":  "PickupLocationKey",
+        "Ordinal":  10,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_HVFHV_Trips",
+        "ColumnName":  "DropoffLocationKey",
+        "Ordinal":  11,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_HVFHV_Trips",
+        "ColumnName":  "ServiceTypeKey",
+        "Ordinal":  12,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_HVFHV_Trips",
+        "ColumnName":  "HVFHSProviderKey",
+        "Ordinal":  13,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_HVFHV_Trips",
+        "ColumnName":  "DispatchBaseKey",
+        "Ordinal":  14,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_HVFHV_Trips",
+        "ColumnName":  "OriginBaseKey",
+        "Ordinal":  15,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_HVFHV_Trips",
+        "ColumnName":  "HVFHVFlagKey",
+        "Ordinal":  16,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_HVFHV_Trips",
+        "ColumnName":  "LoadBatchKey",
+        "Ordinal":  17,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_HVFHV_Trips",
+        "ColumnName":  "TripCount",
+        "Ordinal":  18,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_HVFHV_Trips",
+        "ColumnName":  "TripDistanceMiles",
+        "Ordinal":  19,
+        "DataType":  "decimal",
+        "MaxLength":  9,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_HVFHV_Trips",
+        "ColumnName":  "TripDurationSeconds",
+        "Ordinal":  20,
+        "DataType":  "bigint",
+        "MaxLength":  8,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_HVFHV_Trips",
+        "ColumnName":  "WaitingTimeSeconds",
+        "Ordinal":  21,
+        "DataType":  "bigint",
+        "MaxLength":  8,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_HVFHV_Trips",
+        "ColumnName":  "OnSceneToPickupSeconds",
+        "Ordinal":  22,
+        "DataType":  "bigint",
+        "MaxLength":  8,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_HVFHV_Trips",
+        "ColumnName":  "BasePassengerFare",
+        "Ordinal":  23,
+        "DataType":  "decimal",
+        "MaxLength":  9,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_HVFHV_Trips",
+        "ColumnName":  "TollsAmount",
+        "Ordinal":  24,
+        "DataType":  "decimal",
+        "MaxLength":  9,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_HVFHV_Trips",
+        "ColumnName":  "BCFAmount",
+        "Ordinal":  25,
+        "DataType":  "decimal",
+        "MaxLength":  9,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_HVFHV_Trips",
+        "ColumnName":  "SalesTaxAmount",
+        "Ordinal":  26,
+        "DataType":  "decimal",
+        "MaxLength":  9,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_HVFHV_Trips",
+        "ColumnName":  "CongestionSurcharge",
+        "Ordinal":  27,
+        "DataType":  "decimal",
+        "MaxLength":  9,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_HVFHV_Trips",
+        "ColumnName":  "AirportFee",
+        "Ordinal":  28,
+        "DataType":  "decimal",
+        "MaxLength":  9,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_HVFHV_Trips",
+        "ColumnName":  "TipAmount",
+        "Ordinal":  29,
+        "DataType":  "decimal",
+        "MaxLength":  9,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_HVFHV_Trips",
+        "ColumnName":  "DriverPayAmount",
+        "Ordinal":  30,
+        "DataType":  "decimal",
+        "MaxLength":  9,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_HVFHV_Trips",
+        "ColumnName":  "CBDCongestionFee",
+        "Ordinal":  31,
+        "DataType":  "decimal",
+        "MaxLength":  9,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_HVFHV_Trips",
+        "ColumnName":  "GrossPassengerAmount",
+        "Ordinal":  32,
+        "DataType":  "decimal",
+        "MaxLength":  9,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_HVFHV_Trips",
+        "ColumnName":  "RecordHash",
+        "Ordinal":  33,
+        "DataType":  "binary",
+        "MaxLength":  32,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_HVFHV_Trips",
+        "ColumnName":  "LoadedAt",
+        "Ordinal":  34,
+        "DataType":  "datetime2",
+        "MaxLength":  6,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_YellowGreen_Trips",
+        "ColumnName":  "TripKey",
+        "Ordinal":  1,
+        "DataType":  "bigint",
+        "MaxLength":  8,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_YellowGreen_Trips",
+        "ColumnName":  "PickupDateKey",
+        "Ordinal":  2,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_YellowGreen_Trips",
+        "ColumnName":  "DropoffDateKey",
+        "Ordinal":  3,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_YellowGreen_Trips",
+        "ColumnName":  "PickupTimeKey",
+        "Ordinal":  4,
+        "DataType":  "smallint",
+        "MaxLength":  2,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_YellowGreen_Trips",
+        "ColumnName":  "DropoffTimeKey",
+        "Ordinal":  5,
+        "DataType":  "smallint",
+        "MaxLength":  2,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_YellowGreen_Trips",
+        "ColumnName":  "PickupLocationKey",
+        "Ordinal":  6,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_YellowGreen_Trips",
+        "ColumnName":  "DropoffLocationKey",
+        "Ordinal":  7,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_YellowGreen_Trips",
+        "ColumnName":  "ServiceTypeKey",
+        "Ordinal":  8,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_YellowGreen_Trips",
+        "ColumnName":  "VendorKey",
+        "Ordinal":  9,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_YellowGreen_Trips",
+        "ColumnName":  "RateCodeKey",
+        "Ordinal":  10,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_YellowGreen_Trips",
+        "ColumnName":  "PaymentTypeKey",
+        "Ordinal":  11,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_YellowGreen_Trips",
+        "ColumnName":  "TripTypeKey",
+        "Ordinal":  12,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_YellowGreen_Trips",
+        "ColumnName":  "TaxiFlagKey",
+        "Ordinal":  13,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_YellowGreen_Trips",
+        "ColumnName":  "PassengerGroupKey",
+        "Ordinal":  14,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_YellowGreen_Trips",
+        "ColumnName":  "LoadBatchKey",
+        "Ordinal":  15,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_YellowGreen_Trips",
+        "ColumnName":  "TripCount",
+        "Ordinal":  16,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_YellowGreen_Trips",
+        "ColumnName":  "PassengerCount",
+        "Ordinal":  17,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_YellowGreen_Trips",
+        "ColumnName":  "TripDistanceMiles",
+        "Ordinal":  18,
+        "DataType":  "decimal",
+        "MaxLength":  9,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_YellowGreen_Trips",
+        "ColumnName":  "TripDurationSeconds",
+        "Ordinal":  19,
+        "DataType":  "bigint",
+        "MaxLength":  8,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_YellowGreen_Trips",
+        "ColumnName":  "AverageSpeedMPH",
+        "Ordinal":  20,
+        "DataType":  "decimal",
+        "MaxLength":  9,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_YellowGreen_Trips",
+        "ColumnName":  "FareAmount",
+        "Ordinal":  21,
+        "DataType":  "decimal",
+        "MaxLength":  9,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_YellowGreen_Trips",
+        "ColumnName":  "ExtraAmount",
+        "Ordinal":  22,
+        "DataType":  "decimal",
+        "MaxLength":  9,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_YellowGreen_Trips",
+        "ColumnName":  "MTATaxAmount",
+        "Ordinal":  23,
+        "DataType":  "decimal",
+        "MaxLength":  9,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_YellowGreen_Trips",
+        "ColumnName":  "TipAmount",
+        "Ordinal":  24,
+        "DataType":  "decimal",
+        "MaxLength":  9,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_YellowGreen_Trips",
+        "ColumnName":  "TollsAmount",
+        "Ordinal":  25,
+        "DataType":  "decimal",
+        "MaxLength":  9,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_YellowGreen_Trips",
+        "ColumnName":  "ImprovementSurcharge",
+        "Ordinal":  26,
+        "DataType":  "decimal",
+        "MaxLength":  9,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_YellowGreen_Trips",
+        "ColumnName":  "CongestionSurcharge",
+        "Ordinal":  27,
+        "DataType":  "decimal",
+        "MaxLength":  9,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_YellowGreen_Trips",
+        "ColumnName":  "AirportFee",
+        "Ordinal":  28,
+        "DataType":  "decimal",
+        "MaxLength":  9,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_YellowGreen_Trips",
+        "ColumnName":  "CBDCongestionFee",
+        "Ordinal":  29,
+        "DataType":  "decimal",
+        "MaxLength":  9,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_YellowGreen_Trips",
+        "ColumnName":  "TotalAmount",
+        "Ordinal":  30,
+        "DataType":  "decimal",
+        "MaxLength":  9,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_YellowGreen_Trips",
+        "ColumnName":  "RecordHash",
+        "Ordinal":  31,
+        "DataType":  "binary",
+        "MaxLength":  32,
+        "Nullable":  true
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_YellowGreen_Trips",
+        "ColumnName":  "LoadedAt",
+        "Ordinal":  32,
+        "DataType":  "datetime2",
+        "MaxLength":  6,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_Zone_Traffic_Snapshot",
+        "ColumnName":  "DateKey",
+        "Ordinal":  1,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_Zone_Traffic_Snapshot",
+        "ColumnName":  "TimeKey",
+        "Ordinal":  2,
+        "DataType":  "smallint",
+        "MaxLength":  2,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_Zone_Traffic_Snapshot",
+        "ColumnName":  "LocationKey",
+        "Ordinal":  3,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_Zone_Traffic_Snapshot",
+        "ColumnName":  "ServiceTypeKey",
+        "Ordinal":  4,
+        "DataType":  "int",
+        "MaxLength":  4,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_Zone_Traffic_Snapshot",
+        "ColumnName":  "TotalPickups",
+        "Ordinal":  5,
+        "DataType":  "bigint",
+        "MaxLength":  8,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_Zone_Traffic_Snapshot",
+        "ColumnName":  "TotalDropoffs",
+        "Ordinal":  6,
+        "DataType":  "bigint",
+        "MaxLength":  8,
+        "Nullable":  false
+    },
+    {
+        "SchemaName":  "dbo",
+        "TableName":  "Fact_Zone_Traffic_Snapshot",
+        "ColumnName":  "SnapshotUpdatedAt",
+        "Ordinal":  7,
+        "DataType":  "datetime2",
+        "MaxLength":  6,
+        "Nullable":  false
+    }
+]

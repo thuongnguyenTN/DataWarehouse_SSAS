@@ -1,0 +1,31 @@
+<Batch xmlns="http://schemas.microsoft.com/analysisservices/2003/engine" Transaction="true">
+  <Parallel MaxParallel="2">
+    <Process>
+      <Object>
+        <DatabaseID>NYCTaxi_SSAS</DatabaseID>
+        <CubeID>DSV_NYCTaxi</CubeID>
+        <MeasureGroupID>Daily Financial Snapshot</MeasureGroupID>
+        <PartitionID>Daily Financial Snapshot All</PartitionID>
+      </Object>
+      <Type>ProcessFull</Type>
+    </Process>
+    <Process>
+      <Object>
+        <DatabaseID>NYCTaxi_SSAS</DatabaseID>
+        <CubeID>DSV_NYCTaxi</CubeID>
+        <MeasureGroupID>Zone Traffic Snapshot</MeasureGroupID>
+        <PartitionID>Zone Traffic Snapshot All</PartitionID>
+      </Object>
+      <Type>ProcessFull</Type>
+    </Process>
+    <Process>
+      <Object>
+        <DatabaseID>NYCTaxi_SSAS</DatabaseID>
+        <CubeID>DSV_NYCTaxi</CubeID>
+        <MeasureGroupID>Base Performance Snapshot</MeasureGroupID>
+        <PartitionID>Base Performance Snapshot All</PartitionID>
+      </Object>
+      <Type>ProcessFull</Type>
+    </Process>
+  </Parallel>
+</Batch>

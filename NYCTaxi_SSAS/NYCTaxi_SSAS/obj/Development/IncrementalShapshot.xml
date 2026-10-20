@@ -19,119 +19,126 @@
     <ObjectSnapshots>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
-        <TimeStamp>6lHVabsaTNE1ym5OB/URuAEbJ9I=10/12/26 00:41:2610/12/26 00:41:26</TimeStamp>
+        <TimeStamp>xGtriTifdXKzMgayxuFV8iwRdTM=10/19/26 20:33:0810/12/26 00:41:26</TimeStamp>
         <ID>
           <String>DS_NYCTaxi_DWH</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.DataSourceView</Type>
-        <TimeStamp>M9wU0KmX0hicfnG5YKyuXaxweOw=10/12/26 00:47:1210/12/26 00:44:20</TimeStamp>
+        <TimeStamp>WrafEx8bYyFamVsWkzHustYK12U=10/19/26 20:33:0910/12/26 00:44:20</TimeStamp>
         <ID>
-          <String>DSV_NYCTaxi</String>
+          <String>DSV_NYCTaxi_DWH</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>j0HD77soe+TujBXp+026a6SPM5s=10/12/26 03:28:1110/12/26 01:06:16</TimeStamp>
+        <TimeStamp>Cqiu/T8mWNpnoWPwCMZDM0X9DJM=10/19/26 20:33:0910/12/26 01:06:16</TimeStamp>
         <ID>
           <String>Dim Time</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>GMskDs+sEitxzoaR1Ifj5DbgsGA=10/12/26 03:22:2710/12/26 01:15:04</TimeStamp>
+        <TimeStamp>RRn8yUXjm54nMxuTFHIpxo8d3Yc=10/19/26 20:33:0910/12/26 01:15:04</TimeStamp>
         <ID>
           <String>Dim Date</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>2IzafwB9d0rLwRpqa7RaqKsDT4I=10/12/26 03:14:0510/12/26 01:21:44</TimeStamp>
+        <TimeStamp>vOQVzU+vt1DbzlDjnxEHrL+do7M=10/19/26 20:33:0910/12/26 01:21:44</TimeStamp>
         <ID>
           <String>Dim Location</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>8L1tDdEYPiIaSxjQWiopbENOnGs=10/12/26 01:23:5610/12/26 01:23:03</TimeStamp>
+        <TimeStamp>rmYjM3Skou0wi5QmMxCVxS2T7tw=10/19/26 20:33:0910/12/26 01:23:03</TimeStamp>
         <ID>
           <String>Dim Service Type</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>pK/BxxXwLsVHny6oz9Rb21A8Lkw=10/12/26 01:27:1010/12/26 01:23:56</TimeStamp>
+        <TimeStamp>RRWt1DkHke1fLrrliHkG3blRd5M=10/19/26 20:33:0910/12/26 01:23:56</TimeStamp>
         <ID>
           <String>Dim Vendor</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>nQOcyKjvB8KOgYi4uU/DUGVlATQ=10/12/26 01:27:1010/12/26 01:27:10</TimeStamp>
+        <TimeStamp>Vf+2CvAVCQd/jNSW6cfN0vQ4dRs=10/19/26 20:33:0910/12/26 01:27:10</TimeStamp>
         <ID>
           <String>Dim Base</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>jW2JI8iFB+kiTI4Mh+e4a/2WptE=10/12/26 01:34:3410/12/26 01:34:34</TimeStamp>
+        <TimeStamp>s7I72HYE2XCBhHB3oAnhO1Oj83s=10/19/26 20:33:0910/12/26 01:34:34</TimeStamp>
         <ID>
           <String>Dim HVFHS Provider</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>UNMqBGAsIeHmoGsoWrtTvc/rumg=10/12/26 01:34:5910/12/26 01:34:59</TimeStamp>
+        <TimeStamp>YGUA2X0dY6XxZKW6o+g04/Ewxq8=10/19/26 20:33:0910/12/26 01:34:59</TimeStamp>
         <ID>
           <String>Dim Rate Code</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>3s7tImUlxGP7xaoyAam2n3n7EJg=10/12/26 01:35:1810/12/26 01:35:18</TimeStamp>
+        <TimeStamp>iFVdcI8tlnBRuDLUlxPRNTlXstI=10/19/26 20:33:0910/12/26 01:35:18</TimeStamp>
         <ID>
           <String>Dim Payment Type</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>YkpqM0HluKBbzlBg2nmP0lL7/es=10/12/26 01:42:3210/12/26 01:42:32</TimeStamp>
+        <TimeStamp>wrLit8q7nLYtxasMNTYdZMI4rTk=10/19/26 20:33:0910/12/26 01:42:32</TimeStamp>
         <ID>
           <String>Dim Trip Type</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>T2XvhcwHR4eB4OTQojEIpnfAw3o=10/12/26 01:42:5110/12/26 01:42:51</TimeStamp>
+        <TimeStamp>2p/XZ2XFOBIjaOjuZiCUsEKN3P4=10/19/26 20:33:0910/12/26 01:42:51</TimeStamp>
         <ID>
           <String>Dim Taxi Flags</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>bLV3rupvBYHQJHNdTe1vBwhJ0NU=10/12/26 01:43:1410/12/26 01:43:14</TimeStamp>
+        <TimeStamp>JI6lHIAZ68X0GZMvDSp0PNClO0g=10/19/26 20:33:0910/12/26 01:43:14</TimeStamp>
         <ID>
           <String>Dim FHV Flags</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>p7zw3XYSwiw1nuqYOtDKQnTNwoo=10/12/26 01:43:4210/12/26 01:43:42</TimeStamp>
+        <TimeStamp>0xm16ACLrv3o2QqOaQkvfsJAG/k=10/19/26 20:33:0910/12/26 01:43:42</TimeStamp>
         <ID>
           <String>Dim HVFHV Flags</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>9F0nRuJcccUfCybYeyAY8uZ4Buc=10/12/26 03:06:4310/12/26 01:43:58</TimeStamp>
+        <TimeStamp>EnLAOeJmzW+s5432bfwRhbLX3Uo=10/19/26 20:33:0910/12/26 01:43:58</TimeStamp>
         <ID>
           <String>Dim Passenger Group</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>aIsXnx6LctdmHFe5GE3NoeeSte4=10/19/26 20:33:0910/19/26 20:16:56</TimeStamp>
+        <ID>
+          <String>Dim Load Batch</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>zTvSjKbhurmw5dHrvV8J8HvwGso=10/12/26 03:36:3810/12/26 01:48:58DJNR1vXuK9YO2qMoOVMLxjGXeis=10/12/26 01:48:5810/12/26 01:48:58</TimeStamp>
+        <TimeStamp>5jN5mZl7vC7BB1SeW5uyDzLJ7ok=10/19/26 20:43:4310/12/26 01:48:58DKVIM3/z1v8e6sci8Rgs2lljHAQ=10/19/26 20:43:4310/12/26 01:48:58</TimeStamp>
         <ID>
           <String>DSV_NYCTaxi</String>
         </ID>
@@ -148,5 +155,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2026-10-12T00:50:29.716667Z</LastDeployed>
+  <LastDeployed>2026-10-19T13:43:53.213333Z</LastDeployed>
 </DeploymentSnapshot>

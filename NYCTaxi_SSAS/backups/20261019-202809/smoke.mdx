@@ -1,0 +1,14 @@
+-- Run against the deployed NYCTaxi_SSAS database in SSMS.
+SELECT {
+ [Measures].[All Trips],
+ [Measures].[Recorded Passenger Amount],
+ [Measures].[FHV Avg Duration Minutes],
+ [Measures].[HVFHV Avg Duration Minutes],
+ [Measures].[Taxi Avg Duration Minutes],
+ [Measures].[HVFHV Avg Waiting Minutes]
+} ON COLUMNS
+FROM [DSV_NYCTaxi];
+
+SELECT {[Measures].[All Trips], [Measures].[Recorded Passenger Amount]} ON COLUMNS,
+ NON EMPTY [Pickup Date].[Calendar].Members ON ROWS
+FROM [DSV_NYCTaxi];

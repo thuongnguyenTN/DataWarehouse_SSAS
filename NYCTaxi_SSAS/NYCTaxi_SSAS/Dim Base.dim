@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="94009d19-6da0-463c-bebb-351d5195acb5" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine" dwd:design-time-name="94009d19-6da0-463c-bebb-351d5195acb5">
   <ID>Dim Base</ID>
   <Name>Dim Base</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -43,7 +43,7 @@
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
   <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="bcabf374-7ead-46f7-92da-19df08d82325">
-    <DataSourceViewID>DSV_NYCTaxi</DataSourceViewID>
+    <DataSourceViewID>DSV_NYCTaxi_DWH</DataSourceViewID>
   </Source>
   <ErrorConfiguration dwd:design-time-name="4c68405b-2a5e-4437-b666-ccff185abb8a">
     <KeyNotFound>ReportAndStop</KeyNotFound>
@@ -63,11 +63,12 @@
             <TableID>dbo_Dim_Base</TableID>
             <ColumnID>BaseKey</ColumnID>
           </Source>
+          <NullProcessing>ZeroOrBlank</NullProcessing>
         </KeyColumn>
       </KeyColumns>
       <NameColumn dwd:design-time-name="7c368a32-c969-444e-ac4d-c46b484c0020">
         <DataType>WChar</DataType>
-        <DataSize>30</DataSize>
+        <DataSize>60</DataSize>
         <Source xsi:type="ColumnBinding" dwd:design-time-name="dfdbb4e6-a2f1-401a-ba81-83537c9038d4">
           <TableID>dbo_Dim_Base</TableID>
           <ColumnID>BaseNumber</ColumnID>
@@ -92,11 +93,12 @@
       <KeyColumns>
         <KeyColumn dwd:design-time-name="84117647-69e2-45ad-86ae-48d3f972464e">
           <DataType>WChar</DataType>
-          <DataSize>200</DataSize>
+          <DataSize>400</DataSize>
           <Source xsi:type="ColumnBinding" dwd:design-time-name="c0fe3062-345f-450c-8a69-3d4ad2fa4dcc">
             <TableID>dbo_Dim_Base</TableID>
             <ColumnID>BaseName</ColumnID>
           </Source>
+          <NullProcessing>ZeroOrBlank</NullProcessing>
         </KeyColumn>
       </KeyColumns>
       <OrderBy>Key</OrderBy>
@@ -109,11 +111,12 @@
       <KeyColumns>
         <KeyColumn dwd:design-time-name="d6ea6fc2-3d25-414c-9d72-ecb2c5cbc1d4">
           <DataType>WChar</DataType>
-          <DataSize>50</DataSize>
+          <DataSize>100</DataSize>
           <Source xsi:type="ColumnBinding" dwd:design-time-name="251c4206-49a1-461a-b3e6-9eaa15c226b6">
             <TableID>dbo_Dim_Base</TableID>
             <ColumnID>BaseCategory</ColumnID>
           </Source>
+          <NullProcessing>ZeroOrBlank</NullProcessing>
         </KeyColumn>
       </KeyColumns>
       <OrderBy>Key</OrderBy>
@@ -122,4 +125,6 @@
     </Attribute>
   </Attributes>
   <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+  <UnknownMember>Visible</UnknownMember>
+  <UnknownMemberName>Unknown (unresolved key)</UnknownMemberName>
 </Dimension>

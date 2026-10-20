@@ -1,0 +1,461 @@
+﻿[
+    {
+        "FKName":  "FK_FHV_PickupDate",
+        "FactTable":  "Fact_FHV_Trips",
+        "FactColumn":  "PickupDateKey",
+        "DimTable":  "Dim_Date",
+        "DimColumn":  "DateKey",
+        "IsDisabled":  false,
+        "IsNotTrusted":  false
+    },
+    {
+        "FKName":  "FK_FHV_DropoffDate",
+        "FactTable":  "Fact_FHV_Trips",
+        "FactColumn":  "DropoffDateKey",
+        "DimTable":  "Dim_Date",
+        "DimColumn":  "DateKey",
+        "IsDisabled":  false,
+        "IsNotTrusted":  false
+    },
+    {
+        "FKName":  "FK_HVFHV_RequestDate",
+        "FactTable":  "Fact_HVFHV_Trips",
+        "FactColumn":  "RequestDateKey",
+        "DimTable":  "Dim_Date",
+        "DimColumn":  "DateKey",
+        "IsDisabled":  false,
+        "IsNotTrusted":  false
+    },
+    {
+        "FKName":  "FK_HVFHV_OnSceneDate",
+        "FactTable":  "Fact_HVFHV_Trips",
+        "FactColumn":  "OnSceneDateKey",
+        "DimTable":  "Dim_Date",
+        "DimColumn":  "DateKey",
+        "IsDisabled":  false,
+        "IsNotTrusted":  false
+    },
+    {
+        "FKName":  "FK_HVFHV_PickupDate",
+        "FactTable":  "Fact_HVFHV_Trips",
+        "FactColumn":  "PickupDateKey",
+        "DimTable":  "Dim_Date",
+        "DimColumn":  "DateKey",
+        "IsDisabled":  false,
+        "IsNotTrusted":  false
+    },
+    {
+        "FKName":  "FK_HVFHV_DropoffDate",
+        "FactTable":  "Fact_HVFHV_Trips",
+        "FactColumn":  "DropoffDateKey",
+        "DimTable":  "Dim_Date",
+        "DimColumn":  "DateKey",
+        "IsDisabled":  false,
+        "IsNotTrusted":  false
+    },
+    {
+        "FKName":  "FK_DFS_Date",
+        "FactTable":  "Fact_Daily_Financial_Snapshot",
+        "FactColumn":  "DateKey",
+        "DimTable":  "Dim_Date",
+        "DimColumn":  "DateKey",
+        "IsDisabled":  false,
+        "IsNotTrusted":  false
+    },
+    {
+        "FKName":  "FK_ZTS_Date",
+        "FactTable":  "Fact_Zone_Traffic_Snapshot",
+        "FactColumn":  "DateKey",
+        "DimTable":  "Dim_Date",
+        "DimColumn":  "DateKey",
+        "IsDisabled":  false,
+        "IsNotTrusted":  false
+    },
+    {
+        "FKName":  "FK_BPS_Date",
+        "FactTable":  "Fact_Base_Performance_Snapshot",
+        "FactColumn":  "DateKey",
+        "DimTable":  "Dim_Date",
+        "DimColumn":  "DateKey",
+        "IsDisabled":  false,
+        "IsNotTrusted":  false
+    },
+    {
+        "FKName":  "FK_FYG_PickupDate",
+        "FactTable":  "Fact_YellowGreen_Trips",
+        "FactColumn":  "PickupDateKey",
+        "DimTable":  "Dim_Date",
+        "DimColumn":  "DateKey",
+        "IsDisabled":  false,
+        "IsNotTrusted":  false
+    },
+    {
+        "FKName":  "FK_FYG_DropoffDate",
+        "FactTable":  "Fact_YellowGreen_Trips",
+        "FactColumn":  "DropoffDateKey",
+        "DimTable":  "Dim_Date",
+        "DimColumn":  "DateKey",
+        "IsDisabled":  false,
+        "IsNotTrusted":  false
+    },
+    {
+        "FKName":  "FK_FHV_PickupTime",
+        "FactTable":  "Fact_FHV_Trips",
+        "FactColumn":  "PickupTimeKey",
+        "DimTable":  "Dim_Time",
+        "DimColumn":  "TimeKey",
+        "IsDisabled":  false,
+        "IsNotTrusted":  false
+    },
+    {
+        "FKName":  "FK_FHV_DropoffTime",
+        "FactTable":  "Fact_FHV_Trips",
+        "FactColumn":  "DropoffTimeKey",
+        "DimTable":  "Dim_Time",
+        "DimColumn":  "TimeKey",
+        "IsDisabled":  false,
+        "IsNotTrusted":  false
+    },
+    {
+        "FKName":  "FK_HVFHV_RequestTime",
+        "FactTable":  "Fact_HVFHV_Trips",
+        "FactColumn":  "RequestTimeKey",
+        "DimTable":  "Dim_Time",
+        "DimColumn":  "TimeKey",
+        "IsDisabled":  false,
+        "IsNotTrusted":  false
+    },
+    {
+        "FKName":  "FK_HVFHV_OnSceneTime",
+        "FactTable":  "Fact_HVFHV_Trips",
+        "FactColumn":  "OnSceneTimeKey",
+        "DimTable":  "Dim_Time",
+        "DimColumn":  "TimeKey",
+        "IsDisabled":  false,
+        "IsNotTrusted":  false
+    },
+    {
+        "FKName":  "FK_HVFHV_PickupTime",
+        "FactTable":  "Fact_HVFHV_Trips",
+        "FactColumn":  "PickupTimeKey",
+        "DimTable":  "Dim_Time",
+        "DimColumn":  "TimeKey",
+        "IsDisabled":  false,
+        "IsNotTrusted":  false
+    },
+    {
+        "FKName":  "FK_HVFHV_DropoffTime",
+        "FactTable":  "Fact_HVFHV_Trips",
+        "FactColumn":  "DropoffTimeKey",
+        "DimTable":  "Dim_Time",
+        "DimColumn":  "TimeKey",
+        "IsDisabled":  false,
+        "IsNotTrusted":  false
+    },
+    {
+        "FKName":  "FK_ZTS_Time",
+        "FactTable":  "Fact_Zone_Traffic_Snapshot",
+        "FactColumn":  "TimeKey",
+        "DimTable":  "Dim_Time",
+        "DimColumn":  "TimeKey",
+        "IsDisabled":  false,
+        "IsNotTrusted":  false
+    },
+    {
+        "FKName":  "FK_FYG_PickupTime",
+        "FactTable":  "Fact_YellowGreen_Trips",
+        "FactColumn":  "PickupTimeKey",
+        "DimTable":  "Dim_Time",
+        "DimColumn":  "TimeKey",
+        "IsDisabled":  false,
+        "IsNotTrusted":  false
+    },
+    {
+        "FKName":  "FK_FYG_DropoffTime",
+        "FactTable":  "Fact_YellowGreen_Trips",
+        "FactColumn":  "DropoffTimeKey",
+        "DimTable":  "Dim_Time",
+        "DimColumn":  "TimeKey",
+        "IsDisabled":  false,
+        "IsNotTrusted":  false
+    },
+    {
+        "FKName":  "FK_FHV_PickupLocation",
+        "FactTable":  "Fact_FHV_Trips",
+        "FactColumn":  "PickupLocationKey",
+        "DimTable":  "Dim_Location",
+        "DimColumn":  "LocationKey",
+        "IsDisabled":  false,
+        "IsNotTrusted":  false
+    },
+    {
+        "FKName":  "FK_FHV_DropoffLocation",
+        "FactTable":  "Fact_FHV_Trips",
+        "FactColumn":  "DropoffLocationKey",
+        "DimTable":  "Dim_Location",
+        "DimColumn":  "LocationKey",
+        "IsDisabled":  false,
+        "IsNotTrusted":  false
+    },
+    {
+        "FKName":  "FK_HVFHV_PickupLocation",
+        "FactTable":  "Fact_HVFHV_Trips",
+        "FactColumn":  "PickupLocationKey",
+        "DimTable":  "Dim_Location",
+        "DimColumn":  "LocationKey",
+        "IsDisabled":  false,
+        "IsNotTrusted":  false
+    },
+    {
+        "FKName":  "FK_HVFHV_DropoffLocation",
+        "FactTable":  "Fact_HVFHV_Trips",
+        "FactColumn":  "DropoffLocationKey",
+        "DimTable":  "Dim_Location",
+        "DimColumn":  "LocationKey",
+        "IsDisabled":  false,
+        "IsNotTrusted":  false
+    },
+    {
+        "FKName":  "FK_ZTS_Location",
+        "FactTable":  "Fact_Zone_Traffic_Snapshot",
+        "FactColumn":  "LocationKey",
+        "DimTable":  "Dim_Location",
+        "DimColumn":  "LocationKey",
+        "IsDisabled":  false,
+        "IsNotTrusted":  false
+    },
+    {
+        "FKName":  "FK_FYG_PickupLocation",
+        "FactTable":  "Fact_YellowGreen_Trips",
+        "FactColumn":  "PickupLocationKey",
+        "DimTable":  "Dim_Location",
+        "DimColumn":  "LocationKey",
+        "IsDisabled":  false,
+        "IsNotTrusted":  false
+    },
+    {
+        "FKName":  "FK_FYG_DropoffLocation",
+        "FactTable":  "Fact_YellowGreen_Trips",
+        "FactColumn":  "DropoffLocationKey",
+        "DimTable":  "Dim_Location",
+        "DimColumn":  "LocationKey",
+        "IsDisabled":  false,
+        "IsNotTrusted":  false
+    },
+    {
+        "FKName":  "FK_FHV_ServiceType",
+        "FactTable":  "Fact_FHV_Trips",
+        "FactColumn":  "ServiceTypeKey",
+        "DimTable":  "Dim_ServiceType",
+        "DimColumn":  "ServiceTypeKey",
+        "IsDisabled":  false,
+        "IsNotTrusted":  false
+    },
+    {
+        "FKName":  "FK_HVFHV_ServiceType",
+        "FactTable":  "Fact_HVFHV_Trips",
+        "FactColumn":  "ServiceTypeKey",
+        "DimTable":  "Dim_ServiceType",
+        "DimColumn":  "ServiceTypeKey",
+        "IsDisabled":  false,
+        "IsNotTrusted":  false
+    },
+    {
+        "FKName":  "FK_DFS_Service",
+        "FactTable":  "Fact_Daily_Financial_Snapshot",
+        "FactColumn":  "ServiceTypeKey",
+        "DimTable":  "Dim_ServiceType",
+        "DimColumn":  "ServiceTypeKey",
+        "IsDisabled":  false,
+        "IsNotTrusted":  false
+    },
+    {
+        "FKName":  "FK_ZTS_Service",
+        "FactTable":  "Fact_Zone_Traffic_Snapshot",
+        "FactColumn":  "ServiceTypeKey",
+        "DimTable":  "Dim_ServiceType",
+        "DimColumn":  "ServiceTypeKey",
+        "IsDisabled":  false,
+        "IsNotTrusted":  false
+    },
+    {
+        "FKName":  "FK_BPS_Service",
+        "FactTable":  "Fact_Base_Performance_Snapshot",
+        "FactColumn":  "ServiceTypeKey",
+        "DimTable":  "Dim_ServiceType",
+        "DimColumn":  "ServiceTypeKey",
+        "IsDisabled":  false,
+        "IsNotTrusted":  false
+    },
+    {
+        "FKName":  "FK_FYG_ServiceType",
+        "FactTable":  "Fact_YellowGreen_Trips",
+        "FactColumn":  "ServiceTypeKey",
+        "DimTable":  "Dim_ServiceType",
+        "DimColumn":  "ServiceTypeKey",
+        "IsDisabled":  false,
+        "IsNotTrusted":  false
+    },
+    {
+        "FKName":  "FK_FYG_Vendor",
+        "FactTable":  "Fact_YellowGreen_Trips",
+        "FactColumn":  "VendorKey",
+        "DimTable":  "Dim_Vendor",
+        "DimColumn":  "VendorKey",
+        "IsDisabled":  false,
+        "IsNotTrusted":  false
+    },
+    {
+        "FKName":  "FK_HVFHV_Provider",
+        "FactTable":  "Fact_HVFHV_Trips",
+        "FactColumn":  "HVFHSProviderKey",
+        "DimTable":  "Dim_HVFHSProvider",
+        "DimColumn":  "HVFHSProviderKey",
+        "IsDisabled":  false,
+        "IsNotTrusted":  false
+    },
+    {
+        "FKName":  "FK_BPS_Provider",
+        "FactTable":  "Fact_Base_Performance_Snapshot",
+        "FactColumn":  "HVFHSProviderKey",
+        "DimTable":  "Dim_HVFHSProvider",
+        "DimColumn":  "HVFHSProviderKey",
+        "IsDisabled":  false,
+        "IsNotTrusted":  false
+    },
+    {
+        "FKName":  "FK_FHV_DispatchBase",
+        "FactTable":  "Fact_FHV_Trips",
+        "FactColumn":  "DispatchBaseKey",
+        "DimTable":  "Dim_Base",
+        "DimColumn":  "BaseKey",
+        "IsDisabled":  false,
+        "IsNotTrusted":  false
+    },
+    {
+        "FKName":  "FK_FHV_AffiliatedBase",
+        "FactTable":  "Fact_FHV_Trips",
+        "FactColumn":  "AffiliatedBaseKey",
+        "DimTable":  "Dim_Base",
+        "DimColumn":  "BaseKey",
+        "IsDisabled":  false,
+        "IsNotTrusted":  false
+    },
+    {
+        "FKName":  "FK_HVFHV_DispatchBase",
+        "FactTable":  "Fact_HVFHV_Trips",
+        "FactColumn":  "DispatchBaseKey",
+        "DimTable":  "Dim_Base",
+        "DimColumn":  "BaseKey",
+        "IsDisabled":  false,
+        "IsNotTrusted":  false
+    },
+    {
+        "FKName":  "FK_HVFHV_OriginBase",
+        "FactTable":  "Fact_HVFHV_Trips",
+        "FactColumn":  "OriginBaseKey",
+        "DimTable":  "Dim_Base",
+        "DimColumn":  "BaseKey",
+        "IsDisabled":  false,
+        "IsNotTrusted":  false
+    },
+    {
+        "FKName":  "FK_BPS_Base",
+        "FactTable":  "Fact_Base_Performance_Snapshot",
+        "FactColumn":  "DispatchBaseKey",
+        "DimTable":  "Dim_Base",
+        "DimColumn":  "BaseKey",
+        "IsDisabled":  false,
+        "IsNotTrusted":  false
+    },
+    {
+        "FKName":  "FK_FYG_RateCode",
+        "FactTable":  "Fact_YellowGreen_Trips",
+        "FactColumn":  "RateCodeKey",
+        "DimTable":  "Dim_RateCode",
+        "DimColumn":  "RateCodeKey",
+        "IsDisabled":  false,
+        "IsNotTrusted":  false
+    },
+    {
+        "FKName":  "FK_FYG_PaymentType",
+        "FactTable":  "Fact_YellowGreen_Trips",
+        "FactColumn":  "PaymentTypeKey",
+        "DimTable":  "Dim_PaymentType",
+        "DimColumn":  "PaymentTypeKey",
+        "IsDisabled":  false,
+        "IsNotTrusted":  false
+    },
+    {
+        "FKName":  "FK_FYG_TripType",
+        "FactTable":  "Fact_YellowGreen_Trips",
+        "FactColumn":  "TripTypeKey",
+        "DimTable":  "Dim_TripType",
+        "DimColumn":  "TripTypeKey",
+        "IsDisabled":  false,
+        "IsNotTrusted":  false
+    },
+    {
+        "FKName":  "FK_FYG_TaxiFlag",
+        "FactTable":  "Fact_YellowGreen_Trips",
+        "FactColumn":  "TaxiFlagKey",
+        "DimTable":  "Dim_TaxiFlags",
+        "DimColumn":  "TaxiFlagKey",
+        "IsDisabled":  false,
+        "IsNotTrusted":  false
+    },
+    {
+        "FKName":  "FK_FHV_Flag",
+        "FactTable":  "Fact_FHV_Trips",
+        "FactColumn":  "FHVFlagKey",
+        "DimTable":  "Dim_FHVFlags",
+        "DimColumn":  "FHVFlagKey",
+        "IsDisabled":  false,
+        "IsNotTrusted":  false
+    },
+    {
+        "FKName":  "FK_HVFHV_Flag",
+        "FactTable":  "Fact_HVFHV_Trips",
+        "FactColumn":  "HVFHVFlagKey",
+        "DimTable":  "Dim_HVFHVFlags",
+        "DimColumn":  "HVFHVFlagKey",
+        "IsDisabled":  false,
+        "IsNotTrusted":  false
+    },
+    {
+        "FKName":  "FK_FYG_PassengerGroup",
+        "FactTable":  "Fact_YellowGreen_Trips",
+        "FactColumn":  "PassengerGroupKey",
+        "DimTable":  "Dim_PassengerGroup",
+        "DimColumn":  "PassengerGroupKey",
+        "IsDisabled":  false,
+        "IsNotTrusted":  false
+    },
+    {
+        "FKName":  "FK_FHV_LoadBatch",
+        "FactTable":  "Fact_FHV_Trips",
+        "FactColumn":  "LoadBatchKey",
+        "DimTable":  "Dim_LoadBatch",
+        "DimColumn":  "LoadBatchKey",
+        "IsDisabled":  false,
+        "IsNotTrusted":  false
+    },
+    {
+        "FKName":  "FK_HVFHV_LoadBatch",
+        "FactTable":  "Fact_HVFHV_Trips",
+        "FactColumn":  "LoadBatchKey",
+        "DimTable":  "Dim_LoadBatch",
+        "DimColumn":  "LoadBatchKey",
+        "IsDisabled":  false,
+        "IsNotTrusted":  false
+    },
+    {
+        "FKName":  "FK_FYG_LoadBatch",
+        "FactTable":  "Fact_YellowGreen_Trips",
+        "FactColumn":  "LoadBatchKey",
+        "DimTable":  "Dim_LoadBatch",
+        "DimColumn":  "LoadBatchKey",
+        "IsDisabled":  false,
+        "IsNotTrusted":  false
+    }
+]

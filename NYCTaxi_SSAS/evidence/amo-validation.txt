@@ -1,0 +1,26 @@
+Warning: [DS_NYCTaxi_DWH]: Do not use unsupported OLE DB providers in a DataSource.
+Warning: [Dim Base]: Create hierarchies in non-parent child dimensions.
+Warning: [Dim Date]: Avoid visible attribute hierarchies for attributes used as levels in user-defined hierarchies.
+Warning: [Dim Date]: Set at least one of the attribute types to match the 'Time' dimension type.
+Warning: [Dim Date]: Define attribute relationships as 'Rigid' where appropriate.
+Warning: [Dim HVFHS Provider]: Create hierarchies in non-parent child dimensions.
+Warning: [Dim HVFHV Flags]: Create hierarchies in non-parent child dimensions.
+Warning: [Dim Load Batch]: Create hierarchies in non-parent child dimensions.
+Warning: [Dim Location]: Avoid visible attribute hierarchies for attributes used as levels in user-defined hierarchies.
+Warning: [Dim Location]: Define attribute relationships as 'Rigid' where appropriate.
+Warning: [Dim Passenger Group]: Create hierarchies in non-parent child dimensions.
+Warning: [Dim Rate Code]: Create hierarchies in non-parent child dimensions.
+Warning: [Dim Service Type]: Create hierarchies in non-parent child dimensions.
+Warning: [Dim Time]: Avoid visible attribute hierarchies for attributes used as levels in user-defined hierarchies.
+Warning: [Dim Time]: Define attribute relationships as 'Rigid' where appropriate.
+Warning: [Dim Trip Type]: Create hierarchies in non-parent child dimensions.
+Warning: [Dim Vendor]: Create hierarchies in non-parent child dimensions.
+Warning: [NYC Taxi Analysis].[Fact FHV Trips].[Operational]: Specify the EstimatedRows property. It will be used by the user interface to validate and report on aggregation sizes.
+Warning: [NYC Taxi Analysis].[Fact FHV Trips]: Consolidate partitions for measure groups with 5 or more partitions that have less than 2 million rows or are smaller than 50 MB in size.
+Warning: [NYC Taxi Analysis].[Fact HVFHV Trips].[Operational]: Specify the EstimatedRows property. It will be used by the user interface to validate and report on aggregation sizes.
+Warning: [NYC Taxi Analysis].[Fact HVFHV Trips]: Consolidate partitions for measure groups with 5 or more partitions that have less than 2 million rows or are smaller than 50 MB in size.
+Warning: [NYC Taxi Analysis].[Fact Yellow Green Trips].[Operational]: Specify the EstimatedRows property. It will be used by the user interface to validate and report on aggregation sizes.
+Warning: [NYC Taxi Analysis].[Fact Yellow Green Trips]: Consolidate partitions for measure groups with 5 or more partitions that have less than 2 million rows or are smaller than 50 MB in size.
+Warning: [NYC Taxi Analysis].[Daily Financial Snapshot].[Operational]: Specify the EstimatedRows property. It will be used by the user interface to validate and report on aggregation sizes.
+Warning: [NYC Taxi Analysis].[Zone Traffic Snapshot].[Operational]: Specify the EstimatedRows property. It will be used by the user interface to validate and report on aggregation sizes.
+Warning: [NYC Taxi Analysis].[Base Performance Snapshot].[Operational]: Specify the EstimatedRows property. It will be used by the user interface to validate and report on aggregation sizes.

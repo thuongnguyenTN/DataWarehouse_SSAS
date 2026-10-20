@@ -1,0 +1,157 @@
+﻿[
+    {
+        "TableName":  "AggregateWatermark",
+        "ColumnName":  "AggregateName",
+        "Ordinal":  1
+    },
+    {
+        "TableName":  "AggregateWatermark",
+        "ColumnName":  "FactName",
+        "Ordinal":  2
+    },
+    {
+        "TableName":  "Dim_Base",
+        "ColumnName":  "BaseKey",
+        "Ordinal":  1
+    },
+    {
+        "TableName":  "Dim_Date",
+        "ColumnName":  "DateKey",
+        "Ordinal":  1
+    },
+    {
+        "TableName":  "Dim_FHVFlags",
+        "ColumnName":  "FHVFlagKey",
+        "Ordinal":  1
+    },
+    {
+        "TableName":  "Dim_HVFHSProvider",
+        "ColumnName":  "HVFHSProviderKey",
+        "Ordinal":  1
+    },
+    {
+        "TableName":  "Dim_HVFHVFlags",
+        "ColumnName":  "HVFHVFlagKey",
+        "Ordinal":  1
+    },
+    {
+        "TableName":  "Dim_LoadBatch",
+        "ColumnName":  "LoadBatchKey",
+        "Ordinal":  1
+    },
+    {
+        "TableName":  "Dim_Location",
+        "ColumnName":  "LocationKey",
+        "Ordinal":  1
+    },
+    {
+        "TableName":  "Dim_PassengerGroup",
+        "ColumnName":  "PassengerGroupKey",
+        "Ordinal":  1
+    },
+    {
+        "TableName":  "Dim_PaymentType",
+        "ColumnName":  "PaymentTypeKey",
+        "Ordinal":  1
+    },
+    {
+        "TableName":  "Dim_RateCode",
+        "ColumnName":  "RateCodeKey",
+        "Ordinal":  1
+    },
+    {
+        "TableName":  "Dim_ServiceType",
+        "ColumnName":  "ServiceTypeKey",
+        "Ordinal":  1
+    },
+    {
+        "TableName":  "Dim_TaxiFlags",
+        "ColumnName":  "TaxiFlagKey",
+        "Ordinal":  1
+    },
+    {
+        "TableName":  "Dim_Time",
+        "ColumnName":  "TimeKey",
+        "Ordinal":  1
+    },
+    {
+        "TableName":  "Dim_TripType",
+        "ColumnName":  "TripTypeKey",
+        "Ordinal":  1
+    },
+    {
+        "TableName":  "Dim_Vendor",
+        "ColumnName":  "VendorKey",
+        "Ordinal":  1
+    },
+    {
+        "TableName":  "Fact_Base_Performance_Snapshot",
+        "ColumnName":  "DateKey",
+        "Ordinal":  1
+    },
+    {
+        "TableName":  "Fact_Base_Performance_Snapshot",
+        "ColumnName":  "DispatchBaseKey",
+        "Ordinal":  2
+    },
+    {
+        "TableName":  "Fact_Base_Performance_Snapshot",
+        "ColumnName":  "ServiceTypeKey",
+        "Ordinal":  3
+    },
+    {
+        "TableName":  "Fact_Base_Performance_Snapshot",
+        "ColumnName":  "HVFHSProviderKey",
+        "Ordinal":  4
+    },
+    {
+        "TableName":  "Fact_Daily_Financial_Snapshot",
+        "ColumnName":  "DateKey",
+        "Ordinal":  1
+    },
+    {
+        "TableName":  "Fact_Daily_Financial_Snapshot",
+        "ColumnName":  "ServiceTypeKey",
+        "Ordinal":  2
+    },
+    {
+        "TableName":  "Fact_FHV_Trips",
+        "ColumnName":  "TripKey",
+        "Ordinal":  1
+    },
+    {
+        "TableName":  "Fact_HVFHV_Trips",
+        "ColumnName":  "TripKey",
+        "Ordinal":  1
+    },
+    {
+        "TableName":  "Fact_YellowGreen_Trips",
+        "ColumnName":  "TripKey",
+        "Ordinal":  1
+    },
+    {
+        "TableName":  "Fact_Zone_Traffic_Snapshot",
+        "ColumnName":  "DateKey",
+        "Ordinal":  1
+    },
+    {
+        "TableName":  "Fact_Zone_Traffic_Snapshot",
+        "ColumnName":  "TimeKey",
+        "Ordinal":  2
+    },
+    {
+        "TableName":  "Fact_Zone_Traffic_Snapshot",
+        "ColumnName":  "LocationKey",
+        "Ordinal":  3
+    },
+    {
+        "TableName":  "Fact_Zone_Traffic_Snapshot",
+        "ColumnName":  "ServiceTypeKey",
+        "Ordinal":  4
+    },
+    {
+        "TableName":  "LoadStepLog",
+        "ColumnName":  "LogID",
+        "Ordinal":  1
+    }
+]
