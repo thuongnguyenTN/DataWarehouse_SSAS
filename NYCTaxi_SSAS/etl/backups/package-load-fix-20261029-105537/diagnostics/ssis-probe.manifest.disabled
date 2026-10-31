@@ -1,0 +1,676 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <file name="Binn\DTS.dll" hashalg="SHA1">
+    <comClass clsid="{2A446053-4F77-471F-AE39-D029C070677D}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" progid="SSIS.ProjectConnectionsCreator.7" threadingModel="Free" description="Helper class that creates connections in the project">
+      <progid>SSIS.ProjectConnectionsCreator</progid>
+    </comClass>
+    <comClass clsid="{64E61590-AD68-437D-98BB-BC335ED7A1DD}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" progid="SSIS.ProjectConnectionsCreatorNeutral.7" threadingModel="Neutral" description="Helper class that creates connections in the project">
+      <progid>SSIS.ProjectConnectionsCreatorNeutral</progid>
+    </comClass>
+    <comClass clsid="{6D678945-35D6-4C2D-8DFE-C9A127418661}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" progid="SSIS.Package.9" threadingModel="Free" description="Package Class">
+      <progid>SSIS.Package</progid>
+    </comClass>
+    <comClass clsid="{96878822-0F2C-4C6E-AAF0-65E9139DFC11}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" progid="DTS.PackageNeutral.9" threadingModel="Neutral" description="Package Neutral Class">
+      <progid>DTS.PackageNeutral</progid>
+    </comClass>
+    <comClass clsid="{9E6F2EEF-7E20-4725-B2FD-74EEC1D250D6}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" progid="DTS.PackageRemote.9" threadingModel="Free" description="Package Remote Class (32-bit)">
+      <progid>DTS.PackageRemote</progid>
+    </comClass>
+    <comClass clsid="{EF42EDA9-C0BD-4A47-BB9A-E002FA649299}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" progid="DTS.PackageRemote64.9" threadingModel="Free" description="Package Remote Class (64-bit)">
+      <progid>DTS.PackageRemote64</progid>
+    </comClass>
+    <comClass clsid="{A459BC32-7033-435D-8E1F-21E5E13361DD}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" progid="DTS.TaskCreator.9" description="Task Creator Class (32-bit)">
+      <progid>DTS.TaskCreator</progid>
+    </comClass>
+    <comClass clsid="{625B7E0C-6EB9-4EA6-911E-2A3FEE7BDF14}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" progid="DTS.TaskCreator64.9" description="Task Creator Class (64-bit)">
+      <progid>DTS.TaskCreator64</progid>
+    </comClass>
+    <comClass clsid="{A509DFE9-EC02-4E95-8C36-B9471CC83098}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" progid="SSIS.VariableCreator.7" threadingModel="Free" description="Variable Creator Class">
+      <progid>SSIS.VariableCreator</progid>
+    </comClass>
+    <comClass clsid="{CB10DFB9-2DF1-4BDE-A036-B4A3E8459B61}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" description="TaskHost Class"/>
+    <comClass clsid="{63B3D0B4-BC6E-4581-B327-B709DEFD7EA1}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" description="DTS Connection Manager Host"/>
+    <comClass clsid="{0A86D90F-E4A5-4552-B779-C3927A19CD8A}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" description="EventHandler Class"/>
+    <comClass clsid="{8A620AE0-B663-4140-BD73-C52E703E50B7}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" description="Variable dispenser object"/>
+    <comClass clsid="{E86A4A4E-2C6F-48F7-A0C8-C010143FD8E4}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" description="Variable Class"/>
+    <comClass clsid="{93287010-E0B4-45AD-BB6E-1F5D60A57FE0}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" description="Parameter Class"/>
+    <comClass clsid="{D1826C3A-FBCD-4588-95C0-2009008B8EBC}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" description="DTS Log Provider Host"/>
+    <comClass clsid="{F5D3682F-B8AF-4AE5-A7E6-5FFDFF992D4F}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" progid="SSIS.Application.9" threadingModel="Free" description="Application Class">
+      <progid>SSIS.Application</progid>
+    </comClass>
+    <comClass clsid="{82B13557-5FC8-40E6-A0C2-6C7E81B5A7B3}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" description="Sequence Class"/>
+    <comClass clsid="{BF63CBDD-ED5A-42C8-8A44-F8AF5AAAE3A6}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" description="ForEachLoop Class"/>
+    <comClass clsid="{55CDCD8F-E37D-4F07-90BF-18E0164CF8B6}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" description="ForLoop Class"/>
+    <comClass clsid="{C0856ABD-5E9A-457D-AF2E-EF1D32C78CFD}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" description="PrecedenceConstraint Class"/>
+    <comClass clsid="{E44D3F1E-D9DE-41CD-B048-821636DC6F1B}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" description="For Each Enumerator Host"/>
+    <comClass clsid="{88C2EB3F-53D4-45B4-878C-6B80026574BA}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" progid="DTS.ForEachItemEnumerator.9" threadingModel="Free" description="For Each Item Enumerator,2,105">
+      <progid>DTS.ForEachItemEnumerator</progid>
+    </comClass>
+    <comClass clsid="{BE7178B3-A8C2-4812-B4C4-48FD87A30D11}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" progid="SSIS.ReplacementTask.9" threadingModel="Both" description="ReplacementTask Class">
+      <progid>SSIS.ReplacementTask</progid>
+    </comClass>
+    <comClass clsid="{5AE0D60D-E89F-478A-8E71-D255D5682A39}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" progid="SSIS.Properties.7" threadingModel="Free" description="Properties Class">
+      <progid>SSIS.Properties</progid>
+    </comClass>
+    <typelib tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" version="1.0" helpdir="" flags="HASDISKIMAGE"/>
+  </file>
+  <file name="Binn\DTSComExprEval.dll" hashalg="SHA1">
+    <comClass clsid="{718D4E38-C468-4774-95FE-9005148FD74E}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" threadingModel="Both" description="Expression Evaluator"/>
+  </file>
+  <file name="Binn\DTSConn.dll" hashalg="SHA1">
+    <comClass clsid="{39B1B63F-8ECD-482B-9478-C9615AB7EBC5}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" progid="DTS.ConnectionManagerOlap.9" threadingModel="Both" description="DTS Connection Manager for Analysis Services,4,101">
+      <progid>DTS.ConnectionManagerOlap</progid>
+    </comClass>
+    <comClass clsid="{1F5DB402-32F5-4A1B-A882-299F9167ED41}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" progid="DTS.ConnectionManagerOleDb.9" threadingModel="Both" description="DTS Connection Manager for OLE DB,4,102">
+      <progid>DTS.ConnectionManagerOleDb</progid>
+    </comClass>
+    <comClass clsid="{33909ED3-AAEE-4252-BB3E-B5613E964FFD}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" progid="DTS.ConnectionManagerOdbc.9" threadingModel="Both" description="DTS Connection Manager for ODBC,4,103">
+      <progid>DTS.ConnectionManagerOdbc</progid>
+    </comClass>
+    <comClass clsid="{2808B840-9ECC-457D-B9CD-9F3ECC2C514D}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" progid="DTS.ConnectionManagerAdo.9" threadingModel="Both" description="DTS Connection Manager for ADO,4,104">
+      <progid>DTS.ConnectionManagerAdo</progid>
+    </comClass>
+    <comClass clsid="{E29C87AB-BD49-4697-9D55-F0AF11D68B0B}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" progid="DTS.ConnectionManagerAdoNet.9" threadingModel="Both" description="DTS Connection Manager for ADO.NET,4,105">
+      <progid>DTS.ConnectionManagerAdoNet</progid>
+    </comClass>
+    <comClass clsid="{BE0C31F0-82A0-4047-9B0C-D4AC99EDEE0B}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" progid="DTS.ConnectionManagerFile.9" threadingModel="Both" description="DTS Connection Manager for Files,4,106">
+      <progid>DTS.ConnectionManagerFile</progid>
+    </comClass>
+    <comClass clsid="{B3DA4E4A-62BC-4E2D-9A67-E8BA236ED67F}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" progid="DTS.ConnectionManagerMultiFile.9" threadingModel="Both" description="DTS Connection Manager for Multiple Files,4,106">
+      <progid>DTS.ConnectionManagerMultiFile</progid>
+    </comClass>
+    <comClass clsid="{94D21409-7872-4E36-8979-DFA60700AD6B}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" progid="DTS.ConnectionManagerFlatFile.9" threadingModel="Both" description="DTS Connection Manager for Flat Files,4,107">
+      <progid>DTS.ConnectionManagerFlatFile</progid>
+    </comClass>
+    <comClass clsid="{C70F863E-CF88-4554-889D-AF2773C99126}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" progid="DTS.ConnectionManagerMultiFlatFile.9" threadingModel="Both" description="DTS Connection Manager for Multiple Flat Files,4,107">
+      <progid>DTS.ConnectionManagerMultiFlatFile</progid>
+    </comClass>
+    <comClass clsid="{12EBBF3A-AC78-4B8B-9450-E45A805CE4B9}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" progid="DTS.ConnectionManagerHttp.9" threadingModel="Both" description="ConnectionManagerHttp Class,4,108">
+      <progid>DTS.ConnectionManagerHttp</progid>
+    </comClass>
+    <comClass clsid="{14853708-F526-4F93-BA07-839B061A2DCD}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" progid="DTS.ConnectionManagerFtp.9" threadingModel="Both" description="ConnectionManagerFTP Class,4,109">
+      <progid>DTS.ConnectionManagerFtp</progid>
+    </comClass>
+    <comClass clsid="{BAFE6D25-2135-47F2-B0D1-D05019C87499}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" progid="DTS.ConnectionManagerCache.8" threadingModel="Both" description="SSIS Connection Manager for Cache,4,110">
+      <progid>DTS.ConnectionManagerCache</progid>
+    </comClass>
+    <comClass clsid="{079C6E33-8006-4100-BC58-8BD2F280A29D}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" progid="DTS.ConnectionManagerExcel.9" threadingModel="Both" description="DTS Connection Manager for Excel files,4,9999">
+      <progid>DTS.ConnectionManagerExcel</progid>
+    </comClass>
+    <comClass clsid="{34D44D36-D899-4078-8A47-CF79331D85A5}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" description="HttpClientConnection100 Class"/>
+    <comClass clsid="{E48B7FC2-F3BF-4C48-86A6-75916C709895}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" description="FTPClientConnection100 Class"/>
+  </file>
+  <file name="Binn\DTSLog.dll" hashalg="SHA1">
+    <comClass clsid="{E4F1E63C-9B62-48BB-9DDF-D603A44446F4}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" progid="DTS.LogProviderSQLServer.9" threadingModel="Free" description="DTS Log Provider for SQL Server,3,110">
+      <progid>DTS.LogProviderSQLServer</progid>
+    </comClass>
+    <comClass clsid="{7EC0A922-B109-4794-9277-8069145D340A}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" progid="DTS.LogProviderTextFile.9" threadingModel="Free" description="DTS Log Provider for Text File,3,111">
+      <progid>DTS.LogProviderTextFile</progid>
+    </comClass>
+    <comClass clsid="{2BE63CC1-AE62-40E0-AC3B-49D0AAAF30DF}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" progid="DTS.LogProviderXMLFile.9" threadingModel="Free" description="DTS Log Provider for XML File,3,112">
+      <progid>DTS.LogProviderXMLFile</progid>
+    </comClass>
+    <comClass clsid="{22CAB5B1-FF71-4712-A366-23238E221A9A}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" progid="DTS.LogProviderEventLog.9" threadingModel="Free" description="DTS Log Provider for Windows Event Log,3,113">
+      <progid>DTS.LogProviderEventLog</progid>
+    </comClass>
+    <comClass clsid="{426D7B8C-F454-4222-9B17-A09EAD38F6EA}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" progid="DTS.LogProviderSQLProfiler.9" threadingModel="Free" description="DTS Log Provider for SQL Profiler,3,114">
+      <progid>DTS.LogProviderSQLProfiler</progid>
+    </comClass>
+  </file>
+  <file name="Binn\DTSPipeline.dll" hashalg="SHA1">
+    <comClass clsid="{DEF2A1DF-3286-451B-880F-AC21C10B10DE}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" threadingModel="free" description="DTSBufferManager Class"/>
+    <comClass clsid="{4A626E00-52BE-4FC2-B7D7-D3E678E0EBA0}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" threadingModel="free" description="CErrorComponent Class"/>
+    <comClass clsid="{309DA7BC-B099-4C25-9E67-F9D1B1B3A084}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" progid="SSIS.Pipeline.9" threadingModel="free" description="MainPipe Class,0,101">
+      <progid>SSIS.Pipeline</progid>
+    </comClass>
+    <comClass clsid="{27BDEB67-60BE-4360-AC7F-AAED6FFE4CB1}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" progid="DTS.ManagedComponentWrapper.9" threadingModel="free" description="DTS Pipeline Managed Component Wrapper">
+      <progid>DTS.ManagedComponentWrapper</progid>
+    </comClass>
+    <typelib tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" version="1.0" helpdir="" flags="HASDISKIMAGE"/>
+  </file>
+  <file name="Binn\DtrHost.tlb" hashalg="SHA1">
+    <typelib tlbid="{19F0F8A7-49C5-46A4-B9B0-D51E255A04B5}" version="1.0" helpdir="" flags="HASDISKIMAGE"/>
+  </file>
+  <file name="Binn\ExecPackageTask.dll" hashalg="SHA1">
+    <comClass clsid="{8581A249-9976-4749-9193-8A1376BADBE7}" tlbid="{6541136C-08A9-4EEE-9880-B541853B898C}" description="Parameter Assignment Class"/>
+    <comClass clsid="{A7D511AC-A65B-43B6-88AD-684F03663A02}" tlbid="{6541136C-08A9-4EEE-9880-B541853B898C}" description="Parameter Assignment Collection Class"/>
+    <comClass clsid="{E12E8DBC-4CD8-4A75-A596-5885659D6B29}" tlbid="{6541136C-08A9-4EEE-9880-B541853B898C}" progid="SSIS.ExecutePackageTask.9" threadingModel="Both" description="ExecutePackageTask Class,0,100">
+      <progid>SSIS.ExecutePackageTask</progid>
+    </comClass>
+    <typelib tlbid="{6541136C-08A9-4EEE-9880-B541853B898C}" version="1.0" helpdir="" flags="HASDISKIMAGE"/>
+  </file>
+  <file name="Binn\SQLTaskConnections.dll" hashalg="SHA1">
+    <comClass clsid="{91EA009E-D658-458E-B304-E9BEBC5B2155}" tlbid="{4333EAAC-36BD-433F-890E-A6C53B75E5FD}" progid="SQLTaskConnections.SQLTaskConnectionAD.9" threadingModel="Both" description="SQLTaskConnectionADO Class">
+      <progid>SQLTaskConnections.SQLTaskConnectionAD</progid>
+    </comClass>
+    <comClass clsid="{71DE91BA-1A3D-47D2-BBA4-C64D1EE6F5C7}" tlbid="{4333EAAC-36BD-433F-890E-A6C53B75E5FD}" progid="SQLTaskConnections.SQLTaskConnectionOl.9" threadingModel="Both" description="SQLTaskConnectionOleDb Class">
+      <progid>SQLTaskConnections.SQLTaskConnectionOl</progid>
+    </comClass>
+    <comClass clsid="{76E4EB2F-4C2E-49B7-B66B-08071FD7C4F0}" tlbid="{4333EAAC-36BD-433F-890E-A6C53B75E5FD}" progid="SQLTaskConnections.SQLTaskConnectionOD.9" threadingModel="Both" description="SQLTaskConnectionODBC Class">
+      <progid>SQLTaskConnections.SQLTaskConnectionOD</progid>
+    </comClass>
+    <typelib tlbid="{4333EAAC-36BD-433F-890E-A6C53B75E5FD}" version="1.0" helpdir="" flags="HASDISKIMAGE"/>
+  </file>
+  <file name="PipelineComponents\OdbcSrc.dll" hashalg="SHA1">
+    <comClass clsid="{13E69DE6-845C-4709-96F7-59E7B4145FC1}" tlbid="{9C4E56A7-54D9-4AA8-80A0-AFE6F41EAAFF}" progid="DTSAdapter.ODBCSource.3" threadingModel="free" description="DtsOdbcSrc Class,1,101">
+      <progid>DTSAdapter.ODBCSource</progid>
+    </comClass>
+    <typelib tlbid="{9C4E56A7-54D9-4AA8-80A0-AFE6F41EAAFF}" version="1.0" helpdir="" flags="HASDISKIMAGE"/>
+  </file>
+  <file name="PipelineComponents\OdbcDest.dll" hashalg="SHA1">
+    <comClass clsid="{8A73C391-636A-4E36-9EC1-F615785F738B}" tlbid="{71D8174F-192B-4A3D-9C28-78EFEBD7B599}" progid="DTSAdapter.ODBCDst.3" threadingModel="free" description="DtsOdbcDest Class,1,101">
+      <progid>DTSAdapter.ODBCDst</progid>
+    </comClass>
+    <typelib tlbid="{71D8174F-192B-4A3D-9C28-78EFEBD7B599}" version="1.0" helpdir="" flags="HASDISKIMAGE"/>
+  </file>
+  <file name="PipelineComponents\OleDbSrc.dll" hashalg="SHA1">
+    <comClass clsid="{FB0713B0-7E4F-4478-A84B-9CAD9F4B0344}" tlbid="{E2A5F281-0E22-4043-AC30-FBFAF96D43FF}" progid="DTSAdapter.OLEDBSource.9" threadingModel="free" description="DtsOleDbSrc Class,1,101">
+      <progid>DTSAdapter.OLEDBSource</progid>
+    </comClass>
+    <typelib tlbid="{E2A5F281-0E22-4043-AC30-FBFAF96D43FF}" version="1.0" helpdir="" flags="HASDISKIMAGE"/>
+  </file>
+  <file name="PipelineComponents\TxAgg.dll" hashalg="SHA1">
+    <comClass clsid="{349E903E-4077-4E98-B654-59DB81D35638}" tlbid="{F358F888-366E-4EC1-B9FD-F2B032A23309}" progid="DTSTransform.Aggregate.9" threadingModel="free" description="Aggregation Transform Class,1,101">
+      <progid>DTSTransform.Aggregate</progid>
+    </comClass>
+    <typelib tlbid="{F358F888-366E-4EC1-B9FD-F2B032A23309}" version="1.0" helpdir="" flags="HASDISKIMAGE"/>
+  </file>
+  <file name="PipelineComponents\TxMerge.dll" hashalg="SHA1">
+    <comClass clsid="{B046FD36-C993-4933-BF46-F14E28EA1222}" tlbid="{DA870F79-7B5D-4E2F-81F7-206D55D64F23}" progid="DTSTransform.Merge.9" threadingModel="free" description="TxMerge Class,1,101">
+      <progid>DTSTransform.Merge</progid>
+    </comClass>
+    <typelib tlbid="{DA870F79-7B5D-4E2F-81F7-206D55D64F23}" version="1.0" helpdir="" flags="HASDISKIMAGE"/>
+  </file>
+  <file name="PipelineComponents\TxUnPivot.dll" hashalg="SHA1">
+    <comClass clsid="{98B704F1-4E2D-4EB6-8DC5-41380CF7CA37}" tlbid="{DAEA054E-94D5-4039-A67B-50BC3B84B6CB}" progid="DTSTransform.UnPivot.9" threadingModel="free" description="TxUnPivot Class,1,101">
+      <progid>DTSTransform.UnPivot</progid>
+    </comClass>
+    <typelib tlbid="{DAEA054E-94D5-4039-A67B-50BC3B84B6CB}" version="1.0" helpdir="" flags="HASDISKIMAGE"/>
+  </file>
+  <file name="PipelineComponents\CommandDest.dll" hashalg="SHA1">
+    <comClass clsid="{549DE88B-9E50-4896-BE94-CB72E742B9AF}" tlbid="{98AAC251-E0CF-4CB5-AFC6-1827B9A33360}" progid="DTSTransform.OLEDBCommand.9" threadingModel="free" description="Dts CommandDest Class,1,101">
+      <progid>DTSTransform.OLEDBCommand</progid>
+    </comClass>
+    <typelib tlbid="{98AAC251-E0CF-4CB5-AFC6-1827B9A33360}" version="1.0" helpdir="" flags="HASDISKIMAGE"/>
+  </file>
+  <file name="PipelineComponents\ExcelDest.dll" hashalg="SHA1">
+    <comClass clsid="{4C8EF551-502C-450E-819B-FA89F60397A5}" tlbid="{9ED59978-EBBB-46D6-B417-43B9F15B92EE}" progid="DTSAdapter.ExcelDestination.9" threadingModel="free" description="DtsExcelDest Class,1,101">
+      <progid>DTSAdapter.ExcelDestination</progid>
+    </comClass>
+    <typelib tlbid="{9ED59978-EBBB-46D6-B417-43B9F15B92EE}" version="1.0" helpdir="" flags="HASDISKIMAGE"/>
+  </file>
+  <file name="PipelineComponents\ExcelSrc.dll" hashalg="SHA1">
+    <comClass clsid="{3ECCB5B0-A890-4B30-B8F3-DFCF05F8BCE0}" tlbid="{ED47DA10-9313-49AA-8CD1-72C4003038A7}" progid="DTSAdapter.ExcelSource.9" threadingModel="free" description="DtsExcelSrc Class,1,101">
+      <progid>DTSAdapter.ExcelSource</progid>
+    </comClass>
+    <typelib tlbid="{ED47DA10-9313-49AA-8CD1-72C4003038A7}" version="1.0" helpdir="" flags="HASDISKIMAGE"/>
+  </file>
+  <file name="PipelineComponents\FlatFileDest.dll" hashalg="SHA1">
+    <comClass clsid="{3763366D-73A7-4E3D-8ACE-ADEFB63EADDC}" tlbid="{20B8D07C-52BE-46AE-A1CE-7EB971CA1E86}" progid="DTSAdapter.FlatFileDestination.9" threadingModel="free" description="DtsFlatFileDest Class,1,101">
+      <progid>DTSAdapter.FlatFileDestination</progid>
+    </comClass>
+    <typelib tlbid="{20B8D07C-52BE-46AE-A1CE-7EB971CA1E86}" version="1.0" helpdir="" flags="HASDISKIMAGE"/>
+  </file>
+  <file name="PipelineComponents\flatfilesrc.dll" hashalg="SHA1">
+    <comClass clsid="{573F76F2-803C-466F-A074-735611F20CD7}" tlbid="{C6CBEFE7-E009-4AD9-A26B-2D4061D0B8E1}" progid="DTSAdapter.FlatFileSource.9" threadingModel="Free" description="FlatFileSrc Class,1,101">
+      <progid>DTSAdapter.FlatFileSource</progid>
+    </comClass>
+    <typelib tlbid="{C6CBEFE7-E009-4AD9-A26B-2D4061D0B8E1}" version="1.0" helpdir="" flags="HASDISKIMAGE"/>
+  </file>
+  <file name="PipelineComponents\OleDbDest.dll" hashalg="SHA1">
+    <comClass clsid="{CEE8F9BC-1A7D-4031-9054-B16C85D02F1C}" tlbid="{AB964B5D-6A97-4FD7-879E-C2C6A0195FE1}" progid="DTSAdapter.OLEDBDestination.9" threadingModel="free" description="DtsOleDbDest Class,1,101">
+      <progid>DTSAdapter.OLEDBDestination</progid>
+    </comClass>
+    <typelib tlbid="{AB964B5D-6A97-4FD7-879E-C2C6A0195FE1}" version="1.0" helpdir="" flags="HASDISKIMAGE"/>
+  </file>
+  <file name="PipelineComponents\RawDest.dll" hashalg="SHA1">
+    <comClass clsid="{1B4A4083-0CA8-4795-8821-DD697E69C592}" tlbid="{492B7D3A-FA21-42E4-906C-6F83746F4EA2}" progid="DTSAdapter.RawDestination.9" threadingModel="free" description="RawDest Class,1,101">
+      <progid>DTSAdapter.RawDestination</progid>
+    </comClass>
+    <typelib tlbid="{492B7D3A-FA21-42E4-906C-6F83746F4EA2}" version="1.0" helpdir="" flags="HASDISKIMAGE"/>
+  </file>
+  <file name="PipelineComponents\RawSource.dll" hashalg="SHA1">
+    <comClass clsid="{22101560-DA8D-47B1-B6DE-FA7F81EA28F9}" tlbid="{D09C0642-F64F-4227-BDCB-AAC63F2AEFC1}" progid="DTSAdapter.RawSource.9" threadingModel="free" description="RawSource Class,1,101">
+      <progid>DTSAdapter.RawSource</progid>
+    </comClass>
+    <typelib tlbid="{D09C0642-F64F-4227-BDCB-AAC63F2AEFC1}" version="1.0" helpdir="" flags="HASDISKIMAGE"/>
+  </file>
+  <file name="PipelineComponents\RecordSetDest.dll" hashalg="SHA1">
+    <comClass clsid="{D8D40C2C-D78E-4430-B00C-6FBFD0C7DB22}" tlbid="{5E247B39-4614-451B-8683-FA3FCE52C83E}" progid="DTSAdapter.RecordsetDestination.9" threadingModel="free" description="RecordSetDest Class,1,101">
+      <progid>DTSAdapter.RecordsetDestination</progid>
+    </comClass>
+    <typelib tlbid="{5E247B39-4614-451B-8683-FA3FCE52C83E}" version="1.0" helpdir="" flags="HASDISKIMAGE"/>
+  </file>
+  <file name="PipelineComponents\SQLDest.dll" hashalg="SHA1">
+    <comClass clsid="{735E2861-C39E-4803-8DCA-77EA95B58699}" tlbid="{C1EA700D-E810-4554-9244-03CCB71BC293}" progid="DTSAdapter.SQLServerDestination.9" threadingModel="free" description="DtsSqlDest Class,1,101">
+      <progid>DTSAdapter.SQLServerDestination</progid>
+    </comClass>
+    <typelib tlbid="{C1EA700D-E810-4554-9244-03CCB71BC293}" version="1.0" helpdir="" flags="HASDISKIMAGE"/>
+  </file>
+  <file name="PipelineComponents\TxBDD.dll" hashalg="SHA1">
+    <comClass clsid="{9CA6D4F3-1427-44CF-A08E-908EC2F5A1C4}" tlbid="{61957B33-0349-4867-87CE-193B884C571A}" progid="DTSTransform.BalancedDataDistributor.8" threadingModel="free" description="Balanced Data Distributor Class,1,101">
+      <progid>DTSTransform.BalancedDataDistributor</progid>
+    </comClass>
+    <typelib tlbid="{61957B33-0349-4867-87CE-193B884C571A}" version="1.0" helpdir="" flags="HASDISKIMAGE"/>
+  </file>
+  <file name="PipelineComponents\TxBestMatch.dll" hashalg="SHA1">
+    <comClass clsid="{8924A8C5-28FE-4441-B08E-C309FA9BF349}" tlbid="{C6023F72-0B47-4076-951F-4FEB50C50409}" progid="DTSTransform.BestMatch.9" threadingModel="free" description="Fuzzy Match Class,1,101">
+      <progid>DTSTransform.BestMatch</progid>
+    </comClass>
+    <typelib tlbid="{C6023F72-0B47-4076-951F-4FEB50C50409}" version="1.0" helpdir="" flags="HASDISKIMAGE"/>
+  </file>
+  <file name="PipelineComponents\TxCache.dll" hashalg="SHA1">
+    <comClass clsid="{C5659A1B-97B7-4596-BEB0-D4619CBE5406}" tlbid="{6EF44E7C-AD06-4527-8CF0-AFC642A8234A}" progid="DTSTransform.Cache.8" threadingModel="free" description="DtsTxCache Class,1,101">
+      <progid>DTSTransform.Cache</progid>
+    </comClass>
+    <typelib tlbid="{6EF44E7C-AD06-4527-8CF0-AFC642A8234A}" version="1.0" helpdir="" flags="HASDISKIMAGE"/>
+  </file>
+  <file name="PipelineComponents\TxCharMap.dll" hashalg="SHA1">
+    <comClass clsid="{9D7EBD4D-FD39-4D09-A72A-2E0CF2EA9FC0}" tlbid="{40401B8C-295E-4D42-B0AB-7C68B950D57F}" progid="DTSTransform.CharacterMap.9" threadingModel="free" description="TxCharMap Class,1,101">
+      <progid>DTSTransform.CharacterMap</progid>
+    </comClass>
+    <typelib tlbid="{40401B8C-295E-4D42-B0AB-7C68B950D57F}" version="1.0" helpdir="" flags="HASDISKIMAGE"/>
+  </file>
+  <file name="PipelineComponents\TxCopyMap.dll" hashalg="SHA1">
+    <comClass clsid="{E1C79C65-149D-45EA-A904-B102A0DB10E9}" tlbid="{1D629A13-BAFE-46E8-8B46-540B9FB304AA}" progid="DTSTransform.CopyMap.9" threadingModel="free" description="Copy Map Class,1,101">
+      <progid>DTSTransform.CopyMap</progid>
+    </comClass>
+    <typelib tlbid="{1D629A13-BAFE-46E8-8B46-540B9FB304AA}" version="1.0" helpdir="" flags="HASDISKIMAGE"/>
+  </file>
+  <file name="PipelineComponents\TxDataConvert.dll" hashalg="SHA1">
+    <comClass clsid="{A7313A1D-3394-4090-8DE2-6233E9CCDFCE}" tlbid="{D1FCC19C-C164-462A-9862-87715EB059A0}" progid="DTSTransform.DataConvert.9" threadingModel="free" description="DtsTxDataConvert Class,1,101">
+      <progid>DTSTransform.DataConvert</progid>
+    </comClass>
+    <typelib tlbid="{D1FCC19C-C164-462A-9862-87715EB059A0}" version="1.0" helpdir="" flags="HASDISKIMAGE"/>
+  </file>
+  <file name="PipelineComponents\TxDerived.dll" hashalg="SHA1">
+    <comClass clsid="{CAAC1F5A-04DF-45A9-B4CF-CDB7165DE543}" tlbid="{99ED8B65-DF7B-442E-A29A-7700D5F4E1EF}" progid="DTSTransform.DerivedColumn.9" threadingModel="free" description="DerivedColumn Class,1,101">
+      <progid>DTSTransform.DerivedColumn</progid>
+    </comClass>
+    <typelib tlbid="{99ED8B65-DF7B-442E-A29A-7700D5F4E1EF}" version="1.0" helpdir="" flags="HASDISKIMAGE"/>
+  </file>
+  <file name="PipelineComponents\TxFileExtractor.dll" hashalg="SHA1">
+    <comClass clsid="{17B26F04-C566-4BB5-8686-DB826ADCB5B2}" tlbid="{82E27AE5-00D7-448F-AEC8-701600D5EDE6}" description="FileExtractor Class"/>
+    <comClass clsid="{C68CDF7C-12E8-4FCC-8A5A-BA9450F8DD35}" tlbid="{82E27AE5-00D7-448F-AEC8-701600D5EDE6}" progid="TxFileExtractor.Extractor.9" threadingModel="free" description="Extractor Class,1,102">
+      <progid>TxFileExtractor.Extractor</progid>
+    </comClass>
+    <typelib tlbid="{82E27AE5-00D7-448F-AEC8-701600D5EDE6}" version="1.0" helpdir="" flags="HASDISKIMAGE"/>
+  </file>
+  <file name="PipelineComponents\TxFileInserter.dll" hashalg="SHA1">
+    <comClass clsid="{2F8933ED-DFBC-40B7-8789-B9689A60122D}" tlbid="{22DD131A-6E86-4A37-BC87-5A9E18FD5C05}" progid="TxFileInserter.Inserter.9" threadingModel="free" description="Inserter Class,1,102">
+      <progid>TxFileInserter.Inserter</progid>
+    </comClass>
+    <typelib tlbid="{22DD131A-6E86-4A37-BC87-5A9E18FD5C05}" version="1.0" helpdir="" flags="HASDISKIMAGE"/>
+  </file>
+  <file name="PipelineComponents\TxGroupDups.dll" hashalg="SHA1">
+    <comClass clsid="{23E8E6A0-756F-49A8-995F-89AA04DF297C}" tlbid="{3DC07EDE-D83D-4A8C-9F63-68C3AFBB7EA1}" progid="DTSTransform.GroupDups.9" threadingModel="free" description="DtsTxGroupDups Class,1,101">
+      <progid>DTSTransform.GroupDups</progid>
+    </comClass>
+    <comClass clsid="{6980E454-F002-41CD-BB43-26092408D660}" tlbid="{3DC07EDE-D83D-4A8C-9F63-68C3AFBB7EA1}" description="CFGEventSink Class"/>
+    <typelib tlbid="{3DC07EDE-D83D-4A8C-9F63-68C3AFBB7EA1}" version="1.0" helpdir="" flags="HASDISKIMAGE"/>
+  </file>
+  <file name="PipelineComponents\TxLineage.dll" hashalg="SHA1">
+    <comClass clsid="{F1495F67-2140-4DD7-9690-4BF75F993081}" tlbid="{93E533B8-F099-4705-830D-6E3214B8D5A1}" progid="DTSTransform.Lineage.9" threadingModel="free" description="TxLineage Class,1,101">
+      <progid>DTSTransform.Lineage</progid>
+    </comClass>
+    <typelib tlbid="{93E533B8-F099-4705-830D-6E3214B8D5A1}" version="1.0" helpdir="" flags="HASDISKIMAGE"/>
+  </file>
+  <file name="PipelineComponents\TxMergeJoin.dll" hashalg="SHA1">
+    <comClass clsid="{AA415F0A-C855-47E2-A6A0-7DEC53ED5F32}" tlbid="{2CF897EF-770D-4C99-AB4C-19FB24FE8215}" progid="DTSTransform.MergeJoin.9" threadingModel="free" description="TxMergeJoin Class,1,101">
+      <progid>DTSTransform.MergeJoin</progid>
+    </comClass>
+    <typelib tlbid="{2CF897EF-770D-4C99-AB4C-19FB24FE8215}" version="1.0" helpdir="" flags="HASDISKIMAGE"/>
+  </file>
+  <file name="PipelineComponents\TxMulticast.dll" hashalg="SHA1">
+    <comClass clsid="{606BB659-17EE-4618-82DE-E9BE82BB7B0A}" tlbid="{49AB8E4E-1336-43B3-9C42-B1708840F202}" progid="DTSTransform.Multicast.9" threadingModel="free" description="TxMulticast Class,1,101">
+      <progid>DTSTransform.Multicast</progid>
+    </comClass>
+    <typelib tlbid="{49AB8E4E-1336-43B3-9C42-B1708840F202}" version="1.0" helpdir="" flags="HASDISKIMAGE"/>
+  </file>
+  <file name="PipelineComponents\TxPivot.dll" hashalg="SHA1">
+    <comClass clsid="{22B0D315-FD7B-4E11-94EF-64C391AFD8F5}" tlbid="{F147D614-A342-4C3D-AC4B-1BA08B41B4E8}" progid="DTSTransform.Pivot.9" threadingModel="free" description="TxPivot Class,1,101">
+      <progid>DTSTransform.Pivot</progid>
+    </comClass>
+    <typelib tlbid="{F147D614-A342-4C3D-AC4B-1BA08B41B4E8}" version="1.0" helpdir="" flags="HASDISKIMAGE"/>
+  </file>
+  <file name="PipelineComponents\TxRowCount.dll" hashalg="SHA1">
+    <comClass clsid="{4701AF97-FDCA-4212-B881-381FB7CDB381}" tlbid="{7DBDFFD4-68AE-4C0B-B2B8-DDF9AE214A02}" progid="DTSTransform.RowCount.9" threadingModel="free" description="Row Count Class,1,101">
+      <progid>DTSTransform.RowCount</progid>
+    </comClass>
+    <typelib tlbid="{7DBDFFD4-68AE-4C0B-B2B8-DDF9AE214A02}" version="1.0" helpdir="" flags="HASDISKIMAGE"/>
+  </file>
+  <file name="PipelineComponents\TxSampling.dll" hashalg="SHA1">
+    <comClass clsid="{51E4B19C-3A77-4A82-9165-725122640C0A}" tlbid="{6DFACC0A-D01E-4A04-BFD9-D1AE68242A1C}" progid="DTSTransform.PctSampling.9" threadingModel="free" description="PctSampling Class,1,101">
+      <progid>DTSTransform.PctSampling</progid>
+    </comClass>
+    <comClass clsid="{4A766CFB-7D95-4EA2-AB2B-ECCCABB44DAD}" tlbid="{6DFACC0A-D01E-4A04-BFD9-D1AE68242A1C}" progid="DTSTransform.RowSampling.9" threadingModel="free" description="RowSampling Class,1,101">
+      <progid>DTSTransform.RowSampling</progid>
+    </comClass>
+    <typelib tlbid="{6DFACC0A-D01E-4A04-BFD9-D1AE68242A1C}" version="1.0" helpdir="" flags="HASDISKIMAGE"/>
+  </file>
+  <file name="PipelineComponents\TxSCD.dll" hashalg="SHA1">
+    <comClass clsid="{D9C43F74-4C96-45B9-8DEA-42B34050DF4D}" tlbid="{12935B78-DCC3-427E-9226-DD0F4475E0A3}" progid="DTSTransform.SCD.9" threadingModel="free" description="TxSCD Class,1,101">
+      <progid>DTSTransform.SCD</progid>
+    </comClass>
+    <typelib tlbid="{12935B78-DCC3-427E-9226-DD0F4475E0A3}" version="1.0" helpdir="" flags="HASDISKIMAGE"/>
+  </file>
+  <file name="PipelineComponents\TxSort.dll" hashalg="SHA1">
+    <comClass clsid="{C2986E0A-9706-415B-A3EF-ECBC7D0B9608}" tlbid="{8578C3C9-17AD-419C-A123-E5A84820EB2F}" progid="DTSTransform.Sort.9" threadingModel="free" description="TxSort Class,1,101">
+      <progid>DTSTransform.Sort</progid>
+    </comClass>
+    <typelib tlbid="{8578C3C9-17AD-419C-A123-E5A84820EB2F}" version="1.0" helpdir="" flags="HASDISKIMAGE"/>
+  </file>
+  <file name="PipelineComponents\TxSplit.dll" hashalg="SHA1">
+    <comClass clsid="{DC7B6342-6B74-4DAD-AD64-C91BC9252F63}" tlbid="{48221384-3502-4F8A-9C7F-BBA3469957D5}" progid="DTSTransform.ConditionalSplit.9" threadingModel="free" description="Split Class,1,101">
+      <progid>DTSTransform.ConditionalSplit</progid>
+    </comClass>
+    <typelib tlbid="{48221384-3502-4F8A-9C7F-BBA3469957D5}" version="1.0" helpdir="" flags="HASDISKIMAGE"/>
+  </file>
+  <file name="PipelineComponents\TxTermExtraction.dll" hashalg="SHA1">
+    <comClass clsid="{B3647C53-1B6D-48A0-BA22-6C0FC36F5204}" tlbid="{1EAB0CED-839B-480A-A051-5E2765567151}" progid="DTSTransform.TermExtraction.9" threadingModel="free" description="TermExtraction Transform Class,1,151">
+      <progid>DTSTransform.TermExtraction</progid>
+    </comClass>
+    <typelib tlbid="{1EAB0CED-839B-480A-A051-5E2765567151}" version="1.0" helpdir="" flags="HASDISKIMAGE"/>
+  </file>
+  <file name="PipelineComponents\TxTermLookup.dll" hashalg="SHA1">
+    <comClass clsid="{8BC2B3C9-E8F4-42C2-BBC8-0A069E33E03E}" tlbid="{7F8C7A01-EDFF-4FAD-BF41-872B1F73F82A}" progid="DTSTransform.TermLookup.9" threadingModel="free" description="TermLookup Transform Class,1,102">
+      <progid>DTSTransform.TermLookup</progid>
+    </comClass>
+    <typelib tlbid="{7F8C7A01-EDFF-4FAD-BF41-872B1F73F82A}" version="1.0" helpdir="" flags="HASDISKIMAGE"/>
+  </file>
+  <file name="PipelineComponents\TxUnionAll.dll" hashalg="SHA1">
+    <comClass clsid="{5D403EF4-EC8F-4E26-9FED-94AA780998CB}" tlbid="{DB0A95B5-0D3D-46B0-AE2A-C822AC99C15A}" progid="DTSTransform.UnionAll.9" threadingModel="free" description="TxUnionAll Class,1,101">
+      <progid>DTSTransform.UnionAll</progid>
+    </comClass>
+    <typelib tlbid="{DB0A95B5-0D3D-46B0-AE2A-C822AC99C15A}" version="1.0" helpdir="" flags="HASDISKIMAGE"/>
+  </file>
+  <file name="PipelineComponents\TxLookup.dll" hashalg="SHA1">
+    <comClass clsid="{E180A859-E5BF-4E0C-A824-89797EF1315B}" tlbid="{03D1B4BF-329F-43FB-B028-5D9158C4C7E2}" progid="DTSTransform.Lookup.9" threadingModel="free" description="Lookup Transform,1,101">
+      <progid>DTSTransform.Lookup</progid>
+    </comClass>
+    <comClass clsid="{326D435C-267B-4B5E-9C2D-9B0BF6DD6173}" tlbid="{03D1B4BF-329F-43FB-B028-5D9158C4C7E2}" progid="TxLookup.LookupCache.8" threadingModel="Free" description="Lookup Cache Class">
+      <progid>TxLookup.LookupCache</progid>
+    </comClass>
+    <comClass clsid="{724C8753-76E7-44B7-B53C-D43ED01290A2}" tlbid="{03D1B4BF-329F-43FB-B028-5D9158C4C7E2}" progid="TxLookup.OledbCacheLoader.8" threadingModel="Free" description="OLEDB CacheLoader Class">
+      <progid>TxLookup.OledbCacheLoader</progid>
+    </comClass>
+    <typelib tlbid="{03D1B4BF-329F-43FB-B028-5D9158C4C7E2}" version="1.0" helpdir="" flags="HASDISKIMAGE"/>
+  </file>
+  <file name="PipelineComponents\msmdpp.dll" hashalg="SHA1">
+    <comClass clsid="{95A749F8-5745-4F4B-B969-03765AEC612A}" tlbid="{6B33C6AB-C510-4892-B895-D36B6F8DFE1B}" progid="MSMDPP.PXPipelineProcessPartition.9" threadingModel="Free" description="Partition Processing,1,102">
+      <progid>MSMDPP.PXPipelineProcessPartition</progid>
+    </comClass>
+    <comClass clsid="{525A36B1-28CC-445C-8300-33F5E4436F0C}" tlbid="{6B33C6AB-C510-4892-B895-D36B6F8DFE1B}" progid="MSMDPP.PXPipelineProcessDimension.9" threadingModel="Free" description="Dimension Processing,1,123">
+      <progid>MSMDPP.PXPipelineProcessDimension</progid>
+    </comClass>
+    <typelib tlbid="{6B33C6AB-C510-4892-B895-D36B6F8DFE1B}" version="1.0" helpdir="" flags="HASDISKIMAGE"/>
+  </file>
+  <file name="ForeachEnumerators\ForEachFileEnumerator.dll" hashalg="SHA1">
+    <comClass clsid="{23CC236B-C0C1-44FC-BFCD-B5D4A7E9F64A}" tlbid="{887CFA87-BBAE-44AA-BC42-A2742A8A239F}" progid="DTS.ForEachFileEnumerator.9" threadingModel="Free" description="For Each File Enumerator,2,101">
+      <progid>DTS.ForEachFileEnumerator</progid>
+    </comClass>
+    <typelib tlbid="{887CFA87-BBAE-44AA-BC42-A2742A8A239F}" version="1.0" helpdir="" flags="HASDISKIMAGE"/>
+  </file>
+  <!--Interfaces defined in dts.tlb-->
+  <comInterfaceExternalProxyStub name="IDTSPackageVersionUpdate100" iid="{958E1940-7985-4AFF-9F1B-85001056FC56}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSInfoEvents100" iid="{C39B3D98-CDF4-4E5F-95C7-54B994063275}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSPackageVersionUpdate130" iid="{E9023C19-14A0-4D15-A5A9-BBAAC1B42F7D}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSObjectVersionUpdate100" iid="{EDB0A174-D6D6-433C-A3F9-A873565D06BB}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSManagedWrapper100" iid="{97B11CC6-508F-4E5C-8DD5-90EEE54C59E7}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSManagedForEachEnumeratorWrapper100" iid="{AB7A442B-DF64-41AF-8BC0-EFE7DEF554BC}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSEvaluatorContext100" iid="{938CC882-1B68-4AE8-9487-26008B8AF669}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSExpressionEvaluator100" iid="{0C733C44-F4F5-4B97-9E3F-E89C6FAEF0D2}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSVariableDispenser100" iid="{C9E28BBB-5096-4374-B786-17E899765554}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSVariables100" iid="{47DBF6C7-0DFA-4130-8B01-51FC7BD818C4}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSVariable100" iid="{0374F92A-5B0E-4696-83C2-F2CA3DA4524D}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSContainer100" iid="{635057ED-56B1-4304-BC94-78E74D0FD6BD}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSLoggingOptions100" iid="{7B41F351-1C58-4B9B-8612-BB2B56913EC8}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSSelectedLogProviders100" iid="{4E89E690-B13B-4B16-8DC5-C1B20449099D}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSLogProvider100" iid="{ADC9BAD5-DACB-4066-87C3-A2DB241856E8}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSLogEntryInfos100" iid="{609BE781-FAD5-41E4-9040-06A312C23B48}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSLogEntryInfo100" iid="{A186D0D2-4541-4206-90AE-D5D5727E1D54}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSManagedTask100" iid="{0EA255BC-E5E9-4D4F-893C-CE77FA417219}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSManagedXmlSerializationHelper100" iid="{5AEC4FF9-C9B6-4AA3-9127-7EEA514A12AB}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{5AEC4FF9-C9B6-4AA3-9127-7EEA514A12AB}"/>
+  <comInterfaceExternalProxyStub name="IDTSPackage100" iid="{9FE05D89-0D18-4EAB-9584-A4C49E4ACFA3}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSExecutable100" iid="{D9B1C5E5-9ABD-4FE4-AAAC-02CCE0B38D9E}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSConnections100" iid="{66105ED5-7513-416F-BF86-65AA4F51FBD6}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSConnectionManager100" iid="{6306464D-FB7A-471C-9FBC-CD7DD868BDC3}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSEvents100" iid="{0468F4BF-0BC7-4DBD-A8E1-0937C1A085F0}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSRuntimeObject100" iid="{E0C770BC-2184-4DC2-B8D4-EE96682D6D94}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSTaskHost100" iid="{56802FA1-B901-4ED2-BC70-4733BAAFA259}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSBreakpointSite100" iid="{64FA9B52-4068-47DC-9974-01E511A6F1AA}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSSuspend100" iid="{03F0A15A-C4E7-4DB8-9403-DDF7E28CE376}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSBreakpointManager100" iid="{74AF805F-D187-4887-9F1C-586BDC081167}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSBreakpointTarget100" iid="{C16B3DF3-21A5-490E-AA8E-4725A66D6F34}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSLogging100" iid="{FC34C22E-A41F-4392-BEE5-21AE8F8C4307}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSConfigurations100" iid="{D6AEAA04-B5E8-48E7-8A26-F8A09199B4C3}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSConfiguration100" iid="{C090DFE4-EF3F-4D37-A7DB-8FABE73144BA}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSBreakpointTargets100" iid="{23BE2C05-54A9-4C7C-9C6F-A50A2C270C24}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSLogProviders100" iid="{C79BAE4C-C585-4C2C-BE5C-6FF783F2C802}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSExtendedProperties100" iid="{E47B8B46-9B40-4A71-8A1A-030E5F6C056B}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSExtendedProperty100" iid="{BE435C71-5260-404D-83A8-7E0753A54E25}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSProperty100" iid="{B48B413B-15E9-4371-8CA0-56D72D6D4E3A}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSErrors100" iid="{C3605A58-1039-4C38-ABBB-C0FBA33BAADF}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSError100" iid="{0588465D-9107-431F-96A5-2D82B8AE4479}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSWarnings100" iid="{CD7CFE4F-7A0B-4C68-9581-732181DDE18B}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSWarning100" iid="{D0A91CD6-0F50-4BB0-BA3B-D26496BAA45A}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSEnumReferencedObjects100" iid="{9748F445-DD5F-4278-8C34-77958B1A03FA}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSManagedHelper100" iid="{8A1E280B-6312-441F-906B-6E62D6642B6A}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{8A1E280B-6312-441F-906B-6E62D6642B6A}"/>
+  <comInterfaceExternalProxyStub name="IDTSManagedHelper140" iid="{C285F038-15E6-45FA-9AF5-3F59A4700C6F}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{C285F038-15E6-45FA-9AF5-3F59A4700C6F}"/>
+  <comInterfaceExternalProxyStub name="IDTSManagedHelper150" iid="{4B2D9203-5E27-464E-BEDA-01B46E771CFE}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{4B2D9203-5E27-464E-BEDA-01B46E771CFE}"/>
+  <comInterfaceExternalProxyStub name="IDTSManagedPropertyHelper100" iid="{CBF57D70-9BCC-4F47-B6BB-6F78D0936F9A}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{CBF57D70-9BCC-4F47-B6BB-6F78D0936F9A}"/>
+  <comInterfaceExternalProxyStub name="IDTSManagedSerializer100" iid="{B83FFC66-6C46-4E80-9D37-12FB397098F6}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{B83FFC66-6C46-4E80-9D37-12FB397098F6}"/>
+  <comInterfaceExternalProxyStub name="IDTSTaskCreator100" iid="{A5D52D8C-8CE2-4AC9-90E9-A273163D9385}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSTask100" iid="{B047A17E-0BB7-4DBF-89A3-22A10D6AC596}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSComponentEvents100" iid="{2E5EC595-328A-4599-A03C-BFE757F6E866}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSExecutables100" iid="{4CF5ADEB-5828-476C-BF7F-E35267E0EC3F}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSProperties100" iid="{6F23F97E-2B3A-476D-9311-39ABB9866CA0}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSProperties130" iid="{C5CC0120-E975-471F-BE60-BC6D1E415C8B}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSPackageInfos100" iid="{A14BF99F-8101-45E8-9280-7EE705F6DAAE}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSPackageInfo100" iid="{E842E410-D3AB-436E-A25B-AE9565801D64}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSDBProviderInfos100" iid="{BBD40A87-0BA0-4F00-9EFD-1ECFC886D0FD}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSDBProviderInfo100" iid="{4BFA4B43-B515-4663-9313-5AE2869DE872}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSTaskInfos100" iid="{09764972-C9FF-4C3C-81F3-0FDDE6BA06B0}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSTaskInfo100" iid="{ABA75033-3487-4F35-803C-F960273B64E7}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSPipelineComponentInfos100" iid="{92855A31-04FB-4A39-84F3-42701F0DB9D0}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSPipelineComponentInfo100" iid="{5E4CC3AD-1A2C-4A77-AD51-71FA2CEE6487}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSConnectionInfo100" iid="{AEEAC8FC-149E-40B6-BD4E-A8ABB20675C0}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSConnectionInfos100" iid="{D6CF618B-FFAD-4297-9257-CE5D4EAC60FD}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSEventHandlers100" iid="{5ACAE344-B3F6-45A0-986C-3E6AB85E2C7C}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSEventHandler100" iid="{380C2982-CD7C-4EC8-80BC-7E7D91B7EA94}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSUnsafeVariables100" iid="{521E5124-1553-4B4C-987A-537021EC1EF1}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSCloneVariableDispenser100" iid="{73D89302-72F0-4790-B9AA-B071A5AAB702}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSPrecedenceConstraints100" iid="{3F61DED3-AC86-4B6C-8D7F-BC2C0AEC68BC}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSPrecedenceConstraint100" iid="{E71D7EDA-2773-4D96-9A14-A74E1A2D73D2}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSConnectionManager140" iid="{83CD7B5F-782E-476C-B7F4-9DB846D23348}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSConnectionManagerVariables100" iid="{3B763248-DF47-4B53-ADB2-C1A3D37DC9E6}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSConnectionManagerInit100" iid="{EEE178B5-FCBE-4CAC-A5B8-E18F8782CB87}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSConnectionManagerMarshalControl100" iid="{61AEEC50-F366-47E0-BACF-FCA58AF30F29}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSConnectionManagerDatabaseParameters100" iid="{62D74D4E-91C9-46D8-A676-32C5A90A612D}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSConnectionManagerFile100" iid="{E6F9D9B3-79D2-4D13-A542-FCB887D2DDB7}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSConnectionManagerFlatFile100" iid="{F4764CD6-F93F-446F-BFE7-8CC230307634}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSConnectionManagerFlatFileColumns100" iid="{AA6A32F7-3807-4458-90A0-EAC8F7556D90}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSConnectionManagerFlatFileColumn100" iid="{61709468-D94C-4EC4-90BD-C370B2D49267}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSODBCHandles100" iid="{FE960AE6-75AA-42AD-87E6-C5382B22DD77}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSODBCHandles130" iid="{A71C2818-C684-4B72-B775-5B0C7082092A}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSForEachEnumerator100" iid="{AB063461-C596-4546-B3E9-5E2F8B1D863D}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSObjectReferenceTracker100" iid="{5F09E206-9B12-4BDA-ABBA-3F5957A5291F}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSForEachEnumeratorInfo100" iid="{F56E3E22-6896-4DCF-AB93-A6F0DFD7AF3E}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSForEachEnumeratorInfos100" iid="{BAB95F74-97FA-44CE-AC4E-4E0077168147}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSForEachVariableMappings100" iid="{4A76EB97-0286-4951-9620-B5BA63B0CA69}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSForEachVariableMapping100" iid="{AD7C10D4-FDF4-4AED-BC9C-73525F79875D}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSForEachItemValue100" iid="{4EEED23D-CE54-465F-AE14-82FF59FC0161}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSForEachItem100" iid="{14AF2A35-4430-4DEB-B1CD-98A8080CCC49}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSForEachItems100" iid="{76795400-5F07-4D8C-992E-1C364F99E51B}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSForEachItemEnumerator100" iid="{FE3E7474-8865-47D1-A35A-75E766977A0A}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSObjectHost100" iid="{A10E8F71-B6FC-4B11-A6AB-542FFB94C2E5}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSPropertiesProvider100" iid="{44C136E4-51B1-4E6E-88A5-D91B0E457B53}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSPropertiesProviderEx100" iid="{52152E7F-F84E-40B7-92D8-FEB3B7FF4B31}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSExecutionLocation100" iid="{BCA5F39F-6FC9-4702-A1F5-DA755B4AC8DC}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSProductLevel100" iid="{C39FCD0A-F3CE-4110-84F2-8BF28C33EDFB}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSTaskInit100" iid="{277D70B0-6E18-4109-8C48-9510F90CDFE3}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSEventInfos100" iid="{471DC28B-E709-4A22-A09A-045559304B0E}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSEventInfo100" iid="{5F073CB0-7E43-4C65-B190-5DC694E74189}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSLogProviderInit100" iid="{A7DABD84-DBEC-4453-B752-CEB24F91B237}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSSequence100" iid="{8DA615BF-C387-42FC-96D4-A309B04F80A2}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSForEachLoop100" iid="{133ED3DF-6FBE-417B-A035-A95830A7B41E}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSForLoop100" iid="{EC3FFE7E-782E-433D-A25E-65A64C5A6B6A}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSProject100" iid="{DA9D2E83-F992-4118-B38F-3E29B95B21FA}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSParameter100" iid="{1E9A8D87-D0F5-4DD0-A6D0-D818B3F777CB}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSProjectPackage100" iid="{BAD16223-6600-4826-9484-9AC8269F35A8}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="ITaskSupportProject100" iid="{F3ADD70C-ABE6-4297-AA6F-D5B3D9A54FB6}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSSupportParentExecutionPath100" iid="{2CFE5FB9-4CC7-4A3D-9CCE-4EF38B061C43}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSSupportOffline100" iid="{4B86ED63-BAD2-4B20-AAB0-E9174D6E3E79}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSProjectConnectionsCreator100" iid="{FB4EABC0-43E5-47ED-9248-87EF9AE3C3FF}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSServerExecution100" iid="{3C1B0C29-993A-47B5-8852-344C3B19AEB8}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSProjectAccessor100" iid="{A80EC244-F7E2-4A2A-95D4-A151E54B43B4}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSProjectAccessor150" iid="{A222E3E7-57F6-4257-946D-8174B73DA62A}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSProjectAccessor170" iid="{5CB5BA0B-D542-4049-8C00-A387733AFFA2}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSPerfRecorder100" iid="{94989328-D18F-4880-BB02-F4CDECAC394F}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSSupportPerfRecorder100" iid="{66C5E6F8-9FBD-4842-90FC-FB1EB7854DE4}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSDataTapConfiguration100" iid="{DE86C472-32A1-4E46-BB24-B999C26E978B}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSSupportDataTapConfiguration100" iid="{CD11F034-D762-47BD-B586-651C9BFB33E2}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSSupportVerboseLogging100" iid="{7C786A97-BAAD-484C-BFDC-15415A5A803D}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSPackageSigning100" iid="{A178BE7A-AF4A-45BF-A884-AA2836C3ADF8}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSName100" iid="{6D94768E-CCA5-4B02-9823-6CDD24FA336D}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSExpression100" iid="{47AC1F9F-8FCF-4476-A0C9-35830351B991}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSParameters100" iid="{12D713EC-9EA7-40AD-8435-09D3EA276790}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSForEachItemsProvider100" iid="{EB220EF4-824B-4EE7-9B23-518252BEEFE8}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSLogProviderInfo100" iid="{CBA6ACF1-18BB-4C60-A235-DB8CB62C2DFB}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSLogProviderInfos100" iid="{15B6D7B5-0247-4BFD-81C7-DF4FFBEF4827}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSEventsProvider100" iid="{1739C21B-1AFF-4909-B24F-7BDCB5D87750}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSDowngradableObject100" iid="{5549953B-B8F8-4598-A441-35807A99B1E3}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSDowngradeSettings100" iid="{4E451CE4-0877-4DDB-961B-39F2B3F33B78}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSHasInternalProperties100" iid="{98009A99-65FA-4FC3-AE90-807ED14EE621}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSPackagePath100" iid="{D120C6A6-13B2-4CB5-8EA2-302D2D709C6D}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSDynamicName100" iid="{1D375FCC-B86B-4875-BD32-42593AC6984D}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSExecutionPath100" iid="{93861EE5-4528-457A-9A3A-E8AA07A2FB23}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSVariableLock100" iid="{EBAA4B53-56EC-4D38-973C-EC1605674A7B}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSDataTypeInfo100" iid="{40D241C6-F68B-41F3-8A8F-B097756512D4}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSDataTypeInfos100" iid="{1AB2D0AB-5F73-4548-88D7-3F515CED7E7E}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSApplication100" iid="{815FC3F7-BCDB-45D4-A948-F15898894C76}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSPersist100" iid="{C23004A4-8EDE-4672-8A68-4B0475396C40}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSRunningPackages100" iid="{CAF3843D-EF5C-4BD0-9CF1-5C3327950500}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSRunningPackage100" iid="{371F12AF-67C4-40A2-B7F1-72FEACBB3DB1}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSApplication130" iid="{58BE4369-CAAB-46AF-A8BD-86F44A32A13A}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSApplication150" iid="{208E4E3B-B37A-412E-A803-3147579B7F38}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSApplication160" iid="{4B41EC7D-ECA3-4B8E-992D-D59602794DFC}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSApplication170" iid="{48A3C16D-087C-46D5-9A19-DF2A1420B3B6}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSComponentPersist100" iid="{D95D4D3E-42DC-49EB-A7CE-4068D9D81B89}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSComponentPersist130" iid="{D31C635E-4ABC-4532-AD27-37F919EC3C2F}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSExecutionMetrics100" iid="{EC6AD622-19B3-4C20-BFFE-4ABDB2928113}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSHttpClientConnection100" iid="{51A7355A-DAC2-4068-83FF-233D4C2CEFD3}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSConnectionManagerHttp100" iid="{371978B6-CC64-4143-970C-2439FBFFB62C}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSConnectionManagerFtp100" iid="{C2275925-8A01-49D6-9DB4-F362F3862E1A}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSFtpClientConnection100" iid="{4E4D5515-D0CD-4F70-B74E-D402D6E71858}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSPersist130" iid="{44106B46-C3D4-414B-9657-E863C4A20BF9}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSPackagePersist100" iid="{87B8C46E-E06E-4528-AED5-72A3267131F6}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSPackagePersist130" iid="{3DC3E2B7-A591-4F45-8D49-5239A111B952}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSServerUsageControl100" iid="{5382B76B-23C0-486E-8C40-0A15F8D2D138}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSDumpConfiguration100" iid="{E65C94C3-2902-4081-AAC7-F3ED58A58EEF}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSConfigurationControl100" iid="{AAE27AF5-3719-4C26-9945-082C9B0327B9}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSPackageInternal100" iid="{300B2AAE-12BF-4DDB-B20A-919522E17D6C}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSVariableCreator100" iid="{15E2C653-F6B6-4713-8F51-C1566E6383E4}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSTelemetry130" iid="{8C4CF9E1-4A73-48A4-A838-02608BDA5F83}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSTelemetry140" iid="{5D610838-0ED6-4B63-8CA2-43EADD343C7E}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSSupportTargetServerVersion130" iid="{DE587A5A-7A9F-44EE-8AB3-745E0702401F}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSConnectionManagerResilience140" iid="{84E2203B-F6CF-43FE-BE33-75A1A91330E6}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSConnectionManagerManagedIdentity140" iid="{25EC3FF5-931E-4F77-8744-AE41D7136607}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSAccessTokenProvider140" iid="{40FFEEEE-555A-443C-860F-E3DC526DB540}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSSupportAccessTokenProvider140" iid="{424D6BB6-8A28-461D-AE32-B5D34AE867CA}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSExecuteOnProxy140" iid="{DDB6CA13-0306-48D9-9230-8F0CB1BC8E22}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSConnectionManagerExcel100" iid="{85885C28-EDDE-47DB-953B-6A634C0A08E4}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSConnectionManagerCacheColumn100" iid="{A8327D62-F869-47F6-915A-ED7B883370D9}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSConnectionManagerCacheColumns100" iid="{F1F3090C-3E41-477F-BB7F-FED3C4BFA4A3}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSConnectionManagerCache100" iid="{A913906D-A36D-4208-AB30-66EF13FBE30F}" tlbid="{066C03BF-1DE6-4775-A5F0-155FE6E57BB2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <!--Interfaces defined in dtspipeline.tlb-->
+  <comInterfaceExternalProxyStub name="IDTSBLOBObject100" iid="{9DBBCD9A-4349-4D9E-A355-0BAA79F49D9D}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSObject100" iid="{5C12A167-9C00-47B2-A395-0464443306DE}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSCustomProperty100" iid="{A68A326F-39E2-46B3-B58C-342E22C77A11}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSCustomPropertyCollection100" iid="{322445DB-27F8-4A21-BB47-8597A7D681D2}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSInputColumn100" iid="{65C1F453-525F-4E8D-BE16-DBE0D466EAAC}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSInputColumn130" iid="{71F61370-A96E-4AFC-BE90-A9C7688BD3D3}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSInputColumnCachedInfo100" iid="{22112DC1-6089-480A-A3F2-CFDF3D61A94B}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSInputColumnCollection100" iid="{F9341A62-16B9-4CDF-9103-601CCD2E64B6}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSOutputColumn100" iid="{EAAE6505-37CB-4BDF-988D-6F2EBBCE36B6}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSOutputColumn130" iid="{309CE63E-B5D1-4639-A489-E1494EEF3CD0}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSOutputColumnCollection100" iid="{6CE414D2-5AA9-45AC-9CA0-9D7E4C656B2B}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSVirtualInputColumn100" iid="{99E480CC-5A7B-4C1C-B5C5-618869C49E00}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSVirtualInputColumnCollection100" iid="{6F4F41F8-0B2A-4EE3-8726-07D2A2C80159}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSVirtualInput100" iid="{FA61246D-94C6-4D76-AE05-3FEDC4517157}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSInput100" iid="{0F1F94FB-08E8-4119-9303-FD0766EEE493}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSExternalMetadataColumnCollection100" iid="{A1FE81B1-327D-42C8-A43F-D7CD15BF26E6}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSExternalMetadataColumn100" iid="{7A5CEE07-3BD5-4AEB-A829-7D5E0A9CBFAF}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSComponentMetaData100" iid="{8C58A054-31C1-4669-A90C-08B4056A474B}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSInputCollection100" iid="{56FEF6C6-2DFA-429E-BCBB-A17DCEE881A8}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSOutputCollection100" iid="{4C49E074-37AE-48BB-8FBC-4F08E7CD0E7E}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSOutput100" iid="{CB315E6D-8967-46A1-89B5-339FB5DC168F}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSDesigntimeComponent100" iid="{D9228F15-C7AA-4CEE-9726-F1B1B85EB80C}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSFriendlyEnumCollection100" iid="{C9E78173-41CB-4DBD-ABD5-433B341AFFF4}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSFriendlyEnum100" iid="{1E6CA513-A54A-43C0-937E-CD4DE1199869}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSRuntimeConnectionCollection100" iid="{C51C4097-C340-4FEE-8A84-E8336691F892}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSRuntimeConnection100" iid="{5B18052B-7393-4AC6-82BB-7C08EB887496}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSComponentView100" iid="{1832D9E8-E41A-47BF-872E-2CCB15350685}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSComponentMetaData130" iid="{FC45F596-01E0-416B-BE0D-41D196CC411F}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSRuntimeComponent100" iid="{F288D45B-5D74-476D-8AB7-2527A8DC9833}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSBuffer100" iid="{BD8ECA9D-FB8A-4B61-B17F-44CB9D37D89F}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" proxyStubClsid32="{BD8ECA9D-FB8A-4B61-B17F-44CB9D37D89F}"/>
+  <comInterfaceExternalProxyStub name="IDTSBufferManager100" iid="{EC8D0A84-D556-4F03-B974-9730A5E32A37}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSRuntimeComponent130" iid="{73C35ABA-006F-401A-B9BF-504C6731D305}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSManagedComponentWrapper100" iid="{1DE08664-195A-4A33-9C05-49B4D1F3B77C}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" proxyStubClsid32="{1DE08664-195A-4A33-9C05-49B4D1F3B77C}"/>
+  <comInterfaceExternalProxyStub name="IDTSManagedComponentHost100" iid="{9396F700-26C3-4EAB-BAC3-F28FA9DAE6BC}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" proxyStubClsid32="{9396F700-26C3-4EAB-BAC3-F28FA9DAE6BC}"/>
+  <comInterfaceExternalProxyStub name="IDTSManagedComponentHost130" iid="{61075F5B-7A15-4810-995B-76CACCA8EE51}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" proxyStubClsid32="{61075F5B-7A15-4810-995B-76CACCA8EE51}"/>
+  <comInterfaceExternalProxyStub name="IDTSManagedComponent100" iid="{2E798CC6-91E8-4101-8C69-1D1BBF08DE84}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSComponentMetaDataCollection100" iid="{D8EFD9A0-D72A-4F2D-B087-2575CE2C4D00}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSPathCollection100" iid="{1A18ECC4-120E-446A-8975-508B56297AB8}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSPath100" iid="{79B2FA99-8F15-4DAF-BD10-1CA8995D6C35}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSBufferManagerInitialize100" iid="{4B7CEA7C-71EC-4146-B6B1-CD9C5B47DD19}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSObjectModel100" iid="{411C95BD-6D5C-4F9B-9F6C-689CDD8909A1}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSPersistenceComponent100" iid="{49A46F54-F664-4FC1-97ED-E2DBEDC71A02}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSPipeline100" iid="{3FBB1B9A-EEA1-4396-9F68-28DA9F7C06EE}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSPipeline130" iid="{7CBD0567-5B46-4A78-A840-C91F6BD201B6}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSExpressionEvaluatorEx100" iid="{68A81BAB-E127-4E9C-B1DB-2FC65116B02D}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSMultiInputComponent100" iid="{743C418E-6491-4765-8375-EEAD3A880D9F}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" proxyStubClsid32="{743C418E-6491-4765-8375-EEAD3A880D9F}"/>
+  <comInterfaceExternalProxyStub name="IDTSMultiInputComponentHost100" iid="{CF9D6564-27C4-4CF5-B477-22838E7F6AAD}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" proxyStubClsid32="{CF9D6564-27C4-4CF5-B477-22838E7F6AAD}"/>
+  <comInterfaceExternalProxyStub name="IDTSSupportBackPressure100" iid="{4276AA32-A644-44E7-BFB7-F0FC0DD587C7}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" proxyStubClsid32="{4276AA32-A644-44E7-BFB7-F0FC0DD587C7}"/>
+  <comInterfaceExternalProxyStub name="IDTSBufferTapConfiguration100" iid="{C673A627-B2EA-46DA-9683-0EE6F9B6D499}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSDataFileCreator100" iid="{8C521F31-C865-43DB-93A2-AEEE6BD8404B}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSLookupDesign100" iid="{8EDC4F31-A3C5-438F-99D7-F3C2741AF902}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSPivotDesign100" iid="{8399DA87-8FBE-4EF7-88E7-F229F5016ABA}" tlbid="{12A8C678-D15C-4C88-9383-858AB7E79902}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <!--Interfaces defined in ExecPackage.tlb-->
+  <comInterfaceExternalProxyStub name="IDTSParameterAssignment" iid="{475B50AA-3752-4E73-A31D-63CA8382EB62}" tlbid="{6541136C-08A9-4EEE-9880-B541853B898C}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSParameterAssignments" iid="{13FAAE00-DE74-411F-B6AD-0DEDA3B2C090}" tlbid="{6541136C-08A9-4EEE-9880-B541853B898C}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSExecutePackage100" iid="{0F3C18CF-6D1C-4A60-82DA-8BD1EF95EB7C}" tlbid="{6541136C-08A9-4EEE-9880-B541853B898C}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="ISupportErrorInfo" iid="{00280063-D927-4F49-87CA-A360193DC83B}" tlbid="{6541136C-08A9-4EEE-9880-B541853B898C}" proxyStubClsid32="{00280063-D927-4F49-87CA-A360193DC83B}"/>
+  <!--Interfaces defined in ForEachFileEnumerator.tlb-->
+  <comInterfaceExternalProxyStub name="IDTSForEachFileEnumerator100" iid="{FE51D09A-39E4-42EB-A5D1-411943560B40}" tlbid="{887CFA87-BBAE-44AA-BC42-A2742A8A239F}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <!--Interfaces defined in SQLTaskConnections.tlb-->
+  <comInterfaceExternalProxyStub name="IDTSSQLTaskConnection" iid="{F8C23495-723B-4070-88B5-AC74D625D3D2}" tlbid="{4333EAAC-36BD-433F-890E-A6C53B75E5FD}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSSQLTaskConnectionParameterSize" iid="{2C62A1DB-DDA1-4E88-9C3A-9B93D227B164}" tlbid="{4333EAAC-36BD-433F-890E-A6C53B75E5FD}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IDTSSQLTaskConnectionOleDb" iid="{01C25EAE-8D1D-477C-AEC2-FFE3C719CE1F}" tlbid="{4333EAAC-36BD-433F-890E-A6C53B75E5FD}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <!--Interfaces defined in TxBestMatch.tlb-->
+  <comInterfaceExternalProxyStub name="IBestMatchPerf" iid="{C11F240C-A061-4756-BF93-1C0FBD47A3FA}" tlbid="{C6023F72-0B47-4076-951F-4FEB50C50409}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <!--Interfaces defined in TxFileExtractor.tlb-->
+  <comInterfaceExternalProxyStub name="IFileExtractor" iid="{F14FC2CE-85ED-449B-A840-A84F1DCE2100}" tlbid="{82E27AE5-00D7-448F-AEC8-701600D5EDE6}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="IExtractor" iid="{708C29B7-E5EF-4697-ABF4-BB9E5780BC89}" tlbid="{82E27AE5-00D7-448F-AEC8-701600D5EDE6}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <!--Interfaces defined in TxGroupDups.tlb-->
+  <comInterfaceExternalProxyStub name="IGroupDupsPerf" iid="{27F25A2C-0A57-4BC4-B782-6BA2240D2837}" tlbid="{3DC07EDE-D83D-4A8C-9F63-68C3AFBB7EA1}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <!--Interfaces defined in TxLookup.tlb-->
+  <comInterfaceExternalProxyStub name="ICacheLoader" iid="{AEC71000-BEF1-4DEE-808A-EF0A61E53920}" tlbid="{03D1B4BF-329F-43FB-B028-5D9158C4C7E2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="ILookupCache" iid="{A6E3A2E8-6FA2-4C77-A64B-A74BC6089580}" tlbid="{03D1B4BF-329F-43FB-B028-5D9158C4C7E2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="ILookupExec90" iid="{9BB24640-3E83-4F37-8082-16E2E192DBC1}" tlbid="{03D1B4BF-329F-43FB-B028-5D9158C4C7E2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <comInterfaceExternalProxyStub name="ICacheDestination" iid="{14226E5D-EADA-4E52-BA24-9AFE99BDA046}" tlbid="{03D1B4BF-329F-43FB-B028-5D9158C4C7E2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+  <!--Interfaces defined in DtrHost.tlb-->
+  <comInterfaceExternalProxyStub name="IHost" iid="{C674DDA0-F577-48F5-9097-26869B4BD931}" tlbid="{19F0F8A7-49C5-46A4-B9B0-D51E255A04B5}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+<assemblyIdentity name="Microsoft.SqlServer.ManagedDTS" version="17.100.0.0" publicKeyToken="89845dcd8080cc91" processorArchitecture="msil"/>
+  <clrClass clsid="{6593C559-B72E-4051-8F15-6DEDF69BE74C}" progid="Microsoft.SqlServer.Dts.Runtime.DTSManagedXmlSerializationHelper" threadingModel="Both" name="Microsoft.SqlServer.Dts.Runtime.DTSManagedXmlSerializationHelper" runtimeVersion="v4.0.30319"/>
+  <clrClass clsid="{51BF726D-F9E2-43E3-943D-E382900D0FDD}" progid="Microsoft.SqlServer.Dts.Runtime.ManagedHelper" threadingModel="Both" name="Microsoft.SqlServer.Dts.Runtime.ManagedHelper" runtimeVersion="v4.0.30319"/>
+  <clrClass clsid="{E57E30F1-8229-4CA3-B8DB-9C6964C61E39}" progid="Microsoft.SqlServer.Dts.Runtime.ManagedHelper+ManagedPropertyHelper" threadingModel="Both" name="Microsoft.SqlServer.Dts.Runtime.ManagedHelper+ManagedPropertyHelper" runtimeVersion="v4.0.30319"/>
+  <clrClass clsid="{5C09C25A-E943-467A-9A6C-091B18CB92BD}" progid="Microsoft.SqlServer.Dts.Runtime.ManagerSerializer" threadingModel="Both" name="Microsoft.SqlServer.Dts.Runtime.ManagerSerializer" runtimeVersion="v4.0.30319"/>
+  <clrClass clsid="{4D524A3B-E58B-4D4D-B947-D13EB34D60EA}" progid="Microsoft.SqlServer.Dts.Runtime.ManagedWrapper" threadingModel="Both" name="Microsoft.SqlServer.Dts.Runtime.ManagedWrapper" runtimeVersion="v4.0.30319"/>
+  <clrClass clsid="{5004E405-2305-4E3B-8D53-FDAAA86B1D04}" progid="Microsoft.SqlServer.Dts.Runtime.ManagedForEachEnumeratorWrapper" threadingModel="Both" name="Microsoft.SqlServer.Dts.Runtime.ManagedForEachEnumeratorWrapper" runtimeVersion="v4.0.30319"/>
+  <clrClass clsid="{B73EA106-6158-46D4-91C5-6C49F7ED8FFC}" progid="Microsoft.SqlServer.Dts.Runtime.Project" threadingModel="Both" name="Microsoft.SqlServer.Dts.Runtime.Project" runtimeVersion="v4.0.30319"/>
+  <clrClass clsid="{37C91DA1-7AB4-486A-BC5A-9E688C46BFEC}" progid="Microsoft.SqlServer.Dts.Runtime.Interop.ManagedParameterWrapper" threadingModel="Both" name="Microsoft.SqlServer.Dts.Runtime.Interop.ManagedParameterWrapper" runtimeVersion="v4.0.30319"/>
+  <clrClass clsid="{AA489F5C-3C24-4340-B85D-3C57B125D0A8}" progid="Microsoft.SqlServer.Dts.Runtime.Interop.ProjectAccessor" threadingModel="Both" name="Microsoft.SqlServer.Dts.Runtime.Interop.ProjectAccessor" runtimeVersion="v4.0.30319"/>
+  <clrClass clsid="{3A9A1992-02CE-4CB6-AFA3-66FD6022249B}" progid="Microsoft.SqlServer.Dts.Runtime.ProjectVariablesWrapper" threadingModel="Both" name="Microsoft.SqlServer.Dts.Runtime.ProjectVariablesWrapper" runtimeVersion="v4.0.30319"/>
+  <file name="Binn/Microsoft.SqlServer.ManagedDTS.dll" hashalg="SHA1"/>
+</assembly>

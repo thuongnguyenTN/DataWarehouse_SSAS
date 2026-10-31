@@ -3,7 +3,7 @@
     <Process>
       <Object>
         <DatabaseID>NYCTaxi_SSAS</DatabaseID>
-        <CubeID>DSV_NYCTaxi</CubeID>
+        <CubeID>FHV_Trips</CubeID>
         <MeasureGroupID>Fact FHV Trips</MeasureGroupID>
         <PartitionID>Fact FHV Trips 202501</PartitionID>
       </Object>
@@ -12,7 +12,7 @@
     <Process>
       <Object>
         <DatabaseID>NYCTaxi_SSAS</DatabaseID>
-        <CubeID>DSV_NYCTaxi</CubeID>
+        <CubeID>FHV_Trips</CubeID>
         <MeasureGroupID>Fact FHV Trips</MeasureGroupID>
         <PartitionID>Fact FHV Trips 202502</PartitionID>
       </Object>
@@ -21,7 +21,7 @@
     <Process>
       <Object>
         <DatabaseID>NYCTaxi_SSAS</DatabaseID>
-        <CubeID>DSV_NYCTaxi</CubeID>
+        <CubeID>FHV_Trips</CubeID>
         <MeasureGroupID>Fact FHV Trips</MeasureGroupID>
         <PartitionID>Fact FHV Trips 202503</PartitionID>
       </Object>
@@ -30,7 +30,7 @@
     <Process>
       <Object>
         <DatabaseID>NYCTaxi_SSAS</DatabaseID>
-        <CubeID>DSV_NYCTaxi</CubeID>
+        <CubeID>FHV_Trips</CubeID>
         <MeasureGroupID>Fact FHV Trips</MeasureGroupID>
         <PartitionID>Fact FHV Trips 202504</PartitionID>
       </Object>
@@ -39,7 +39,7 @@
     <Process>
       <Object>
         <DatabaseID>NYCTaxi_SSAS</DatabaseID>
-        <CubeID>DSV_NYCTaxi</CubeID>
+        <CubeID>FHV_Trips</CubeID>
         <MeasureGroupID>Fact FHV Trips</MeasureGroupID>
         <PartitionID>Fact FHV Trips 202505</PartitionID>
       </Object>
@@ -48,7 +48,7 @@
     <Process>
       <Object>
         <DatabaseID>NYCTaxi_SSAS</DatabaseID>
-        <CubeID>DSV_NYCTaxi</CubeID>
+        <CubeID>FHV_Trips</CubeID>
         <MeasureGroupID>Fact FHV Trips</MeasureGroupID>
         <PartitionID>Fact FHV Trips 202506</PartitionID>
       </Object>
@@ -57,7 +57,7 @@
     <Process>
       <Object>
         <DatabaseID>NYCTaxi_SSAS</DatabaseID>
-        <CubeID>DSV_NYCTaxi</CubeID>
+        <CubeID>FHV_Trips</CubeID>
         <MeasureGroupID>Fact FHV Trips</MeasureGroupID>
         <PartitionID>Fact FHV Trips 202507</PartitionID>
       </Object>
@@ -66,7 +66,7 @@
     <Process>
       <Object>
         <DatabaseID>NYCTaxi_SSAS</DatabaseID>
-        <CubeID>DSV_NYCTaxi</CubeID>
+        <CubeID>FHV_Trips</CubeID>
         <MeasureGroupID>Fact FHV Trips</MeasureGroupID>
         <PartitionID>Fact FHV Trips 202508</PartitionID>
       </Object>
@@ -75,7 +75,7 @@
     <Process>
       <Object>
         <DatabaseID>NYCTaxi_SSAS</DatabaseID>
-        <CubeID>DSV_NYCTaxi</CubeID>
+        <CubeID>FHV_Trips</CubeID>
         <MeasureGroupID>Fact FHV Trips</MeasureGroupID>
         <PartitionID>Fact FHV Trips 202509</PartitionID>
       </Object>
@@ -84,7 +84,7 @@
     <Process>
       <Object>
         <DatabaseID>NYCTaxi_SSAS</DatabaseID>
-        <CubeID>DSV_NYCTaxi</CubeID>
+        <CubeID>FHV_Trips</CubeID>
         <MeasureGroupID>Fact FHV Trips</MeasureGroupID>
         <PartitionID>Fact FHV Trips 202510</PartitionID>
       </Object>
@@ -93,7 +93,7 @@
     <Process>
       <Object>
         <DatabaseID>NYCTaxi_SSAS</DatabaseID>
-        <CubeID>DSV_NYCTaxi</CubeID>
+        <CubeID>FHV_Trips</CubeID>
         <MeasureGroupID>Fact FHV Trips</MeasureGroupID>
         <PartitionID>Fact FHV Trips 202511</PartitionID>
       </Object>
@@ -102,7 +102,7 @@
     <Process>
       <Object>
         <DatabaseID>NYCTaxi_SSAS</DatabaseID>
-        <CubeID>DSV_NYCTaxi</CubeID>
+        <CubeID>FHV_Trips</CubeID>
         <MeasureGroupID>Fact FHV Trips</MeasureGroupID>
         <PartitionID>Fact FHV Trips 202512</PartitionID>
       </Object>
@@ -111,7 +111,7 @@
     <Process>
       <Object>
         <DatabaseID>NYCTaxi_SSAS</DatabaseID>
-        <CubeID>DSV_NYCTaxi</CubeID>
+        <CubeID>FHV_Trips</CubeID>
         <MeasureGroupID>Fact FHV Trips</MeasureGroupID>
         <PartitionID>Fact FHV Trips Other Dates</PartitionID>
       </Object>
@@ -120,7 +120,7 @@
     <Process>
       <Object>
         <DatabaseID>NYCTaxi_SSAS</DatabaseID>
-        <CubeID>DSV_NYCTaxi</CubeID>
+        <CubeID>HVFHV_Trips</CubeID>
         <MeasureGroupID>Fact HVFHV Trips</MeasureGroupID>
         <PartitionID>Fact HVFHV Trips 202501</PartitionID>
       </Object>
@@ -129,7 +129,7 @@
     <Process>
       <Object>
         <DatabaseID>NYCTaxi_SSAS</DatabaseID>
-        <CubeID>DSV_NYCTaxi</CubeID>
+        <CubeID>HVFHV_Trips</CubeID>
         <MeasureGroupID>Fact HVFHV Trips</MeasureGroupID>
         <PartitionID>Fact HVFHV Trips 202502</PartitionID>
       </Object>
@@ -138,7 +138,7 @@
     <Process>
       <Object>
         <DatabaseID>NYCTaxi_SSAS</DatabaseID>
-        <CubeID>DSV_NYCTaxi</CubeID>
+        <CubeID>HVFHV_Trips</CubeID>
         <MeasureGroupID>Fact HVFHV Trips</MeasureGroupID>
         <PartitionID>Fact HVFHV Trips 202503</PartitionID>
       </Object>
@@ -147,7 +147,7 @@
     <Process>
       <Object>
         <DatabaseID>NYCTaxi_SSAS</DatabaseID>
-        <CubeID>DSV_NYCTaxi</CubeID>
+        <CubeID>HVFHV_Trips</CubeID>
         <MeasureGroupID>Fact HVFHV Trips</MeasureGroupID>
         <PartitionID>Fact HVFHV Trips 202504</PartitionID>
       </Object>
@@ -156,7 +156,7 @@
     <Process>
       <Object>
         <DatabaseID>NYCTaxi_SSAS</DatabaseID>
-        <CubeID>DSV_NYCTaxi</CubeID>
+        <CubeID>HVFHV_Trips</CubeID>
         <MeasureGroupID>Fact HVFHV Trips</MeasureGroupID>
         <PartitionID>Fact HVFHV Trips 202505</PartitionID>
       </Object>
@@ -165,7 +165,7 @@
     <Process>
       <Object>
         <DatabaseID>NYCTaxi_SSAS</DatabaseID>
-        <CubeID>DSV_NYCTaxi</CubeID>
+        <CubeID>HVFHV_Trips</CubeID>
         <MeasureGroupID>Fact HVFHV Trips</MeasureGroupID>
         <PartitionID>Fact HVFHV Trips 202506</PartitionID>
       </Object>
@@ -174,7 +174,7 @@
     <Process>
       <Object>
         <DatabaseID>NYCTaxi_SSAS</DatabaseID>
-        <CubeID>DSV_NYCTaxi</CubeID>
+        <CubeID>HVFHV_Trips</CubeID>
         <MeasureGroupID>Fact HVFHV Trips</MeasureGroupID>
         <PartitionID>Fact HVFHV Trips 202507</PartitionID>
       </Object>
@@ -183,7 +183,7 @@
     <Process>
       <Object>
         <DatabaseID>NYCTaxi_SSAS</DatabaseID>
-        <CubeID>DSV_NYCTaxi</CubeID>
+        <CubeID>HVFHV_Trips</CubeID>
         <MeasureGroupID>Fact HVFHV Trips</MeasureGroupID>
         <PartitionID>Fact HVFHV Trips 202508</PartitionID>
       </Object>
@@ -192,7 +192,7 @@
     <Process>
       <Object>
         <DatabaseID>NYCTaxi_SSAS</DatabaseID>
-        <CubeID>DSV_NYCTaxi</CubeID>
+        <CubeID>HVFHV_Trips</CubeID>
         <MeasureGroupID>Fact HVFHV Trips</MeasureGroupID>
         <PartitionID>Fact HVFHV Trips 202509</PartitionID>
       </Object>
@@ -201,7 +201,7 @@
     <Process>
       <Object>
         <DatabaseID>NYCTaxi_SSAS</DatabaseID>
-        <CubeID>DSV_NYCTaxi</CubeID>
+        <CubeID>HVFHV_Trips</CubeID>
         <MeasureGroupID>Fact HVFHV Trips</MeasureGroupID>
         <PartitionID>Fact HVFHV Trips 202510</PartitionID>
       </Object>
@@ -210,7 +210,7 @@
     <Process>
       <Object>
         <DatabaseID>NYCTaxi_SSAS</DatabaseID>
-        <CubeID>DSV_NYCTaxi</CubeID>
+        <CubeID>HVFHV_Trips</CubeID>
         <MeasureGroupID>Fact HVFHV Trips</MeasureGroupID>
         <PartitionID>Fact HVFHV Trips 202511</PartitionID>
       </Object>
@@ -219,7 +219,7 @@
     <Process>
       <Object>
         <DatabaseID>NYCTaxi_SSAS</DatabaseID>
-        <CubeID>DSV_NYCTaxi</CubeID>
+        <CubeID>HVFHV_Trips</CubeID>
         <MeasureGroupID>Fact HVFHV Trips</MeasureGroupID>
         <PartitionID>Fact HVFHV Trips 202512</PartitionID>
       </Object>
@@ -228,7 +228,7 @@
     <Process>
       <Object>
         <DatabaseID>NYCTaxi_SSAS</DatabaseID>
-        <CubeID>DSV_NYCTaxi</CubeID>
+        <CubeID>HVFHV_Trips</CubeID>
         <MeasureGroupID>Fact HVFHV Trips</MeasureGroupID>
         <PartitionID>Fact HVFHV Trips Other Dates</PartitionID>
       </Object>
@@ -237,7 +237,7 @@
     <Process>
       <Object>
         <DatabaseID>NYCTaxi_SSAS</DatabaseID>
-        <CubeID>DSV_NYCTaxi</CubeID>
+        <CubeID>YellowGreen_Trips</CubeID>
         <MeasureGroupID>Fact Yellow Green Trips</MeasureGroupID>
         <PartitionID>Fact Yellow Green Trips 200812</PartitionID>
       </Object>
@@ -246,7 +246,7 @@
     <Process>
       <Object>
         <DatabaseID>NYCTaxi_SSAS</DatabaseID>
-        <CubeID>DSV_NYCTaxi</CubeID>
+        <CubeID>YellowGreen_Trips</CubeID>
         <MeasureGroupID>Fact Yellow Green Trips</MeasureGroupID>
         <PartitionID>Fact Yellow Green Trips 202412</PartitionID>
       </Object>
@@ -255,7 +255,7 @@
     <Process>
       <Object>
         <DatabaseID>NYCTaxi_SSAS</DatabaseID>
-        <CubeID>DSV_NYCTaxi</CubeID>
+        <CubeID>YellowGreen_Trips</CubeID>
         <MeasureGroupID>Fact Yellow Green Trips</MeasureGroupID>
         <PartitionID>Fact Yellow Green Trips 202501</PartitionID>
       </Object>
@@ -264,7 +264,7 @@
     <Process>
       <Object>
         <DatabaseID>NYCTaxi_SSAS</DatabaseID>
-        <CubeID>DSV_NYCTaxi</CubeID>
+        <CubeID>YellowGreen_Trips</CubeID>
         <MeasureGroupID>Fact Yellow Green Trips</MeasureGroupID>
         <PartitionID>Fact Yellow Green Trips 202502</PartitionID>
       </Object>
@@ -273,7 +273,7 @@
     <Process>
       <Object>
         <DatabaseID>NYCTaxi_SSAS</DatabaseID>
-        <CubeID>DSV_NYCTaxi</CubeID>
+        <CubeID>YellowGreen_Trips</CubeID>
         <MeasureGroupID>Fact Yellow Green Trips</MeasureGroupID>
         <PartitionID>Fact Yellow Green Trips 202503</PartitionID>
       </Object>
@@ -282,7 +282,7 @@
     <Process>
       <Object>
         <DatabaseID>NYCTaxi_SSAS</DatabaseID>
-        <CubeID>DSV_NYCTaxi</CubeID>
+        <CubeID>YellowGreen_Trips</CubeID>
         <MeasureGroupID>Fact Yellow Green Trips</MeasureGroupID>
         <PartitionID>Fact Yellow Green Trips 202504</PartitionID>
       </Object>
@@ -291,7 +291,7 @@
     <Process>
       <Object>
         <DatabaseID>NYCTaxi_SSAS</DatabaseID>
-        <CubeID>DSV_NYCTaxi</CubeID>
+        <CubeID>YellowGreen_Trips</CubeID>
         <MeasureGroupID>Fact Yellow Green Trips</MeasureGroupID>
         <PartitionID>Fact Yellow Green Trips 202505</PartitionID>
       </Object>
@@ -300,7 +300,7 @@
     <Process>
       <Object>
         <DatabaseID>NYCTaxi_SSAS</DatabaseID>
-        <CubeID>DSV_NYCTaxi</CubeID>
+        <CubeID>YellowGreen_Trips</CubeID>
         <MeasureGroupID>Fact Yellow Green Trips</MeasureGroupID>
         <PartitionID>Fact Yellow Green Trips 202506</PartitionID>
       </Object>
@@ -309,7 +309,7 @@
     <Process>
       <Object>
         <DatabaseID>NYCTaxi_SSAS</DatabaseID>
-        <CubeID>DSV_NYCTaxi</CubeID>
+        <CubeID>YellowGreen_Trips</CubeID>
         <MeasureGroupID>Fact Yellow Green Trips</MeasureGroupID>
         <PartitionID>Fact Yellow Green Trips 202507</PartitionID>
       </Object>
@@ -318,7 +318,7 @@
     <Process>
       <Object>
         <DatabaseID>NYCTaxi_SSAS</DatabaseID>
-        <CubeID>DSV_NYCTaxi</CubeID>
+        <CubeID>YellowGreen_Trips</CubeID>
         <MeasureGroupID>Fact Yellow Green Trips</MeasureGroupID>
         <PartitionID>Fact Yellow Green Trips 202508</PartitionID>
       </Object>
@@ -327,7 +327,7 @@
     <Process>
       <Object>
         <DatabaseID>NYCTaxi_SSAS</DatabaseID>
-        <CubeID>DSV_NYCTaxi</CubeID>
+        <CubeID>YellowGreen_Trips</CubeID>
         <MeasureGroupID>Fact Yellow Green Trips</MeasureGroupID>
         <PartitionID>Fact Yellow Green Trips 202509</PartitionID>
       </Object>
@@ -336,7 +336,7 @@
     <Process>
       <Object>
         <DatabaseID>NYCTaxi_SSAS</DatabaseID>
-        <CubeID>DSV_NYCTaxi</CubeID>
+        <CubeID>YellowGreen_Trips</CubeID>
         <MeasureGroupID>Fact Yellow Green Trips</MeasureGroupID>
         <PartitionID>Fact Yellow Green Trips 202510</PartitionID>
       </Object>
@@ -345,7 +345,7 @@
     <Process>
       <Object>
         <DatabaseID>NYCTaxi_SSAS</DatabaseID>
-        <CubeID>DSV_NYCTaxi</CubeID>
+        <CubeID>YellowGreen_Trips</CubeID>
         <MeasureGroupID>Fact Yellow Green Trips</MeasureGroupID>
         <PartitionID>Fact Yellow Green Trips 202511</PartitionID>
       </Object>
@@ -354,7 +354,7 @@
     <Process>
       <Object>
         <DatabaseID>NYCTaxi_SSAS</DatabaseID>
-        <CubeID>DSV_NYCTaxi</CubeID>
+        <CubeID>YellowGreen_Trips</CubeID>
         <MeasureGroupID>Fact Yellow Green Trips</MeasureGroupID>
         <PartitionID>Fact Yellow Green Trips 202512</PartitionID>
       </Object>
@@ -363,7 +363,7 @@
     <Process>
       <Object>
         <DatabaseID>NYCTaxi_SSAS</DatabaseID>
-        <CubeID>DSV_NYCTaxi</CubeID>
+        <CubeID>YellowGreen_Trips</CubeID>
         <MeasureGroupID>Fact Yellow Green Trips</MeasureGroupID>
         <PartitionID>Fact Yellow Green Trips 202601</PartitionID>
       </Object>
@@ -372,7 +372,7 @@
     <Process>
       <Object>
         <DatabaseID>NYCTaxi_SSAS</DatabaseID>
-        <CubeID>DSV_NYCTaxi</CubeID>
+        <CubeID>YellowGreen_Trips</CubeID>
         <MeasureGroupID>Fact Yellow Green Trips</MeasureGroupID>
         <PartitionID>Fact Yellow Green Trips Other Dates</PartitionID>
       </Object>
@@ -381,7 +381,7 @@
     <Process>
       <Object>
         <DatabaseID>NYCTaxi_SSAS</DatabaseID>
-        <CubeID>DSV_NYCTaxi</CubeID>
+        <CubeID>Daily_Financial</CubeID>
         <MeasureGroupID>Daily Financial Snapshot</MeasureGroupID>
         <PartitionID>Daily Financial Snapshot All</PartitionID>
       </Object>
@@ -390,7 +390,7 @@
     <Process>
       <Object>
         <DatabaseID>NYCTaxi_SSAS</DatabaseID>
-        <CubeID>DSV_NYCTaxi</CubeID>
+        <CubeID>Zone_Traffic</CubeID>
         <MeasureGroupID>Zone Traffic Snapshot</MeasureGroupID>
         <PartitionID>Zone Traffic Snapshot All</PartitionID>
       </Object>
@@ -399,7 +399,7 @@
     <Process>
       <Object>
         <DatabaseID>NYCTaxi_SSAS</DatabaseID>
-        <CubeID>DSV_NYCTaxi</CubeID>
+        <CubeID>Base_Performance</CubeID>
         <MeasureGroupID>Base Performance Snapshot</MeasureGroupID>
         <PartitionID>Base Performance Snapshot All</PartitionID>
       </Object>

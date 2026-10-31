@@ -1,0 +1,1 @@
+{"RunId":"b363fbf7-f5bd-47ed-89fa-760fa2fbc0e4","Stage":"Dwh","Task":"StageAttempt","Status":"RUNNING","Message":"Lần thử 1","HeartbeatUtc":"2026-10-31T08:40:36.6620815Z","TaskStartedUtc":"2026-10-31T08:40:36.6620815Z","Rows":0,"TotalRows":0,"LogFolder":"E:\\NYCTaxi\\NYCTaxi_SSAS\\etl\\tests\\master-fixture-logs\\b363fbf7-f5bd-47ed-89fa-760fa2fbc0e4"}

@@ -1,0 +1,5 @@
+﻿{
+    "Test":  "Production SqlBulkCopy path: quoted comma, quote, multiline, NULL and row count",
+    "Passed":  true,
+    "Rows":  2
+}

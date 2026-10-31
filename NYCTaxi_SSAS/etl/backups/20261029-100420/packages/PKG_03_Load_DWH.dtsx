@@ -1,0 +1,315 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="10/11/2026 5:04:15 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="THUONGNGUYEN"
+  DTS:CreatorName="THUONGNGUYEN\ADMIN"
+  DTS:DTSID="{26DDE3C6-72C4-4EBF-ABA9-8773A0EA956B}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="17.0.1016.0"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="PKG_03_Load_DWH"
+  DTS:PackageType="5"
+  DTS:VersionBuild="2"
+  DTS:VersionGUID="{73F4A793-D06C-4AF1-A701-A6DD726735A1}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\EST_00_Precheck_DWH"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="EST_00_Precheck_DWH - SQL Server transactional load"
+      DTS:DTSID="{B8F83559-BB01-413D-A252-A797A03D0714}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="EST_00_Precheck_DWH"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{4A829E7F-DE39-4A39-83D3-52CE94E192E2}"
+          SQLTask:SqlStatementSource="SET NOCOUNT ON;&#xA;SET XACT_ABORT ON;&#xA;IF DB_ID(N'NYCTaxi_Staging') IS NULL OR DB_ID(N'NYCTaxi_DWH') IS NULL&#xA;    THROW 55001, 'Missing database NYCTaxi_Staging or NYCTaxi_DWH.', 1;&#xA;IF OBJECT_ID(N'NYCTaxi_Staging.clean.ValidTrip',N'V') IS NULL&#xA;    THROW 55002, 'Missing NYCTaxi_Staging.clean.ValidTrip; run Transform first.', 1;&#xA;IF OBJECT_ID(N'NYCTaxi_Staging.clean.TaxiZone',N'U') IS NULL&#xA;    THROW 55003, 'Missing clean.TaxiZone.', 1;&#xA;IF OBJECT_ID(N'dbo.Fact_YellowGreen_Trips',N'U') IS NULL&#xA; OR OBJECT_ID(N'dbo.Fact_FHV_Trips',N'U') IS NULL&#xA; OR OBJECT_ID(N'dbo.Fact_HVFHV_Trips',N'U') IS NULL&#xA;    THROW 55004, 'Missing transactional Fact tables; run 04_create_nyctaxi_dwh.sql.', 1;&#xA;IF NOT EXISTS(SELECT 1 FROM dbo.Dim_Time WHERE MinuteOfDay=0 AND TimeKey=1)&#xA; OR NOT EXISTS(SELECT 1 FROM dbo.Dim_Time WHERE MinuteOfDay=1439 AND TimeKey=1440)&#xA;    THROW 55005, 'Dim_Time not initialized (TimeKey must be MinuteOfDay + 1).',1;&#xA;IF NOT EXISTS(SELECT 1 FROM NYCTaxi_Staging.clean.ValidTrip)&#xA;    THROW 55006, 'No valid trips in clean.ValidTrip.', 1;&#xA;IF EXISTS(SELECT 1 FROM dbo.Fact_YellowGreen_Trips WHERE RecordHash IS NULL)&#xA; OR EXISTS(SELECT 1 FROM dbo.Fact_FHV_Trips WHERE RecordHash IS NULL)&#xA; OR EXISTS(SELECT 1 FROM dbo.Fact_HVFHV_Trips WHERE RecordHash IS NULL)&#xA;    THROW 55007, 'Legacy Fact rows have NULL RecordHash. Perform a ONE-TIME migration/reset after backup.', 1;&#xA;IF NOT EXISTS (SELECT 1 FROM sys.schemas WHERE name = N'etl')&#xA;    EXEC(N'CREATE SCHEMA etl AUTHORIZATION dbo');&#xA;IF OBJECT_ID(N'etl.LoadStepLog',N'U') IS NULL&#xA;    CREATE TABLE etl.LoadStepLog&#xA;    (&#xA;        LogID BIGINT IDENTITY(1,1) NOT NULL PRIMARY KEY,&#xA;        StepName NVARCHAR(100) NOT NULL,&#xA;        InsertedRows BIGINT NULL,&#xA;        CompletedAt DATETIME2(0) NOT NULL DEFAULT SYSDATETIME()&#xA;    );&#xA;IF NOT EXISTS(SELECT 1 FROM sys.indexes WHERE object_id=OBJECT_ID(N'dbo.Fact_YellowGreen_Trips') AND name=N'UX_FYG_RecordHash')&#xA;    CREATE UNIQUE INDEX UX_FYG_RecordHash ON dbo.Fact_YellowGreen_Trips(RecordHash) WHERE RecordHash IS NOT NULL;&#xA;IF NOT EXISTS(SELECT 1 FROM sys.indexes WHERE object_id=OBJECT_ID(N'dbo.Fact_FHV_Trips') AND name=N'UX_FHV_RecordHash')&#xA;    CREATE UNIQUE INDEX UX_FHV_RecordHash ON dbo.Fact_FHV_Trips(RecordHash) WHERE RecordHash IS NOT NULL;&#xA;IF NOT EXISTS(SELECT 1 FROM sys.indexes WHERE object_id=OBJECT_ID(N'dbo.Fact_HVFHV_Trips') AND name=N'UX_HVFHV_RecordHash')&#xA;    CREATE UNIQUE INDEX UX_HVFHV_RecordHash ON dbo.Fact_HVFHV_Trips(RecordHash) WHERE RecordHash IS NOT NULL;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\EST_01_Load_Dimensions"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="EST_01_Load_Dimensions - SQL Server transactional load"
+      DTS:DTSID="{2A46897D-EFF9-484D-BD2D-81D8CFA66D6E}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="EST_01_Load_Dimensions"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{4A829E7F-DE39-4A39-83D3-52CE94E192E2}"
+          SQLTask:SqlStatementSource="SET NOCOUNT ON;&#xA;SET XACT_ABORT ON;&#xA;BEGIN TRY&#xA; BEGIN TRAN;&#xA; -- All physical Dimension tables and their Unknown members come from 04_create_nyctaxi_dwh.sql.&#xA; -- 1) SCD Type 1: Taxi Zone lookup&#xA; INSERT INTO dbo.Dim_Location(LocationID,Borough,ZoneName,ServiceZone)&#xA; SELECT S.LocationID,S.Borough,S.Zone,S.ServiceZone&#xA; FROM NYCTaxi_Staging.clean.TaxiZone S&#xA; WHERE S.LocationID IS NOT NULL&#xA;   AND NOT EXISTS(SELECT 1 FROM dbo.Dim_Location D WITH (UPDLOCK,HOLDLOCK) WHERE D.LocationID=S.LocationID);&#xA; UPDATE D SET D.Borough=S.Borough, D.ZoneName=S.Zone, D.ServiceZone=S.ServiceZone&#xA; FROM dbo.Dim_Location D JOIN NYCTaxi_Staging.clean.TaxiZone S ON S.LocationID=D.LocationID&#xA; WHERE EXISTS (SELECT D.Borough,D.ZoneName,D.ServiceZone EXCEPT SELECT S.Borough,S.Zone,S.ServiceZone);&#xA; -- 2) Codes used by all four source types&#xA; INSERT dbo.Dim_ServiceType(ServiceCode,ServiceName)&#xA; SELECT V.Code,V.Name&#xA; FROM (VALUES ('YELLOW',N'Yellow Taxi'),('GREEN',N'Green Taxi'),&#xA;              ('FHV',N'For-Hire Vehicle'),('FHVHV',N'High Volume FHV')) V(Code,Name)&#xA; WHERE NOT EXISTS(SELECT 1 FROM dbo.Dim_ServiceType D WHERE D.ServiceCode=V.Code);&#xA; INSERT dbo.Dim_Vendor(VendorID)&#xA; SELECT DISTINCT C.VendorID FROM NYCTaxi_Staging.clean.ValidTrip C&#xA; WHERE C.TaxiType IN('YELLOW','GREEN') AND C.VendorID IS NOT NULL&#xA;   AND NOT EXISTS(SELECT 1 FROM dbo.Dim_Vendor D WHERE D.VendorID=C.VendorID);&#xA; INSERT dbo.Dim_RateCode(RateCodeID)&#xA; SELECT DISTINCT C.RateCodeID FROM NYCTaxi_Staging.clean.ValidTrip C&#xA; WHERE C.TaxiType IN('YELLOW','GREEN') AND C.RateCodeID IS NOT NULL&#xA;   AND NOT EXISTS(SELECT 1 FROM dbo.Dim_RateCode D WHERE D.RateCodeID=C.RateCodeID);&#xA; INSERT dbo.Dim_PaymentType(PaymentTypeID)&#xA; SELECT DISTINCT C.PaymentTypeID FROM NYCTaxi_Staging.clean.ValidTrip C&#xA; WHERE C.TaxiType IN('YELLOW','GREEN') AND C.PaymentTypeID IS NOT NULL&#xA;   AND NOT EXISTS(SELECT 1 FROM dbo.Dim_PaymentType D WHERE D.PaymentTypeID=C.PaymentTypeID);&#xA; INSERT dbo.Dim_TripType(TripTypeID)&#xA; SELECT DISTINCT C.TripTypeID FROM NYCTaxi_Staging.clean.ValidTrip C&#xA; WHERE C.TaxiType='GREEN' AND C.TripTypeID IS NOT NULL&#xA;   AND NOT EXISTS(SELECT 1 FROM dbo.Dim_TripType D WHERE D.TripTypeID=C.TripTypeID);&#xA; INSERT dbo.Dim_HVFHSProvider(LicenseNumber)&#xA; SELECT DISTINCT C.HVFHSLicenseNum FROM NYCTaxi_Staging.clean.ValidTrip C&#xA; WHERE C.TaxiType='FHVHV' AND C.HVFHSLicenseNum IS NOT NULL&#xA;   AND NOT EXISTS(SELECT 1 FROM dbo.Dim_HVFHSProvider D WHERE D.LicenseNumber=C.HVFHSLicenseNum);&#xA; ;WITH Bases AS&#xA; (&#xA;   SELECT DispatchingBaseNum AS BaseNumber FROM NYCTaxi_Staging.clean.ValidTrip&#xA;   UNION SELECT OriginatingBaseNum FROM NYCTaxi_Staging.clean.ValidTrip&#xA;   UNION SELECT AffiliatedBaseNum FROM NYCTaxi_Staging.clean.ValidTrip&#xA; )&#xA; INSERT dbo.Dim_Base(BaseNumber)&#xA; SELECT B.BaseNumber FROM Bases B&#xA; WHERE B.BaseNumber IS NOT NULL&#xA;   AND NOT EXISTS(SELECT 1 FROM dbo.Dim_Base D WHERE D.BaseNumber=B.BaseNumber);&#xA; -- 3) Junk dimensions&#xA; INSERT dbo.Dim_TaxiFlags(StoreAndFwd)&#xA; SELECT DISTINCT CASE WHEN UPPER(C.StoreAndFwdFlag) IN('Y','N') THEN UPPER(C.StoreAndFwdFlag) ELSE 'U' END&#xA; FROM NYCTaxi_Staging.clean.ValidTrip C WHERE C.TaxiType IN('YELLOW','GREEN')&#xA; AND NOT EXISTS (SELECT 1 FROM dbo.Dim_TaxiFlags D&#xA;     WHERE D.StoreAndFwd=CASE WHEN UPPER(C.StoreAndFwdFlag) IN('Y','N') THEN UPPER(C.StoreAndFwdFlag) ELSE 'U' END);&#xA; INSERT dbo.Dim_FHVFlags(IsSharedRide)&#xA; SELECT DISTINCT CASE WHEN UPPER(C.SharedRequestFlag) IN('Y','N') THEN UPPER(C.SharedRequestFlag) ELSE 'U' END&#xA; FROM NYCTaxi_Staging.clean.ValidTrip C WHERE C.TaxiType='FHV'&#xA; AND NOT EXISTS (SELECT 1 FROM dbo.Dim_FHVFlags D&#xA;     WHERE D.IsSharedRide=CASE WHEN UPPER(C.SharedRequestFlag) IN('Y','N') THEN UPPER(C.SharedRequestFlag) ELSE 'U' END);&#xA; ;WITH F AS&#xA; (&#xA;   SELECT DISTINCT&#xA;    CASE WHEN UPPER(SharedRequestFlag) IN('Y','N') THEN UPPER(SharedRequestFlag) ELSE 'U' END AS R,&#xA;    CASE WHEN UPPER(SharedMatchFlag) IN('Y','N') THEN UPPER(SharedMatchFlag) ELSE 'U' END AS M,&#xA;    CASE WHEN UPPER(AccessARideFlag) IN('Y','N') THEN UPPER(AccessARideFlag) ELSE 'U' END AS A,&#xA;    CASE WHEN UPPER(WAVRequestFlag) IN('Y','N') THEN UPPER(WAVRequestFlag) ELSE 'U' END AS WR,&#xA;    CASE WHEN UPPER(WAVMatchFlag) IN('Y','N') THEN UPPER(WAVMatchFlag) ELSE 'U' END AS WM&#xA;   FROM NYCTaxi_Staging.clean.ValidTrip WHERE TaxiType='FHVHV'&#xA; )&#xA; INSERT dbo.Dim_HVFHVFlags(IsSharedRequest,IsSharedMatch,IsAccessARide,IsWAVRequest,IsWAVMatch)&#xA; SELECT F.R,F.M,F.A,F.WR,F.WM FROM F&#xA; WHERE NOT EXISTS (SELECT 1 FROM dbo.Dim_HVFHVFlags D&#xA;    WHERE D.IsSharedRequest=F.R AND D.IsSharedMatch=F.M AND D.IsAccessARide=F.A&#xA;    AND D.IsWAVRequest=F.WR AND D.IsWAVMatch=F.WM);&#xA; -- 4) Add dates outside seed period; IsHoliday=0 until a reliable calendar is provided.&#xA; ;WITH Dates AS&#xA; (&#xA;    SELECT CONVERT(date,PickupDateTime) AS FullDate FROM NYCTaxi_Staging.clean.ValidTrip&#xA;    UNION SELECT CONVERT(date,DropoffDateTime) FROM NYCTaxi_Staging.clean.ValidTrip&#xA;    UNION SELECT CONVERT(date,RequestDateTime) FROM NYCTaxi_Staging.clean.ValidTrip WHERE RequestDateTime IS NOT NULL&#xA;    UNION SELECT CONVERT(date,OnSceneDateTime) FROM NYCTaxi_Staging.clean.ValidTrip WHERE OnSceneDateTime IS NOT NULL&#xA; )&#xA; INSERT dbo.Dim_Date(DateKey,FullDate,DayOfWeekNumber,DayOfWeekName,DayOfMonth,MonthNumber,&#xA;                      MonthName,QuarterNumber,YearNumber,IsWeekend,IsHoliday)&#xA; SELECT YEAR(X.FullDate)*10000+MONTH(X.FullDate)*100+DAY(X.FullDate),X.FullDate,&#xA;        CONVERT(tinyint,DATEDIFF(DAY,'19000101',X.FullDate)%7+1),&#xA;        DATENAME(WEEKDAY,X.FullDate),CONVERT(tinyint,DAY(X.FullDate)),&#xA;        CONVERT(tinyint,MONTH(X.FullDate)),DATENAME(MONTH,X.FullDate),&#xA;        CONVERT(tinyint,DATEPART(QUARTER,X.FullDate)),CONVERT(smallint,YEAR(X.FullDate)),&#xA;        CASE WHEN DATEDIFF(DAY,'19000101',X.FullDate)%7 IN(5,6) THEN 1 ELSE 0 END,0&#xA; FROM Dates X WHERE X.FullDate BETWEEN '20000101' AND '20991231'&#xA; AND NOT EXISTS(SELECT 1 FROM dbo.Dim_Date D WHERE D.FullDate=X.FullDate);&#xA; -- 5) Monthly processing groups inferred from pickup dates (NOT actual file lineage).&#xA; ;WITH B AS&#xA; (&#xA;    SELECT DISTINCT C.TaxiType,&#xA;         YEAR(C.PickupDateTime) AS YY,MONTH(C.PickupDateTime) AS MM,&#xA;         CONCAT('CLEAN-',C.TaxiType,'-',CONVERT(char(6),C.PickupDateTime,112)) AS BatchID&#xA;    FROM NYCTaxi_Staging.clean.ValidTrip C&#xA;    WHERE C.PickupDateTime IS NOT NULL&#xA; )&#xA; INSERT dbo.Dim_LoadBatch(BatchID,DatasetName,SourceFileName,SourceYear,SourceMonth,LoadedAt,BatchStatus)&#xA; SELECT B.BatchID,B.TaxiType,NULL,B.YY,B.MM,SYSDATETIME(),'READY'&#xA; FROM B WHERE NOT EXISTS(SELECT 1 FROM dbo.Dim_LoadBatch D WHERE D.BatchID=B.BatchID);&#xA; COMMIT TRAN;&#xA;END TRY&#xA;BEGIN CATCH&#xA; IF @@TRANCOUNT&gt;0 ROLLBACK;&#xA; THROW;&#xA;END CATCH;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\EST_02_Load_FactYellowGreen"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="EST_02_Load_FactYellowGreen - SQL Server transactional load"
+      DTS:DTSID="{2FCC6B61-7740-4EA8-97CA-CCB34F108292}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="EST_02_Load_FactYellowGreen"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{4A829E7F-DE39-4A39-83D3-52CE94E192E2}"
+          SQLTask:SqlStatementSource="SET NOCOUNT ON;&#xA;SET XACT_ABORT ON;&#xA;BEGIN TRY&#xA; BEGIN TRAN;&#xA;;WITH SourceRows AS&#xA;(&#xA;  SELECT C.*,&#xA;    HASHBYTES('SHA2_256',&#xA;      (SELECT C.TaxiType AS TaxiType,&#xA;            C.VendorID AS VendorID,&#xA;            C.HVFHSLicenseNum AS HVFHSLicenseNum,&#xA;            C.DispatchingBaseNum AS DispatchingBaseNum,&#xA;            C.OriginatingBaseNum AS OriginatingBaseNum,&#xA;            C.AffiliatedBaseNum AS AffiliatedBaseNum,&#xA;            C.RequestDateTime AS RequestDateTime,&#xA;            C.OnSceneDateTime AS OnSceneDateTime,&#xA;            C.PickupDateTime AS PickupDateTime,&#xA;            C.DropoffDateTime AS DropoffDateTime,&#xA;            C.TripDurationSeconds AS TripDurationSeconds,&#xA;            C.PULocationID AS PULocationID,&#xA;            C.DOLocationID AS DOLocationID,&#xA;            C.PassengerCount AS PassengerCount,&#xA;            C.TripDistanceMiles AS TripDistanceMiles,&#xA;            C.RateCodeID AS RateCodeID,&#xA;            C.PaymentTypeID AS PaymentTypeID,&#xA;            C.TripTypeID AS TripTypeID,&#xA;            C.StoreAndFwdFlag AS StoreAndFwdFlag,&#xA;            C.FareAmount AS FareAmount,&#xA;            C.ExtraAmount AS ExtraAmount,&#xA;            C.MTATaxAmount AS MTATaxAmount,&#xA;            C.TipAmount AS TipAmount,&#xA;            C.TollsAmount AS TollsAmount,&#xA;            C.ImprovementSurcharge AS ImprovementSurcharge,&#xA;            C.CongestionSurcharge AS CongestionSurcharge,&#xA;            C.AirportFee AS AirportFee,&#xA;            C.CBDCongestionFee AS CBDCongestionFee,&#xA;            C.BCFAmount AS BCFAmount,&#xA;            C.SalesTaxAmount AS SalesTaxAmount,&#xA;            C.DriverPayAmount AS DriverPayAmount,&#xA;            C.TotalAmount AS TotalAmount,&#xA;            C.IsTotalCalculated AS IsTotalCalculated,&#xA;            C.SharedRequestFlag AS SharedRequestFlag,&#xA;            C.SharedMatchFlag AS SharedMatchFlag,&#xA;            C.AccessARideFlag AS AccessARideFlag,&#xA;            C.WAVRequestFlag AS WAVRequestFlag,&#xA;            C.WAVMatchFlag AS WAVMatchFlag&#xA;       FOR JSON PATH, WITHOUT_ARRAY_WRAPPER, INCLUDE_NULL_VALUES)&#xA;    ) AS PayloadHash&#xA;  FROM NYCTaxi_Staging.clean.ValidTrip C&#xA;  WHERE C.TaxiType IN ('YELLOW','GREEN')&#xA;),&#xA;Ranked AS&#xA;(&#xA;  SELECT S.*, ROW_NUMBER() OVER(PARTITION BY S.PayloadHash ORDER BY S.TripCleanID) AS DuplicateOrdinal&#xA;  FROM SourceRows S&#xA;),&#xA;Tagged AS&#xA;(&#xA;  SELECT R.*,&#xA;    HASHBYTES('SHA2_256', CONCAT(CONVERT(varchar(64),R.PayloadHash,2),':',R.DuplicateOrdinal)) AS RecordHash&#xA;  FROM Ranked R&#xA;),&#xA;FactValues AS (&#xA;SELECT&#xA;    COALESCE(PickupDate.DateKey, 0) AS PickupDateKey,&#xA;    COALESCE(DropoffDate.DateKey, 0) AS DropoffDateKey,&#xA;&#xA;    COALESCE(PickupTime.TimeKey, 0) AS PickupTimeKey,&#xA;    COALESCE(DropoffTime.TimeKey, 0) AS DropoffTimeKey,&#xA;&#xA;    COALESCE(PickupZone.LocationKey, 0) AS PickupLocationKey,&#xA;    COALESCE(DropoffZone.LocationKey, 0) AS DropoffLocationKey,&#xA;&#xA;    COALESCE(ServiceType.ServiceTypeKey, 0) AS ServiceTypeKey,&#xA;    COALESCE(Vendor.VendorKey, 0) AS VendorKey,&#xA;    COALESCE(RateCode.RateCodeKey, 0) AS RateCodeKey,&#xA;    COALESCE(Payment.PaymentTypeKey, 0) AS PaymentTypeKey,&#xA;    COALESCE(TripType.TripTypeKey, 0) AS TripTypeKey,&#xA;    COALESCE(TaxiFlag.TaxiFlagKey, 0) AS TaxiFlagKey,&#xA;    COALESCE(PassengerGroup.PassengerGroupKey, 0)&#xA;        AS PassengerGroupKey,&#xA;&#xA;    COALESCE(LoadBatch.LoadBatchKey,0) AS LoadBatchKey,&#xA;    1 AS TripCount,&#xA;&#xA;    C.PassengerCount,&#xA;    C.TripDistanceMiles,&#xA;    C.TripDurationSeconds,&#xA;&#xA;    CASE&#xA;        WHEN C.TripDurationSeconds &gt; 0&#xA;             AND C.TripDistanceMiles &gt;= 0&#xA;        THEN CONVERT&#xA;        (&#xA;            DECIMAL(12,3),&#xA;            C.TripDistanceMiles * 3600.0&#xA;            / C.TripDurationSeconds&#xA;        )&#xA;        ELSE NULL&#xA;    END AS AverageSpeedMPH,&#xA;&#xA;    C.FareAmount,&#xA;    C.ExtraAmount,&#xA;    C.MTATaxAmount,&#xA;    C.TipAmount,&#xA;    C.TollsAmount,&#xA;    C.ImprovementSurcharge,&#xA;    C.CongestionSurcharge,&#xA;    C.AirportFee,&#xA;    C.CBDCongestionFee,&#xA;    C.TotalAmount,&#xA;    C.RecordHash AS RecordHash&#xA;&#xA;FROM Tagged AS C&#xA;&#xA;LEFT JOIN dbo.Dim_Date AS PickupDate&#xA;    ON PickupDate.FullDate =&#xA;       CONVERT(DATE, C.PickupDateTime)&#xA;&#xA;LEFT JOIN dbo.Dim_Date AS DropoffDate&#xA;    ON DropoffDate.FullDate =&#xA;       CONVERT(DATE, C.DropoffDateTime)&#xA;&#xA;LEFT JOIN dbo.Dim_Time AS PickupTime&#xA;    ON PickupTime.MinuteOfDay =&#xA;       DATEPART(HOUR, C.PickupDateTime) * 60&#xA;       + DATEPART(MINUTE, C.PickupDateTime)&#xA;&#xA;LEFT JOIN dbo.Dim_Time AS DropoffTime&#xA;    ON DropoffTime.MinuteOfDay =&#xA;       DATEPART(HOUR, C.DropoffDateTime) * 60&#xA;       + DATEPART(MINUTE, C.DropoffDateTime)&#xA;&#xA;LEFT JOIN dbo.Dim_Location AS PickupZone&#xA;    ON PickupZone.LocationID = C.PULocationID&#xA;&#xA;LEFT JOIN dbo.Dim_Location AS DropoffZone&#xA;    ON DropoffZone.LocationID = C.DOLocationID&#xA;&#xA;LEFT JOIN dbo.Dim_ServiceType AS ServiceType&#xA;    ON ServiceType.ServiceCode = C.TaxiType&#xA;&#xA;LEFT JOIN dbo.Dim_Vendor AS Vendor&#xA;    ON Vendor.VendorID = C.VendorID&#xA;&#xA;LEFT JOIN dbo.Dim_RateCode AS RateCode&#xA;    ON RateCode.RateCodeID = C.RateCodeID&#xA;&#xA;LEFT JOIN dbo.Dim_PaymentType AS Payment&#xA;    ON Payment.PaymentTypeID = C.PaymentTypeID&#xA;&#xA;LEFT JOIN dbo.Dim_TripType AS TripType&#xA;    ON TripType.TripTypeID = C.TripTypeID&#xA;&#xA;LEFT JOIN dbo.Dim_TaxiFlags AS TaxiFlag&#xA;    ON TaxiFlag.StoreAndFwd =&#xA;       CASE&#xA;           WHEN UPPER(C.StoreAndFwdFlag) IN ('Y', 'N')&#xA;               THEN UPPER(C.StoreAndFwdFlag)&#xA;           ELSE 'U'&#xA;       END&#xA;&#xA;LEFT JOIN dbo.Dim_PassengerGroup AS PassengerGroup&#xA;    ON C.PassengerCount BETWEEN&#xA;       PassengerGroup.MinCount AND PassengerGroup.MaxCount&#xA;&#xA;LEFT JOIN dbo.Dim_LoadBatch AS LoadBatch&#xA;    ON LoadBatch.BatchID = CONCAT('CLEAN-',C.TaxiType,'-',CONVERT(char(6),C.PickupDateTime,112))&#xA;&#xA;WHERE C.TaxiType IN ('YELLOW', 'GREEN')&#xA;)&#xA;    INSERT INTO dbo.Fact_YellowGreen_Trips&#xA;    (PickupDateKey, DropoffDateKey, PickupTimeKey, DropoffTimeKey, PickupLocationKey, DropoffLocationKey, ServiceTypeKey, VendorKey, RateCodeKey, PaymentTypeKey, TripTypeKey, TaxiFlagKey, PassengerGroupKey, LoadBatchKey, TripCount, PassengerCount, TripDistanceMiles, TripDurationSeconds, AverageSpeedMPH, FareAmount, ExtraAmount, MTATaxAmount, TipAmount, TollsAmount, ImprovementSurcharge, CongestionSurcharge, AirportFee, CBDCongestionFee, TotalAmount, RecordHash)&#xA;    SELECT V.PickupDateKey, V.DropoffDateKey, V.PickupTimeKey, V.DropoffTimeKey, V.PickupLocationKey, V.DropoffLocationKey, V.ServiceTypeKey, V.VendorKey, V.RateCodeKey, V.PaymentTypeKey, V.TripTypeKey, V.TaxiFlagKey, V.PassengerGroupKey, V.LoadBatchKey, V.TripCount, V.PassengerCount, V.TripDistanceMiles, V.TripDurationSeconds, V.AverageSpeedMPH, V.FareAmount, V.ExtraAmount, V.MTATaxAmount, V.TipAmount, V.TollsAmount, V.ImprovementSurcharge, V.CongestionSurcharge, V.AirportFee, V.CBDCongestionFee, V.TotalAmount, V.RecordHash&#xA;    FROM FactValues V&#xA;    WHERE NOT EXISTS&#xA;      (SELECT 1 FROM dbo.Fact_YellowGreen_Trips F WITH (UPDLOCK,HOLDLOCK) WHERE F.RecordHash=V.RecordHash);&#xA;    DECLARE @InsertedRows bigint = @@ROWCOUNT;&#xA;    INSERT etl.LoadStepLog(StepName,InsertedRows)&#xA;    VALUES('Fact_YellowGreen_Trips',@InsertedRows);&#xA;&#xA; COMMIT TRAN;&#xA;END TRY&#xA;BEGIN CATCH&#xA; IF @@TRANCOUNT&gt;0 ROLLBACK;&#xA; THROW;&#xA;END CATCH;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\EST_03_Load_FactFHV"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="EST_03_Load_FactFHV - SQL Server transactional load"
+      DTS:DTSID="{BCE5A58B-69AC-4C94-99EC-57D97CF62B2A}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="EST_03_Load_FactFHV"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{4A829E7F-DE39-4A39-83D3-52CE94E192E2}"
+          SQLTask:SqlStatementSource="SET NOCOUNT ON;&#xA;SET XACT_ABORT ON;&#xA;BEGIN TRY&#xA; BEGIN TRAN;&#xA;;WITH SourceRows AS&#xA;(&#xA;  SELECT C.*,&#xA;    HASHBYTES('SHA2_256',&#xA;      (SELECT C.TaxiType AS TaxiType,&#xA;            C.VendorID AS VendorID,&#xA;            C.HVFHSLicenseNum AS HVFHSLicenseNum,&#xA;            C.DispatchingBaseNum AS DispatchingBaseNum,&#xA;            C.OriginatingBaseNum AS OriginatingBaseNum,&#xA;            C.AffiliatedBaseNum AS AffiliatedBaseNum,&#xA;            C.RequestDateTime AS RequestDateTime,&#xA;            C.OnSceneDateTime AS OnSceneDateTime,&#xA;            C.PickupDateTime AS PickupDateTime,&#xA;            C.DropoffDateTime AS DropoffDateTime,&#xA;            C.TripDurationSeconds AS TripDurationSeconds,&#xA;            C.PULocationID AS PULocationID,&#xA;            C.DOLocationID AS DOLocationID,&#xA;            C.PassengerCount AS PassengerCount,&#xA;            C.TripDistanceMiles AS TripDistanceMiles,&#xA;            C.RateCodeID AS RateCodeID,&#xA;            C.PaymentTypeID AS PaymentTypeID,&#xA;            C.TripTypeID AS TripTypeID,&#xA;            C.StoreAndFwdFlag AS StoreAndFwdFlag,&#xA;            C.FareAmount AS FareAmount,&#xA;            C.ExtraAmount AS ExtraAmount,&#xA;            C.MTATaxAmount AS MTATaxAmount,&#xA;            C.TipAmount AS TipAmount,&#xA;            C.TollsAmount AS TollsAmount,&#xA;            C.ImprovementSurcharge AS ImprovementSurcharge,&#xA;            C.CongestionSurcharge AS CongestionSurcharge,&#xA;            C.AirportFee AS AirportFee,&#xA;            C.CBDCongestionFee AS CBDCongestionFee,&#xA;            C.BCFAmount AS BCFAmount,&#xA;            C.SalesTaxAmount AS SalesTaxAmount,&#xA;            C.DriverPayAmount AS DriverPayAmount,&#xA;            C.TotalAmount AS TotalAmount,&#xA;            C.IsTotalCalculated AS IsTotalCalculated,&#xA;            C.SharedRequestFlag AS SharedRequestFlag,&#xA;            C.SharedMatchFlag AS SharedMatchFlag,&#xA;            C.AccessARideFlag AS AccessARideFlag,&#xA;            C.WAVRequestFlag AS WAVRequestFlag,&#xA;            C.WAVMatchFlag AS WAVMatchFlag&#xA;       FOR JSON PATH, WITHOUT_ARRAY_WRAPPER, INCLUDE_NULL_VALUES)&#xA;    ) AS PayloadHash&#xA;  FROM NYCTaxi_Staging.clean.ValidTrip C&#xA;  WHERE C.TaxiType='FHV'&#xA;),&#xA;Ranked AS&#xA;(&#xA;  SELECT S.*, ROW_NUMBER() OVER(PARTITION BY S.PayloadHash ORDER BY S.TripCleanID) AS DuplicateOrdinal&#xA;  FROM SourceRows S&#xA;),&#xA;Tagged AS&#xA;(&#xA;  SELECT R.*,&#xA;    HASHBYTES('SHA2_256', CONCAT(CONVERT(varchar(64),R.PayloadHash,2),':',R.DuplicateOrdinal)) AS RecordHash&#xA;  FROM Ranked R&#xA;),&#xA;FactValues AS (&#xA;SELECT&#xA;    COALESCE(PickupDate.DateKey, 0) AS PickupDateKey,&#xA;    COALESCE(DropoffDate.DateKey, 0) AS DropoffDateKey,&#xA;&#xA;    COALESCE(PickupTime.TimeKey, 0) AS PickupTimeKey,&#xA;    COALESCE(DropoffTime.TimeKey, 0) AS DropoffTimeKey,&#xA;&#xA;    COALESCE(PickupZone.LocationKey, 0)&#xA;        AS PickupLocationKey,&#xA;&#xA;    COALESCE(DropoffZone.LocationKey, 0)&#xA;        AS DropoffLocationKey,&#xA;&#xA;    COALESCE(ServiceType.ServiceTypeKey, 0)&#xA;        AS ServiceTypeKey,&#xA;&#xA;    COALESCE(DispatchBase.BaseKey, 0)&#xA;        AS DispatchBaseKey,&#xA;&#xA;    COALESCE(AffiliatedBase.BaseKey, 0)&#xA;        AS AffiliatedBaseKey,&#xA;&#xA;    COALESCE(FHVFlag.FHVFlagKey, 0)&#xA;        AS FHVFlagKey,&#xA;&#xA;    COALESCE(LoadBatch.LoadBatchKey,0) AS LoadBatchKey,&#xA;    1 AS TripCount,&#xA;&#xA;    C.TripDurationSeconds,&#xA;    C.RecordHash AS RecordHash&#xA;&#xA;FROM Tagged AS C&#xA;&#xA;LEFT JOIN dbo.Dim_Date AS PickupDate&#xA;    ON PickupDate.FullDate =&#xA;       CONVERT(DATE, C.PickupDateTime)&#xA;&#xA;LEFT JOIN dbo.Dim_Date AS DropoffDate&#xA;    ON DropoffDate.FullDate =&#xA;       CONVERT(DATE, C.DropoffDateTime)&#xA;&#xA;LEFT JOIN dbo.Dim_Time AS PickupTime&#xA;    ON PickupTime.MinuteOfDay =&#xA;       DATEPART(HOUR, C.PickupDateTime) * 60&#xA;       + DATEPART(MINUTE, C.PickupDateTime)&#xA;&#xA;LEFT JOIN dbo.Dim_Time AS DropoffTime&#xA;    ON DropoffTime.MinuteOfDay =&#xA;       DATEPART(HOUR, C.DropoffDateTime) * 60&#xA;       + DATEPART(MINUTE, C.DropoffDateTime)&#xA;&#xA;LEFT JOIN dbo.Dim_Location AS PickupZone&#xA;    ON PickupZone.LocationID = C.PULocationID&#xA;&#xA;LEFT JOIN dbo.Dim_Location AS DropoffZone&#xA;    ON DropoffZone.LocationID = C.DOLocationID&#xA;&#xA;LEFT JOIN dbo.Dim_ServiceType AS ServiceType&#xA;    ON ServiceType.ServiceCode = C.TaxiType&#xA;&#xA;LEFT JOIN dbo.Dim_Base AS DispatchBase&#xA;    ON DispatchBase.BaseNumber = C.DispatchingBaseNum&#xA;&#xA;LEFT JOIN dbo.Dim_Base AS AffiliatedBase&#xA;    ON AffiliatedBase.BaseNumber = C.AffiliatedBaseNum&#xA;&#xA;LEFT JOIN dbo.Dim_FHVFlags AS FHVFlag&#xA;    ON FHVFlag.IsSharedRide =&#xA;       CASE&#xA;           WHEN UPPER(C.SharedRequestFlag) IN ('Y', 'N')&#xA;               THEN UPPER(C.SharedRequestFlag)&#xA;           ELSE 'U'&#xA;       END&#xA;&#xA;LEFT JOIN dbo.Dim_LoadBatch AS LoadBatch&#xA;    ON LoadBatch.BatchID = CONCAT('CLEAN-',C.TaxiType,'-',CONVERT(char(6),C.PickupDateTime,112))&#xA;&#xA;WHERE C.TaxiType = 'FHV'&#xA;)&#xA;    INSERT INTO dbo.Fact_FHV_Trips&#xA;    (PickupDateKey, DropoffDateKey, PickupTimeKey, DropoffTimeKey, PickupLocationKey, DropoffLocationKey, ServiceTypeKey, DispatchBaseKey, AffiliatedBaseKey, FHVFlagKey, LoadBatchKey, TripCount, TripDurationSeconds, RecordHash)&#xA;    SELECT V.PickupDateKey, V.DropoffDateKey, V.PickupTimeKey, V.DropoffTimeKey, V.PickupLocationKey, V.DropoffLocationKey, V.ServiceTypeKey, V.DispatchBaseKey, V.AffiliatedBaseKey, V.FHVFlagKey, V.LoadBatchKey, V.TripCount, V.TripDurationSeconds, V.RecordHash&#xA;    FROM FactValues V&#xA;    WHERE NOT EXISTS&#xA;      (SELECT 1 FROM dbo.Fact_FHV_Trips F WITH (UPDLOCK,HOLDLOCK) WHERE F.RecordHash=V.RecordHash);&#xA;    DECLARE @InsertedRows bigint = @@ROWCOUNT;&#xA;    INSERT etl.LoadStepLog(StepName,InsertedRows)&#xA;    VALUES('Fact_FHV_Trips',@InsertedRows);&#xA;&#xA; COMMIT TRAN;&#xA;END TRY&#xA;BEGIN CATCH&#xA; IF @@TRANCOUNT&gt;0 ROLLBACK;&#xA; THROW;&#xA;END CATCH;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\EST_04_Load_FactHVFHV"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="EST_04_Load_FactHVFHV - SQL Server transactional load"
+      DTS:DTSID="{535A0299-ECA9-4BB2-928F-B77FD3205770}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="EST_04_Load_FactHVFHV"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{4A829E7F-DE39-4A39-83D3-52CE94E192E2}"
+          SQLTask:SqlStatementSource="SET NOCOUNT ON;&#xA;SET XACT_ABORT ON;&#xA;BEGIN TRY&#xA; BEGIN TRAN;&#xA;;WITH SourceRows AS&#xA;(&#xA;  SELECT C.*,&#xA;    HASHBYTES('SHA2_256',&#xA;      (SELECT C.TaxiType AS TaxiType,&#xA;            C.VendorID AS VendorID,&#xA;            C.HVFHSLicenseNum AS HVFHSLicenseNum,&#xA;            C.DispatchingBaseNum AS DispatchingBaseNum,&#xA;            C.OriginatingBaseNum AS OriginatingBaseNum,&#xA;            C.AffiliatedBaseNum AS AffiliatedBaseNum,&#xA;            C.RequestDateTime AS RequestDateTime,&#xA;            C.OnSceneDateTime AS OnSceneDateTime,&#xA;            C.PickupDateTime AS PickupDateTime,&#xA;            C.DropoffDateTime AS DropoffDateTime,&#xA;            C.TripDurationSeconds AS TripDurationSeconds,&#xA;            C.PULocationID AS PULocationID,&#xA;            C.DOLocationID AS DOLocationID,&#xA;            C.PassengerCount AS PassengerCount,&#xA;            C.TripDistanceMiles AS TripDistanceMiles,&#xA;            C.RateCodeID AS RateCodeID,&#xA;            C.PaymentTypeID AS PaymentTypeID,&#xA;            C.TripTypeID AS TripTypeID,&#xA;            C.StoreAndFwdFlag AS StoreAndFwdFlag,&#xA;            C.FareAmount AS FareAmount,&#xA;            C.ExtraAmount AS ExtraAmount,&#xA;            C.MTATaxAmount AS MTATaxAmount,&#xA;            C.TipAmount AS TipAmount,&#xA;            C.TollsAmount AS TollsAmount,&#xA;            C.ImprovementSurcharge AS ImprovementSurcharge,&#xA;            C.CongestionSurcharge AS CongestionSurcharge,&#xA;            C.AirportFee AS AirportFee,&#xA;            C.CBDCongestionFee AS CBDCongestionFee,&#xA;            C.BCFAmount AS BCFAmount,&#xA;            C.SalesTaxAmount AS SalesTaxAmount,&#xA;            C.DriverPayAmount AS DriverPayAmount,&#xA;            C.TotalAmount AS TotalAmount,&#xA;            C.IsTotalCalculated AS IsTotalCalculated,&#xA;            C.SharedRequestFlag AS SharedRequestFlag,&#xA;            C.SharedMatchFlag AS SharedMatchFlag,&#xA;            C.AccessARideFlag AS AccessARideFlag,&#xA;            C.WAVRequestFlag AS WAVRequestFlag,&#xA;            C.WAVMatchFlag AS WAVMatchFlag&#xA;       FOR JSON PATH, WITHOUT_ARRAY_WRAPPER, INCLUDE_NULL_VALUES)&#xA;    ) AS PayloadHash&#xA;  FROM NYCTaxi_Staging.clean.ValidTrip C&#xA;  WHERE C.TaxiType='FHVHV'&#xA;),&#xA;Ranked AS&#xA;(&#xA;  SELECT S.*, ROW_NUMBER() OVER(PARTITION BY S.PayloadHash ORDER BY S.TripCleanID) AS DuplicateOrdinal&#xA;  FROM SourceRows S&#xA;),&#xA;Tagged AS&#xA;(&#xA;  SELECT R.*,&#xA;    HASHBYTES('SHA2_256', CONCAT(CONVERT(varchar(64),R.PayloadHash,2),':',R.DuplicateOrdinal)) AS RecordHash&#xA;  FROM Ranked R&#xA;),&#xA;C AS&#xA;(&#xA;    SELECT&#xA;        T.*,&#xA;&#xA;        CASE&#xA;            WHEN UPPER(T.SharedRequestFlag) IN ('Y', 'N')&#xA;                THEN UPPER(T.SharedRequestFlag)&#xA;            ELSE 'U'&#xA;        END AS NormalizedSharedRequest,&#xA;&#xA;        CASE&#xA;            WHEN UPPER(T.SharedMatchFlag) IN ('Y', 'N')&#xA;                THEN UPPER(T.SharedMatchFlag)&#xA;            ELSE 'U'&#xA;        END AS NormalizedSharedMatch,&#xA;&#xA;        CASE&#xA;            WHEN UPPER(T.AccessARideFlag) IN ('Y', 'N')&#xA;                THEN UPPER(T.AccessARideFlag)&#xA;            ELSE 'U'&#xA;        END AS NormalizedAccessARide,&#xA;&#xA;        CASE&#xA;            WHEN UPPER(T.WAVRequestFlag) IN ('Y', 'N')&#xA;                THEN UPPER(T.WAVRequestFlag)&#xA;            ELSE 'U'&#xA;        END AS NormalizedWAVRequest,&#xA;&#xA;        CASE&#xA;            WHEN UPPER(T.WAVMatchFlag) IN ('Y', 'N')&#xA;                THEN UPPER(T.WAVMatchFlag)&#xA;            ELSE 'U'&#xA;        END AS NormalizedWAVMatch&#xA;&#xA;    FROM Tagged AS T&#xA;    WHERE T.TaxiType = 'FHVHV'&#xA;),&#xA;FactValues AS (&#xA;SELECT&#xA;    COALESCE(RequestDate.DateKey, 0) AS RequestDateKey,&#xA;    COALESCE(OnSceneDate.DateKey, 0) AS OnSceneDateKey,&#xA;    COALESCE(PickupDate.DateKey, 0) AS PickupDateKey,&#xA;    COALESCE(DropoffDate.DateKey, 0) AS DropoffDateKey,&#xA;&#xA;    COALESCE(RequestTime.TimeKey, 0) AS RequestTimeKey,&#xA;    COALESCE(OnSceneTime.TimeKey, 0) AS OnSceneTimeKey,&#xA;    COALESCE(PickupTime.TimeKey, 0) AS PickupTimeKey,&#xA;    COALESCE(DropoffTime.TimeKey, 0) AS DropoffTimeKey,&#xA;&#xA;    COALESCE(PickupZone.LocationKey, 0)&#xA;        AS PickupLocationKey,&#xA;&#xA;    COALESCE(DropoffZone.LocationKey, 0)&#xA;        AS DropoffLocationKey,&#xA;&#xA;    COALESCE(ServiceType.ServiceTypeKey, 0)&#xA;        AS ServiceTypeKey,&#xA;&#xA;    COALESCE(Provider.HVFHSProviderKey, 0)&#xA;        AS HVFHSProviderKey,&#xA;&#xA;    COALESCE(DispatchBase.BaseKey, 0)&#xA;        AS DispatchBaseKey,&#xA;&#xA;    COALESCE(OriginBase.BaseKey, 0)&#xA;        AS OriginBaseKey,&#xA;&#xA;    COALESCE(Flags.HVFHVFlagKey, 0)&#xA;        AS HVFHVFlagKey,&#xA;&#xA;    COALESCE(LoadBatch.LoadBatchKey,0) AS LoadBatchKey,&#xA;    1 AS TripCount,&#xA;&#xA;    C.TripDistanceMiles,&#xA;    C.TripDurationSeconds,&#xA;&#xA;    CASE&#xA;        WHEN C.RequestDateTime IS NOT NULL&#xA;         AND C.PickupDateTime &gt;= C.RequestDateTime&#xA;        THEN DATEDIFF_BIG(&#xA;            SECOND,&#xA;            C.RequestDateTime,&#xA;            C.PickupDateTime&#xA;        )&#xA;    END AS WaitingTimeSeconds,&#xA;&#xA;    CASE&#xA;        WHEN C.OnSceneDateTime IS NOT NULL&#xA;         AND C.PickupDateTime &gt;= C.OnSceneDateTime&#xA;        THEN DATEDIFF_BIG(&#xA;            SECOND,&#xA;            C.OnSceneDateTime,&#xA;            C.PickupDateTime&#xA;        )&#xA;    END AS OnSceneToPickupSeconds,&#xA;&#xA;    C.FareAmount AS BasePassengerFare,&#xA;    C.TollsAmount,&#xA;    C.BCFAmount,&#xA;    C.SalesTaxAmount,&#xA;    C.CongestionSurcharge,&#xA;    C.AirportFee,&#xA;    C.TipAmount,&#xA;    C.DriverPayAmount,&#xA;    C.CBDCongestionFee,&#xA;    C.TotalAmount AS GrossPassengerAmount,&#xA;    C.RecordHash AS RecordHash&#xA;&#xA;FROM C&#xA;&#xA;LEFT JOIN dbo.Dim_Date AS RequestDate&#xA;    ON RequestDate.FullDate =&#xA;       CONVERT(DATE, C.RequestDateTime)&#xA;&#xA;LEFT JOIN dbo.Dim_Date AS OnSceneDate&#xA;    ON OnSceneDate.FullDate =&#xA;       CONVERT(DATE, C.OnSceneDateTime)&#xA;&#xA;LEFT JOIN dbo.Dim_Date AS PickupDate&#xA;    ON PickupDate.FullDate =&#xA;       CONVERT(DATE, C.PickupDateTime)&#xA;&#xA;LEFT JOIN dbo.Dim_Date AS DropoffDate&#xA;    ON DropoffDate.FullDate =&#xA;       CONVERT(DATE, C.DropoffDateTime)&#xA;&#xA;LEFT JOIN dbo.Dim_Time AS RequestTime&#xA;    ON RequestTime.MinuteOfDay =&#xA;       DATEPART(HOUR, C.RequestDateTime) * 60&#xA;       + DATEPART(MINUTE, C.RequestDateTime)&#xA;&#xA;LEFT JOIN dbo.Dim_Time AS OnSceneTime&#xA;    ON OnSceneTime.MinuteOfDay =&#xA;       DATEPART(HOUR, C.OnSceneDateTime) * 60&#xA;       + DATEPART(MINUTE, C.OnSceneDateTime)&#xA;&#xA;LEFT JOIN dbo.Dim_Time AS PickupTime&#xA;    ON PickupTime.MinuteOfDay =&#xA;       DATEPART(HOUR, C.PickupDateTime) * 60&#xA;       + DATEPART(MINUTE, C.PickupDateTime)&#xA;&#xA;LEFT JOIN dbo.Dim_Time AS DropoffTime&#xA;    ON DropoffTime.MinuteOfDay =&#xA;       DATEPART(HOUR, C.DropoffDateTime) * 60&#xA;       + DATEPART(MINUTE, C.DropoffDateTime)&#xA;&#xA;LEFT JOIN dbo.Dim_Location AS PickupZone&#xA;    ON PickupZone.LocationID = C.PULocationID&#xA;&#xA;LEFT JOIN dbo.Dim_Location AS DropoffZone&#xA;    ON DropoffZone.LocationID = C.DOLocationID&#xA;&#xA;LEFT JOIN dbo.Dim_ServiceType AS ServiceType&#xA;    ON ServiceType.ServiceCode = C.TaxiType&#xA;&#xA;LEFT JOIN dbo.Dim_HVFHSProvider AS Provider&#xA;    ON Provider.LicenseNumber = C.HVFHSLicenseNum&#xA;&#xA;LEFT JOIN dbo.Dim_Base AS DispatchBase&#xA;    ON DispatchBase.BaseNumber = C.DispatchingBaseNum&#xA;&#xA;LEFT JOIN dbo.Dim_Base AS OriginBase&#xA;    ON OriginBase.BaseNumber = C.OriginatingBaseNum&#xA;&#xA;LEFT JOIN dbo.Dim_HVFHVFlags AS Flags&#xA;    ON Flags.IsSharedRequest = C.NormalizedSharedRequest&#xA;   AND Flags.IsSharedMatch = C.NormalizedSharedMatch&#xA;   AND Flags.IsAccessARide = C.NormalizedAccessARide&#xA;   AND Flags.IsWAVRequest = C.NormalizedWAVRequest&#xA;   AND Flags.IsWAVMatch = C.NormalizedWAVMatch&#xA;LEFT JOIN dbo.Dim_LoadBatch AS LoadBatch&#xA;    ON LoadBatch.BatchID = CONCAT('CLEAN-',C.TaxiType,'-',CONVERT(char(6),C.PickupDateTime,112))&#xA;&#xA;)&#xA;    INSERT INTO dbo.Fact_HVFHV_Trips&#xA;    (RequestDateKey, OnSceneDateKey, PickupDateKey, DropoffDateKey, RequestTimeKey, OnSceneTimeKey, PickupTimeKey, DropoffTimeKey, PickupLocationKey, DropoffLocationKey, ServiceTypeKey, HVFHSProviderKey, DispatchBaseKey, OriginBaseKey, HVFHVFlagKey, LoadBatchKey, TripCount, TripDistanceMiles, TripDurationSeconds, WaitingTimeSeconds, OnSceneToPickupSeconds, BasePassengerFare, TollsAmount, BCFAmount, SalesTaxAmount, CongestionSurcharge, AirportFee, TipAmount, DriverPayAmount, CBDCongestionFee, GrossPassengerAmount, RecordHash)&#xA;    SELECT V.RequestDateKey, V.OnSceneDateKey, V.PickupDateKey, V.DropoffDateKey, V.RequestTimeKey, V.OnSceneTimeKey, V.PickupTimeKey, V.DropoffTimeKey, V.PickupLocationKey, V.DropoffLocationKey, V.ServiceTypeKey, V.HVFHSProviderKey, V.DispatchBaseKey, V.OriginBaseKey, V.HVFHVFlagKey, V.LoadBatchKey, V.TripCount, V.TripDistanceMiles, V.TripDurationSeconds, V.WaitingTimeSeconds, V.OnSceneToPickupSeconds, V.BasePassengerFare, V.TollsAmount, V.BCFAmount, V.SalesTaxAmount, V.CongestionSurcharge, V.AirportFee, V.TipAmount, V.DriverPayAmount, V.CBDCongestionFee, V.GrossPassengerAmount, V.RecordHash&#xA;    FROM FactValues V&#xA;    WHERE NOT EXISTS&#xA;      (SELECT 1 FROM dbo.Fact_HVFHV_Trips F WITH (UPDLOCK,HOLDLOCK) WHERE F.RecordHash=V.RecordHash);&#xA;    DECLARE @InsertedRows bigint = @@ROWCOUNT;&#xA;    INSERT etl.LoadStepLog(StepName,InsertedRows)&#xA;    VALUES('Fact_HVFHV_Trips',@InsertedRows);&#xA;&#xA; COMMIT TRAN;&#xA;END TRY&#xA;BEGIN CATCH&#xA; IF @@TRANCOUNT&gt;0 ROLLBACK;&#xA; THROW;&#xA;END CATCH;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\EST_05_Validate_DWH"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="EST_05_Validate_DWH - SQL Server transactional load"
+      DTS:DTSID="{658FFD06-E89E-44F1-B834-7D187FC4BD03}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="EST_05_Validate_DWH"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{4A829E7F-DE39-4A39-83D3-52CE94E192E2}"
+          SQLTask:SqlStatementSource="SET NOCOUNT ON;&#xA;-- Source can be a subset of historical data, so only compare a lower bound.&#xA;DECLARE @CleanTaxi bigint=(SELECT COUNT_BIG(*) FROM NYCTaxi_Staging.clean.ValidTrip WHERE TaxiType IN('YELLOW','GREEN'));&#xA;DECLARE @CleanFHV bigint=(SELECT COUNT_BIG(*) FROM NYCTaxi_Staging.clean.ValidTrip WHERE TaxiType='FHV');&#xA;DECLARE @CleanHVFHV bigint=(SELECT COUNT_BIG(*) FROM NYCTaxi_Staging.clean.ValidTrip WHERE TaxiType='FHVHV');&#xA;IF (SELECT COUNT_BIG(*) FROM dbo.Fact_YellowGreen_Trips)&lt;@CleanTaxi&#xA; THROW 55041,'YellowGreen Fact is missing valid Clean trips.',1;&#xA;IF (SELECT COUNT_BIG(*) FROM dbo.Fact_FHV_Trips)&lt;@CleanFHV&#xA; THROW 55042,'FHV Fact is missing valid Clean trips.',1;&#xA;IF (SELECT COUNT_BIG(*) FROM dbo.Fact_HVFHV_Trips)&lt;@CleanHVFHV&#xA; THROW 55043,'HVFHV Fact is missing valid Clean trips.',1;&#xA;IF EXISTS (SELECT 1 FROM dbo.Fact_YellowGreen_Trips WHERE ServiceTypeKey=0)&#xA; OR EXISTS (SELECT 1 FROM dbo.Fact_FHV_Trips WHERE ServiceTypeKey=0)&#xA; OR EXISTS (SELECT 1 FROM dbo.Fact_HVFHV_Trips WHERE ServiceTypeKey=0)&#xA; THROW 55044, 'A Fact has unknown ServiceTypeKey.',1;&#xA;-- Mark inferred monthly groups, without asserting any real file-level lineage.&#xA;UPDATE D SET D.BatchStatus='SUCCEEDED',D.LoadedAt=SYSDATETIME()&#xA;FROM dbo.Dim_LoadBatch D&#xA;WHERE D.BatchID LIKE 'CLEAN-%' AND D.BatchStatus='READY';&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{4395D3D9-03CF-492C-BFD3-CC16C2F984D2}"
+      DTS:From="Package\EST_00_Precheck_DWH"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\EST_01_Load_Dimensions" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{6639D3D1-6137-4B04-865F-5A43F87C7EF6}"
+      DTS:From="Package\EST_01_Load_Dimensions"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\EST_02_Load_FactYellowGreen" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{58C8BB31-26B1-4FDB-BE25-06007A721E78}"
+      DTS:From="Package\EST_02_Load_FactYellowGreen"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3"
+      DTS:To="Package\EST_03_Load_FactFHV" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{EC17AE8C-FA8B-4709-9740-5BBE6F6609C5}"
+      DTS:From="Package\EST_03_Load_FactFHV"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 4"
+      DTS:To="Package\EST_04_Load_FactHVFHV" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 5]"
+      DTS:CreationName=""
+      DTS:DTSID="{C5E83471-C313-4F78-9443-631F7F1ACE1C}"
+      DTS:From="Package\EST_04_Load_FactHVFHV"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 5"
+      DTS:To="Package\EST_05_Validate_DWH" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="193.333333333334,42.6666666666667"
+          Id="Package\EST_00_Precheck_DWH"
+          TopLeft="22.8333333333333,6.14999996900551" />
+        <NodeLayout
+          Size="204,42.6666666666667"
+          Id="Package\EST_01_Load_Dimensions"
+          TopLeft="283.749988097698,7.41667147080078" />
+        <NodeLayout
+          Size="228,42.6666666666667"
+          Id="Package\EST_02_Load_FactYellowGreen"
+          TopLeft="586.124974044041,13.2333427556352" />
+        <NodeLayout
+          Size="188,42.6666666666667"
+          Id="Package\EST_03_Load_FactFHV"
+          TopLeft="604.87497409992,260.850002510548" />
+        <NodeLayout
+          Size="201.333333333334,42.6666666666667"
+          Id="Package\EST_04_Load_FactHVFHV"
+          TopLeft="301.95832067666,254.966674353281" />
+        <NodeLayout
+          Size="188,42.6666666666667"
+          Id="Package\EST_05_Validate_DWH"
+          TopLeft="8.00000078231098,252.333346041043" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="216.166666666667,28.1166690532365">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="67.5833214310313,0"
+              Start="0,0"
+              End="60.0833214310313,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="60.0833214310313,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="487.749988097698,31.6583404465513">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="98.3749859463427,0"
+              Start="0,0"
+              End="90.8749859463427,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="90.8749859463427,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="699.49997407198,55.9000094223019">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,204.949993088246"
+              Start="0,0"
+              End="0,197.449993088246">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,197.449993088246" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="604.87497409992,279.241671765248">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-101.583320089927,0"
+              Start="0,0"
+              End="-94.0833200899268,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-94.0833200899268,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 5]"
+          TopLeft="301.95832067666,274.983343530496">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-105.958319894349,0"
+              Start="0,0"
+              End="-98.4583198943491,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-98.4583198943491,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

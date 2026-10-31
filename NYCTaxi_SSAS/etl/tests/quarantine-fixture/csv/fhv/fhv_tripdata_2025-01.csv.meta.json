@@ -1,0 +1,25 @@
+{
+  "source_file": "E:\\NYCTaxi\\NYCTaxi_SSAS\\etl\\tests\\quarantine-fixture\\raw\\fhv\\fhv_tripdata_2025-01.parquet",
+  "source_size": 1896,
+  "source_mtime_ns": 1793244628627002000,
+  "dataset": "fhv",
+  "columns": [
+    "dispatching_base_num",
+    "pickup_datetime",
+    "dropOff_datetime",
+    "PULocationID",
+    "DOLocationID",
+    "SR_Flag",
+    "Affiliated_base_number"
+  ],
+  "schema_mode": "ssis",
+  "contract_version": 1,
+  "encoding": "utf-8",
+  "line_ending": "LF",
+  "rows": 1,
+  "source_rows": 1,
+  "row_limit": 100000,
+  "csv_size": 153,
+  "csv_mtime_ns": 1793244628638498000,
+  "sha256": "2025643349d731aa4d14aa57a7315b66ede98c0e7fe67fa782c2a2009d3ce3b2"
+}

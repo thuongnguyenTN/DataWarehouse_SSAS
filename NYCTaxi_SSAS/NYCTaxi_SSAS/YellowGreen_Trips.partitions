@@ -1,0 +1,364 @@
+<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine" dwd:design-time-name="ef3e0b90-8a10-4de6-8af8-8b12486e959a">
+  <ID>YellowGreen_Trips</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Fact Yellow Green Trips</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="5d88a7ee-3797-489b-8f77-6b5d190a01a7">
+          <ID>Fact Yellow Green Trips 200812</ID>
+          <Name>Fact Yellow Green Trips 200812</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="e43de899-ad26-4206-849c-439e73415aa6">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_YellowGreen_Trips] WHERE PickupDateKey &gt;= 20081201 AND PickupDateKey &lt; 20090101</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="0a5676bb-2193-4444-8073-4983f35f95c6">
+          <ID>Fact Yellow Green Trips 202412</ID>
+          <Name>Fact Yellow Green Trips 202412</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="8f191263-f841-48da-a734-1322dd5280fb">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_YellowGreen_Trips] WHERE PickupDateKey &gt;= 20241201 AND PickupDateKey &lt; 20250101</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="09ae4da6-5a60-4355-a200-a71a0989212f">
+          <ID>Fact Yellow Green Trips 202501</ID>
+          <Name>Fact Yellow Green Trips 202501</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="f8b8ff97-0546-4e0d-b3d7-3e6dc599ac7d">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_YellowGreen_Trips] WHERE PickupDateKey &gt;= 20250101 AND PickupDateKey &lt; 20250201</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="a4b4c90a-e96b-417b-a699-c1852e85aad0">
+          <ID>Fact Yellow Green Trips 202502</ID>
+          <Name>Fact Yellow Green Trips 202502</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="3208b53e-a0ad-480e-90b1-fef3c6016163">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_YellowGreen_Trips] WHERE PickupDateKey &gt;= 20250201 AND PickupDateKey &lt; 20250301</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="4bd3053a-28e5-4fc0-88c6-5811610f07ef">
+          <ID>Fact Yellow Green Trips 202503</ID>
+          <Name>Fact Yellow Green Trips 202503</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="105d76ae-c18e-4975-8b13-9a4130d8375b">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_YellowGreen_Trips] WHERE PickupDateKey &gt;= 20250301 AND PickupDateKey &lt; 20250401</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="efbde930-8dbf-4baf-91a2-27f9fdba09fc">
+          <ID>Fact Yellow Green Trips 202504</ID>
+          <Name>Fact Yellow Green Trips 202504</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="42d472c7-e0a8-4234-bda7-a0433bc6514d">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_YellowGreen_Trips] WHERE PickupDateKey &gt;= 20250401 AND PickupDateKey &lt; 20250501</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="fd877878-ce39-4530-85aa-cb0d9ba997f9">
+          <ID>Fact Yellow Green Trips 202505</ID>
+          <Name>Fact Yellow Green Trips 202505</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="d9d4090a-d07c-42c7-a044-371b48e0d5fe">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_YellowGreen_Trips] WHERE PickupDateKey &gt;= 20250501 AND PickupDateKey &lt; 20250601</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="03ac1c2e-079d-480a-97ae-c52d2abaa6c7">
+          <ID>Fact Yellow Green Trips 202506</ID>
+          <Name>Fact Yellow Green Trips 202506</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="4cf621bc-877c-4ca7-9cd6-6d67a40b9c33">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_YellowGreen_Trips] WHERE PickupDateKey &gt;= 20250601 AND PickupDateKey &lt; 20250701</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="3456e918-13e3-4280-9e17-09c5b9044cae">
+          <ID>Fact Yellow Green Trips 202507</ID>
+          <Name>Fact Yellow Green Trips 202507</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="e71fe216-9226-4835-a41a-ad3f8f83969e">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_YellowGreen_Trips] WHERE PickupDateKey &gt;= 20250701 AND PickupDateKey &lt; 20250801</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="a4c84d09-9e10-4152-b20d-51533d8ae3af">
+          <ID>Fact Yellow Green Trips 202508</ID>
+          <Name>Fact Yellow Green Trips 202508</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="ff1cff65-5206-40ae-85d3-777b6c206520">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_YellowGreen_Trips] WHERE PickupDateKey &gt;= 20250801 AND PickupDateKey &lt; 20250901</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="de1d7b59-cd6c-4cba-8501-ed9aebb7c349">
+          <ID>Fact Yellow Green Trips 202509</ID>
+          <Name>Fact Yellow Green Trips 202509</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="64b0cbd5-c3e3-4326-b4c3-108010a40064">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_YellowGreen_Trips] WHERE PickupDateKey &gt;= 20250901 AND PickupDateKey &lt; 20251001</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="e61fce35-5665-46ca-afd8-f3a3dea58ec2">
+          <ID>Fact Yellow Green Trips 202510</ID>
+          <Name>Fact Yellow Green Trips 202510</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="db7c2d19-0009-4132-837d-3397d18f2b11">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_YellowGreen_Trips] WHERE PickupDateKey &gt;= 20251001 AND PickupDateKey &lt; 20251101</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="112c5d4b-1e6c-4836-9448-22233370ba6f">
+          <ID>Fact Yellow Green Trips 202511</ID>
+          <Name>Fact Yellow Green Trips 202511</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="cdb13d4b-96b2-4860-869a-28008e0734cf">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_YellowGreen_Trips] WHERE PickupDateKey &gt;= 20251101 AND PickupDateKey &lt; 20251201</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="7d5e8786-e7db-49a5-b04e-4c1f15c8d9f4">
+          <ID>Fact Yellow Green Trips 202512</ID>
+          <Name>Fact Yellow Green Trips 202512</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="946ba9b5-3a68-4a77-900d-a0045cb7e0a8">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_YellowGreen_Trips] WHERE PickupDateKey &gt;= 20251201 AND PickupDateKey &lt; 20260101</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="320eed53-a8ce-4e68-b303-63e9732a9164">
+          <ID>Fact Yellow Green Trips 202601</ID>
+          <Name>Fact Yellow Green Trips 202601</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="18b4d140-1834-494b-8696-b0581659f42f">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_YellowGreen_Trips] WHERE PickupDateKey &gt;= 20260101 AND PickupDateKey &lt; 20260201</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="15c41108-ef1e-4a80-8556-566134c459f8">
+          <ID>Fact Yellow Green Trips Other Dates</ID>
+          <Name>Fact Yellow Green Trips Other Dates</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="112e8441-6a3c-4641-a0a7-a878d34c698a">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_YellowGreen_Trips] WHERE NOT ((PickupDateKey &gt;= 20081201 AND PickupDateKey &lt; 20090101) OR (PickupDateKey &gt;= 20241201 AND PickupDateKey &lt; 20250101) OR (PickupDateKey &gt;= 20250101 AND PickupDateKey &lt; 20250201) OR (PickupDateKey &gt;= 20250201 AND PickupDateKey &lt; 20250301) OR (PickupDateKey &gt;= 20250301 AND PickupDateKey &lt; 20250401) OR (PickupDateKey &gt;= 20250401 AND PickupDateKey &lt; 20250501) OR (PickupDateKey &gt;= 20250501 AND PickupDateKey &lt; 20250601) OR (PickupDateKey &gt;= 20250601 AND PickupDateKey &lt; 20250701) OR (PickupDateKey &gt;= 20250701 AND PickupDateKey &lt; 20250801) OR (PickupDateKey &gt;= 20250801 AND PickupDateKey &lt; 20250901) OR (PickupDateKey &gt;= 20250901 AND PickupDateKey &lt; 20251001) OR (PickupDateKey &gt;= 20251001 AND PickupDateKey &lt; 20251101) OR (PickupDateKey &gt;= 20251101 AND PickupDateKey &lt; 20251201) OR (PickupDateKey &gt;= 20251201 AND PickupDateKey &lt; 20260101) OR (PickupDateKey &gt;= 20260101 AND PickupDateKey &lt; 20260201))</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+      </Partitions>
+      <AggregationDesigns>
+        <AggregationDesign>
+          <ID>Operational</ID>
+          <Name>Operational</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <Dimensions>
+            <Dimension>
+              <CubeDimensionID>Pickup Date</CubeDimensionID>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Dropoff Date</CubeDimensionID>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Pickup Time</CubeDimensionID>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Dropoff Time</CubeDimensionID>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Pickup Location</CubeDimensionID>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Dropoff Location</CubeDimensionID>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Dim Service Type</CubeDimensionID>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Dim Vendor</CubeDimensionID>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Dim Rate Code</CubeDimensionID>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Dim Payment Type</CubeDimensionID>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Dim Trip Type</CubeDimensionID>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Dim Taxi Flags</CubeDimensionID>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Dim Passenger Group</CubeDimensionID>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Dim Load Batch</CubeDimensionID>
+            </Dimension>
+          </Dimensions>
+          <Aggregations>
+            <Aggregation>
+              <ID>Month Service</ID>
+              <Name>Month Service</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Pickup Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Month Number</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Dim Service Type</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Service Type Key</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Date Borough</ID>
+              <Name>Date Borough</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Pickup Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Date Key</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Pickup Location</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Borough</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+          </Aggregations>
+        </AggregationDesign>
+      </AggregationDesigns>
+    </MeasureGroup>
+    </MeasureGroups>
+</Cube>

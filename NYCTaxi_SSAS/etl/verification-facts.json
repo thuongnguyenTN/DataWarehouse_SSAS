@@ -1,0 +1,17 @@
+﻿[
+    {
+        "Fact":  "FHV",
+        "Rows":  1199560,
+        "MissingLineage":  0
+    },
+    {
+        "Fact":  "HVFHV",
+        "Rows":  1200000,
+        "MissingLineage":  0
+    },
+    {
+        "Fact":  "YellowGreen",
+        "Rows":  1772699,
+        "MissingLineage":  0
+    }
+]

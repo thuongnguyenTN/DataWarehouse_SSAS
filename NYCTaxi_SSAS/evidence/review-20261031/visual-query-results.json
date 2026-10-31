@@ -1,0 +1,911 @@
+﻿[
+    {
+        "Cube":  "YellowGreen Trips",
+        "Visual":  "08b6494c4654f9a6850e",
+        "Type":  "card",
+        "Passed":  true,
+        "Rows":  1,
+        "Milliseconds":  20,
+        "Error":  null
+    },
+    {
+        "Cube":  "YellowGreen Trips",
+        "Visual":  "1410d6c94f97d4d4c5d2",
+        "Type":  "clusteredColumnChart",
+        "Passed":  true,
+        "Rows":  20,
+        "Milliseconds":  10,
+        "Error":  null
+    },
+    {
+        "Cube":  "YellowGreen Trips",
+        "Visual":  "26e6e440bfc5077e7180",
+        "Type":  "clusteredBarChart",
+        "Passed":  true,
+        "Rows":  8,
+        "Milliseconds":  8,
+        "Error":  null
+    },
+    {
+        "Cube":  "YellowGreen Trips",
+        "Visual":  "2d0857d8f2bf088c8fe2",
+        "Type":  "slicer",
+        "Passed":  true,
+        "Rows":  6,
+        "Milliseconds":  6,
+        "Error":  null
+    },
+    {
+        "Cube":  "YellowGreen Trips",
+        "Visual":  "30ba35de9d19d216ef55",
+        "Type":  "slicer",
+        "Passed":  true,
+        "Rows":  20,
+        "Milliseconds":  5,
+        "Error":  null
+    },
+    {
+        "Cube":  "YellowGreen Trips",
+        "Visual":  "59ed5f1482b737acdfe1",
+        "Type":  "slicer",
+        "Passed":  true,
+        "Rows":  20,
+        "Milliseconds":  4,
+        "Error":  null
+    },
+    {
+        "Cube":  "YellowGreen Trips",
+        "Visual":  "7de81113d664c14ec597",
+        "Type":  "slicer",
+        "Passed":  true,
+        "Rows":  9,
+        "Milliseconds":  6,
+        "Error":  null
+    },
+    {
+        "Cube":  "YellowGreen Trips",
+        "Visual":  "7e483673ffd31f2ac075",
+        "Type":  "card",
+        "Passed":  true,
+        "Rows":  1,
+        "Milliseconds":  5,
+        "Error":  null
+    },
+    {
+        "Cube":  "YellowGreen Trips",
+        "Visual":  "92bead8f38f82a0a9dec",
+        "Type":  "clusteredColumnChart",
+        "Passed":  true,
+        "Rows":  2,
+        "Milliseconds":  6,
+        "Error":  null
+    },
+    {
+        "Cube":  "YellowGreen Trips",
+        "Visual":  "cdf097db214f42a69301",
+        "Type":  "card",
+        "Passed":  true,
+        "Rows":  1,
+        "Milliseconds":  4,
+        "Error":  null
+    },
+    {
+        "Cube":  "YellowGreen Trips",
+        "Visual":  "dbfd439cf8253755cc4b",
+        "Type":  "card",
+        "Passed":  true,
+        "Rows":  1,
+        "Milliseconds":  4,
+        "Error":  null
+    },
+    {
+        "Cube":  "YellowGreen Trips",
+        "Visual":  "f7ed507540f0820f416a",
+        "Type":  "lineChart",
+        "Passed":  true,
+        "Rows":  20,
+        "Milliseconds":  10,
+        "Error":  null
+    },
+    {
+        "Cube":  "YellowGreen Trips",
+        "Visual":  "09d4bd1343ca646f1b34",
+        "Type":  "slicer",
+        "Passed":  true,
+        "Rows":  6,
+        "Milliseconds":  5,
+        "Error":  null
+    },
+    {
+        "Cube":  "YellowGreen Trips",
+        "Visual":  "6e985d39beda37663a15",
+        "Type":  "slicer",
+        "Passed":  true,
+        "Rows":  9,
+        "Milliseconds":  4,
+        "Error":  null
+    },
+    {
+        "Cube":  "YellowGreen Trips",
+        "Visual":  "8b92b17b1beb2a9affe3",
+        "Type":  "clusteredColumnChart",
+        "Passed":  true,
+        "Rows":  2,
+        "Milliseconds":  23,
+        "Error":  null
+    },
+    {
+        "Cube":  "YellowGreen Trips",
+        "Visual":  "ad9591747bb931cfc7be",
+        "Type":  "clusteredBarChart",
+        "Passed":  true,
+        "Rows":  20,
+        "Milliseconds":  138,
+        "Error":  null
+    },
+    {
+        "Cube":  "YellowGreen Trips",
+        "Visual":  "b15b2c53a35892ad46e2",
+        "Type":  "card",
+        "Passed":  true,
+        "Rows":  1,
+        "Milliseconds":  4,
+        "Error":  null
+    },
+    {
+        "Cube":  "YellowGreen Trips",
+        "Visual":  "c9105c04ffe28c92023b",
+        "Type":  "slicer",
+        "Passed":  true,
+        "Rows":  20,
+        "Milliseconds":  6,
+        "Error":  null
+    },
+    {
+        "Cube":  "YellowGreen Trips",
+        "Visual":  "cc5bc17c4904a809ff26",
+        "Type":  "lineChart",
+        "Passed":  true,
+        "Rows":  20,
+        "Milliseconds":  9,
+        "Error":  null
+    },
+    {
+        "Cube":  "YellowGreen Trips",
+        "Visual":  "cf4165a97a7ee58a2439",
+        "Type":  "card",
+        "Passed":  true,
+        "Rows":  1,
+        "Milliseconds":  3,
+        "Error":  null
+    },
+    {
+        "Cube":  "YellowGreen Trips",
+        "Visual":  "d4a422c3fd83ace56d42",
+        "Type":  "card",
+        "Passed":  true,
+        "Rows":  1,
+        "Milliseconds":  4,
+        "Error":  null
+    },
+    {
+        "Cube":  "YellowGreen Trips",
+        "Visual":  "d7597e7f703f06a477af",
+        "Type":  "clusteredColumnChart",
+        "Passed":  true,
+        "Rows":  5,
+        "Milliseconds":  288,
+        "Error":  null
+    },
+    {
+        "Cube":  "YellowGreen Trips",
+        "Visual":  "eec4a9ece6e59253a933",
+        "Type":  "slicer",
+        "Passed":  true,
+        "Rows":  20,
+        "Milliseconds":  7,
+        "Error":  null
+    },
+    {
+        "Cube":  "YellowGreen Trips",
+        "Visual":  "f608818a7740e8a78353",
+        "Type":  "card",
+        "Passed":  true,
+        "Rows":  1,
+        "Milliseconds":  6,
+        "Error":  null
+    },
+    {
+        "Cube":  "HVFHV Trips",
+        "Visual":  "04dca95c5ca93e2f8873",
+        "Type":  "clusteredColumnChart",
+        "Passed":  true,
+        "Rows":  1,
+        "Milliseconds":  57,
+        "Error":  null
+    },
+    {
+        "Cube":  "HVFHV Trips",
+        "Visual":  "1815b81126af0a2a1fe2",
+        "Type":  "card",
+        "Passed":  true,
+        "Rows":  1,
+        "Milliseconds":  7,
+        "Error":  null
+    },
+    {
+        "Cube":  "HVFHV Trips",
+        "Visual":  "1aa485b553c5a2605d8f",
+        "Type":  "lineChart",
+        "Passed":  true,
+        "Rows":  14,
+        "Milliseconds":  28,
+        "Error":  null
+    },
+    {
+        "Cube":  "HVFHV Trips",
+        "Visual":  "33172055780f75b31db7",
+        "Type":  "card",
+        "Passed":  true,
+        "Rows":  1,
+        "Milliseconds":  5,
+        "Error":  null
+    },
+    {
+        "Cube":  "HVFHV Trips",
+        "Visual":  "64cedef802ebe49ffd66",
+        "Type":  "slicer",
+        "Passed":  true,
+        "Rows":  20,
+        "Milliseconds":  6,
+        "Error":  null
+    },
+    {
+        "Cube":  "HVFHV Trips",
+        "Visual":  "6a356efac0a392059ba2",
+        "Type":  "slicer",
+        "Passed":  true,
+        "Rows":  6,
+        "Milliseconds":  6,
+        "Error":  null
+    },
+    {
+        "Cube":  "HVFHV Trips",
+        "Visual":  "7e11deca0adffed2d40b",
+        "Type":  "card",
+        "Passed":  true,
+        "Rows":  1,
+        "Milliseconds":  5,
+        "Error":  null
+    },
+    {
+        "Cube":  "HVFHV Trips",
+        "Visual":  "80c868b237aa14a995f6",
+        "Type":  "clusteredBarChart",
+        "Passed":  true,
+        "Rows":  6,
+        "Milliseconds":  8,
+        "Error":  null
+    },
+    {
+        "Cube":  "HVFHV Trips",
+        "Visual":  "882cd31f49ea8d919d45",
+        "Type":  "card",
+        "Passed":  true,
+        "Rows":  1,
+        "Milliseconds":  6,
+        "Error":  null
+    },
+    {
+        "Cube":  "HVFHV Trips",
+        "Visual":  "b39574b175ad0ff388bc",
+        "Type":  "slicer",
+        "Passed":  true,
+        "Rows":  9,
+        "Milliseconds":  6,
+        "Error":  null
+    },
+    {
+        "Cube":  "HVFHV Trips",
+        "Visual":  "b472533837e68b753a43",
+        "Type":  "lineChart",
+        "Passed":  true,
+        "Rows":  14,
+        "Milliseconds":  11,
+        "Error":  null
+    },
+    {
+        "Cube":  "HVFHV Trips",
+        "Visual":  "cd3176cd8103eed9df4b",
+        "Type":  "slicer",
+        "Passed":  true,
+        "Rows":  20,
+        "Milliseconds":  6,
+        "Error":  null
+    },
+    {
+        "Cube":  "HVFHV Trips",
+        "Visual":  "23218adf425fa01ab0f7",
+        "Type":  "card",
+        "Passed":  true,
+        "Rows":  1,
+        "Milliseconds":  5,
+        "Error":  null
+    },
+    {
+        "Cube":  "HVFHV Trips",
+        "Visual":  "234e2f18c3885d05c0db",
+        "Type":  "slicer",
+        "Passed":  true,
+        "Rows":  6,
+        "Milliseconds":  6,
+        "Error":  null
+    },
+    {
+        "Cube":  "HVFHV Trips",
+        "Visual":  "57901c6be09171f3e8ce",
+        "Type":  "clusteredBarChart",
+        "Passed":  true,
+        "Rows":  3,
+        "Milliseconds":  143,
+        "Error":  null
+    },
+    {
+        "Cube":  "HVFHV Trips",
+        "Visual":  "677f51a6263b7011f69d",
+        "Type":  "slicer",
+        "Passed":  true,
+        "Rows":  5,
+        "Milliseconds":  6,
+        "Error":  null
+    },
+    {
+        "Cube":  "HVFHV Trips",
+        "Visual":  "960f24d3f5e39d598b09",
+        "Type":  "slicer",
+        "Passed":  true,
+        "Rows":  20,
+        "Milliseconds":  20,
+        "Error":  null
+    },
+    {
+        "Cube":  "HVFHV Trips",
+        "Visual":  "a3309f3ff0076051b4fe",
+        "Type":  "card",
+        "Passed":  true,
+        "Rows":  1,
+        "Milliseconds":  5,
+        "Error":  null
+    },
+    {
+        "Cube":  "HVFHV Trips",
+        "Visual":  "a9a637ceb80b02ffbd33",
+        "Type":  "clusteredBarChart",
+        "Passed":  true,
+        "Rows":  6,
+        "Milliseconds":  11,
+        "Error":  null
+    },
+    {
+        "Cube":  "HVFHV Trips",
+        "Visual":  "b5fef3ebc443b1ea13a6",
+        "Type":  "lineChart",
+        "Passed":  true,
+        "Rows":  14,
+        "Milliseconds":  13,
+        "Error":  null
+    },
+    {
+        "Cube":  "HVFHV Trips",
+        "Visual":  "bf2be0c97f709b849614",
+        "Type":  "card",
+        "Passed":  true,
+        "Rows":  1,
+        "Milliseconds":  6,
+        "Error":  null
+    },
+    {
+        "Cube":  "HVFHV Trips",
+        "Visual":  "e7a50d4ab986b1cdccc9",
+        "Type":  "card",
+        "Passed":  true,
+        "Rows":  1,
+        "Milliseconds":  5,
+        "Error":  null
+    },
+    {
+        "Cube":  "HVFHV Trips",
+        "Visual":  "efa5bd7d9a927d504568",
+        "Type":  "clusteredColumnChart",
+        "Passed":  true,
+        "Rows":  2,
+        "Milliseconds":  22,
+        "Error":  null
+    },
+    {
+        "Cube":  "HVFHV Trips",
+        "Visual":  "fa1329cf3a90dd622727",
+        "Type":  "slicer",
+        "Passed":  true,
+        "Rows":  20,
+        "Milliseconds":  7,
+        "Error":  null
+    },
+    {
+        "Cube":  "FHV Trips",
+        "Visual":  "04b6e1401c364e517ee9",
+        "Type":  "clusteredBarChart",
+        "Passed":  true,
+        "Rows":  20,
+        "Milliseconds":  366,
+        "Error":  null
+    },
+    {
+        "Cube":  "FHV Trips",
+        "Visual":  "074637c3200144e8dd1b",
+        "Type":  "slicer",
+        "Passed":  true,
+        "Rows":  6,
+        "Milliseconds":  5,
+        "Error":  null
+    },
+    {
+        "Cube":  "FHV Trips",
+        "Visual":  "0e5d801ea3d1e3860127",
+        "Type":  "clusteredBarChart",
+        "Passed":  true,
+        "Rows":  8,
+        "Milliseconds":  10,
+        "Error":  null
+    },
+    {
+        "Cube":  "FHV Trips",
+        "Visual":  "1df8716a976f7de70dc7",
+        "Type":  "slicer",
+        "Passed":  true,
+        "Rows":  9,
+        "Milliseconds":  5,
+        "Error":  null
+    },
+    {
+        "Cube":  "FHV Trips",
+        "Visual":  "1e91fbcb25fda4d783f2",
+        "Type":  "slicer",
+        "Passed":  true,
+        "Rows":  20,
+        "Milliseconds":  5,
+        "Error":  null
+    },
+    {
+        "Cube":  "FHV Trips",
+        "Visual":  "6210e791448f8b78ca42",
+        "Type":  "card",
+        "Passed":  true,
+        "Rows":  1,
+        "Milliseconds":  5,
+        "Error":  null
+    },
+    {
+        "Cube":  "FHV Trips",
+        "Visual":  "7882d055f344ec9f77da",
+        "Type":  "slicer",
+        "Passed":  true,
+        "Rows":  20,
+        "Milliseconds":  4,
+        "Error":  null
+    },
+    {
+        "Cube":  "FHV Trips",
+        "Visual":  "86e8e694e0507eb95f87",
+        "Type":  "card",
+        "Passed":  true,
+        "Rows":  1,
+        "Milliseconds":  5,
+        "Error":  null
+    },
+    {
+        "Cube":  "FHV Trips",
+        "Visual":  "9ed729931d9544afb8f2",
+        "Type":  "lineChart",
+        "Passed":  true,
+        "Rows":  14,
+        "Milliseconds":  12,
+        "Error":  null
+    },
+    {
+        "Cube":  "FHV Trips",
+        "Visual":  "a6aecf8a2300ea48849f",
+        "Type":  "clusteredColumnChart",
+        "Passed":  true,
+        "Rows":  20,
+        "Milliseconds":  9,
+        "Error":  null
+    },
+    {
+        "Cube":  "FHV Trips",
+        "Visual":  "e30812cb14efb86c8898",
+        "Type":  "card",
+        "Passed":  true,
+        "Rows":  1,
+        "Milliseconds":  3,
+        "Error":  null
+    },
+    {
+        "Cube":  "FHV Trips",
+        "Visual":  "e96ff69ad7225419896e",
+        "Type":  "card",
+        "Passed":  true,
+        "Rows":  1,
+        "Milliseconds":  4,
+        "Error":  null
+    },
+    {
+        "Cube":  "Daily Financial",
+        "Visual":  "09f94dd90391ec1b428c",
+        "Type":  "lineChart",
+        "Passed":  true,
+        "Rows":  20,
+        "Milliseconds":  9,
+        "Error":  null
+    },
+    {
+        "Cube":  "Daily Financial",
+        "Visual":  "54e8d5fe47095ab322ef",
+        "Type":  "clusteredColumnChart",
+        "Passed":  true,
+        "Rows":  3,
+        "Milliseconds":  5,
+        "Error":  null
+    },
+    {
+        "Cube":  "Daily Financial",
+        "Visual":  "8879ac55a8d7ce7172e0",
+        "Type":  "card",
+        "Passed":  true,
+        "Rows":  1,
+        "Milliseconds":  3,
+        "Error":  null
+    },
+    {
+        "Cube":  "Daily Financial",
+        "Visual":  "8f6cb8a51654b5539b1d",
+        "Type":  "slicer",
+        "Passed":  true,
+        "Rows":  6,
+        "Milliseconds":  4,
+        "Error":  null
+    },
+    {
+        "Cube":  "Daily Financial",
+        "Visual":  "a774c9302398e9fdf8aa",
+        "Type":  "slicer",
+        "Passed":  true,
+        "Rows":  20,
+        "Milliseconds":  4,
+        "Error":  null
+    },
+    {
+        "Cube":  "Daily Financial",
+        "Visual":  "ac6560e476308ce415b4",
+        "Type":  "card",
+        "Passed":  true,
+        "Rows":  1,
+        "Milliseconds":  4,
+        "Error":  null
+    },
+    {
+        "Cube":  "Daily Financial",
+        "Visual":  "e330979c92e0e6c1aa65",
+        "Type":  "card",
+        "Passed":  true,
+        "Rows":  1,
+        "Milliseconds":  3,
+        "Error":  null
+    },
+    {
+        "Cube":  "Daily Financial",
+        "Visual":  "e89ea1368b6ef941b72f",
+        "Type":  "clusteredColumnChart",
+        "Passed":  true,
+        "Rows":  3,
+        "Milliseconds":  4,
+        "Error":  null
+    },
+    {
+        "Cube":  "Daily Financial",
+        "Visual":  "f24740cdb1cda946a28b",
+        "Type":  "slicer",
+        "Passed":  true,
+        "Rows":  20,
+        "Milliseconds":  3,
+        "Error":  null
+    },
+    {
+        "Cube":  "Daily Financial",
+        "Visual":  "f68bdab9354801093075",
+        "Type":  "lineChart",
+        "Passed":  true,
+        "Rows":  20,
+        "Milliseconds":  6,
+        "Error":  null
+    },
+    {
+        "Cube":  "Daily Financial",
+        "Visual":  "fb20030cf2f332a8d5a6",
+        "Type":  "card",
+        "Passed":  true,
+        "Rows":  1,
+        "Milliseconds":  3,
+        "Error":  null
+    },
+    {
+        "Cube":  "Zone Traffic",
+        "Visual":  "06afddf79f8af94a85e5",
+        "Type":  "slicer",
+        "Passed":  true,
+        "Rows":  6,
+        "Milliseconds":  5,
+        "Error":  null
+    },
+    {
+        "Cube":  "Zone Traffic",
+        "Visual":  "1eb7035301dd5e3363f4",
+        "Type":  "clusteredColumnChart",
+        "Passed":  true,
+        "Rows":  4,
+        "Milliseconds":  6,
+        "Error":  null
+    },
+    {
+        "Cube":  "Zone Traffic",
+        "Visual":  "210cc708763563d6452a",
+        "Type":  "slicer",
+        "Passed":  true,
+        "Rows":  20,
+        "Milliseconds":  3,
+        "Error":  null
+    },
+    {
+        "Cube":  "Zone Traffic",
+        "Visual":  "3cfc3d14098a7f482e8c",
+        "Type":  "slicer",
+        "Passed":  true,
+        "Rows":  20,
+        "Milliseconds":  3,
+        "Error":  null
+    },
+    {
+        "Cube":  "Zone Traffic",
+        "Visual":  "6679a30d544d8d96cf0d",
+        "Type":  "slicer",
+        "Passed":  true,
+        "Rows":  9,
+        "Milliseconds":  3,
+        "Error":  null
+    },
+    {
+        "Cube":  "Zone Traffic",
+        "Visual":  "6b36f2aae0f5f89466ab",
+        "Type":  "clusteredColumnChart",
+        "Passed":  true,
+        "Rows":  20,
+        "Milliseconds":  49,
+        "Error":  null
+    },
+    {
+        "Cube":  "Zone Traffic",
+        "Visual":  "966c2fea5a768a1487ef",
+        "Type":  "card",
+        "Passed":  true,
+        "Rows":  1,
+        "Milliseconds":  3,
+        "Error":  null
+    },
+    {
+        "Cube":  "Zone Traffic",
+        "Visual":  "bdc1dd744f79a978bcfc",
+        "Type":  "lineChart",
+        "Passed":  true,
+        "Rows":  20,
+        "Milliseconds":  36,
+        "Error":  null
+    },
+    {
+        "Cube":  "Zone Traffic",
+        "Visual":  "cad955d1f1f023f4e2c2",
+        "Type":  "clusteredBarChart",
+        "Passed":  true,
+        "Rows":  8,
+        "Milliseconds":  6,
+        "Error":  null
+    },
+    {
+        "Cube":  "Zone Traffic",
+        "Visual":  "db963f2f2b84da1c2402",
+        "Type":  "card",
+        "Passed":  true,
+        "Rows":  1,
+        "Milliseconds":  3,
+        "Error":  null
+    },
+    {
+        "Cube":  "Zone Traffic",
+        "Visual":  "09a1e3a97e02d9ade0de",
+        "Type":  "slicer",
+        "Passed":  true,
+        "Rows":  9,
+        "Milliseconds":  5,
+        "Error":  null
+    },
+    {
+        "Cube":  "Zone Traffic",
+        "Visual":  "2d16bc2ccd31b77db667",
+        "Type":  "clusteredBarChart",
+        "Passed":  true,
+        "Rows":  20,
+        "Milliseconds":  44,
+        "Error":  null
+    },
+    {
+        "Cube":  "Zone Traffic",
+        "Visual":  "3c7d52d0c0c07ffa8aa9",
+        "Type":  "slicer",
+        "Passed":  true,
+        "Rows":  6,
+        "Milliseconds":  5,
+        "Error":  null
+    },
+    {
+        "Cube":  "Zone Traffic",
+        "Visual":  "60ee569ecc890c2718d4",
+        "Type":  "card",
+        "Passed":  true,
+        "Rows":  1,
+        "Milliseconds":  2,
+        "Error":  null
+    },
+    {
+        "Cube":  "Zone Traffic",
+        "Visual":  "a224b16021ca94e2671f",
+        "Type":  "slicer",
+        "Passed":  true,
+        "Rows":  20,
+        "Milliseconds":  5,
+        "Error":  null
+    },
+    {
+        "Cube":  "Zone Traffic",
+        "Visual":  "ce718e86d691b83460f7",
+        "Type":  "slicer",
+        "Passed":  true,
+        "Rows":  20,
+        "Milliseconds":  4,
+        "Error":  null
+    },
+    {
+        "Cube":  "Zone Traffic",
+        "Visual":  "f2592ec068001749a501",
+        "Type":  "pivotTable",
+        "Passed":  true,
+        "Rows":  20,
+        "Milliseconds":  59,
+        "Error":  null
+    },
+    {
+        "Cube":  "Zone Traffic",
+        "Visual":  "f432abff04909e651da7",
+        "Type":  "card",
+        "Passed":  true,
+        "Rows":  1,
+        "Milliseconds":  4,
+        "Error":  null
+    },
+    {
+        "Cube":  "Base Performance",
+        "Visual":  "07c5bb909a0da53de24b",
+        "Type":  "card",
+        "Passed":  true,
+        "Rows":  1,
+        "Milliseconds":  5,
+        "Error":  null
+    },
+    {
+        "Cube":  "Base Performance",
+        "Visual":  "2664ba6b75b1adbfeb17",
+        "Type":  "slicer",
+        "Passed":  true,
+        "Rows":  20,
+        "Milliseconds":  3,
+        "Error":  null
+    },
+    {
+        "Cube":  "Base Performance",
+        "Visual":  "2bc3699a0292e72f245f",
+        "Type":  "clusteredBarChart",
+        "Passed":  true,
+        "Rows":  20,
+        "Milliseconds":  8,
+        "Error":  null
+    },
+    {
+        "Cube":  "Base Performance",
+        "Visual":  "415b33f5f09737eb24a3",
+        "Type":  "card",
+        "Passed":  true,
+        "Rows":  1,
+        "Milliseconds":  4,
+        "Error":  null
+    },
+    {
+        "Cube":  "Base Performance",
+        "Visual":  "501a7ab921e78306e5b4",
+        "Type":  "lineChart",
+        "Passed":  true,
+        "Rows":  20,
+        "Milliseconds":  15,
+        "Error":  null
+    },
+    {
+        "Cube":  "Base Performance",
+        "Visual":  "985734263114ceeaf76b",
+        "Type":  "card",
+        "Passed":  true,
+        "Rows":  1,
+        "Milliseconds":  4,
+        "Error":  null
+    },
+    {
+        "Cube":  "Base Performance",
+        "Visual":  "a20d209a63b193c6dde3",
+        "Type":  "clusteredBarChart",
+        "Passed":  true,
+        "Rows":  3,
+        "Milliseconds":  6,
+        "Error":  null
+    },
+    {
+        "Cube":  "Base Performance",
+        "Visual":  "a868a7104432ccab4f83",
+        "Type":  "slicer",
+        "Passed":  true,
+        "Rows":  20,
+        "Milliseconds":  5,
+        "Error":  null
+    },
+    {
+        "Cube":  "Base Performance",
+        "Visual":  "b0ab82a2df0c2fab0c24",
+        "Type":  "slicer",
+        "Passed":  true,
+        "Rows":  6,
+        "Milliseconds":  5,
+        "Error":  null
+    },
+    {
+        "Cube":  "Base Performance",
+        "Visual":  "b328a7f61a8f074b118d",
+        "Type":  "card",
+        "Passed":  true,
+        "Rows":  1,
+        "Milliseconds":  4,
+        "Error":  null
+    },
+    {
+        "Cube":  "Base Performance",
+        "Visual":  "b68eafceb6824e360889",
+        "Type":  "slicer",
+        "Passed":  true,
+        "Rows":  20,
+        "Milliseconds":  4,
+        "Error":  null
+    },
+    {
+        "Cube":  "Base Performance",
+        "Visual":  "f3b41c0466ffbb99915e",
+        "Type":  "clusteredBarChart",
+        "Passed":  true,
+        "Rows":  20,
+        "Milliseconds":  5,
+        "Error":  null
+    }
+]

@@ -1,0 +1,1 @@
+﻿EVALUATE TOPN(20,SUMMARIZECOLUMNS('Dispatch Base'[Base Key],'Dispatch Base'[Base Key.Key0],"M1",[Base Performance Snapshot TotalTrips]))

@@ -1,0 +1,11 @@
+﻿{
+    "Passed":  true,
+    "Backup":  "E:\\NYCTaxi\\NYCTaxi_SSAS\\etl\\backups\\lookup-checkpoint-fix-20261031-151610",
+    "ValidationPassed":  true,
+    "FactRowsBefore":  478227,
+    "FactRowsAfter":  478227,
+    "LookupInFactPlan":  0,
+    "CompletedFileCheckpoints":  48,
+    "EtlStarted":  false,
+    "PipelineStatusModified":  false
+}

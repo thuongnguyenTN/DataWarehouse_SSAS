@@ -1,0 +1,1 @@
+Audited 51 foreign keys; 0 failing constraints. All 15 dimensions contain key=0.

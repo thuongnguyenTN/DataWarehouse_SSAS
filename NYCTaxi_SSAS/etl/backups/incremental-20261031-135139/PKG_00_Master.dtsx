@@ -1,0 +1,407 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="10/12/2026 12:22:09 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="THUONGNGUYEN"
+  DTS:CreatorName="THUONGNGUYEN\ADMIN"
+  DTS:DelayValidation="True"
+  DTS:DTSID="{F84AF46A-6714-4447-8515-E6F1A1680B64}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="17.0.1016.0"
+  DTS:LocaleID="1033"
+  DTS:MaxConcurrentExecutables="1"
+  DTS:ObjectName="PKG_00_Master"
+  DTS:PackageType="5"
+  DTS:VersionBuild="7"
+  DTS:VersionGUID="{464DAF67-4A4C-4DDD-AE79-F8AA67171C90}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:PackageParameters>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{EB34BBA4-7703-47CA-83E4-2F0A430790C6}"
+      DTS:ObjectName="pEndMonth">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">2021-03</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="3"
+      DTS:DTSID="{4DD5D5B6-F33E-4501-A9E7-A8B72D657EED}"
+      DTS:ObjectName="pMaxRows">
+      <DTS:Property
+        DTS:DataType="3"
+        DTS:Name="ParameterValue">1000</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{F3A6670D-E018-49BE-B19D-396345862B5F}"
+      DTS:ObjectName="pRunnerPath">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">E:\NYCTaxi\NYCTaxi_SSAS\etl\Invoke-NYCTaxiPipeline.ps1</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{768CF990-65C1-437A-9A9C-CE9A03A82EF1}"
+      DTS:ObjectName="pStartMonth">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">2021-03</DTS:Property>
+    </DTS:PackageParameter>
+  </DTS:PackageParameters>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\EPT_01_Extract"
+      DTS:CreationName="Microsoft.ExecuteProcess"
+      DTS:DelayValidation="True"
+      DTS:DTSID="{860FF066-611B-4971-A069-1008928FF976}"
+      DTS:ExecutableType="Microsoft.ExecuteProcess"
+      DTS:FailPackageOnFailure="True"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="EPT_01_Extract"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:PropertyExpression
+        DTS:Name="Arguments">"-NoProfile -ExecutionPolicy Bypass -File \"" + @[$Package::pRunnerPath] + "\" -Stage Extract -StartMonth " + @[$Package::pStartMonth] + " -EndMonth " + @[$Package::pEndMonth] + " -MaxRows " + (DT_WSTR,12)@[$Package::pMaxRows] + " -RunId \"" + (DT_WSTR,50)@[System::ExecutionInstanceGUID] + "\""</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <ExecuteProcessData
+          Executable="C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+          Arguments="-NoProfile -ExecutionPolicy Bypass -File &quot;E:\NYCTaxi\NYCTaxi_SSAS\etl\Invoke-NYCTaxiPipeline.ps1&quot; -Stage Extract -StartMonth 2021-03 -EndMonth 2021-03 -MaxRows 1000 -RunId &quot;{C2C7EA84-970C-4573-9B66-2289BA319243}&quot;"
+          WorkingDirectory="E:\NYCTaxi\NYCTaxi_SSAS"
+          WindowStyle="Hidden" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\EPT_02_Transform"
+      DTS:CreationName="Microsoft.ExecuteProcess"
+      DTS:DelayValidation="True"
+      DTS:DTSID="{36050C0C-0AC7-45AE-B625-6CE017949B21}"
+      DTS:ExecutableType="Microsoft.ExecuteProcess"
+      DTS:FailPackageOnFailure="True"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="EPT_02_Transform"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:PropertyExpression
+        DTS:Name="Arguments">"-NoProfile -ExecutionPolicy Bypass -File \"" + @[$Package::pRunnerPath] + "\" -Stage Transform -StartMonth " + @[$Package::pStartMonth] + " -EndMonth " + @[$Package::pEndMonth] + " -MaxRows " + (DT_WSTR,12)@[$Package::pMaxRows] + " -RunId \"" + (DT_WSTR,50)@[System::ExecutionInstanceGUID] + "\""</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <ExecuteProcessData
+          Executable="C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+          Arguments="-NoProfile -ExecutionPolicy Bypass -File &quot;E:\NYCTaxi\NYCTaxi_SSAS\etl\Invoke-NYCTaxiPipeline.ps1&quot; -Stage Transform -StartMonth 2021-03 -EndMonth 2021-03 -MaxRows 1000 -RunId &quot;{C2C7EA84-970C-4573-9B66-2289BA319243}&quot;"
+          WorkingDirectory="E:\NYCTaxi\NYCTaxi_SSAS"
+          WindowStyle="Hidden" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\EPT_03_Dwh"
+      DTS:CreationName="Microsoft.ExecuteProcess"
+      DTS:DelayValidation="True"
+      DTS:DTSID="{C1F69395-8835-42E5-8BDC-0987FF353AE0}"
+      DTS:ExecutableType="Microsoft.ExecuteProcess"
+      DTS:FailPackageOnFailure="True"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="EPT_03_Dwh"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:PropertyExpression
+        DTS:Name="Arguments">"-NoProfile -ExecutionPolicy Bypass -File \"" + @[$Package::pRunnerPath] + "\" -Stage Dwh -StartMonth " + @[$Package::pStartMonth] + " -EndMonth " + @[$Package::pEndMonth] + " -MaxRows " + (DT_WSTR,12)@[$Package::pMaxRows] + " -RunId \"" + (DT_WSTR,50)@[System::ExecutionInstanceGUID] + "\""</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <ExecuteProcessData
+          Executable="C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+          Arguments="-NoProfile -ExecutionPolicy Bypass -File &quot;E:\NYCTaxi\NYCTaxi_SSAS\etl\Invoke-NYCTaxiPipeline.ps1&quot; -Stage Dwh -StartMonth 2021-03 -EndMonth 2021-03 -MaxRows 1000 -RunId &quot;{C2C7EA84-970C-4573-9B66-2289BA319243}&quot;"
+          WorkingDirectory="E:\NYCTaxi\NYCTaxi_SSAS"
+          WindowStyle="Hidden" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\EPT_04_Aggregates"
+      DTS:CreationName="Microsoft.ExecuteProcess"
+      DTS:DelayValidation="True"
+      DTS:DTSID="{C72ADD83-B922-44A3-A817-A25A4361767F}"
+      DTS:ExecutableType="Microsoft.ExecuteProcess"
+      DTS:FailPackageOnFailure="True"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="EPT_04_Aggregates"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:PropertyExpression
+        DTS:Name="Arguments">"-NoProfile -ExecutionPolicy Bypass -File \"" + @[$Package::pRunnerPath] + "\" -Stage Aggregates -StartMonth " + @[$Package::pStartMonth] + " -EndMonth " + @[$Package::pEndMonth] + " -MaxRows " + (DT_WSTR,12)@[$Package::pMaxRows] + " -RunId \"" + (DT_WSTR,50)@[System::ExecutionInstanceGUID] + "\""</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <ExecuteProcessData
+          Executable="C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+          Arguments="-NoProfile -ExecutionPolicy Bypass -File &quot;E:\NYCTaxi\NYCTaxi_SSAS\etl\Invoke-NYCTaxiPipeline.ps1&quot; -Stage Aggregates -StartMonth 2021-03 -EndMonth 2021-03 -MaxRows 1000 -RunId &quot;{C2C7EA84-970C-4573-9B66-2289BA319243}&quot;"
+          WorkingDirectory="E:\NYCTaxi\NYCTaxi_SSAS"
+          WindowStyle="Hidden" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\EPT_05_Ssas"
+      DTS:CreationName="Microsoft.ExecuteProcess"
+      DTS:DelayValidation="True"
+      DTS:DTSID="{49F20EB3-6B7B-4F6F-9194-05430581696A}"
+      DTS:ExecutableType="Microsoft.ExecuteProcess"
+      DTS:FailPackageOnFailure="True"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="EPT_05_Ssas"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:PropertyExpression
+        DTS:Name="Arguments">"-NoProfile -ExecutionPolicy Bypass -File \"" + @[$Package::pRunnerPath] + "\" -Stage Ssas -StartMonth " + @[$Package::pStartMonth] + " -EndMonth " + @[$Package::pEndMonth] + " -MaxRows " + (DT_WSTR,12)@[$Package::pMaxRows] + " -RunId \"" + (DT_WSTR,50)@[System::ExecutionInstanceGUID] + "\""</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <ExecuteProcessData
+          Executable="C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+          Arguments="-NoProfile -ExecutionPolicy Bypass -File &quot;E:\NYCTaxi\NYCTaxi_SSAS\etl\Invoke-NYCTaxiPipeline.ps1&quot; -Stage Ssas -StartMonth 2021-03 -EndMonth 2021-03 -MaxRows 1000 -RunId &quot;{C2C7EA84-970C-4573-9B66-2289BA319243}&quot;"
+          WorkingDirectory="E:\NYCTaxi\NYCTaxi_SSAS"
+          WindowStyle="Hidden" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Stage1]"
+      DTS:CreationName=""
+      DTS:DTSID="{36FA6366-B00D-4CDF-A83B-3A15A7A4E79E}"
+      DTS:From="Package\EPT_01_Extract"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Stage1"
+      DTS:To="Package\EPT_02_Transform" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Stage2]"
+      DTS:CreationName=""
+      DTS:DTSID="{FBEF21DC-EAF9-4479-A204-4134198DDCD4}"
+      DTS:From="Package\EPT_02_Transform"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Stage2"
+      DTS:To="Package\EPT_03_Dwh" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Stage3]"
+      DTS:CreationName=""
+      DTS:DTSID="{BF9A7AA0-228D-4B50-A30A-432E59D0F3D5}"
+      DTS:From="Package\EPT_03_Dwh"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Stage3"
+      DTS:To="Package\EPT_04_Aggregates" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Stage4]"
+      DTS:CreationName=""
+      DTS:DTSID="{CCE680C3-3B74-4D2A-AF43-BEE95204ABB1}"
+      DTS:From="Package\EPT_04_Aggregates"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Stage4"
+      DTS:To="Package\EPT_05_Ssas" />
+  </DTS:PrecedenceConstraints>
+  <DTS:EventHandlers>
+    <DTS:EventHandler
+      DTS:refId="Package.EventHandlers[OnError]"
+      DTS:CreationName="OnError"
+      DTS:DTSID="{51E27204-7041-4527-B3F9-78376ED5F15F}"
+      DTS:EventID="9437328"
+      DTS:EventName="OnError"
+      DTS:LocaleID="1033">
+      <DTS:Variables>
+        <DTS:Variable
+          DTS:CreationName=""
+          DTS:Description="The propagate property of the event"
+          DTS:DTSID="{6B147182-4AD9-4694-95EC-F80E10684D6E}"
+          DTS:IncludeInDebugDump="6789"
+          DTS:Namespace="System"
+          DTS:ObjectName="Propagate">
+          <DTS:VariableValue
+            DTS:DataType="11">-1</DTS:VariableValue>
+        </DTS:Variable>
+      </DTS:Variables>
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package.EventHandlers[OnError]\EST_LogOriginalError"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:DelayValidation="True"
+          DTS:DisableEventHandlers="True"
+          DTS:DTSID="{ABD04E5F-9839-4E86-AA60-2C50519A216D}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="EST_LogOriginalError">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{4A829E7F-DE39-4A39-83D3-52CE94E192E2}"
+              SQLTask:SqlStatementSource="INSERT etl.PackageError(ExecutionId,PackageName,SourceName,ErrorCode,ErrorDescription) VALUES(?,?,?,?,?);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="0"
+                SQLTask:DtsVariableName="System::ExecutionInstanceGUID"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="130"
+                SQLTask:ParameterSize="64" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="1"
+                SQLTask:DtsVariableName="System::PackageName"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="130"
+                SQLTask:ParameterSize="260" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="2"
+                SQLTask:DtsVariableName="System::SourceName"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="130"
+                SQLTask:ParameterSize="260" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="3"
+                SQLTask:DtsVariableName="System::ErrorCode"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="3"
+                SQLTask:ParameterSize="-1" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="4"
+                SQLTask:DtsVariableName="System::ErrorDescription"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="130"
+                SQLTask:ParameterSize="4000" />
+            </SQLTask:SqlTaskData>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+    </DTS:EventHandler>
+  </DTS:EventHandlers>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="153.333333333334,42.6666666666667"
+          Id="Package\EPT_01_Extract"
+          TopLeft="16.1666666666667,5.50000000000004" />
+        <NodeLayout
+          Size="169.333333333334,42.6666666666667"
+          Id="Package\EPT_02_Transform"
+          TopLeft="8.16666666666667,108.166666666667" />
+        <NodeLayout
+          Size="142.666666666667,42.6666666666667"
+          Id="Package\EPT_03_Dwh"
+          TopLeft="21.5,210.833333333334" />
+        <NodeLayout
+          Size="174.666666666667,42.6666666666667"
+          Id="Package\EPT_04_Aggregates"
+          TopLeft="5.50000000000004,313.5" />
+        <NodeLayout
+          Size="142.666666666667,42.6666666666667"
+          Id="Package\EPT_05_Ssas"
+          TopLeft="21.5,416.166666666667" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Stage1]"
+          TopLeft="92.8333333333333,48.1666666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60.0000000000001"
+              Start="0,0"
+              End="0,52.5000000000001">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5000000000001" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Stage2]"
+          TopLeft="92.8333333333333,150.833333333333">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60.0000000000001"
+              Start="0,0"
+              End="0,52.5000000000001">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5000000000001" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Stage3]"
+          TopLeft="92.8333333333334,253.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60.0000000000001"
+              Start="0,0"
+              End="0,52.5000000000001">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5000000000001" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Stage4]"
+          TopLeft="92.8333333333334,356.166666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60.0000000000001"
+              Start="0,0"
+              End="0,52.5000000000001">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5000000000001" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <DtsEventHandler
+    design-time-name="Package.EventHandlers[OnError]">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="NaN,NaN"
+          Id="Package.EventHandlers[OnError]\EST_LogOriginalError"
+          TopLeft="NaN,NaN" />
+      </GraphLayout>
+    </LayoutInfo>
+  </DtsEventHandler>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

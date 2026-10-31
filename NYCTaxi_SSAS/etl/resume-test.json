@@ -1,0 +1,5 @@
+﻿{
+    "Test":  "Retrying an earlier stage invalidates downstream completion; stale progress cannot skip Transform",
+    "Passed":  true,
+    "RunId":  "94ddf222-28d7-4bd4-8342-180ade7dce5a"
+}

@@ -138,9 +138,44 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>5jN5mZl7vC7BB1SeW5uyDzLJ7ok=10/19/26 20:43:4310/12/26 01:48:58DKVIM3/z1v8e6sci8Rgs2lljHAQ=10/19/26 20:43:4310/12/26 01:48:58</TimeStamp>
+        <TimeStamp>YEESFUjqVXHbQErb2PAt0PXhHQY=10/21/26 08:10:2410/21/26 08:10:24NAC1JR0TCeRxUz3fnrswJd9kUEg=10/21/26 08:10:2410/21/26 08:10:24</TimeStamp>
         <ID>
-          <String>DSV_NYCTaxi</String>
+          <String>FHV_Trips</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>W1jKkcJsQ1JwGuitTIqg+T8Mtwo=10/21/26 08:10:2410/21/26 08:10:248Lwl3Ivtqv2CO9W7jPTltv5+wdA=10/21/26 08:10:2410/21/26 08:10:24</TimeStamp>
+        <ID>
+          <String>HVFHV_Trips</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>8q3EDodSYWRFQ0NJEePXR5/TEYI=10/21/26 08:10:2410/21/26 08:10:24VJ7ze7sl6Ys2SK9V2yK7+ndyBAg=10/21/26 08:10:2410/21/26 08:10:24</TimeStamp>
+        <ID>
+          <String>YellowGreen_Trips</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>uss4pQQ5muKsktGfJuRuAE0fXSE=10/21/26 08:10:2410/21/26 08:10:24MsgFOxMCM55lYn/wNdXOedd4zMw=10/21/26 08:10:2410/21/26 08:10:24</TimeStamp>
+        <ID>
+          <String>Daily_Financial</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>ziANsYdBout39WamPRuple0rBFk=10/21/26 08:10:2410/21/26 08:10:24YSn0xPEUzDlbKu0eFmMwu+C2GsQ=10/21/26 08:10:2410/21/26 08:10:24</TimeStamp>
+        <ID>
+          <String>Zone_Traffic</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>2AviIcHLi2lLX5QKi0WF8C54488=10/21/26 08:10:2410/21/26 08:10:24I0ZvXN5/2XpPrSy0Jt4IM32T7io=10/21/26 08:10:2410/21/26 08:10:24</TimeStamp>
+        <ID>
+          <String>Base_Performance</String>
         </ID>
       </ObjectSnapshot>
     </ObjectSnapshots>
@@ -155,5 +190,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2026-10-19T13:43:53.213333Z</LastDeployed>
+  <LastDeployed>2026-10-21T01:37:49.076667Z</LastDeployed>
 </DeploymentSnapshot>

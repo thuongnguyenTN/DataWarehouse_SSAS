@@ -1,0 +1,6 @@
+﻿{
+    "Test":  "Production Fact SQL reconciles a historical correction and a removed/rejected row; outer rollback restores business data",
+    "Passed":  true,
+    "Before":  "1199560|1798583396",
+    "After":  "1199560|1798583396"
+}

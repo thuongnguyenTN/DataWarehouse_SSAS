@@ -1,14 +1,16 @@
-# NYC Taxi Analysis — SSAS Multidimensional
+﻿# NYC Taxi Analysis — SSAS Multidimensional
 
 Dự án tiếp tục solution hiện có tại `E:\NYCTaxi\NYCTaxi_SSAS`, sử dụng schema thực tế của `THUONGNGUYEN\MSSQLSV.NYCTaxi_DWH`. Không thay đổi bảng hoặc dữ liệu DWH.
 
-## Mô hình đã triển khai
+## Mô hình dự án hiện tại
+
+Cập nhật 29/10/2026: sáu cube đã được xác nhận Processed trên server qua luồng ETL đầy đủ; 102 kiểm tra SQL–MDX đạt, 15 dimension và 45 partition đã process. Xem [hướng dẫn ETL](etl/README.md) và [báo cáo triển khai ETL](etl/IMPLEMENTATION_REPORT.md). Báo cáo triển khai ngày trước đó mô tả trạng thái lịch sử.
 
 - Data Source `DS_NYCTaxi_DWH`: MSOLEDBSQL, Windows authentication, tài khoản dịch vụ SSAS.
 - DSV `DSV_NYCTaxi_DWH`: 15 dimension, 3 transaction fact, 3 snapshot fact; quan hệ theo PK/FK thực tế. Tệp vẫn giữ tên `DSV_NYCTaxi.dsv` để tiếp tục dự án cũ.
 - 15 database dimension, gồm Dim Load Batch; role-playing Pickup/Dropoff/Request/On Scene/Snapshot và Dispatch/Origin/Affiliated.
-- Cube `NYC Taxi Analysis`, giữ ID nội bộ `DSV_NYCTaxi` để cập nhật cube cũ.
-- 6 measure group, 49 measure nghiệp vụ cộng dồn, 18 measure ẩn hỗ trợ mẫu số hợp lệ và 19 calculated measure MDX.
+- 6 cube riêng theo nghiệp vụ: `FHV Trips`, `HVFHV Trips`, `YellowGreen Trips`, `Daily Financial`, `Zone Traffic`, `Base Performance`. Mỗi cube có một measure group, chỉ giữ dimension và MDX liên quan; dimension cấp database và DSV dùng chung.
+- 6 measure group, 49 measure nghiệp vụ cộng dồn, 18 measure ẩn hỗ trợ mẫu số hợp lệ và 18 calculated measure MDX.
 - 45 partition MOLAP: FHV 13, HVFHV 13, YellowGreen 16, snapshot 3. Transaction chia theo tháng/bảng nguồn; Yellow/Green phân biệt qua ServiceTypeKey. `Other Dates` giữ khóa 0 và tháng chưa tách riêng.
 - Aggregation design `Operational`: Month/Service, Date/Borough khi có khóa địa lý tương ứng. Snapshot là measure group độc lập, không phải SSAS aggregation của transaction.
 
@@ -16,13 +18,13 @@ Dự án tiếp tục solution hiện có tại `E:\NYCTaxi\NYCTaxi_SSAS`, sử 
 
 ## Chỉ tiêu và hierarchy
 
-`Total Trips All Services` chỉ cộng ba transaction fact; không cộng TotalTrips từ snapshot. Tiền cước và tiền khách trả được giữ riêng theo nguồn, không gộp FareAmount với BasePassengerFare.
+Đã bỏ `Total Trips All Services` vì không còn cube tổng hợp. Truy vấn từng cube theo nghiệp vụ; snapshot nằm ở cube riêng. Tiền cước và tiền khách trả được giữ riêng theo nguồn, không gộp FareAmount với BasePassengerFare.
 
 Trung bình dùng tổng giá trị chia tổng TripCount của các dòng có giá trị tương ứng, không coi NULL là 0. Speed dùng tổng khoảng cách chia tổng thời gian của cùng tập dòng có khoảng cách không âm và thời gian dương. Tip Percentage là TipAmount/FareAmount cho taxi, TipAmount/BasePassengerFare cho HVFHV, trên cùng tập dòng có đủ hai giá trị; không phải tip/tổng tiền.
 
 Shared Request Rate dùng snapshot Base Performance, riêng FHVHV: TotalSharedRequests/TotalTrips. WAV Match Rate là TotalWAVMatches/TotalWAVRequests. Base Average Duration/Waiting dùng DurationTripCount/WaitingTripCount. Mẫu số trống hoặc bằng 0 trả NULL.
 
-Dimension không liên quan có `IgnoreUnrelatedDimensions=false`. Khi so sánh liên nguồn, dùng dimension chung; Payment Type không mô tả FHV/HVFHV. Tổng chuyến dùng CoalesceEmpty nên ngữ cảnh trống có thể hiển thị 0.
+Dimension không liên quan có `IgnoreUnrelatedDimensions=false`. Khi so sánh liên nguồn, dùng dimension chung; Payment Type không mô tả FHV/HVFHV. Không có measure cộng tổng các cube; tổng liên nguồn cần thực hiện ở lớp báo cáo với cùng bộ lọc.
 
 - Calendar: Year → Quarter → Month → Date; khóa quý `(YearNumber,QuarterNumber)`, tháng `(YearNumber,MonthNumber)`, ngày DateKey.
 - Time: TimeBand → Hour → Time; khóa giờ `(TimeBand,HourNumber)` phân biệt giờ Unknown với giờ 00; phút dùng TimeKey 1..1440, khóa 0 là Unknown.

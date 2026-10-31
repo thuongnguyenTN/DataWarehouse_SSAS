@@ -1,0 +1,2 @@
+{"Utc":"2026-10-31T10:18:03.0437229Z","RunId":"555295b8-86c3-487d-a50d-35d0f0ea12e7","Stage":"Dwh","Task":"StageAttempt","Status":"RUNNING","Detail":"Lần thử 1"}
+{"Utc":"2026-10-31T10:18:03.8188576Z","RunId":"555295b8-86c3-487d-a50d-35d0f0ea12e7","Stage":"Dwh","Task":"FixtureSql","Status":"FAILED","Detail":"fixture original SQL error"}

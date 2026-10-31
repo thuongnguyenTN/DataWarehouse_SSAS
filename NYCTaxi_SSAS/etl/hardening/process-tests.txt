@@ -1,0 +1,1 @@
+PASS job close terminates runner and descendant

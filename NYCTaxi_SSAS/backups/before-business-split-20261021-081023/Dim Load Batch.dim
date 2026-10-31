@@ -1,0 +1,147 @@
+<Dimension xmlns="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ID>Dim Load Batch</ID>
+  <Name>Dim Load Batch</Name>
+  <Source xsi:type="DataSourceViewBinding">
+    <DataSourceViewID>DSV_NYCTaxi_DWH</DataSourceViewID>
+  </Source>
+  <Attributes>
+    <Attribute>
+      <ID>Load Batch Key</ID>
+      <Name>Load Batch Key</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_Dim_LoadBatch</TableID>
+            <ColumnID>LoadBatchKey</ColumnID>
+          </Source>
+          <NullProcessing>ZeroOrBlank</NullProcessing>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_Dim_LoadBatch</TableID>
+          <ColumnID>BatchID</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship>
+          <AttributeID>BatchID</AttributeID>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Dataset Name</AttributeID>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Source File Name</AttributeID>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Source Year</AttributeID>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Source Month</AttributeID>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Batch Status</AttributeID>
+        </AttributeRelationship>
+      </AttributeRelationships>
+    </Attribute>
+    <Attribute>
+      <ID>BatchID</ID>
+      <Name>BatchID</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_Dim_LoadBatch</TableID>
+            <ColumnID>BatchID</ColumnID>
+          </Source>
+          <NullProcessing>ZeroOrBlank</NullProcessing>
+        </KeyColumn>
+      </KeyColumns>
+    </Attribute>
+    <Attribute>
+      <ID>Dataset Name</ID>
+      <Name>Dataset Name</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>60</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_Dim_LoadBatch</TableID>
+            <ColumnID>DatasetName</ColumnID>
+          </Source>
+          <NullProcessing>ZeroOrBlank</NullProcessing>
+        </KeyColumn>
+      </KeyColumns>
+    </Attribute>
+    <Attribute>
+      <ID>Source File Name</ID>
+      <Name>Source File Name</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>1000</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_Dim_LoadBatch</TableID>
+            <ColumnID>SourceFileName</ColumnID>
+          </Source>
+          <NullProcessing>ZeroOrBlank</NullProcessing>
+        </KeyColumn>
+      </KeyColumns>
+    </Attribute>
+    <Attribute>
+      <ID>Source Year</ID>
+      <Name>Source Year</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_Dim_LoadBatch</TableID>
+            <ColumnID>SourceYear</ColumnID>
+          </Source>
+          <NullProcessing>ZeroOrBlank</NullProcessing>
+        </KeyColumn>
+      </KeyColumns>
+    </Attribute>
+    <Attribute>
+      <ID>Source Month</ID>
+      <Name>Source Month</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>UnsignedTinyInt</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_Dim_LoadBatch</TableID>
+            <ColumnID>SourceMonth</ColumnID>
+          </Source>
+          <NullProcessing>ZeroOrBlank</NullProcessing>
+        </KeyColumn>
+      </KeyColumns>
+    </Attribute>
+    <Attribute>
+      <ID>Batch Status</ID>
+      <Name>Batch Status</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>40</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_Dim_LoadBatch</TableID>
+            <ColumnID>BatchStatus</ColumnID>
+          </Source>
+          <NullProcessing>ZeroOrBlank</NullProcessing>
+        </KeyColumn>
+      </KeyColumns>
+    </Attribute>
+  </Attributes>
+  <UnknownMember>Visible</UnknownMember>
+  <UnknownMemberName>Unknown (unresolved key)</UnknownMemberName>
+  <ErrorConfiguration>
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+</Dimension>

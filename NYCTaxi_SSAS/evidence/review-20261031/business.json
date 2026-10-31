@@ -1,0 +1,429 @@
+﻿[
+    [
+        {
+            "SourceSRFlag":  null,
+            "SharedRequestFlag":  null,
+            "Rows":  140000
+        }
+    ],
+    [
+        {
+            "IsSharedRide":  "U",
+            "Rows":  139970
+        }
+    ],
+    [
+        {
+            "DateRows":  5848,
+            "HolidayRows":  0
+        }
+    ],
+    [
+        {
+            "SourceDataset":  "fhv",
+            "SourceKey":  "fhv_tripdata_2025-02.csv",
+            "Rows":  10000,
+            "MinDate":  20250201,
+            "MaxDate":  20250201
+        },
+        {
+            "SourceDataset":  "fhv",
+            "SourceKey":  "fhv_tripdata_2025-04.csv",
+            "Rows":  10000,
+            "MinDate":  20250401,
+            "MaxDate":  20250401
+        },
+        {
+            "SourceDataset":  "fhv",
+            "SourceKey":  "fhv_tripdata_2025-09.csv",
+            "Rows":  9995,
+            "MinDate":  20250901,
+            "MaxDate":  20250901
+        },
+        {
+            "SourceDataset":  "fhv",
+            "SourceKey":  "fhv_tripdata_2025-11.csv",
+            "Rows":  9997,
+            "MinDate":  20251101,
+            "MaxDate":  20251101
+        },
+        {
+            "SourceDataset":  "fhv",
+            "SourceKey":  "fhv_tripdata_2025-01.csv",
+            "Rows":  9998,
+            "MinDate":  20250101,
+            "MaxDate":  20250101
+        },
+        {
+            "SourceDataset":  "fhv",
+            "SourceKey":  "fhv_tripdata_2025-10.csv",
+            "Rows":  10000,
+            "MinDate":  20251001,
+            "MaxDate":  20251001
+        },
+        {
+            "SourceDataset":  "fhv",
+            "SourceKey":  "fhv_tripdata_2025-12.csv",
+            "Rows":  9992,
+            "MinDate":  20251201,
+            "MaxDate":  20251201
+        },
+        {
+            "SourceDataset":  "fhv",
+            "SourceKey":  "fhv_tripdata_2025-03.csv",
+            "Rows":  10000,
+            "MinDate":  20250301,
+            "MaxDate":  20250301
+        },
+        {
+            "SourceDataset":  "fhv",
+            "SourceKey":  "fhv_tripdata_2021-01.csv",
+            "Rows":  10000,
+            "MinDate":  20210101,
+            "MaxDate":  20210101
+        },
+        {
+            "SourceDataset":  "fhv",
+            "SourceKey":  "fhv_tripdata_2025-08.csv",
+            "Rows":  9991,
+            "MinDate":  20250801,
+            "MaxDate":  20250801
+        },
+        {
+            "SourceDataset":  "fhv",
+            "SourceKey":  "fhv_tripdata_2025-05.csv",
+            "Rows":  10000,
+            "MinDate":  20250501,
+            "MaxDate":  20250501
+        },
+        {
+            "SourceDataset":  "fhv",
+            "SourceKey":  "fhv_tripdata_2025-06.csv",
+            "Rows":  10000,
+            "MinDate":  20250601,
+            "MaxDate":  20250601
+        },
+        {
+            "SourceDataset":  "fhv",
+            "SourceKey":  "fhv_tripdata_2025-07.csv",
+            "Rows":  10000,
+            "MinDate":  20250701,
+            "MaxDate":  20250701
+        },
+        {
+            "SourceDataset":  "fhv",
+            "SourceKey":  "fhv_tripdata_2021-02.csv",
+            "Rows":  9997,
+            "MinDate":  20210201,
+            "MaxDate":  20210201
+        }
+    ],
+    [
+        {
+            "Rows":  61,
+            "WithFileName":  0
+        }
+    ],
+    [
+        {
+            "DateKey":  20250301,
+            "DispatchBaseKey":  140,
+            "ServiceTypeKey":  4,
+            "HVFHSProviderKey":  1,
+            "TotalTrips":  7224,
+            "TotalTripDurationSeconds":  7768962,
+            "DurationTripCount":  7224,
+            "AverageTripDurationSeconds":  1075.44,
+            "TotalWaitingTimeSeconds":  2464700,
+            "WaitingTripCount":  7218,
+            "AverageWaitingTimeSeconds":  341.47,
+            "TotalSharedRequests":  452,
+            "TotalSharedMatches":  292,
+            "TotalWAVRequests":  6,
+            "TotalWAVMatches":  559,
+            "TotalDriverPay":  152299.15,
+            "SnapshotUpdatedAt":  "\/Date(1793441002000)\/"
+        },
+        {
+            "DateKey":  20250201,
+            "DispatchBaseKey":  140,
+            "ServiceTypeKey":  4,
+            "HVFHSProviderKey":  1,
+            "TotalTrips":  7358,
+            "TotalTripDurationSeconds":  7710241,
+            "DurationTripCount":  7358,
+            "AverageTripDurationSeconds":  1047.87,
+            "TotalWaitingTimeSeconds":  2505029,
+            "WaitingTripCount":  7354,
+            "AverageWaitingTimeSeconds":  340.63,
+            "TotalSharedRequests":  540,
+            "TotalSharedMatches":  365,
+            "TotalWAVRequests":  1,
+            "TotalWAVMatches":  530,
+            "TotalDriverPay":  136398.23,
+            "SnapshotUpdatedAt":  "\/Date(1793441002000)\/"
+        },
+        {
+            "DateKey":  20251101,
+            "DispatchBaseKey":  140,
+            "ServiceTypeKey":  4,
+            "HVFHSProviderKey":  1,
+            "TotalTrips":  6417,
+            "TotalTripDurationSeconds":  9184402,
+            "DurationTripCount":  6417,
+            "AverageTripDurationSeconds":  1431.26,
+            "TotalWaitingTimeSeconds":  2779803,
+            "WaitingTripCount":  6396,
+            "AverageWaitingTimeSeconds":  434.62,
+            "TotalSharedRequests":  409,
+            "TotalSharedMatches":  290,
+            "TotalWAVRequests":  1,
+            "TotalWAVMatches":  508,
+            "TotalDriverPay":  214810.85,
+            "SnapshotUpdatedAt":  "\/Date(1793441002000)\/"
+        },
+        {
+            "DateKey":  20250101,
+            "DispatchBaseKey":  140,
+            "ServiceTypeKey":  4,
+            "HVFHSProviderKey":  1,
+            "TotalTrips":  8095,
+            "TotalTripDurationSeconds":  9244070,
+            "DurationTripCount":  8095,
+            "AverageTripDurationSeconds":  1141.95,
+            "TotalWaitingTimeSeconds":  3264059,
+            "WaitingTripCount":  8028,
+            "AverageWaitingTimeSeconds":  406.58,
+            "TotalSharedRequests":  503,
+            "TotalSharedMatches":  387,
+            "TotalWAVRequests":  6,
+            "TotalWAVMatches":  503,
+            "TotalDriverPay":  201588.68,
+            "SnapshotUpdatedAt":  "\/Date(1793441002000)\/"
+        },
+        {
+            "DateKey":  20251001,
+            "DispatchBaseKey":  140,
+            "ServiceTypeKey":  4,
+            "HVFHSProviderKey":  1,
+            "TotalTrips":  7253,
+            "TotalTripDurationSeconds":  7149420,
+            "DurationTripCount":  7253,
+            "AverageTripDurationSeconds":  985.72,
+            "TotalWaitingTimeSeconds":  1945090,
+            "WaitingTripCount":  7245,
+            "AverageWaitingTimeSeconds":  268.47,
+            "TotalSharedRequests":  444,
+            "TotalSharedMatches":  234,
+            "TotalWAVRequests":  4,
+            "TotalWAVMatches":  492,
+            "TotalDriverPay":  134325.01,
+            "SnapshotUpdatedAt":  "\/Date(1793441002000)\/"
+        },
+        {
+            "DateKey":  20251201,
+            "DispatchBaseKey":  140,
+            "ServiceTypeKey":  4,
+            "HVFHSProviderKey":  1,
+            "TotalTrips":  6247,
+            "TotalTripDurationSeconds":  6055129,
+            "DurationTripCount":  6247,
+            "AverageTripDurationSeconds":  969.29,
+            "TotalWaitingTimeSeconds":  1935790,
+            "WaitingTripCount":  6232,
+            "AverageWaitingTimeSeconds":  310.62,
+            "TotalSharedRequests":  382,
+            "TotalSharedMatches":  240,
+            "TotalWAVRequests":  5,
+            "TotalWAVMatches":  476,
+            "TotalDriverPay":  123644.29,
+            "SnapshotUpdatedAt":  "\/Date(1793441002000)\/"
+        },
+        {
+            "DateKey":  20250801,
+            "DispatchBaseKey":  140,
+            "ServiceTypeKey":  4,
+            "HVFHSProviderKey":  1,
+            "TotalTrips":  7176,
+            "TotalTripDurationSeconds":  7300347,
+            "DurationTripCount":  7176,
+            "AverageTripDurationSeconds":  1017.33,
+            "TotalWaitingTimeSeconds":  2146830,
+            "WaitingTripCount":  7172,
+            "AverageWaitingTimeSeconds":  299.33,
+            "TotalSharedRequests":  654,
+            "TotalSharedMatches":  422,
+            "TotalWAVRequests":  3,
+            "TotalWAVMatches":  455,
+            "TotalDriverPay":  138719.54,
+            "SnapshotUpdatedAt":  "\/Date(1793441002000)\/"
+        },
+        {
+            "DateKey":  20250401,
+            "DispatchBaseKey":  140,
+            "ServiceTypeKey":  4,
+            "HVFHSProviderKey":  1,
+            "TotalTrips":  6633,
+            "TotalTripDurationSeconds":  6311224,
+            "DurationTripCount":  6633,
+            "AverageTripDurationSeconds":  951.49,
+            "TotalWaitingTimeSeconds":  2308145,
+            "WaitingTripCount":  6630,
+            "AverageWaitingTimeSeconds":  348.14,
+            "TotalSharedRequests":  550,
+            "TotalSharedMatches":  299,
+            "TotalWAVRequests":  2,
+            "TotalWAVMatches":  439,
+            "TotalDriverPay":  123999.61,
+            "SnapshotUpdatedAt":  "\/Date(1793441002000)\/"
+        },
+        {
+            "DateKey":  20250501,
+            "DispatchBaseKey":  140,
+            "ServiceTypeKey":  4,
+            "HVFHSProviderKey":  1,
+            "TotalTrips":  7220,
+            "TotalTripDurationSeconds":  7344370,
+            "DurationTripCount":  7220,
+            "AverageTripDurationSeconds":  1017.23,
+            "TotalWaitingTimeSeconds":  1811108,
+            "WaitingTripCount":  7219,
+            "AverageWaitingTimeSeconds":  250.88,
+            "TotalSharedRequests":  398,
+            "TotalSharedMatches":  219,
+            "TotalWAVRequests":  4,
+            "TotalWAVMatches":  437,
+            "TotalDriverPay":  138423.55,
+            "SnapshotUpdatedAt":  "\/Date(1793441002000)\/"
+        },
+        {
+            "DateKey":  20250701,
+            "DispatchBaseKey":  140,
+            "ServiceTypeKey":  4,
+            "HVFHSProviderKey":  1,
+            "TotalTrips":  6904,
+            "TotalTripDurationSeconds":  6796100,
+            "DurationTripCount":  6904,
+            "AverageTripDurationSeconds":  984.37,
+            "TotalWaitingTimeSeconds":  2055396,
+            "WaitingTripCount":  6902,
+            "AverageWaitingTimeSeconds":  297.80,
+            "TotalSharedRequests":  554,
+            "TotalSharedMatches":  329,
+            "TotalWAVRequests":  0,
+            "TotalWAVMatches":  413,
+            "TotalDriverPay":  127365.35,
+            "SnapshotUpdatedAt":  "\/Date(1793441002000)\/"
+        }
+    ],
+    [
+        {
+            "TableName":  "Fact_Base_Performance_Snapshot",
+            "IndexName":  "PK_Fact_Base_Performance_Snapshot",
+            "is_unique":  true,
+            "Columns":  "DateKey,DispatchBaseKey,ServiceTypeKey,HVFHSProviderKey"
+        },
+        {
+            "TableName":  "Fact_Daily_Financial_Snapshot",
+            "IndexName":  "PK_Fact_Daily_Financial_Snapshot",
+            "is_unique":  true,
+            "Columns":  "DateKey,ServiceTypeKey"
+        },
+        {
+            "TableName":  "Fact_FHV_Trips",
+            "IndexName":  "IX_DwhFile_Source",
+            "is_unique":  false,
+            "Columns":  "SourceDataset,SourceKey,RecordHash"
+        },
+        {
+            "TableName":  "Fact_FHV_Trips",
+            "IndexName":  "IX_FHV_DateService",
+            "is_unique":  false,
+            "Columns":  "PickupDateKey,ServiceTypeKey"
+        },
+        {
+            "TableName":  "Fact_FHV_Trips",
+            "IndexName":  "PK_Fact_FHV_Trips",
+            "is_unique":  true,
+            "Columns":  "TripKey"
+        },
+        {
+            "TableName":  "Fact_FHV_Trips",
+            "IndexName":  "UX_FHV_RecordHash",
+            "is_unique":  true,
+            "Columns":  "RecordHash"
+        },
+        {
+            "TableName":  "Fact_HVFHV_Trips",
+            "IndexName":  "IX_DwhFile_Source",
+            "is_unique":  false,
+            "Columns":  "SourceDataset,SourceKey,RecordHash"
+        },
+        {
+            "TableName":  "Fact_HVFHV_Trips",
+            "IndexName":  "IX_HVFHV_DateService",
+            "is_unique":  false,
+            "Columns":  "PickupDateKey,ServiceTypeKey"
+        },
+        {
+            "TableName":  "Fact_HVFHV_Trips",
+            "IndexName":  "IX_HVFHV_DispatchBase",
+            "is_unique":  false,
+            "Columns":  "DispatchBaseKey"
+        },
+        {
+            "TableName":  "Fact_HVFHV_Trips",
+            "IndexName":  "PK_Fact_HVFHV_Trips",
+            "is_unique":  true,
+            "Columns":  "TripKey"
+        },
+        {
+            "TableName":  "Fact_HVFHV_Trips",
+            "IndexName":  "UX_HVFHV_RecordHash",
+            "is_unique":  true,
+            "Columns":  "RecordHash"
+        },
+        {
+            "TableName":  "Fact_YellowGreen_Trips",
+            "IndexName":  "IX_DwhFile_Source",
+            "is_unique":  false,
+            "Columns":  "SourceDataset,SourceKey,RecordHash"
+        },
+        {
+            "TableName":  "Fact_YellowGreen_Trips",
+            "IndexName":  "IX_FYG_DateService",
+            "is_unique":  false,
+            "Columns":  "PickupDateKey,ServiceTypeKey"
+        },
+        {
+            "TableName":  "Fact_YellowGreen_Trips",
+            "IndexName":  "IX_FYG_PickupLocation",
+            "is_unique":  false,
+            "Columns":  "PickupLocationKey"
+        },
+        {
+            "TableName":  "Fact_YellowGreen_Trips",
+            "IndexName":  "PK_Fact_YellowGreen_Trips",
+            "is_unique":  true,
+            "Columns":  "TripKey"
+        },
+        {
+            "TableName":  "Fact_YellowGreen_Trips",
+            "IndexName":  "UX_FYG_RecordHash",
+            "is_unique":  true,
+            "Columns":  "RecordHash"
+        },
+        {
+            "TableName":  "Fact_Zone_Traffic_Snapshot",
+            "IndexName":  "PK_Fact_Zone_Traffic_Snapshot",
+            "is_unique":  true,
+            "Columns":  "DateKey,TimeKey,LocationKey,ServiceTypeKey"
+        }
+    ],
+    [
+        {
+            "LastBackup":  "\/Date(1793243077000)\/",
+            "type":  "D"
+        }
+    ]
+]

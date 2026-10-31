@@ -1,0 +1,58 @@
+﻿[
+    {
+        "Mode":  "success",
+        "Stage":  "Dwh",
+        "StartAt":  "Extract",
+        "ExitCode":  0,
+        "Calls":  1,
+        "Passed":  true
+    },
+    {
+        "Mode":  "permanent",
+        "Stage":  "Dwh",
+        "StartAt":  "Extract",
+        "ExitCode":  1,
+        "Calls":  1,
+        "Passed":  true
+    },
+    {
+        "Mode":  "transient",
+        "Stage":  "Dwh",
+        "StartAt":  "Extract",
+        "ExitCode":  0,
+        "Calls":  2,
+        "Passed":  true
+    },
+    {
+        "Mode":  "exhaust",
+        "Stage":  "Dwh",
+        "StartAt":  "Extract",
+        "ExitCode":  1,
+        "Calls":  2,
+        "Passed":  true
+    },
+    {
+        "Mode":  "stale",
+        "Stage":  "Dwh",
+        "StartAt":  "Extract",
+        "ExitCode":  1,
+        "Calls":  1,
+        "Passed":  true
+    },
+    {
+        "Mode":  "success",
+        "Stage":  "Extract",
+        "StartAt":  "Dwh",
+        "ExitCode":  0,
+        "Calls":  1,
+        "Passed":  true
+    },
+    {
+        "Mode":  "skipfail",
+        "Stage":  "Extract",
+        "StartAt":  "Dwh",
+        "ExitCode":  1,
+        "Calls":  1,
+        "Passed":  true
+    }
+]

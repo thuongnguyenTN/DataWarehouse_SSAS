@@ -1,0 +1,658 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts" DTS:refId="Package" DTS:CreationDate="10/12/2026 12:22:09 AM" DTS:CreationName="Microsoft.Package" DTS:CreatorComputerName="THUONGNGUYEN" DTS:CreatorName="THUONGNGUYEN\ADMIN" DTS:DelayValidation="True" DTS:DTSID="{F84AF46A-6714-4447-8515-E6F1A1680B64}" DTS:ExecutableType="Microsoft.Package" DTS:LastModifiedProductVersion="17.0.1016.0" DTS:LocaleID="1033" DTS:MaxConcurrentExecutables="1" DTS:MaxErrorCount="100" DTS:ObjectName="PKG_00_Master" DTS:PackageType="5" DTS:VersionBuild="14" DTS:VersionGUID="{5CF33BF1-F959-4A31-A869-94FCE58529D1}">
+  <DTS:Property DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:PackageParameters>
+    <DTS:PackageParameter DTS:CreationName="" DTS:DataType="8" DTS:DTSID="{400FFA08-BC3E-4320-A060-1311196F27F5}" DTS:ObjectName="pControllerPath">
+      <DTS:Property DTS:DataType="8" DTS:Name="ParameterValue">E:\NYCTaxi\NYCTaxi_SSAS\etl\Invoke-SsisStage.ps1</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter DTS:CreationName="" DTS:DataType="8" DTS:DTSID="{EB34BBA4-7703-47CA-83E4-2F0A430790C6}" DTS:ObjectName="pEndMonth">
+      <DTS:Property DTS:DataType="8" DTS:Name="ParameterValue">2021-02</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter DTS:CreationName="" DTS:DataType="3" DTS:DTSID="{CE210B04-3D5A-4BD1-8EDC-329100BF82FD}" DTS:ObjectName="pMaxRetries">
+      <DTS:Property DTS:DataType="3" DTS:Name="ParameterValue">1</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter DTS:CreationName="" DTS:DataType="3" DTS:DTSID="{4DD5D5B6-F33E-4501-A9E7-A8B72D657EED}" DTS:ObjectName="pMaxRows">
+      <DTS:Property DTS:DataType="3" DTS:Name="ParameterValue">10000</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter DTS:CreationName="" DTS:DataType="8" DTS:DTSID="{5674C435-EE9A-49FC-92AA-348B2DF299A0}" DTS:ObjectName="pResumeRunId">
+      <DTS:Property DTS:DataType="8" DTS:Name="ParameterValue" xml:space="preserve"/>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter DTS:CreationName="" DTS:DataType="8" DTS:DTSID="{F3A6670D-E018-49BE-B19D-396345862B5F}" DTS:ObjectName="pRunnerPath">
+      <DTS:Property DTS:DataType="8" DTS:Name="ParameterValue">E:\NYCTaxi\NYCTaxi_SSAS\etl\Invoke-NYCTaxiPipeline.ps1</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter DTS:CreationName="" DTS:DataType="3" DTS:DTSID="{D837AD7A-FCAF-4EEB-BE4A-65F57092D2DC}" DTS:ObjectName="pShowMonitor">
+      <DTS:Property DTS:DataType="3" DTS:Name="ParameterValue">1</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter DTS:CreationName="" DTS:DataType="8" DTS:DTSID="{768CF990-65C1-437A-9A9C-CE9A03A82EF1}" DTS:ObjectName="pStartMonth">
+      <DTS:Property DTS:DataType="8" DTS:Name="ParameterValue">2021-02</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter DTS:CreationName="" DTS:DataType="8" DTS:DTSID="{9ABEE7DF-B29B-4690-AE00-7664CE463895}" DTS:ObjectName="pStartStage">
+      <DTS:Property DTS:DataType="8" DTS:Name="ParameterValue">Extract</DTS:Property>
+    </DTS:PackageParameter>
+  </DTS:PackageParameters>
+  <DTS:Variables>
+    <DTS:Variable DTS:CreationName="" DTS:DTSID="{26BC5288-22FF-4E52-8A98-B43E0498C0DE}" DTS:EvaluateAsExpression="True" DTS:Expression="(LEN(@[$Package::pResumeRunId]) == 0) ? (DT_WSTR,50)@[System::ExecutionInstanceGUID] : @[$Package::pResumeRunId]" DTS:IncludeInDebugDump="2345" DTS:Namespace="User" DTS:ObjectName="vRunId">
+      <DTS:VariableValue DTS:DataType="8">{4BA2DCE7-2944-48C7-9B59-ACB44CDC03AF}</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable DTS:CreationName="" DTS:DTSID="{31CA9F66-BD17-4DE2-A375-B0FE4E69C4BC}" DTS:IncludeInDebugDump="2345" DTS:Namespace="User" DTS:ObjectName="vStageStdErr">
+      <DTS:VariableValue DTS:DataType="8" xml:space="preserve"/>
+    </DTS:Variable>
+    <DTS:Variable DTS:CreationName="" DTS:DTSID="{0DD65BC5-7675-4356-AD0C-DF60B1F5B84E}" DTS:IncludeInDebugDump="2345" DTS:Namespace="User" DTS:ObjectName="vStageStdOut">
+      <DTS:VariableValue DTS:DataType="8" xml:space="preserve"/>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable DTS:refId="Package\EPT_00_Open_Monitor" DTS:CreationName="Microsoft.ExecuteProcess" DTS:DelayValidation="True" DTS:DTSID="{C90D7A70-751D-4845-9A0B-6F65C27CD6B7}" DTS:ExecutableType="Microsoft.ExecuteProcess" DTS:LocaleID="-1" DTS:ObjectName="EPT_00_Open_Monitor" DTS:ThreadHint="0">
+      <DTS:Variables/>
+      <DTS:PropertyExpression DTS:Name="Arguments">"-NoProfile -ExecutionPolicy Bypass -File \"" + @[$Package::pControllerPath] + "\" -Operation Monitor -Stage Extract -RunnerPath \"" + @[$Package::pRunnerPath] + "\" -RunId \"" + @[User::vRunId] + "\" -StartAt \"" + @[$Package::pStartStage] + "\" -StartMonth " + @[$Package::pStartMonth] + " -EndMonth " + @[$Package::pEndMonth] + " -MaxRows " + (DT_WSTR,12)@[$Package::pMaxRows] + " -MaxRetries " + (DT_WSTR,12)@[$Package::pMaxRetries] + " -ShowMonitor " + (DT_WSTR,12)@[$Package::pShowMonitor]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <ExecuteProcessData Executable="C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" Arguments="-NoProfile -ExecutionPolicy Bypass -File &quot;E:\NYCTaxi\NYCTaxi_SSAS\etl\Invoke-SsisStage.ps1&quot; -Operation Monitor -Stage Extract -RunnerPath &quot;E:\NYCTaxi\NYCTaxi_SSAS\etl\Invoke-NYCTaxiPipeline.ps1&quot; -RunId &quot;{4BA2DCE7-2944-48C7-9B59-ACB44CDC03AF}&quot; -StartAt &quot;Extract&quot; -StartMonth 2021-02 -EndMonth 2021-02 -MaxRows 10000 -MaxRetries 1 -ShowMonitor 1" WorkingDirectory="E:\NYCTaxi\NYCTaxi_SSAS" StandardOutputVariable="User::vStageStdOut" StandardErrorVariable="User::vStageStdErr" WindowStyle="Hidden"/>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:refId="Package\EPT_01_Extract" DTS:CreationName="Microsoft.ExecuteProcess" DTS:DelayValidation="True" DTS:DTSID="{6EC834C6-1579-46AD-B93E-04A646D5135F}" DTS:ExecutableType="Microsoft.ExecuteProcess" DTS:LocaleID="-1" DTS:ObjectName="EPT_01_Extract" DTS:ThreadHint="0">
+      <DTS:Variables/>
+      <DTS:PropertyExpression DTS:Name="Arguments">"-NoProfile -ExecutionPolicy Bypass -File \"" + @[$Package::pControllerPath] + "\" -Operation Stage -Stage Extract -RunnerPath \"" + @[$Package::pRunnerPath] + "\" -RunId \"" + @[User::vRunId] + "\" -StartAt \"" + @[$Package::pStartStage] + "\" -StartMonth " + @[$Package::pStartMonth] + " -EndMonth " + @[$Package::pEndMonth] + " -MaxRows " + (DT_WSTR,12)@[$Package::pMaxRows] + " -MaxRetries " + (DT_WSTR,12)@[$Package::pMaxRetries] + " -ShowMonitor " + (DT_WSTR,12)@[$Package::pShowMonitor]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <ExecuteProcessData Executable="C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" Arguments="-NoProfile -ExecutionPolicy Bypass -File &quot;E:\NYCTaxi\NYCTaxi_SSAS\etl\Invoke-SsisStage.ps1&quot; -Operation Stage -Stage Extract -RunnerPath &quot;E:\NYCTaxi\NYCTaxi_SSAS\etl\Invoke-NYCTaxiPipeline.ps1&quot; -RunId &quot;{4BA2DCE7-2944-48C7-9B59-ACB44CDC03AF}&quot; -StartAt &quot;Extract&quot; -StartMonth 2021-02 -EndMonth 2021-02 -MaxRows 10000 -MaxRetries 1 -ShowMonitor 1" WorkingDirectory="E:\NYCTaxi\NYCTaxi_SSAS" StandardOutputVariable="User::vStageStdOut" StandardErrorVariable="User::vStageStdErr" WindowStyle="Hidden"/>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:refId="Package\EPT_02_Transform" DTS:CreationName="Microsoft.ExecuteProcess" DTS:DelayValidation="True" DTS:DTSID="{A9CFD426-265D-40B6-874F-E62FDF9ED377}" DTS:ExecutableType="Microsoft.ExecuteProcess" DTS:LocaleID="-1" DTS:ObjectName="EPT_02_Transform" DTS:ThreadHint="0">
+      <DTS:Variables/>
+      <DTS:PropertyExpression DTS:Name="Arguments">"-NoProfile -ExecutionPolicy Bypass -File \"" + @[$Package::pControllerPath] + "\" -Operation Stage -Stage Transform -RunnerPath \"" + @[$Package::pRunnerPath] + "\" -RunId \"" + @[User::vRunId] + "\" -StartAt \"" + @[$Package::pStartStage] + "\" -StartMonth " + @[$Package::pStartMonth] + " -EndMonth " + @[$Package::pEndMonth] + " -MaxRows " + (DT_WSTR,12)@[$Package::pMaxRows] + " -MaxRetries " + (DT_WSTR,12)@[$Package::pMaxRetries] + " -ShowMonitor " + (DT_WSTR,12)@[$Package::pShowMonitor]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <ExecuteProcessData Executable="C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" Arguments="-NoProfile -ExecutionPolicy Bypass -File &quot;E:\NYCTaxi\NYCTaxi_SSAS\etl\Invoke-SsisStage.ps1&quot; -Operation Stage -Stage Transform -RunnerPath &quot;E:\NYCTaxi\NYCTaxi_SSAS\etl\Invoke-NYCTaxiPipeline.ps1&quot; -RunId &quot;{4BA2DCE7-2944-48C7-9B59-ACB44CDC03AF}&quot; -StartAt &quot;Extract&quot; -StartMonth 2021-02 -EndMonth 2021-02 -MaxRows 10000 -MaxRetries 1 -ShowMonitor 1" WorkingDirectory="E:\NYCTaxi\NYCTaxi_SSAS" StandardOutputVariable="User::vStageStdOut" StandardErrorVariable="User::vStageStdErr" WindowStyle="Hidden"/>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:refId="Package\EPT_03_Dwh" DTS:CreationName="Microsoft.ExecuteProcess" DTS:DelayValidation="True" DTS:DTSID="{90531E63-0CEF-40FA-9491-416638A76E41}" DTS:ExecutableType="Microsoft.ExecuteProcess" DTS:LocaleID="-1" DTS:ObjectName="EPT_03_Dwh" DTS:ThreadHint="0">
+      <DTS:Variables/>
+      <DTS:PropertyExpression DTS:Name="Arguments">"-NoProfile -ExecutionPolicy Bypass -File \"" + @[$Package::pControllerPath] + "\" -Operation Stage -Stage Dwh -RunnerPath \"" + @[$Package::pRunnerPath] + "\" -RunId \"" + @[User::vRunId] + "\" -StartAt \"" + @[$Package::pStartStage] + "\" -StartMonth " + @[$Package::pStartMonth] + " -EndMonth " + @[$Package::pEndMonth] + " -MaxRows " + (DT_WSTR,12)@[$Package::pMaxRows] + " -MaxRetries " + (DT_WSTR,12)@[$Package::pMaxRetries] + " -ShowMonitor " + (DT_WSTR,12)@[$Package::pShowMonitor]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <ExecuteProcessData Executable="C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" Arguments="-NoProfile -ExecutionPolicy Bypass -File &quot;E:\NYCTaxi\NYCTaxi_SSAS\etl\Invoke-SsisStage.ps1&quot; -Operation Stage -Stage Dwh -RunnerPath &quot;E:\NYCTaxi\NYCTaxi_SSAS\etl\Invoke-NYCTaxiPipeline.ps1&quot; -RunId &quot;{4BA2DCE7-2944-48C7-9B59-ACB44CDC03AF}&quot; -StartAt &quot;Extract&quot; -StartMonth 2021-02 -EndMonth 2021-02 -MaxRows 10000 -MaxRetries 1 -ShowMonitor 1" WorkingDirectory="E:\NYCTaxi\NYCTaxi_SSAS" StandardOutputVariable="User::vStageStdOut" StandardErrorVariable="User::vStageStdErr" WindowStyle="Hidden"/>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:refId="Package\EPT_04_Aggregates" DTS:CreationName="Microsoft.ExecuteProcess" DTS:DelayValidation="True" DTS:DTSID="{D8F1997F-533B-4F59-849A-D61855700290}" DTS:ExecutableType="Microsoft.ExecuteProcess" DTS:LocaleID="-1" DTS:ObjectName="EPT_04_Aggregates" DTS:ThreadHint="0">
+      <DTS:Variables/>
+      <DTS:PropertyExpression DTS:Name="Arguments">"-NoProfile -ExecutionPolicy Bypass -File \"" + @[$Package::pControllerPath] + "\" -Operation Stage -Stage Aggregates -RunnerPath \"" + @[$Package::pRunnerPath] + "\" -RunId \"" + @[User::vRunId] + "\" -StartAt \"" + @[$Package::pStartStage] + "\" -StartMonth " + @[$Package::pStartMonth] + " -EndMonth " + @[$Package::pEndMonth] + " -MaxRows " + (DT_WSTR,12)@[$Package::pMaxRows] + " -MaxRetries " + (DT_WSTR,12)@[$Package::pMaxRetries] + " -ShowMonitor " + (DT_WSTR,12)@[$Package::pShowMonitor]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <ExecuteProcessData Executable="C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" Arguments="-NoProfile -ExecutionPolicy Bypass -File &quot;E:\NYCTaxi\NYCTaxi_SSAS\etl\Invoke-SsisStage.ps1&quot; -Operation Stage -Stage Aggregates -RunnerPath &quot;E:\NYCTaxi\NYCTaxi_SSAS\etl\Invoke-NYCTaxiPipeline.ps1&quot; -RunId &quot;{4BA2DCE7-2944-48C7-9B59-ACB44CDC03AF}&quot; -StartAt &quot;Extract&quot; -StartMonth 2021-02 -EndMonth 2021-02 -MaxRows 10000 -MaxRetries 1 -ShowMonitor 1" WorkingDirectory="E:\NYCTaxi\NYCTaxi_SSAS" StandardOutputVariable="User::vStageStdOut" StandardErrorVariable="User::vStageStdErr" WindowStyle="Hidden"/>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:refId="Package\EPT_05_Ssas" DTS:CreationName="Microsoft.ExecuteProcess" DTS:DelayValidation="True" DTS:DTSID="{9EC0549A-B3A3-43C9-A2D7-BD5FBA2952DA}" DTS:ExecutableType="Microsoft.ExecuteProcess" DTS:LocaleID="-1" DTS:ObjectName="EPT_05_Ssas" DTS:ThreadHint="0">
+      <DTS:Variables/>
+      <DTS:PropertyExpression DTS:Name="Arguments">"-NoProfile -ExecutionPolicy Bypass -File \"" + @[$Package::pControllerPath] + "\" -Operation Stage -Stage Ssas -RunnerPath \"" + @[$Package::pRunnerPath] + "\" -RunId \"" + @[User::vRunId] + "\" -StartAt \"" + @[$Package::pStartStage] + "\" -StartMonth " + @[$Package::pStartMonth] + " -EndMonth " + @[$Package::pEndMonth] + " -MaxRows " + (DT_WSTR,12)@[$Package::pMaxRows] + " -MaxRetries " + (DT_WSTR,12)@[$Package::pMaxRetries] + " -ShowMonitor " + (DT_WSTR,12)@[$Package::pShowMonitor]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <ExecuteProcessData Executable="C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" Arguments="-NoProfile -ExecutionPolicy Bypass -File &quot;E:\NYCTaxi\NYCTaxi_SSAS\etl\Invoke-SsisStage.ps1&quot; -Operation Stage -Stage Ssas -RunnerPath &quot;E:\NYCTaxi\NYCTaxi_SSAS\etl\Invoke-NYCTaxiPipeline.ps1&quot; -RunId &quot;{4BA2DCE7-2944-48C7-9B59-ACB44CDC03AF}&quot; -StartAt &quot;Extract&quot; -StartMonth 2021-02 -EndMonth 2021-02 -MaxRows 10000 -MaxRetries 1 -ShowMonitor 1" WorkingDirectory="E:\NYCTaxi\NYCTaxi_SSAS" StandardOutputVariable="User::vStageStdOut" StandardErrorVariable="User::vStageStdErr" WindowStyle="Hidden"/>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:refId="Package\EPT_99_Complete" DTS:CreationName="Microsoft.ExecuteProcess" DTS:DelayValidation="True" DTS:DTSID="{439985F5-40A0-422D-BDE4-E096A39D9952}" DTS:ExecutableType="Microsoft.ExecuteProcess" DTS:LocaleID="-1" DTS:ObjectName="EPT_99_Complete" DTS:ThreadHint="0">
+      <DTS:Variables/>
+      <DTS:PropertyExpression DTS:Name="Arguments">"-NoProfile -ExecutionPolicy Bypass -File \"" + @[$Package::pControllerPath] + "\" -Operation Complete -Stage Extract -RunnerPath \"" + @[$Package::pRunnerPath] + "\" -RunId \"" + @[User::vRunId] + "\" -StartAt \"" + @[$Package::pStartStage] + "\" -StartMonth " + @[$Package::pStartMonth] + " -EndMonth " + @[$Package::pEndMonth] + " -MaxRows " + (DT_WSTR,12)@[$Package::pMaxRows] + " -MaxRetries " + (DT_WSTR,12)@[$Package::pMaxRetries] + " -ShowMonitor " + (DT_WSTR,12)@[$Package::pShowMonitor]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <ExecuteProcessData Executable="C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" Arguments="-NoProfile -ExecutionPolicy Bypass -File &quot;E:\NYCTaxi\NYCTaxi_SSAS\etl\Invoke-SsisStage.ps1&quot; -Operation Complete -Stage Extract -RunnerPath &quot;E:\NYCTaxi\NYCTaxi_SSAS\etl\Invoke-NYCTaxiPipeline.ps1&quot; -RunId &quot;{4BA2DCE7-2944-48C7-9B59-ACB44CDC03AF}&quot; -StartAt &quot;Extract&quot; -StartMonth 2021-02 -EndMonth 2021-02 -MaxRows 10000 -MaxRetries 1 -ShowMonitor 1" WorkingDirectory="E:\NYCTaxi\NYCTaxi_SSAS" StandardOutputVariable="User::vStageStdOut" StandardErrorVariable="User::vStageStdErr" WindowStyle="Hidden"/>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:refId="Package\EST_90_Report_Original_Error" DTS:CreationName="Microsoft.ExecuteSQLTask" DTS:DelayValidation="True" DTS:DisableEventHandlers="True" DTS:DTSID="{B360DE99-D98E-4B13-935A-7996095BD91D}" DTS:ExecutableType="Microsoft.ExecuteSQLTask" DTS:FailPackageOnFailure="True" DTS:LocaleID="-1" DTS:ObjectName="EST_90_Report_Original_Error" DTS:ThreadHint="1">
+      <DTS:Variables/>
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" SQLTask:Connection="{4A829E7F-DE39-4A39-83D3-52CE94E192E2}" SQLTask:SqlStatementSource="DECLARE @r nvarchar(64)=?, @e nvarchar(4000)=?; INSERT etl.PackageError(ExecutionId,PackageName,SourceName,ErrorCode,ErrorDescription) VALUES(@r,N'PKG_00_Master',N'Master failure branch',55990,@e); DECLARE @m nvarchar(2047)=LEFT(CONCAT(N'Master failed. RunId=',@r,N'. ',COALESCE(NULLIF(@e,N''),N'See local ETL monitor/logs.')),2000); RAISERROR(N'%s',16,1,@m);">
+          <SQLTask:ParameterBinding SQLTask:ParameterName="0" SQLTask:DtsVariableName="User::vRunId" SQLTask:ParameterDirection="Input" SQLTask:DataType="130" SQLTask:ParameterSize="64"/>
+          <SQLTask:ParameterBinding SQLTask:ParameterName="1" SQLTask:DtsVariableName="User::vStageStdErr" SQLTask:ParameterDirection="Input" SQLTask:DataType="130" SQLTask:ParameterSize="4000"/>
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint DTS:refId="Package.PrecedenceConstraints[Failure0]" DTS:CreationName="" DTS:DTSID="{ED305940-696C-4DFE-817C-0CFD3C8F00FC}" DTS:From="Package\EPT_00_Open_Monitor" DTS:ObjectName="Failure0" DTS:To="Package\EST_90_Report_Original_Error" DTS:Value="1"/>
+    <DTS:PrecedenceConstraint DTS:refId="Package.PrecedenceConstraints[Failure1]" DTS:CreationName="" DTS:DTSID="{EE48364E-4BD4-49D8-AB65-4BF1AAABCA43}" DTS:From="Package\EPT_01_Extract" DTS:ObjectName="Failure1" DTS:To="Package\EST_90_Report_Original_Error" DTS:Value="1"/>
+    <DTS:PrecedenceConstraint DTS:refId="Package.PrecedenceConstraints[Failure2]" DTS:CreationName="" DTS:DTSID="{EB20914A-A5DF-4A84-B870-270AD07FAE6A}" DTS:From="Package\EPT_02_Transform" DTS:ObjectName="Failure2" DTS:To="Package\EST_90_Report_Original_Error" DTS:Value="1"/>
+    <DTS:PrecedenceConstraint DTS:refId="Package.PrecedenceConstraints[Failure3]" DTS:CreationName="" DTS:DTSID="{65C95256-DAC5-4335-AC2D-74D9588B90F7}" DTS:From="Package\EPT_03_Dwh" DTS:ObjectName="Failure3" DTS:To="Package\EST_90_Report_Original_Error" DTS:Value="1"/>
+    <DTS:PrecedenceConstraint DTS:refId="Package.PrecedenceConstraints[Failure4]" DTS:CreationName="" DTS:DTSID="{9A50C803-E3D3-4A38-BEB8-52D9B9192A9D}" DTS:From="Package\EPT_04_Aggregates" DTS:ObjectName="Failure4" DTS:To="Package\EST_90_Report_Original_Error" DTS:Value="1"/>
+    <DTS:PrecedenceConstraint DTS:refId="Package.PrecedenceConstraints[Failure5]" DTS:CreationName="" DTS:DTSID="{8899207C-E3C3-476C-A731-CE25C6FAC996}" DTS:From="Package\EPT_05_Ssas" DTS:ObjectName="Failure5" DTS:To="Package\EST_90_Report_Original_Error" DTS:Value="1"/>
+    <DTS:PrecedenceConstraint DTS:refId="Package.PrecedenceConstraints[Failure6]" DTS:CreationName="" DTS:DTSID="{FFB36A72-1213-4524-B8E3-BC19D367A14A}" DTS:From="Package\EPT_99_Complete" DTS:ObjectName="Failure6" DTS:To="Package\EST_90_Report_Original_Error" DTS:Value="1"/>
+    <DTS:PrecedenceConstraint DTS:refId="Package.PrecedenceConstraints[Success0]" DTS:CreationName="" DTS:DTSID="{AB0A4DC7-E66E-42B3-8664-2789736D9C4F}" DTS:From="Package\EPT_00_Open_Monitor" DTS:LogicalAnd="True" DTS:ObjectName="Success0" DTS:To="Package\EPT_01_Extract"/>
+    <DTS:PrecedenceConstraint DTS:refId="Package.PrecedenceConstraints[Success1]" DTS:CreationName="" DTS:DTSID="{67A3D670-5E92-43DA-8069-E1A7615DE299}" DTS:From="Package\EPT_01_Extract" DTS:LogicalAnd="True" DTS:ObjectName="Success1" DTS:To="Package\EPT_02_Transform"/>
+    <DTS:PrecedenceConstraint DTS:refId="Package.PrecedenceConstraints[Success2]" DTS:CreationName="" DTS:DTSID="{9EF24D40-279D-4528-A4B9-426B39224BA5}" DTS:From="Package\EPT_02_Transform" DTS:LogicalAnd="True" DTS:ObjectName="Success2" DTS:To="Package\EPT_03_Dwh"/>
+    <DTS:PrecedenceConstraint DTS:refId="Package.PrecedenceConstraints[Success3]" DTS:CreationName="" DTS:DTSID="{6FD36F6C-7C9F-4AF5-B3FB-58F441813D87}" DTS:From="Package\EPT_03_Dwh" DTS:LogicalAnd="True" DTS:ObjectName="Success3" DTS:To="Package\EPT_04_Aggregates"/>
+    <DTS:PrecedenceConstraint DTS:refId="Package.PrecedenceConstraints[Success4]" DTS:CreationName="" DTS:DTSID="{CD995E47-FE23-4352-96FF-537334FB5C63}" DTS:From="Package\EPT_04_Aggregates" DTS:LogicalAnd="True" DTS:ObjectName="Success4" DTS:To="Package\EPT_05_Ssas"/>
+    <DTS:PrecedenceConstraint DTS:refId="Package.PrecedenceConstraints[Success5]" DTS:CreationName="" DTS:DTSID="{433985FC-18F8-42E7-BE45-DD38F3F1DE76}" DTS:From="Package\EPT_05_Ssas" DTS:LogicalAnd="True" DTS:ObjectName="Success5" DTS:To="Package\EPT_99_Complete"/>
+  </DTS:PrecedenceConstraints>
+  <DTS:EventHandlers>
+    <DTS:EventHandler DTS:refId="Package.EventHandlers[OnError]" DTS:CreationName="OnError" DTS:DTSID="{51E27204-7041-4527-B3F9-78376ED5F15F}" DTS:EventID="9437328" DTS:EventName="OnError" DTS:LocaleID="1033">
+      <DTS:LoggingOptions DTS:LoggingMode="0"/><DTS:Variables>
+        <DTS:Variable DTS:CreationName="" DTS:Description="The propagate property of the event" DTS:DTSID="{6B147182-4AD9-4694-95EC-F80E10684D6E}" DTS:IncludeInDebugDump="6789" DTS:Namespace="System" DTS:ObjectName="Propagate">
+          <DTS:VariableValue DTS:DataType="11">-1</DTS:VariableValue>
+        </DTS:Variable>
+      </DTS:Variables>
+      <DTS:Executables>
+        <DTS:Executable DTS:refId="Package.EventHandlers[OnError]\EST_LogOriginalError" DTS:CreationName="Microsoft.ExecuteSQLTask" DTS:DelayValidation="True" DTS:DisableEventHandlers="True" DTS:DTSID="{ABD04E5F-9839-4E86-AA60-2C50519A216D}" DTS:ExecutableType="Microsoft.ExecuteSQLTask" DTS:LocaleID="-1" DTS:ObjectName="EST_LogOriginalError">
+          <DTS:Variables/>
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" SQLTask:Connection="{4A829E7F-DE39-4A39-83D3-52CE94E192E2}" SQLTask:SqlStatementSource="INSERT etl.PackageError(ExecutionId,PackageName,SourceName,ErrorCode,ErrorDescription) VALUES(?,?,?,?,?);">
+              <SQLTask:ParameterBinding SQLTask:ParameterName="0" SQLTask:DtsVariableName="System::ExecutionInstanceGUID" SQLTask:ParameterDirection="Input" SQLTask:DataType="130" SQLTask:ParameterSize="64"/>
+              <SQLTask:ParameterBinding SQLTask:ParameterName="1" SQLTask:DtsVariableName="System::PackageName" SQLTask:ParameterDirection="Input" SQLTask:DataType="130" SQLTask:ParameterSize="260"/>
+              <SQLTask:ParameterBinding SQLTask:ParameterName="2" SQLTask:DtsVariableName="System::SourceName" SQLTask:ParameterDirection="Input" SQLTask:DataType="130" SQLTask:ParameterSize="260"/>
+              <SQLTask:ParameterBinding SQLTask:ParameterName="3" SQLTask:DtsVariableName="System::ErrorCode" SQLTask:ParameterDirection="Input" SQLTask:DataType="3" SQLTask:ParameterSize="-1"/>
+              <SQLTask:ParameterBinding SQLTask:ParameterName="4" SQLTask:DtsVariableName="System::ErrorDescription" SQLTask:ParameterDirection="Input" SQLTask:DataType="130" SQLTask:ParameterSize="4000"/>
+            </SQLTask:SqlTaskData>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+    </DTS:EventHandler>
+  </DTS:EventHandlers>
+  <DTS:DesignTimeProperties>&lt;?xml version="1.0"?&gt;
+&lt;!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.--&gt;
+&lt;!--If you manually edit this section and make a mistake, you can delete it. --&gt;
+&lt;!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.--&gt;
+&lt;Objects
+  Version="8"&gt;
+  &lt;!--Each node below will contain properties that do not affect runtime behavior.--&gt;
+  &lt;Package
+    design-time-name="Package"&gt;
+    &lt;LayoutInfo&gt;
+      &lt;GraphLayout
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph"&gt;
+        &lt;NodeLayout
+          Size="188,42.6666666666667"
+          Id="Package\EPT_00_Open_Monitor"
+          TopLeft="448.166666666667,5.49999999999993" /&gt;
+        &lt;NodeLayout
+          Size="153.333333333334,42.6666666666667"
+          Id="Package\EPT_01_Extract"
+          TopLeft="327.5,108.166666666666" /&gt;
+        &lt;NodeLayout
+          Size="169.333333333334,42.6666666666667"
+          Id="Package\EPT_02_Transform"
+          TopLeft="249.5,210.833333333333" /&gt;
+        &lt;NodeLayout
+          Size="142.666666666667,42.6666666666667"
+          Id="Package\EPT_03_Dwh"
+          TopLeft="214.833333333333,313.5" /&gt;
+        &lt;NodeLayout
+          Size="174.666666666667,42.6666666666667"
+          Id="Package\EPT_04_Aggregates"
+          TopLeft="120.833333333333,416.166666666666" /&gt;
+        &lt;NodeLayout
+          Size="142.666666666667,42.6666666666667"
+          Id="Package\EPT_05_Ssas"
+          TopLeft="90.8333333333333,518.833333333333" /&gt;
+        &lt;NodeLayout
+          Size="165.333333333334,42.6666666666667"
+          Id="Package\EPT_99_Complete"
+          TopLeft="5.50000000000001,621.5" /&gt;
+        &lt;NodeLayout
+          Size="224,42.6666666666667"
+          Id="Package\EST_90_Report_Original_Error"
+          TopLeft="244.166666666667,724.816666635672" /&gt;
+        &lt;EdgeLayout
+          Id="Package.PrecedenceConstraints[Failure0]"
+          TopLeft="512.166666666667,48.1666666666666"&gt;
+          &lt;EdgeLayout.Curve&gt;
+            &lt;mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-75,676.649999969005"
+              Start="0,0"
+              End="-75,669.149999969005"&gt;
+              &lt;mssgle:Curve.Segments&gt;
+                &lt;mssgle:SegmentCollection
+                  Capacity="5"&gt;
+                  &lt;mssgle:LineSegment
+                    End="0,477.077881350707" /&gt;
+                  &lt;mssgle:CubicBezierSegment
+                    Point1="0,477.077881350707"
+                    Point2="0,481.077881350707"
+                    Point3="-4,481.077881350707" /&gt;
+                  &lt;mssgle:LineSegment
+                    End="-71,481.077881350707" /&gt;
+                  &lt;mssgle:CubicBezierSegment
+                    Point1="-71,481.077881350707"
+                    Point2="-75,481.077881350707"
+                    Point3="-75,485.077881350707" /&gt;
+                  &lt;mssgle:LineSegment
+                    End="-75,669.149999969005" /&gt;
+                &lt;/mssgle:SegmentCollection&gt;
+              &lt;/mssgle:Curve.Segments&gt;
+            &lt;/mssgle:Curve&gt;
+          &lt;/EdgeLayout.Curve&gt;
+          &lt;EdgeLayout.Labels&gt;
+            &lt;mssgm:EdgeLabel
+              BoundingBox="-52.74134765625,486.077881350707,30.4826953125,9.7490234375"
+              RelativePosition="Any" /&gt;
+          &lt;/EdgeLayout.Labels&gt;
+        &lt;/EdgeLayout&gt;
+        &lt;EdgeLayout
+          Id="Package.PrecedenceConstraints[Failure1]"
+          TopLeft="428.388888888889,150.833333333333"&gt;
+          &lt;EdgeLayout.Curve&gt;
+            &lt;mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-18.2222222222221,573.983333302339"
+              Start="0,0"
+              End="-18.2222222222221,566.483333302339"&gt;
+              &lt;mssgle:Curve.Segments&gt;
+                &lt;mssgle:SegmentCollection
+                  Capacity="5"&gt;
+                  &lt;mssgle:LineSegment
+                    End="0,322.676875798791" /&gt;
+                  &lt;mssgle:CubicBezierSegment
+                    Point1="0,322.676875798791"
+                    Point2="0,326.676875798791"
+                    Point3="-4,326.676875798791" /&gt;
+                  &lt;mssgle:LineSegment
+                    End="-14.2222222222221,326.676875798791" /&gt;
+                  &lt;mssgle:CubicBezierSegment
+                    Point1="-14.2222222222221,326.676875798791"
+                    Point2="-18.2222222222221,326.676875798791"
+                    Point3="-18.2222222222221,330.676875798791" /&gt;
+                  &lt;mssgle:LineSegment
+                    End="-18.2222222222221,566.483333302339" /&gt;
+                &lt;/mssgle:SegmentCollection&gt;
+              &lt;/mssgle:Curve.Segments&gt;
+            &lt;/mssgle:Curve&gt;
+          &lt;/EdgeLayout.Curve&gt;
+          &lt;EdgeLayout.Labels&gt;
+            &lt;mssgm:EdgeLabel
+              BoundingBox="-24.3524587673611,331.676875798791,30.4826953125,9.7490234375"
+              RelativePosition="Any" /&gt;
+          &lt;/EdgeLayout.Labels&gt;
+        &lt;/EdgeLayout&gt;
+        &lt;EdgeLayout
+          Id="Package.PrecedenceConstraints[Failure2]"
+          TopLeft="361.055555555555,253.5"&gt;
+          &lt;EdgeLayout.Curve&gt;
+            &lt;mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="22.1111111111112,471.316666635673"
+              Start="0,0"
+              End="22.1111111111112,463.816666635673"&gt;
+              &lt;mssgle:Curve.Segments&gt;
+                &lt;mssgle:SegmentCollection
+                  Capacity="5"&gt;
+                  &lt;mssgle:LineSegment
+                    End="0,219.148383585575" /&gt;
+                  &lt;mssgle:CubicBezierSegment
+                    Point1="0,219.148383585575"
+                    Point2="0,223.148383585575"
+                    Point3="4,223.148383585575" /&gt;
+                  &lt;mssgle:LineSegment
+                    End="18.1111111111112,223.148383585575" /&gt;
+                  &lt;mssgle:CubicBezierSegment
+                    Point1="18.1111111111112,223.148383585575"
+                    Point2="22.1111111111112,223.148383585575"
+                    Point3="22.1111111111112,227.148383585575" /&gt;
+                  &lt;mssgle:LineSegment
+                    End="22.1111111111112,463.816666635673" /&gt;
+                &lt;/mssgle:SegmentCollection&gt;
+              &lt;/mssgle:Curve.Segments&gt;
+            &lt;/mssgle:Curve&gt;
+          &lt;/EdgeLayout.Curve&gt;
+          &lt;EdgeLayout.Labels&gt;
+            &lt;mssgm:EdgeLabel
+              BoundingBox="-4.1857921006944,228.148383585575,30.4826953125,9.7490234375"
+              RelativePosition="Any" /&gt;
+          &lt;/EdgeLayout.Labels&gt;
+        &lt;/EdgeLayout&gt;
+        &lt;EdgeLayout
+          Id="Package.PrecedenceConstraints[Failure3]"
+          TopLeft="308.611111111111,356.166666666666"&gt;
+          &lt;EdgeLayout.Curve&gt;
+            &lt;mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="47.5555555555556,368.649999969006"
+              Start="0,0"
+              End="47.5555555555556,361.149999969006"&gt;
+              &lt;mssgle:Curve.Segments&gt;
+                &lt;mssgle:SegmentCollection
+                  Capacity="5"&gt;
+                  &lt;mssgle:LineSegment
+                    End="0,145.913123832128" /&gt;
+                  &lt;mssgle:CubicBezierSegment
+                    Point1="0,145.913123832128"
+                    Point2="0,149.913123832128"
+                    Point3="4,149.913123832128" /&gt;
+                  &lt;mssgle:LineSegment
+                    End="43.5555555555556,149.913123832128" /&gt;
+                  &lt;mssgle:CubicBezierSegment
+                    Point1="43.5555555555556,149.913123832128"
+                    Point2="47.5555555555556,149.913123832128"
+                    Point3="47.5555555555556,153.913123832128" /&gt;
+                  &lt;mssgle:LineSegment
+                    End="47.5555555555556,361.149999969006" /&gt;
+                &lt;/mssgle:SegmentCollection&gt;
+              &lt;/mssgle:Curve.Segments&gt;
+            &lt;/mssgle:Curve&gt;
+          &lt;/EdgeLayout.Curve&gt;
+          &lt;EdgeLayout.Labels&gt;
+            &lt;mssgm:EdgeLabel
+              BoundingBox="8.5364301215278,154.913123832128,30.4826953125,9.7490234375"
+              RelativePosition="Any" /&gt;
+          &lt;/EdgeLayout.Labels&gt;
+        &lt;/EdgeLayout&gt;
+        &lt;EdgeLayout
+          Id="Package.PrecedenceConstraints[Failure4]"
+          TopLeft="235.944444444444,458.833333333333"&gt;
+          &lt;EdgeLayout.Curve&gt;
+            &lt;mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="93.2222222222223,265.983333302339"
+              Start="0,0"
+              End="93.2222222222223,258.483333302339"&gt;
+              &lt;mssgle:Curve.Segments&gt;
+                &lt;mssgle:SegmentCollection
+                  Capacity="5"&gt;
+                  &lt;mssgle:LineSegment
+                    End="0,121.885049627143" /&gt;
+                  &lt;mssgle:CubicBezierSegment
+                    Point1="0,121.885049627143"
+                    Point2="0,125.885049627143"
+                    Point3="4,125.885049627143" /&gt;
+                  &lt;mssgle:LineSegment
+                    End="89.2222222222223,125.885049627143" /&gt;
+                  &lt;mssgle:CubicBezierSegment
+                    Point1="89.2222222222223,125.885049627143"
+                    Point2="93.2222222222223,125.885049627143"
+                    Point3="93.2222222222223,129.885049627143" /&gt;
+                  &lt;mssgle:LineSegment
+                    End="93.2222222222223,258.483333302339" /&gt;
+                &lt;/mssgle:SegmentCollection&gt;
+              &lt;/mssgle:Curve.Segments&gt;
+            &lt;/mssgle:Curve&gt;
+          &lt;/EdgeLayout.Curve&gt;
+          &lt;EdgeLayout.Labels&gt;
+            &lt;mssgm:EdgeLabel
+              BoundingBox="31.3697634548611,130.885049627143,30.4826953125,9.7490234375"
+              RelativePosition="Any" /&gt;
+          &lt;/EdgeLayout.Labels&gt;
+        &lt;/EdgeLayout&gt;
+        &lt;EdgeLayout
+          Id="Package.PrecedenceConstraints[Failure5]"
+          TopLeft="184.611111111111,561.5"&gt;
+          &lt;EdgeLayout.Curve&gt;
+            &lt;mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="117.555555555556,163.316666635673"
+              Start="0,0"
+              End="117.555555555556,155.816666635673"&gt;
+              &lt;mssgle:Curve.Segments&gt;
+                &lt;mssgle:SegmentCollection
+                  Capacity="5"&gt;
+                  &lt;mssgle:LineSegment
+                    End="0,89.0260914952834" /&gt;
+                  &lt;mssgle:CubicBezierSegment
+                    Point1="0,89.0260914952834"
+                    Point2="0,93.0260914952834"
+                    Point3="4,93.0260914952834" /&gt;
+                  &lt;mssgle:LineSegment
+                    End="113.555555555556,93.0260914952834" /&gt;
+                  &lt;mssgle:CubicBezierSegment
+                    Point1="113.555555555556,93.0260914952834"
+                    Point2="117.555555555556,93.0260914952834"
+                    Point3="117.555555555556,97.0260914952834" /&gt;
+                  &lt;mssgle:LineSegment
+                    End="117.555555555556,155.816666635673" /&gt;
+                &lt;/mssgle:SegmentCollection&gt;
+              &lt;/mssgle:Curve.Segments&gt;
+            &lt;/mssgle:Curve&gt;
+          &lt;/EdgeLayout.Curve&gt;
+          &lt;EdgeLayout.Labels&gt;
+            &lt;mssgm:EdgeLabel
+              BoundingBox="43.5364301215278,98.0260914952834,30.4826953125,9.7490234375"
+              RelativePosition="Any" /&gt;
+          &lt;/EdgeLayout.Labels&gt;
+        &lt;/EdgeLayout&gt;
+        &lt;EdgeLayout
+          Id="Package.PrecedenceConstraints[Failure6]"
+          TopLeft="88.1666666666667,664.166666666666"&gt;
+          &lt;EdgeLayout.Curve&gt;
+            &lt;mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="187,60.6499999690058"
+              Start="0,0"
+              End="187,53.1499999690058"&gt;
+              &lt;mssgle:Curve.Segments&gt;
+                &lt;mssgle:SegmentCollection
+                  Capacity="5"&gt;
+                  &lt;mssgle:LineSegment
+                    End="0,43.5020978778227" /&gt;
+                  &lt;mssgle:CubicBezierSegment
+                    Point1="0,43.5020978778227"
+                    Point2="0,47.5020978778227"
+                    Point3="4,47.5020978778227" /&gt;
+                  &lt;mssgle:LineSegment
+                    End="183,47.5020978778227" /&gt;
+                  &lt;mssgle:CubicBezierSegment
+                    Point1="183,47.5020978778227"
+                    Point2="187,47.5020978778227"
+                    Point3="187,51.5020978778227" /&gt;
+                  &lt;mssgle:LineSegment
+                    End="187,53.1499999690058" /&gt;
+                &lt;/mssgle:SegmentCollection&gt;
+              &lt;/mssgle:Curve.Segments&gt;
+            &lt;/mssgle:Curve&gt;
+          &lt;/EdgeLayout.Curve&gt;
+          &lt;EdgeLayout.Labels&gt;
+            &lt;mssgm:EdgeLabel
+              BoundingBox="78.25865234375,52.5020978778227,30.4826953125,9.7490234375"
+              RelativePosition="Any" /&gt;
+          &lt;/EdgeLayout.Labels&gt;
+        &lt;/EdgeLayout&gt;
+        &lt;EdgeLayout
+          Id="Package.PrecedenceConstraints[Success0]"
+          TopLeft="572.166666666667,48.1666666666666"&gt;
+          &lt;EdgeLayout.Curve&gt;
+            &lt;mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-168,59.9999999999994"
+              Start="0,0"
+              End="-168,52.4999999999994"&gt;
+              &lt;mssgle:Curve.Segments&gt;
+                &lt;mssgle:SegmentCollection
+                  Capacity="5"&gt;
+                  &lt;mssgle:LineSegment
+                    End="0,20.3037974683542" /&gt;
+                  &lt;mssgle:CubicBezierSegment
+                    Point1="0,20.3037974683542"
+                    Point2="0,24.3037974683542"
+                    Point3="-4,24.3037974683542" /&gt;
+                  &lt;mssgle:LineSegment
+                    End="-164,24.3037974683542" /&gt;
+                  &lt;mssgle:CubicBezierSegment
+                    Point1="-164,24.3037974683542"
+                    Point2="-168,24.3037974683542"
+                    Point3="-168,28.3037974683542" /&gt;
+                  &lt;mssgle:LineSegment
+                    End="-168,52.4999999999994" /&gt;
+                &lt;/mssgle:SegmentCollection&gt;
+              &lt;/mssgle:Curve.Segments&gt;
+            &lt;/mssgle:Curve&gt;
+          &lt;/EdgeLayout.Curve&gt;
+          &lt;EdgeLayout.Labels&gt;
+            &lt;EdgeLabelCollection /&gt;
+          &lt;/EdgeLayout.Labels&gt;
+        &lt;/EdgeLayout&gt;
+        &lt;EdgeLayout
+          Id="Package.PrecedenceConstraints[Success1]"
+          TopLeft="379.944444444444,150.833333333333"&gt;
+          &lt;EdgeLayout.Curve&gt;
+            &lt;mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-45.7777777777778,59.9999999999998"
+              Start="0,0"
+              End="-45.7777777777778,52.4999999999998"&gt;
+              &lt;mssgle:Curve.Segments&gt;
+                &lt;mssgle:SegmentCollection
+                  Capacity="5"&gt;
+                  &lt;mssgle:LineSegment
+                    End="0,20.3717728055077" /&gt;
+                  &lt;mssgle:CubicBezierSegment
+                    Point1="0,20.3717728055077"
+                    Point2="0,24.3717728055077"
+                    Point3="-4,24.3717728055077" /&gt;
+                  &lt;mssgle:LineSegment
+                    End="-41.7777777777778,24.3717728055077" /&gt;
+                  &lt;mssgle:CubicBezierSegment
+                    Point1="-41.7777777777778,24.3717728055077"
+                    Point2="-45.7777777777778,24.3717728055077"
+                    Point3="-45.7777777777778,28.3717728055077" /&gt;
+                  &lt;mssgle:LineSegment
+                    End="-45.7777777777778,52.4999999999998" /&gt;
+                &lt;/mssgle:SegmentCollection&gt;
+              &lt;/mssgle:Curve.Segments&gt;
+            &lt;/mssgle:Curve&gt;
+          &lt;/EdgeLayout.Curve&gt;
+          &lt;EdgeLayout.Labels&gt;
+            &lt;EdgeLabelCollection /&gt;
+          &lt;/EdgeLayout.Labels&gt;
+        &lt;/EdgeLayout&gt;
+        &lt;EdgeLayout
+          Id="Package.PrecedenceConstraints[Success2]"
+          TopLeft="307.277777777778,253.5"&gt;
+          &lt;EdgeLayout.Curve&gt;
+            &lt;mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-21.1111111111111,60"
+              Start="0,0"
+              End="-21.1111111111111,52.5"&gt;
+              &lt;mssgle:Curve.Segments&gt;
+                &lt;mssgle:SegmentCollection
+                  Capacity="5"&gt;
+                  &lt;mssgle:LineSegment
+                    End="0,20.3369734789392" /&gt;
+                  &lt;mssgle:CubicBezierSegment
+                    Point1="0,20.3369734789392"
+                    Point2="0,24.3369734789392"
+                    Point3="-4,24.3369734789392" /&gt;
+                  &lt;mssgle:LineSegment
+                    End="-17.1111111111111,24.3369734789392" /&gt;
+                  &lt;mssgle:CubicBezierSegment
+                    Point1="-17.1111111111111,24.3369734789392"
+                    Point2="-21.1111111111111,24.3369734789392"
+                    Point3="-21.1111111111111,28.3369734789392" /&gt;
+                  &lt;mssgle:LineSegment
+                    End="-21.1111111111111,52.5" /&gt;
+                &lt;/mssgle:SegmentCollection&gt;
+              &lt;/mssgle:Curve.Segments&gt;
+            &lt;/mssgle:Curve&gt;
+          &lt;/EdgeLayout.Curve&gt;
+          &lt;EdgeLayout.Labels&gt;
+            &lt;EdgeLabelCollection /&gt;
+          &lt;/EdgeLayout.Labels&gt;
+        &lt;/EdgeLayout&gt;
+        &lt;EdgeLayout
+          Id="Package.PrecedenceConstraints[Success3]"
+          TopLeft="263.722222222222,356.166666666666"&gt;
+          &lt;EdgeLayout.Curve&gt;
+            &lt;mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-55.5555555555555,60.0000000000001"
+              Start="0,0"
+              End="-55.5555555555555,52.5000000000001"&gt;
+              &lt;mssgle:Curve.Segments&gt;
+                &lt;mssgle:SegmentCollection
+                  Capacity="5"&gt;
+                  &lt;mssgle:LineSegment
+                    End="0,20.3992606284658" /&gt;
+                  &lt;mssgle:CubicBezierSegment
+                    Point1="0,20.3992606284658"
+                    Point2="0,24.3992606284658"
+                    Point3="-4,24.3992606284658" /&gt;
+                  &lt;mssgle:LineSegment
+                    End="-51.5555555555555,24.3992606284658" /&gt;
+                  &lt;mssgle:CubicBezierSegment
+                    Point1="-51.5555555555555,24.3992606284658"
+                    Point2="-55.5555555555555,24.3992606284658"
+                    Point3="-55.5555555555555,28.3992606284658" /&gt;
+                  &lt;mssgle:LineSegment
+                    End="-55.5555555555555,52.5000000000001" /&gt;
+                &lt;/mssgle:SegmentCollection&gt;
+              &lt;/mssgle:Curve.Segments&gt;
+            &lt;/mssgle:Curve&gt;
+          &lt;/EdgeLayout.Curve&gt;
+          &lt;EdgeLayout.Labels&gt;
+            &lt;EdgeLabelCollection /&gt;
+          &lt;/EdgeLayout.Labels&gt;
+        &lt;/EdgeLayout&gt;
+        &lt;EdgeLayout
+          Id="Package.PrecedenceConstraints[Success4]"
+          TopLeft="180.388888888889,458.833333333333"&gt;
+          &lt;EdgeLayout.Curve&gt;
+            &lt;mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-18.2222222222222,60"
+              Start="0,0"
+              End="-18.2222222222222,52.5"&gt;
+              &lt;mssgle:Curve.Segments&gt;
+                &lt;mssgle:SegmentCollection
+                  Capacity="5"&gt;
+                  &lt;mssgle:LineSegment
+                    End="0,20.3267776096823" /&gt;
+                  &lt;mssgle:CubicBezierSegment
+                    Point1="0,20.3267776096823"
+                    Point2="0,24.3267776096823"
+                    Point3="-4,24.3267776096823" /&gt;
+                  &lt;mssgle:LineSegment
+                    End="-14.2222222222222,24.3267776096823" /&gt;
+                  &lt;mssgle:CubicBezierSegment
+                    Point1="-14.2222222222222,24.3267776096823"
+                    Point2="-18.2222222222222,24.3267776096823"
+                    Point3="-18.2222222222222,28.3267776096823" /&gt;
+                  &lt;mssgle:LineSegment
+                    End="-18.2222222222222,52.5" /&gt;
+                &lt;/mssgle:SegmentCollection&gt;
+              &lt;/mssgle:Curve.Segments&gt;
+            &lt;/mssgle:Curve&gt;
+          &lt;/EdgeLayout.Curve&gt;
+          &lt;EdgeLayout.Labels&gt;
+            &lt;EdgeLabelCollection /&gt;
+          &lt;/EdgeLayout.Labels&gt;
+        &lt;/EdgeLayout&gt;
+        &lt;EdgeLayout
+          Id="Package.PrecedenceConstraints[Success5]"
+          TopLeft="139.722222222222,561.5"&gt;
+          &lt;EdgeLayout.Curve&gt;
+            &lt;mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-51.5555555555555,60.0000000000001"
+              Start="0,0"
+              End="-51.5555555555555,52.5000000000001"&gt;
+              &lt;mssgle:Curve.Segments&gt;
+                &lt;mssgle:SegmentCollection
+                  Capacity="5"&gt;
+                  &lt;mssgle:LineSegment
+                    End="0,20.3992606284658" /&gt;
+                  &lt;mssgle:CubicBezierSegment
+                    Point1="0,20.3992606284658"
+                    Point2="0,24.3992606284658"
+                    Point3="-4,24.3992606284658" /&gt;
+                  &lt;mssgle:LineSegment
+                    End="-47.5555555555555,24.3992606284658" /&gt;
+                  &lt;mssgle:CubicBezierSegment
+                    Point1="-47.5555555555555,24.3992606284658"
+                    Point2="-51.5555555555555,24.3992606284658"
+                    Point3="-51.5555555555555,28.3992606284658" /&gt;
+                  &lt;mssgle:LineSegment
+                    End="-51.5555555555555,52.5000000000001" /&gt;
+                &lt;/mssgle:SegmentCollection&gt;
+              &lt;/mssgle:Curve.Segments&gt;
+            &lt;/mssgle:Curve&gt;
+          &lt;/EdgeLayout.Curve&gt;
+          &lt;EdgeLayout.Labels&gt;
+            &lt;EdgeLabelCollection /&gt;
+          &lt;/EdgeLayout.Labels&gt;
+        &lt;/EdgeLayout&gt;
+      &lt;/GraphLayout&gt;
+    &lt;/LayoutInfo&gt;
+  &lt;/Package&gt;
+  &lt;DtsEventHandler
+    design-time-name="Package.EventHandlers[OnError]"&gt;
+    &lt;LayoutInfo&gt;
+      &lt;GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph"&gt;
+        &lt;NodeLayout
+          Size="NaN,NaN"
+          Id="Package.EventHandlers[OnError]\EST_LogOriginalError"
+          TopLeft="NaN,NaN" /&gt;
+      &lt;/GraphLayout&gt;
+    &lt;/LayoutInfo&gt;
+  &lt;/DtsEventHandler&gt;
+&lt;/Objects&gt;</DTS:DesignTimeProperties>
+</DTS:Executable>

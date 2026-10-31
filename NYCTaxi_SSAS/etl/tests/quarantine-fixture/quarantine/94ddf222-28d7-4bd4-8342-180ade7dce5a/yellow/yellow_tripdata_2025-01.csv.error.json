@@ -1,0 +1,6 @@
+﻿{
+    "Source":  "E:\\NYCTaxi\\NYCTaxi_SSAS\\etl\\tests\\quarantine-fixture\\csv\\yellow\\yellow_tripdata_2025-01.csv",
+    "RunId":  "94ddf222-28d7-4bd4-8342-180ade7dce5a",
+    "Error":  "System.Management.Automation.RuntimeException: Process inspect-yellow-yellow_tripdata_2025-01 exited 1: Invalid CSV metadata\r\n ",
+    "Utc":  "2026-10-29T03:34:59.1878806Z"
+}

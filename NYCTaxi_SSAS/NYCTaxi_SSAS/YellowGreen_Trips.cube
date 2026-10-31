@@ -1,0 +1,871 @@
+<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine" dwd:design-time-name="6ecdc50f-b376-4a9d-ae2f-a1659d8b0837">
+  <ID>YellowGreen_Trips</ID>
+  <Name>YellowGreen Trips</Name>
+  <Dimensions>
+    <Dimension dwd:design-time-name="2e10a4c2-b64d-4153-8bc7-bbff1ddb5ee1">
+      <ID>Pickup Time</ID>
+      <Name>Pickup Time</Name>
+      <DimensionID>Dim Time</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="31eae733-5389-4dc4-9f08-7a78a8937cdb">
+          <AttributeID>Time Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1c602699-cc64-4ff4-81d5-ac1c6ed5cef3">
+          <AttributeID>Hour Number</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="29c949a4-7c2a-4cb8-8c2a-a54d53a5795e">
+          <AttributeID>Time Band</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4291b4f7-372c-4795-a4d7-52f8ecb7e36e">
+          <AttributeID>Is Peak Hour</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="09a9b115-d55f-4ad4-bf31-f74a4e0e47c2">
+          <AttributeID>Time Label</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="243e78fd-6cc3-4b9e-96de-a4df63a07210">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="9d9840ee-f8d3-4c08-8dff-52c17a22728c">
+      <ID>Dropoff Location</ID>
+      <Name>Dropoff Location</Name>
+      <DimensionID>Dim Location</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="87331cc0-6496-4b7d-8c84-527dc2544d2b">
+          <AttributeID>Location Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="415627d3-0632-4915-8196-3a3aaabb479e">
+          <AttributeID>Location ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ace8e571-20ca-4c47-87c5-ca8067781f27">
+          <AttributeID>Borough</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6516754d-c0cf-4b80-8d7d-a1dd655ac9ec">
+          <AttributeID>Service Zone</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="05088a1d-2314-4fbf-8952-571c18a31b30">
+          <AttributeID>Zone Name</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="ecee5f13-4e58-4afd-a42c-67ff6a90d966">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="79224860-597c-42a2-8cab-eea8e414e975">
+      <ID>Pickup Date</ID>
+      <Name>Pickup Date</Name>
+      <DimensionID>Dim Date</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="9e7325cf-6d82-4e66-a6bb-aae5e9d7e4d2">
+          <AttributeID>Date Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3de1c5ab-cada-490c-b35e-640d828b1fb9">
+          <AttributeID>Day Of Week Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d849dc6b-b1be-4d4b-a7b2-b1836fd23836">
+          <AttributeID>Day Of Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e31ecd9a-3672-4303-9bc1-90fd97cc940a">
+          <AttributeID>Month Number</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="37a83b6e-05f0-4f0d-b3b7-a8d2d8233c50">
+          <AttributeID>Month Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6a7cc8c9-d7bf-4b04-96ad-d182f85b7f62">
+          <AttributeID>Quarter Number</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="51b080a2-78f5-4123-9514-68ee4f14ab95">
+          <AttributeID>Year Number</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c1f94b8f-f7a2-4238-bf20-d9784bfefb83">
+          <AttributeID>Is Weekend</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b830e38e-c7a1-4c7d-9e80-119830969de7">
+          <AttributeID>Is Holiday</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ed4a236e-6959-4cb4-97fa-26fcbc55f68d">
+          <AttributeID>Full Date</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="ec9fc0a9-163a-48eb-ae15-84db7ce1ced5">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="8411cfc3-eaf3-45b6-ac9a-ca91aa66b88b">
+      <ID>Pickup Location</ID>
+      <Name>Pickup Location</Name>
+      <DimensionID>Dim Location</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="951e6d8f-d469-482c-9642-7309bf07eda6">
+          <AttributeID>Location Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="65242bd2-f89d-4353-ae1d-ad3a36223d02">
+          <AttributeID>Location ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3e9a0cc5-2dc8-44a8-b680-8fed097506fc">
+          <AttributeID>Borough</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6c1007a7-6fac-4819-9583-fe20e7aa1fc0">
+          <AttributeID>Service Zone</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9ac0e68c-2ee1-43d2-b11f-2ce7e7030408">
+          <AttributeID>Zone Name</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="f4f194c6-6cb7-41fe-a4f2-280bdb0fd5b2">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="6847c9a9-68a6-4267-b3bc-f64f7209af7f">
+      <ID>Dim Service Type</ID>
+      <Name>Dim Service Type</Name>
+      <DimensionID>Dim Service Type</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="91a9fec3-ff29-49db-98c0-f7c99d1baf46">
+          <AttributeID>Service Type Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fe20c020-92eb-40dd-99a9-2f4113dd9d87">
+          <AttributeID>Service Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6cdfad3c-b4f7-45d2-b2ca-b1b0974e32ac">
+          <AttributeID>Service Name</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="8aa47617-ca65-4e36-b64c-78f69aa202b5">
+      <ID>Dropoff Time</ID>
+      <Name>Dropoff Time</Name>
+      <DimensionID>Dim Time</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="99aa0240-1981-4efb-8dad-f18cc08ab2ea">
+          <AttributeID>Time Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2674e5cd-236a-43f0-baad-4410a6d2d67f">
+          <AttributeID>Hour Number</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1050cbde-ed02-4cb2-9066-d683fa1a8d6b">
+          <AttributeID>Time Band</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b2aa122d-d1cd-4128-9691-4f659171061e">
+          <AttributeID>Is Peak Hour</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cee2ca84-8a24-4f86-b08c-2c5117bfafeb">
+          <AttributeID>Time Label</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="c1eb861d-6f52-45f3-a0b7-49931272d498">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="c6388229-716e-4b60-bbf3-5fa39c3f24e6">
+      <ID>Dropoff Date</ID>
+      <Name>Dropoff Date</Name>
+      <DimensionID>Dim Date</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="22cb91a1-fdb9-4bdc-b3b8-585aa4b5000a">
+          <AttributeID>Date Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8b742e55-1df4-416d-b460-4fe2094fe6f6">
+          <AttributeID>Day Of Week Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ce97071c-0022-4e6b-9eb6-3a5dedb56804">
+          <AttributeID>Day Of Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="61633995-61c8-4980-b079-b0a1665cbf07">
+          <AttributeID>Month Number</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e02e17da-c969-49a5-9412-0e8588c430e3">
+          <AttributeID>Month Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8d34c860-54ba-4f4f-a438-f5ed9d7058e8">
+          <AttributeID>Quarter Number</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a6461328-d108-4e81-a63f-754df0d01c53">
+          <AttributeID>Year Number</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6df1d363-a7b1-4a6d-9f95-8775ec1bd92c">
+          <AttributeID>Is Weekend</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="632044b4-5a3c-4214-87e0-da9a67797295">
+          <AttributeID>Is Holiday</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1b1e4670-a6e3-4a86-a830-0481f4bf902c">
+          <AttributeID>Full Date</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="e43e7cf7-b035-4f5b-a6c1-11058b7c55cb">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="34d3bc35-eda8-441e-9ab7-604fcd5d6fd8">
+      <ID>Dim Taxi Flags</ID>
+      <Name>Dim Taxi Flags</Name>
+      <DimensionID>Dim Taxi Flags</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="7341222d-4429-44d2-9dc0-8d95cf9ff6c6">
+          <AttributeID>Taxi Flag Key</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="a72ef883-d9df-4832-9b3d-6c2165008b1a">
+      <ID>Dim Trip Type</ID>
+      <Name>Dim Trip Type</Name>
+      <DimensionID>Dim Trip Type</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="4a4721e1-3e6e-4111-9086-ed6776b6cb34">
+          <AttributeID>Trip Type Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bca5583a-74ad-4cd9-ba91-9968572b4074">
+          <AttributeID>Trip Type ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="19e4eb4e-7139-42c1-9066-f9ded1c261e7">
+      <ID>Dim Passenger Group</ID>
+      <Name>Dim Passenger Group</Name>
+      <DimensionID>Dim Passenger Group</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="7a957600-91da-401f-a5dc-c0b0fcdb298e">
+          <AttributeID>Passenger Group Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fc6a6ce9-6dd2-40c2-9a6d-654d7fccef32">
+          <AttributeID>Passenger Group Code</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="788e4347-5a86-49ef-acdf-72a3581c8b74">
+      <ID>Dim Vendor</ID>
+      <Name>Dim Vendor</Name>
+      <DimensionID>Dim Vendor</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="306e804c-77a5-4071-8cbf-70eaec7fe62b">
+          <AttributeID>Vendor Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5c7cda05-6904-4b26-aa04-715a4121a4e1">
+          <AttributeID>Vendor Name</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="f682839a-5bb7-4782-9928-c9622627337d">
+      <ID>Dim Payment Type</ID>
+      <Name>Dim Payment Type</Name>
+      <DimensionID>Dim Payment Type</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="90643e60-cf34-4dfd-8f85-da73b7d9f72c">
+          <AttributeID>Payment Type Key</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="9ce2fa6b-d2c8-4d83-a013-41775d8575f8">
+      <ID>Dim Rate Code</ID>
+      <Name>Dim Rate Code</Name>
+      <DimensionID>Dim Rate Code</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="20f22bb5-9825-458e-98e2-2c4239efcaa6">
+          <AttributeID>Rate Code Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fc373926-8809-468c-a381-98d59430ddf8">
+          <AttributeID>Rate Code ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="5875c5bc-7c00-4f25-ab71-3ea9d93fdc82">
+      <ID>Dim Load Batch</ID>
+      <Name>Dim Load Batch</Name>
+      <DimensionID>Dim Load Batch</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="89282477-3724-4911-a99e-aff4d1855392">
+          <AttributeID>Load Batch Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f34a0095-a158-44a7-8d5d-a52089181470">
+          <AttributeID>BatchID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="81f85dd3-82b3-4b2d-8c2e-cddeeadbcfbc">
+          <AttributeID>Dataset Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cf9de92f-d893-4cb8-90cd-2c49a41e9654">
+          <AttributeID>Source File Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4408bd60-ee04-4f49-a303-9e60ac864bc9">
+          <AttributeID>Source Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="586db32e-681e-440d-92ac-2501652524b4">
+          <AttributeID>Source Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9c578fd5-3faa-4b71-8a3c-a4c78e46d8de">
+          <AttributeID>Batch Status</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="3a218bcc-05fc-4f08-a0af-518eaf087b25">
+      <ID>Fact Yellow Green Trips</ID>
+      <Name>Fact Yellow Green Trips</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="891b47f6-10f9-49e1-8dea-688318e52712">
+          <ID>Trip Count - Fact Yellow Green Trips</ID>
+          <Name>Trip Count - Fact Yellow Green Trips</Name>
+          <Source dwd:design-time-name="215a992c-2fbb-4c08-9e9b-2437a8f16234">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="43fa340c-8d1d-4c7a-aed1-ea231ec989a3">
+              <TableID>dbo_Fact_YellowGreen_Trips</TableID>
+              <ColumnID>TripCount</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Fact Yellow Green Trips</DisplayFolder>
+        </Measure>
+        <Measure dwd:design-time-name="bb721077-2343-408f-bc9d-837f320d09b9">
+          <ID>Passenger Count</ID>
+          <Name>Passenger Count</Name>
+          <Source dwd:design-time-name="e6779bbb-858c-4482-bcc3-1a2930b05f64">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="c5786b6f-e788-46e8-9951-811baa0ede56">
+              <TableID>dbo_Fact_YellowGreen_Trips</TableID>
+              <ColumnID>PassengerCount</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Fact Yellow Green Trips</DisplayFolder>
+        </Measure>
+        <Measure dwd:design-time-name="5b7196e1-577b-4a1e-aef9-1a3ee01a00d7">
+          <ID>Trip Distance Miles - Fact Yellow Green Trips</ID>
+          <Name>Trip Distance Miles - Fact Yellow Green Trips</Name>
+          <Source dwd:design-time-name="03ca3f13-d36e-4523-8e6d-18c0c1daa494">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="5ba496fc-8a38-40f4-a92f-7b83071a01ab">
+              <TableID>dbo_Fact_YellowGreen_Trips</TableID>
+              <ColumnID>TripDistanceMiles</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Fact Yellow Green Trips</DisplayFolder>
+        </Measure>
+        <Measure dwd:design-time-name="747181a1-a4aa-40fa-aab2-075d2a6e1174">
+          <ID>Trip Duration Seconds - Fact Yellow Green Trips</ID>
+          <Name>Trip Duration Seconds - Fact Yellow Green Trips</Name>
+          <Source dwd:design-time-name="5275c01c-16d6-42b0-b6dd-de5455bcaffd">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="667a76d0-2784-4691-9be7-410ffc48b7f0">
+              <TableID>dbo_Fact_YellowGreen_Trips</TableID>
+              <ColumnID>TripDurationSeconds</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Fact Yellow Green Trips</DisplayFolder>
+        </Measure>
+        <Measure dwd:design-time-name="2b452165-0c67-4dbb-8e3e-fb448e1bbf7c">
+          <ID>Fare Amount</ID>
+          <Name>Fare Amount</Name>
+          <Source dwd:design-time-name="61db150d-3209-4819-a3ee-b6a5244c0f7a">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="15bebd8d-bcbe-413a-a70d-9b55999da6bf">
+              <TableID>dbo_Fact_YellowGreen_Trips</TableID>
+              <ColumnID>FareAmount</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Fact Yellow Green Trips</DisplayFolder>
+        </Measure>
+        <Measure dwd:design-time-name="9c06d698-df0f-4b43-9921-a0c85aeca073">
+          <ID>Extra Amount</ID>
+          <Name>Extra Amount</Name>
+          <Source dwd:design-time-name="e582194c-c5e4-478d-8f26-992d53ce7f58">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="e9e47ffc-541a-4966-b911-013951f4b5a9">
+              <TableID>dbo_Fact_YellowGreen_Trips</TableID>
+              <ColumnID>ExtraAmount</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Fact Yellow Green Trips</DisplayFolder>
+        </Measure>
+        <Measure dwd:design-time-name="7e871667-4ce5-4eaa-a3cd-bf006a5c783b">
+          <ID>MTA Tax Amount</ID>
+          <Name>MTA Tax Amount</Name>
+          <Source dwd:design-time-name="7617f5b6-5ea0-4ad5-a9bf-88b0d861d04c">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="004e60bf-ab3f-4d42-b7bf-3b46dc6a0f72">
+              <TableID>dbo_Fact_YellowGreen_Trips</TableID>
+              <ColumnID>MTATaxAmount</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Fact Yellow Green Trips</DisplayFolder>
+        </Measure>
+        <Measure dwd:design-time-name="f9e4b0ce-627b-4e0f-a0a6-95989ce89176">
+          <ID>Tip Amount - Fact Yellow Green Trips</ID>
+          <Name>Tip Amount - Fact Yellow Green Trips</Name>
+          <Source dwd:design-time-name="889bdfc6-9e0a-4ec1-9ee1-c1f1b324b3e2">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="1992a527-2b7e-4148-8cf2-2e6f1f8c5e1f">
+              <TableID>dbo_Fact_YellowGreen_Trips</TableID>
+              <ColumnID>TipAmount</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Fact Yellow Green Trips</DisplayFolder>
+        </Measure>
+        <Measure dwd:design-time-name="41e63c17-ab36-4c00-8092-97cde1aff8ac">
+          <ID>Tolls Amount - Fact Yellow Green Trips</ID>
+          <Name>Tolls Amount - Fact Yellow Green Trips</Name>
+          <Source dwd:design-time-name="4d9c6d5f-e810-4259-ba9b-1371ffd88ef6">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="8a7f7428-4986-471e-9c72-0b670f748794">
+              <TableID>dbo_Fact_YellowGreen_Trips</TableID>
+              <ColumnID>TollsAmount</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Fact Yellow Green Trips</DisplayFolder>
+        </Measure>
+        <Measure dwd:design-time-name="27e08847-ccca-4f33-b0ff-498691228f41">
+          <ID>Improvement Surcharge</ID>
+          <Name>Improvement Surcharge</Name>
+          <Source dwd:design-time-name="48db0c40-1d54-4ac4-9f39-145d641bd4e5">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="56bc92b2-b8d6-4a75-a7d1-9a8f26e3c2f2">
+              <TableID>dbo_Fact_YellowGreen_Trips</TableID>
+              <ColumnID>ImprovementSurcharge</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Fact Yellow Green Trips</DisplayFolder>
+        </Measure>
+        <Measure dwd:design-time-name="a85726cb-a387-4069-9d74-0579ee26b220">
+          <ID>Congestion Surcharge - Fact Yellow Green Trips</ID>
+          <Name>Congestion Surcharge - Fact Yellow Green Trips</Name>
+          <Source dwd:design-time-name="0d38473c-92fb-4e9a-b737-c807aceb0b30">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="074b47d0-cd0e-47b2-8f87-0c383b268099">
+              <TableID>dbo_Fact_YellowGreen_Trips</TableID>
+              <ColumnID>CongestionSurcharge</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Fact Yellow Green Trips</DisplayFolder>
+        </Measure>
+        <Measure dwd:design-time-name="af247db7-a69b-4464-be9e-d6ced7e958a9">
+          <ID>Airport Fee - Fact Yellow Green Trips</ID>
+          <Name>Airport Fee - Fact Yellow Green Trips</Name>
+          <Source dwd:design-time-name="b7755615-198b-4d87-865c-84b59883f7dc">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="db569d20-e4a8-4f58-a54b-3802db9f5fb2">
+              <TableID>dbo_Fact_YellowGreen_Trips</TableID>
+              <ColumnID>AirportFee</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Fact Yellow Green Trips</DisplayFolder>
+        </Measure>
+        <Measure dwd:design-time-name="554560e9-6d9a-4d17-a9ed-cd25ce041ef3">
+          <ID>CBD Congestion Fee - Fact Yellow Green Trips</ID>
+          <Name>CBD Congestion Fee - Fact Yellow Green Trips</Name>
+          <Source dwd:design-time-name="5fc40332-e51c-47db-b98f-b2d42b91c45e">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b312352a-95e9-4e27-9b00-8021a71a0cf8">
+              <TableID>dbo_Fact_YellowGreen_Trips</TableID>
+              <ColumnID>CBDCongestionFee</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Fact Yellow Green Trips</DisplayFolder>
+        </Measure>
+        <Measure dwd:design-time-name="963ce567-a4eb-4604-9ed0-680fa5629c22">
+          <ID>Total Amount</ID>
+          <Name>Total Amount</Name>
+          <Source dwd:design-time-name="2f42ee88-cdc3-4821-b7bb-070683fd6ed3">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="1987fd87-9003-4e08-9c7b-6d88dc84c978">
+              <TableID>dbo_Fact_YellowGreen_Trips</TableID>
+              <ColumnID>TotalAmount</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Fact Yellow Green Trips</DisplayFolder>
+        </Measure>
+        <Measure dwd:design-time-name="93bd218a-037e-400c-8c72-b1171bfd52f5">
+          <ID>Fact Yellow Green Trips TripDurationSecondsValidTrips</ID>
+          <Name>Fact Yellow Green Trips TripDurationSecondsValidTrips</Name>
+          <Source dwd:design-time-name="f33ff9b6-e95a-4db2-a679-da8759903467">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="c10af816-6605-4351-9dce-bf7045ad3ecc">
+              <TableID>dbo_Fact_YellowGreen_Trips</TableID>
+              <ColumnID>TripDurationSecondsValidTrips</ColumnID>
+            </Source>
+          </Source>
+          <Visible>false</Visible>
+        </Measure>
+        <Measure dwd:design-time-name="b148774b-0a65-4486-9b5a-67075a62cfb1">
+          <ID>Fact Yellow Green Trips TripDistanceMilesValidTrips</ID>
+          <Name>Fact Yellow Green Trips TripDistanceMilesValidTrips</Name>
+          <Source dwd:design-time-name="3d31eb93-c543-48df-83b6-09b69fc06ab7">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="590e3952-34d6-4a2b-956c-e85c0d5f0cb7">
+              <TableID>dbo_Fact_YellowGreen_Trips</TableID>
+              <ColumnID>TripDistanceMilesValidTrips</ColumnID>
+            </Source>
+          </Source>
+          <Visible>false</Visible>
+        </Measure>
+        <Measure dwd:design-time-name="797d1300-a7c8-4685-96fa-dd31e7f1a5aa">
+          <ID>Fact Yellow Green Trips FareAmountValidTrips</ID>
+          <Name>Fact Yellow Green Trips FareAmountValidTrips</Name>
+          <Source dwd:design-time-name="28aa1999-68c6-471e-a275-2fd15eec3b05">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="16c868fb-928f-4411-855d-694f86a59aa4">
+              <TableID>dbo_Fact_YellowGreen_Trips</TableID>
+              <ColumnID>FareAmountValidTrips</ColumnID>
+            </Source>
+          </Source>
+          <Visible>false</Visible>
+        </Measure>
+        <Measure dwd:design-time-name="72fe247c-c306-4b13-82e6-e2fba1f49480">
+          <ID>Fact Yellow Green Trips TipAmountValidTrips</ID>
+          <Name>Fact Yellow Green Trips TipAmountValidTrips</Name>
+          <Source dwd:design-time-name="a4ae1332-5885-4146-b8ed-582b7faa3501">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="7e39ea7e-646b-4a67-980d-621b950350a5">
+              <TableID>dbo_Fact_YellowGreen_Trips</TableID>
+              <ColumnID>TipAmountValidTrips</ColumnID>
+            </Source>
+          </Source>
+          <Visible>false</Visible>
+        </Measure>
+        <Measure dwd:design-time-name="501ca679-ad78-4897-8b56-8e936fe1328a">
+          <ID>Fact Yellow Green Trips SpeedDistanceMiles</ID>
+          <Name>Fact Yellow Green Trips SpeedDistanceMiles</Name>
+          <Source dwd:design-time-name="7ffb1006-cd04-44b7-be87-a40a1ff73050">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="10c5f1f1-6810-4eb3-9a12-b1a8fa18b310">
+              <TableID>dbo_Fact_YellowGreen_Trips</TableID>
+              <ColumnID>SpeedDistanceMiles</ColumnID>
+            </Source>
+          </Source>
+          <Visible>false</Visible>
+        </Measure>
+        <Measure dwd:design-time-name="ff356073-effd-44f8-bb67-947e65150f9e">
+          <ID>Fact Yellow Green Trips SpeedDurationSeconds</ID>
+          <Name>Fact Yellow Green Trips SpeedDurationSeconds</Name>
+          <Source dwd:design-time-name="26fde651-5f5e-4f18-919a-01c4a9b4397e">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="9a18d34d-d174-423f-975b-ac02550e1fbb">
+              <TableID>dbo_Fact_YellowGreen_Trips</TableID>
+              <ColumnID>SpeedDurationSeconds</ColumnID>
+            </Source>
+          </Source>
+          <Visible>false</Visible>
+        </Measure>
+        <Measure dwd:design-time-name="a3df5d68-aac4-48ed-ad98-66804d62b2af">
+          <ID>Fact Yellow Green Trips TipPairAmount</ID>
+          <Name>Fact Yellow Green Trips TipPairAmount</Name>
+          <Source dwd:design-time-name="1ee2cecb-64b7-4322-96c7-d75eff2eacfa">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="a938783b-b6ff-4f74-be63-cf1e7c861c8b">
+              <TableID>dbo_Fact_YellowGreen_Trips</TableID>
+              <ColumnID>TipPairAmount</ColumnID>
+            </Source>
+          </Source>
+          <Visible>false</Visible>
+        </Measure>
+        <Measure dwd:design-time-name="b3ae31c4-e474-4ef2-88ec-a361b08f92fc">
+          <ID>Fact Yellow Green Trips TipPairFare</ID>
+          <Name>Fact Yellow Green Trips TipPairFare</Name>
+          <Source dwd:design-time-name="4d1618cd-d3c3-4a3b-a9da-a4932715caf7">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="bb20d669-fb34-4a63-be25-3170f5b22c19">
+              <TableID>dbo_Fact_YellowGreen_Trips</TableID>
+              <ColumnID>TipPairFare</ColumnID>
+            </Source>
+          </Source>
+          <Visible>false</Visible>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <IgnoreUnrelatedDimensions>false</IgnoreUnrelatedDimensions>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="bddd293f-fea6-471c-9694-198ce97de441">
+          <CubeDimensionID>Pickup Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="04278c4f-54f7-4eea-a5af-4eac9159e6b9">
+              <AttributeID>Date Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="fdcbb0af-20e1-4041-9b0a-e53816bf6668">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="01290333-56b4-49c8-9a56-0047afd8eeda">
+                    <TableID>dbo_Fact_YellowGreen_Trips</TableID>
+                    <ColumnID>PickupDateKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="3aeee9b3-b52f-482b-a105-5f3d0ce7c9d8">
+          <CubeDimensionID>Dropoff Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="0926615c-1dbf-4ea3-8b8c-2f17d0e8d4ae">
+              <AttributeID>Date Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="003557ac-cd84-440a-9512-96742be0cbb0">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c9930075-3d48-4d2a-94a3-0b0d80930ae9">
+                    <TableID>dbo_Fact_YellowGreen_Trips</TableID>
+                    <ColumnID>DropoffDateKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="c3ad5216-8411-4109-a619-cda499c1aaa3">
+          <CubeDimensionID>Pickup Time</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="6326fc05-9de6-4f54-b1c3-fcd85620bb6e">
+              <AttributeID>Time Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f55bf452-9064-4cda-972f-89e65812618a">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="20535858-d623-4b24-9daf-75103509db75">
+                    <TableID>dbo_Fact_YellowGreen_Trips</TableID>
+                    <ColumnID>PickupTimeKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="fc6226bd-ad06-47c0-9174-5afc8778c22f">
+          <CubeDimensionID>Dropoff Time</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1dfd68da-51d6-4e19-9fda-6dd2949da50e">
+              <AttributeID>Time Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="402b7755-ea84-42f3-9e7a-3af387990fdb">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="331568de-494a-4667-ab37-d11a3e94bfaf">
+                    <TableID>dbo_Fact_YellowGreen_Trips</TableID>
+                    <ColumnID>DropoffTimeKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="be35d4f0-73dd-4d64-a347-71dcbd12c1e5">
+          <CubeDimensionID>Pickup Location</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="592f423e-68f3-4b03-836f-27e5994b3d95">
+              <AttributeID>Location Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="38aae9dd-f82c-4c5f-aab6-fe6a7a3311e4">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3a701530-aa49-4a3d-a571-084bd20e9f78">
+                    <TableID>dbo_Fact_YellowGreen_Trips</TableID>
+                    <ColumnID>PickupLocationKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="3ff4a905-4d94-4fcc-89d4-2b8f5dca87cb">
+          <CubeDimensionID>Dropoff Location</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="bc9e5225-ac78-42da-9ad7-f84807dcc5a5">
+              <AttributeID>Location Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="27469c3c-858f-4920-8e70-1f4ae8f09823">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ee64749c-d79c-4ec9-93b4-d95fcf7db0e9">
+                    <TableID>dbo_Fact_YellowGreen_Trips</TableID>
+                    <ColumnID>DropoffLocationKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="69225483-924f-4370-8e2d-47e7ee456948">
+          <CubeDimensionID>Dim Service Type</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="86cd253d-d496-4386-92e0-cb52140a6b68">
+              <AttributeID>Service Type Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a87c3121-5436-44b4-b6d8-6aea062d3e09">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0463e566-3aaa-421b-9d6b-08f30509199c">
+                    <TableID>dbo_Fact_YellowGreen_Trips</TableID>
+                    <ColumnID>ServiceTypeKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="1aceac3a-d141-4a58-b60a-49f5f179dd4b">
+          <CubeDimensionID>Dim Vendor</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="0105b540-1595-4d0b-add7-9aa1a5b0ce21">
+              <AttributeID>Vendor Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="87c97428-1b0c-4aa5-901b-bc57cc2bb9e2">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2c5dbcbc-4082-4f4e-9307-5a55085af3e1">
+                    <TableID>dbo_Fact_YellowGreen_Trips</TableID>
+                    <ColumnID>VendorKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="cb7423f0-ba34-4501-a0a9-279d132ef447">
+          <CubeDimensionID>Dim Rate Code</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ad879278-3d1c-4b56-ac6e-37c804d70982">
+              <AttributeID>Rate Code Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a064d417-2519-48dd-9dac-f9ec160c0a2f">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9d4aac93-96b0-4ebb-bcd6-c72ec62a893e">
+                    <TableID>dbo_Fact_YellowGreen_Trips</TableID>
+                    <ColumnID>RateCodeKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="889578f9-5461-488e-b594-5a931bbce5ed">
+          <CubeDimensionID>Dim Payment Type</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="8eabbbc9-1f04-4a61-8c10-525de43e04e4">
+              <AttributeID>Payment Type Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e88910e6-8606-4af7-ba74-a9e80d3adf3f">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f9983cd5-d8af-4098-a067-dda15a364133">
+                    <TableID>dbo_Fact_YellowGreen_Trips</TableID>
+                    <ColumnID>PaymentTypeKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="479950ad-13dc-4b13-ac67-72525ab675b7">
+          <CubeDimensionID>Dim Trip Type</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9d9fc76f-eeb0-4628-a43e-6e96f5a570c5">
+              <AttributeID>Trip Type Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c2f38f76-3ac3-4d06-8b75-d5b110f5f92e">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a42e18b8-7d37-43da-9d3d-b87eec6c84de">
+                    <TableID>dbo_Fact_YellowGreen_Trips</TableID>
+                    <ColumnID>TripTypeKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="9680674d-29a1-4161-8cfd-4693a45000f3">
+          <CubeDimensionID>Dim Taxi Flags</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="2e268e6d-25f4-423f-b298-67a053a0ebae">
+              <AttributeID>Taxi Flag Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="50f457b9-a4c4-40d2-91da-8885b0b12697">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7c7e5a12-c3b5-426c-84c8-0249566084e9">
+                    <TableID>dbo_Fact_YellowGreen_Trips</TableID>
+                    <ColumnID>TaxiFlagKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="06ae8e8d-6dbb-489b-9b85-4df7447e2f42">
+          <CubeDimensionID>Dim Passenger Group</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="57898130-e071-4e55-9fd8-071a79c63921">
+              <AttributeID>Passenger Group Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5f6d51a7-f6d3-4b96-bed5-54a2086d9047">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9016a0a9-b23a-4882-994f-2abd469e48a9">
+                    <TableID>dbo_Fact_YellowGreen_Trips</TableID>
+                    <ColumnID>PassengerGroupKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e0953f65-d027-4fa5-bd57-3d7654dbd590">
+          <CubeDimensionID>Dim Load Batch</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="7eee2cad-23d0-4da7-a2d7-f8bd7457d198">
+              <AttributeID>Load Batch Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7487e35a-4195-42eb-a39b-def6e7916a9a">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2fc4704e-0540-4830-81f2-022e951535a9">
+                    <TableID>dbo_Fact_YellowGreen_Trips</TableID>
+                    <ColumnID>LoadBatchKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions/>
+      <AggregationDesigns/>
+    </MeasureGroup>
+    </MeasureGroups>
+  <Source dwd:design-time-name="a3fd343a-82e0-4ce0-9a66-74345514f5a5">
+    <DataSourceViewID>DSV_NYCTaxi_DWH</DataSourceViewID>
+  </Source>
+  <MdxScripts>
+    <MdxScript dwd:design-time-name="429486c0-b30d-4084-a2b3-bfdf265c4c72">
+      <ID>MdxScript</ID>
+      <Name>MdxScript</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Commands>
+        <Command>
+          <Text>CALCULATE;
+CREATE MEMBER CURRENTCUBE.[Measures].[YellowGreen Average Trip Duration Minutes] AS IIF(IsEmpty([Measures].[Fact Yellow Green Trips TripDurationSecondsValidTrips]) OR [Measures].[Fact Yellow Green Trips TripDurationSecondsValidTrips] = 0, NULL, ([Measures].[Trip Duration Seconds - Fact Yellow Green Trips]) / ([Measures].[Fact Yellow Green Trips TripDurationSecondsValidTrips]) * 0.016666666666666666), FORMAT_STRING = '#,##0.00', DISPLAY_FOLDER = 'YellowGreen', VISIBLE = 1;
+CREATE MEMBER CURRENTCUBE.[Measures].[YellowGreen Average Trip Distance] AS IIF(IsEmpty([Measures].[Fact Yellow Green Trips TripDistanceMilesValidTrips]) OR [Measures].[Fact Yellow Green Trips TripDistanceMilesValidTrips] = 0, NULL, ([Measures].[Trip Distance Miles - Fact Yellow Green Trips]) / ([Measures].[Fact Yellow Green Trips TripDistanceMilesValidTrips]) * 1), FORMAT_STRING = '#,##0.00', DISPLAY_FOLDER = 'YellowGreen', VISIBLE = 1;
+CREATE MEMBER CURRENTCUBE.[Measures].[YellowGreen Average Speed MPH] AS IIF(IsEmpty([Measures].[Fact Yellow Green Trips SpeedDurationSeconds]) OR [Measures].[Fact Yellow Green Trips SpeedDurationSeconds] = 0, NULL, ([Measures].[Fact Yellow Green Trips SpeedDistanceMiles]) / ([Measures].[Fact Yellow Green Trips SpeedDurationSeconds]) * 3600), FORMAT_STRING = '#,##0.00', DISPLAY_FOLDER = 'YellowGreen', VISIBLE = 1;
+CREATE MEMBER CURRENTCUBE.[Measures].[YellowGreen Average Fare Per Trip] AS IIF(IsEmpty([Measures].[Fact Yellow Green Trips FareAmountValidTrips]) OR [Measures].[Fact Yellow Green Trips FareAmountValidTrips] = 0, NULL, ([Measures].[Fare Amount]) / ([Measures].[Fact Yellow Green Trips FareAmountValidTrips]) * 1), FORMAT_STRING = '#,##0.00', DISPLAY_FOLDER = 'YellowGreen', VISIBLE = 1;
+CREATE MEMBER CURRENTCUBE.[Measures].[YellowGreen Average Tip Per Trip] AS IIF(IsEmpty([Measures].[Fact Yellow Green Trips TipAmountValidTrips]) OR [Measures].[Fact Yellow Green Trips TipAmountValidTrips] = 0, NULL, ([Measures].[Tip Amount - Fact Yellow Green Trips]) / ([Measures].[Fact Yellow Green Trips TipAmountValidTrips]) * 1), FORMAT_STRING = '#,##0.00', DISPLAY_FOLDER = 'YellowGreen', VISIBLE = 1;
+CREATE MEMBER CURRENTCUBE.[Measures].[YellowGreen Tip Percentage] AS IIF(IsEmpty([Measures].[Fact Yellow Green Trips TipPairFare]) OR [Measures].[Fact Yellow Green Trips TipPairFare] = 0, NULL, ([Measures].[Fact Yellow Green Trips TipPairAmount]) / ([Measures].[Fact Yellow Green Trips TipPairFare]) * 1), FORMAT_STRING = '0.00%', DISPLAY_FOLDER = 'YellowGreen', VISIBLE = 1;</Text>
+        </Command>
+      </Commands>
+    </MdxScript>
+  </MdxScripts>
+</Cube>

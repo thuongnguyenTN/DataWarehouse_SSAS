@@ -1,10 +1,21 @@
-param([ValidateSet('TestMonth','Full')][string]$Scope='TestMonth')
+﻿param([ValidateSet('TestMonth','Full')][string]$Scope='TestMonth', [string]$SqlServer='THUONGNGUYEN\MSSQLSV', [string]$SsasServer='THUONGNGUYEN\MSSQLSV')
 $ErrorActionPreference='Stop'
+trap {
+ $record=$_;$exception=$record.Exception
+ while($exception.InnerException){$exception=$exception.InnerException}
+ if($env:NYCTAXI_ERROR_FILE){
+  try{@{InvocationId=$env:NYCTAXI_INVOCATION;Message=$exception.Message;SqlNumber=$(if($exception -is [Data.SqlClient.SqlException]){$exception.Number}else{$null})}|ConvertTo-Json|Set-Content -LiteralPath $env:NYCTAXI_ERROR_FILE -Encoding UTF8}catch{}
+ }
+ Write-Error -ErrorAction Continue $record;exit 1
+}
 $root=Split-Path $PSScriptRoot
 $null=[Reflection.Assembly]::LoadFrom('C:\Program Files\Microsoft.NET\ADOMD.NET\160\Microsoft.AnalysisServices.AdomdClient.dll')
-$sql=New-Object System.Data.SqlClient.SqlConnection 'Server=THUONGNGUYEN\MSSQLSV;Database=NYCTaxi_DWH;Integrated Security=True;Connect Timeout=10'
-$olap=New-Object Microsoft.AnalysisServices.AdomdClient.AdomdConnection 'Data Source=THUONGNGUYEN\MSSQLSV;Initial Catalog=NYCTaxi_SSAS'
+$builder=New-Object System.Data.SqlClient.SqlConnectionStringBuilder
+$builder['Data Source']=$SqlServer;$builder['Initial Catalog']='NYCTaxi_DWH';$builder['Integrated Security']=$true;$builder['Connect Timeout']=10
+$sql=New-Object System.Data.SqlClient.SqlConnection $builder.ConnectionString
+$olap=New-Object Microsoft.AnalysisServices.AdomdClient.AdomdConnection ("Data Source="+$SsasServer+";Initial Catalog=NYCTaxi_SSAS")
 $sql.Open();$olap.Open(); $olap.GetSchemaDataSet("MDSCHEMA_CUBES",$null).Tables[0] | Select-Object CUBE_NAME,CUBE_CAPTION | Format-Table
+$cubeMap = Get-Content (Join-Path $PSScriptRoot 'cube-map.json') -Raw | ConvertFrom-Json
 $checks=New-Object 'System.Collections.Generic.List[object]'
 $sqlText=New-Object 'System.Collections.Generic.List[string]'
 $mdxText=New-Object 'System.Collections.Generic.List[string]'
@@ -12,7 +23,12 @@ function Check($name,$query,$measure,$slice='') {
  $cmd=$sql.CreateCommand();$cmd.CommandText=$query;$cmd.CommandTimeout=180
  $expected=$cmd.ExecuteScalar()
  $where=if($slice){" WHERE ($slice)"}else{''}
- $mdx="SELECT {[Measures].[$measure]} ON COLUMNS FROM [NYC Taxi Analysis]$where"
+ if ($measure -eq 'Total Trips All Services') {
+  $measure = switch ($key) { 1 {'Trip Count - Fact Yellow Green Trips'} 2 {'Trip Count - Fact Yellow Green Trips'} 3 {'Trip Count'} 4 {'Trip Count - Fact HVFHV Trips'} }
+ }
+ $cubeName = $cubeMap.measures.PSObject.Properties[$measure].Value
+ if (-not $cubeName) { throw "No business cube for measure: $measure" }
+ $mdx="SELECT {[Measures].[$measure]} ON COLUMNS FROM [$cubeName]$where"
  $cmd=$olap.CreateCommand();$cmd.CommandText=$mdx;$cmd.CommandTimeout=180
  $actual=$cmd.ExecuteCellSet().Cells[0].Value
  $eNull=($null -eq $expected -or $expected -is [DBNull]);$aNull=($null -eq $actual -or $actual -is [DBNull])

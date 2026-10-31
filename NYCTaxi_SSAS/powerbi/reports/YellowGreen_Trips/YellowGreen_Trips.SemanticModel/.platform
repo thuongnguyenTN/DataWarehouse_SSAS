@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "YellowGreen_Trips"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "ae7c4247-3fe6-492a-8f9d-34b246243afd"
+  }
+}

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-16"?>
+<Task version="1.2" xmlns="http://schemas.microsoft.com/windows/2004/02/mit/task">
+  <RegistrationInfo>
+    <Description>NYC Taxi ETL: 15th of every month at 10:00 Bangkok. Interactive user must be logged in. Logs: etl/monthly-logs and etl/logs.</Description>
+    <URI>\NYCTaxi Monthly ETL</URI>
+  </RegistrationInfo>
+  <Principals>
+    <Principal id="Author">
+      <UserId>S-1-5-21-385903013-633812429-2288811270-1001</UserId>
+      <LogonType>InteractiveToken</LogonType>
+    </Principal>
+  </Principals>
+  <Settings>
+    <DisallowStartIfOnBatteries>false</DisallowStartIfOnBatteries>
+    <StopIfGoingOnBatteries>false</StopIfGoingOnBatteries>
+    <ExecutionTimeLimit>P1D</ExecutionTimeLimit>
+    <MultipleInstancesPolicy>IgnoreNew</MultipleInstancesPolicy>
+    <StartWhenAvailable>true</StartWhenAvailable>
+    <IdleSettings>
+      <Duration>PT10M</Duration>
+      <WaitTimeout>PT1H</WaitTimeout>
+      <StopOnIdleEnd>true</StopOnIdleEnd>
+      <RestartOnIdle>false</RestartOnIdle>
+    </IdleSettings>
+  </Settings>
+  <Triggers>
+    <CalendarTrigger>
+      <StartBoundary>2026-11-15T10:00:00+07:00</StartBoundary>
+      <ScheduleByMonth>
+        <Months>
+          <January />
+          <February />
+          <March />
+          <April />
+          <May />
+          <June />
+          <July />
+          <August />
+          <September />
+          <October />
+          <November />
+          <December />
+        </Months>
+        <DaysOfMonth>
+          <Day>15</Day>
+        </DaysOfMonth>
+      </ScheduleByMonth>
+    </CalendarTrigger>
+  </Triggers>
+  <Actions Context="Author">
+    <Exec>
+      <Command>C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe</Command>
+      <Arguments>-NoProfile -ExecutionPolicy Bypass -File "E:\NYCTaxi\NYCTaxi_SSAS\etl\Invoke-MonthlyPipeline.ps1" -Mode PublishedMonth -MaxRows 100000</Arguments>
+      <WorkingDirectory>E:\NYCTaxi\NYCTaxi_SSAS\etl</WorkingDirectory>
+    </Exec>
+  </Actions>
+</Task>

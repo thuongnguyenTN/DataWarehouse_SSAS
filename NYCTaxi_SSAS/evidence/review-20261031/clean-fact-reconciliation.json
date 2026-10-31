@@ -1,0 +1,394 @@
+﻿[
+    {
+        "DatasetCode":  "fhv",
+        "SourceKey":  "fhv_tripdata_2025-05.csv",
+        "RowsInClean":  10000,
+        "RowsInFact":  10000,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "fhvhv",
+        "SourceKey":  "fhvhv_tripdata_2021-01.csv",
+        "RowsInClean":  10000,
+        "RowsInFact":  10000,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "fhvhv",
+        "SourceKey":  "fhvhv_tripdata_2025-07.csv",
+        "RowsInClean":  10000,
+        "RowsInFact":  10000,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "green",
+        "SourceKey":  "green_tripdata_2025-07.csv",
+        "RowsInClean":  9999,
+        "RowsInFact":  9999,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "fhv",
+        "SourceKey":  "fhv_tripdata_2021-01.csv",
+        "RowsInClean":  10000,
+        "RowsInFact":  10000,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "fhv",
+        "SourceKey":  "fhv_tripdata_2025-09.csv",
+        "RowsInClean":  9995,
+        "RowsInFact":  9995,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "fhvhv",
+        "SourceKey":  "fhvhv_tripdata_2025-01.csv",
+        "RowsInClean":  10000,
+        "RowsInFact":  10000,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "fhvhv",
+        "SourceKey":  "fhvhv_tripdata_2025-03.csv",
+        "RowsInClean":  10000,
+        "RowsInFact":  10000,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "fhvhv",
+        "SourceKey":  "fhvhv_tripdata_2025-04.csv",
+        "RowsInClean":  10000,
+        "RowsInFact":  10000,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "fhvhv",
+        "SourceKey":  "fhvhv_tripdata_2025-05.csv",
+        "RowsInClean":  10000,
+        "RowsInFact":  10000,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "fhvhv",
+        "SourceKey":  "fhvhv_tripdata_2025-06.csv",
+        "RowsInClean":  10000,
+        "RowsInFact":  10000,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "green",
+        "SourceKey":  "green_tripdata_2025-09.csv",
+        "RowsInClean":  9993,
+        "RowsInFact":  9993,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "green",
+        "SourceKey":  "green_tripdata_2025-10.csv",
+        "RowsInClean":  9993,
+        "RowsInFact":  9993,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "fhv",
+        "SourceKey":  "fhv_tripdata_2025-01.csv",
+        "RowsInClean":  9998,
+        "RowsInFact":  9998,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "fhv",
+        "SourceKey":  "fhv_tripdata_2025-03.csv",
+        "RowsInClean":  10000,
+        "RowsInFact":  10000,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "fhv",
+        "SourceKey":  "fhv_tripdata_2025-10.csv",
+        "RowsInClean":  10000,
+        "RowsInFact":  10000,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "yellow",
+        "SourceKey":  "yellow_tripdata_2021-02.csv",
+        "RowsInClean":  9991,
+        "RowsInFact":  9991,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "yellow",
+        "SourceKey":  "yellow_tripdata_2025-01.csv",
+        "RowsInClean":  9999,
+        "RowsInFact":  9999,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "yellow",
+        "SourceKey":  "yellow_tripdata_2025-02.csv",
+        "RowsInClean":  9990,
+        "RowsInFact":  9990,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "fhv",
+        "SourceKey":  "fhv_tripdata_2025-12.csv",
+        "RowsInClean":  9992,
+        "RowsInFact":  9992,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "green",
+        "SourceKey":  "green_tripdata_2025-02.csv",
+        "RowsInClean":  9994,
+        "RowsInFact":  9994,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "green",
+        "SourceKey":  "green_tripdata_2025-03.csv",
+        "RowsInClean":  9991,
+        "RowsInFact":  9991,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "green",
+        "SourceKey":  "green_tripdata_2025-08.csv",
+        "RowsInClean":  9996,
+        "RowsInFact":  9996,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "yellow",
+        "SourceKey":  "yellow_tripdata_2025-07.csv",
+        "RowsInClean":  9800,
+        "RowsInFact":  9800,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "yellow",
+        "SourceKey":  "yellow_tripdata_2025-11.csv",
+        "RowsInClean":  9730,
+        "RowsInFact":  9730,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "fhv",
+        "SourceKey":  "fhv_tripdata_2025-06.csv",
+        "RowsInClean":  10000,
+        "RowsInFact":  10000,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "fhvhv",
+        "SourceKey":  "fhvhv_tripdata_2025-12.csv",
+        "RowsInClean":  10000,
+        "RowsInFact":  10000,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "green",
+        "SourceKey":  "green_tripdata_2025-05.csv",
+        "RowsInClean":  9990,
+        "RowsInFact":  9990,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "green",
+        "SourceKey":  "green_tripdata_2025-12.csv",
+        "RowsInClean":  9998,
+        "RowsInFact":  9998,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "fhv",
+        "SourceKey":  "fhv_tripdata_2021-02.csv",
+        "RowsInClean":  9997,
+        "RowsInFact":  9997,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "fhv",
+        "SourceKey":  "fhv_tripdata_2025-11.csv",
+        "RowsInClean":  9997,
+        "RowsInFact":  9997,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "fhvhv",
+        "SourceKey":  "fhvhv_tripdata_2025-02.csv",
+        "RowsInClean":  10000,
+        "RowsInFact":  10000,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "fhvhv",
+        "SourceKey":  "fhvhv_tripdata_2025-08.csv",
+        "RowsInClean":  10000,
+        "RowsInFact":  10000,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "green",
+        "SourceKey":  "green_tripdata_2021-02.csv",
+        "RowsInClean":  9983,
+        "RowsInFact":  9983,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "fhv",
+        "SourceKey":  "fhv_tripdata_2025-02.csv",
+        "RowsInClean":  10000,
+        "RowsInFact":  10000,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "fhv",
+        "SourceKey":  "fhv_tripdata_2025-07.csv",
+        "RowsInClean":  10000,
+        "RowsInFact":  10000,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "fhv",
+        "SourceKey":  "fhv_tripdata_2025-08.csv",
+        "RowsInClean":  9991,
+        "RowsInFact":  9991,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "green",
+        "SourceKey":  "green_tripdata_2025-01.csv",
+        "RowsInClean":  9987,
+        "RowsInFact":  9987,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "green",
+        "SourceKey":  "green_tripdata_2025-04.csv",
+        "RowsInClean":  9993,
+        "RowsInFact":  9993,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "fhvhv",
+        "SourceKey":  "fhvhv_tripdata_2025-10.csv",
+        "RowsInClean":  10000,
+        "RowsInFact":  10000,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "fhvhv",
+        "SourceKey":  "fhvhv_tripdata_2025-11.csv",
+        "RowsInClean":  10000,
+        "RowsInFact":  10000,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "green",
+        "SourceKey":  "green_tripdata_2021-01.csv",
+        "RowsInClean":  9989,
+        "RowsInFact":  9989,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "green",
+        "SourceKey":  "green_tripdata_2025-06.csv",
+        "RowsInClean":  9991,
+        "RowsInFact":  9991,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "yellow",
+        "SourceKey":  "yellow_tripdata_2025-03.csv",
+        "RowsInClean":  9989,
+        "RowsInFact":  9989,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "yellow",
+        "SourceKey":  "yellow_tripdata_2025-06.csv",
+        "RowsInClean":  9691,
+        "RowsInFact":  9691,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "yellow",
+        "SourceKey":  "yellow_tripdata_2025-09.csv",
+        "RowsInClean":  9826,
+        "RowsInFact":  9826,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "yellow",
+        "SourceKey":  "yellow_tripdata_2025-10.csv",
+        "RowsInClean":  9832,
+        "RowsInFact":  9832,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "yellow",
+        "SourceKey":  "yellow_tripdata_2025-12.csv",
+        "RowsInClean":  9847,
+        "RowsInFact":  9847,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "fhv",
+        "SourceKey":  "fhv_tripdata_2025-04.csv",
+        "RowsInClean":  10000,
+        "RowsInFact":  10000,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "fhvhv",
+        "SourceKey":  "fhvhv_tripdata_2021-02.csv",
+        "RowsInClean":  10000,
+        "RowsInFact":  10000,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "fhvhv",
+        "SourceKey":  "fhvhv_tripdata_2025-09.csv",
+        "RowsInClean":  10000,
+        "RowsInFact":  10000,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "green",
+        "SourceKey":  "green_tripdata_2025-11.csv",
+        "RowsInClean":  9993,
+        "RowsInFact":  9993,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "yellow",
+        "SourceKey":  "yellow_tripdata_2021-01.csv",
+        "RowsInClean":  9996,
+        "RowsInFact":  9996,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "yellow",
+        "SourceKey":  "yellow_tripdata_2025-04.csv",
+        "RowsInClean":  9931,
+        "RowsInFact":  9931,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "yellow",
+        "SourceKey":  "yellow_tripdata_2025-05.csv",
+        "RowsInClean":  9869,
+        "RowsInFact":  9869,
+        "Passed":  1
+    },
+    {
+        "DatasetCode":  "yellow",
+        "SourceKey":  "yellow_tripdata_2025-08.csv",
+        "RowsInClean":  9832,
+        "RowsInFact":  9832,
+        "Passed":  1
+    }
+]

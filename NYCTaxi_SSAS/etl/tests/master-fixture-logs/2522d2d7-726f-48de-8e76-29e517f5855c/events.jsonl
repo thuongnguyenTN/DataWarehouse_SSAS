@@ -1,0 +1,4 @@
+{"Utc":"2026-10-31T08:40:46.3118268Z","RunId":"2522d2d7-726f-48de-8e76-29e517f5855c","Stage":"Dwh","Task":"StageAttempt","Status":"RUNNING","Detail":"Lần thử 1"}
+{"Utc":"2026-10-31T08:40:47.0090803Z","RunId":"2522d2d7-726f-48de-8e76-29e517f5855c","Stage":"Dwh","Task":"FixtureSql","Status":"RETRYING","Detail":"SQL tạm thời 1205: fixture original SQL error; thử lại sau 5 giây."}
+{"Utc":"2026-10-31T08:40:52.0293818Z","RunId":"2522d2d7-726f-48de-8e76-29e517f5855c","Stage":"Dwh","Task":"StageAttempt","Status":"RUNNING","Detail":"Lần thử 2"}
+{"Utc":"2026-10-31T08:40:52.5468451Z","RunId":"2522d2d7-726f-48de-8e76-29e517f5855c","Stage":"Dwh","Task":"FixtureSql","Status":"FAILED","Detail":"fixture original SQL error"}

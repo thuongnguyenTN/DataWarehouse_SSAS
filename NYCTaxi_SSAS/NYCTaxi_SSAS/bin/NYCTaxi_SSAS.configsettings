@@ -59,7 +59,7 @@
     </Dimensions>
     <Cubes>
       <Cube>
-        <ID>DSV_NYCTaxi</ID>
+        <ID>FHV_Trips</ID>
         <MeasureGroups>
           <MeasureGroup>
             <ID>Fact FHV Trips</ID>
@@ -105,6 +105,11 @@
               </Partition>
             </Partitions>
           </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>HVFHV_Trips</ID>
+        <MeasureGroups>
           <MeasureGroup>
             <ID>Fact HVFHV Trips</ID>
             <Partitions>
@@ -149,6 +154,11 @@
               </Partition>
             </Partitions>
           </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>YellowGreen_Trips</ID>
+        <MeasureGroups>
           <MeasureGroup>
             <ID>Fact Yellow Green Trips</ID>
             <Partitions>
@@ -202,6 +212,11 @@
               </Partition>
             </Partitions>
           </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>Daily_Financial</ID>
+        <MeasureGroups>
           <MeasureGroup>
             <ID>Daily Financial Snapshot</ID>
             <Partitions>
@@ -210,6 +225,11 @@
               </Partition>
             </Partitions>
           </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>Zone_Traffic</ID>
+        <MeasureGroups>
           <MeasureGroup>
             <ID>Zone Traffic Snapshot</ID>
             <Partitions>
@@ -218,6 +238,11 @@
               </Partition>
             </Partitions>
           </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>Base_Performance</ID>
+        <MeasureGroups>
           <MeasureGroup>
             <ID>Base Performance Snapshot</ID>
             <Partitions>

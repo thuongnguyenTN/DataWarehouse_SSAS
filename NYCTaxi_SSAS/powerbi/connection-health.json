@@ -1,0 +1,70 @@
+﻿{
+    "CheckedAt":  "2026-10-31T14:54:49.4852614+07:00",
+    "Server":  "THUONGNGUYEN\\MSSQLSV",
+    "Database":  "NYCTaxi_SSAS",
+    "ServerReachable":  true,
+    "DatabaseState":  "Unprocessed",
+    "Error":  null,
+    "Reports":  [
+                    {
+                        "Cube":  "YellowGreen_Trips",
+                        "Title":  "YellowGreen Trips",
+                        "State":  "Unprocessed",
+                        "ConfigValid":  true,
+                        "ConfigError":  null,
+                        "ProbePassed":  false,
+                        "QueryError":  null,
+                        "ReportExists":  true
+                    },
+                    {
+                        "Cube":  "HVFHV_Trips",
+                        "Title":  "HVFHV Trips",
+                        "State":  "Unprocessed",
+                        "ConfigValid":  true,
+                        "ConfigError":  null,
+                        "ProbePassed":  false,
+                        "QueryError":  null,
+                        "ReportExists":  true
+                    },
+                    {
+                        "Cube":  "FHV_Trips",
+                        "Title":  "FHV Trips",
+                        "State":  "Unprocessed",
+                        "ConfigValid":  true,
+                        "ConfigError":  null,
+                        "ProbePassed":  false,
+                        "QueryError":  null,
+                        "ReportExists":  true
+                    },
+                    {
+                        "Cube":  "Daily_Financial",
+                        "Title":  "Daily Financial",
+                        "State":  "Unprocessed",
+                        "ConfigValid":  true,
+                        "ConfigError":  null,
+                        "ProbePassed":  false,
+                        "QueryError":  null,
+                        "ReportExists":  true
+                    },
+                    {
+                        "Cube":  "Zone_Traffic",
+                        "Title":  "Zone Traffic",
+                        "State":  "Unprocessed",
+                        "ConfigValid":  true,
+                        "ConfigError":  null,
+                        "ProbePassed":  false,
+                        "QueryError":  null,
+                        "ReportExists":  true
+                    },
+                    {
+                        "Cube":  "Base_Performance",
+                        "Title":  "Base Performance",
+                        "State":  "Unprocessed",
+                        "ConfigValid":  true,
+                        "ConfigError":  null,
+                        "ProbePassed":  false,
+                        "QueryError":  null,
+                        "ReportExists":  true
+                    }
+                ]
+}

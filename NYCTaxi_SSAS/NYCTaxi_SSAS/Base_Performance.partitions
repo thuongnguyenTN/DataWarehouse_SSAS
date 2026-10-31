@@ -1,0 +1,72 @@
+<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine" dwd:design-time-name="ef3e0b90-8a10-4de6-8af8-8b12486e959a">
+  <ID>Base_Performance</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Base Performance Snapshot</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="06733d5b-5c8f-4270-be24-4232415dddcb">
+          <ID>Base Performance Snapshot All</ID>
+          <Name>Base Performance Snapshot All</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="51238c23-dd3f-43ee-9bb9-6e7377a9b9eb">
+            <DataSourceViewID>DSV_NYCTaxi_DWH</DataSourceViewID>
+            <TableID>dbo_Fact_Base_Performance_Snapshot</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+      </Partitions>
+      <AggregationDesigns>
+        <AggregationDesign>
+          <ID>Operational</ID>
+          <Name>Operational</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <Dimensions>
+            <Dimension>
+              <CubeDimensionID>Snapshot Date</CubeDimensionID>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Dim Service Type</CubeDimensionID>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Dim HVFHS Provider</CubeDimensionID>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Dispatch Base</CubeDimensionID>
+            </Dimension>
+          </Dimensions>
+          <Aggregations>
+            <Aggregation>
+              <ID>Month Service</ID>
+              <Name>Month Service</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Snapshot Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Month Number</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Dim Service Type</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Service Type Key</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+          </Aggregations>
+        </AggregationDesign>
+      </AggregationDesigns>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

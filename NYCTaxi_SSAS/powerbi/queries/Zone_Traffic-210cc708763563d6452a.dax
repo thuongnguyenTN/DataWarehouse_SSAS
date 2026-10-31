@@ -1,0 +1,1 @@
+﻿EVALUATE TOPN(20,SUMMARIZECOLUMNS('Snapshot Date'[Month Number],'Snapshot Date'[Month Number.Key0],'Snapshot Date'[Month Number.Key1]))

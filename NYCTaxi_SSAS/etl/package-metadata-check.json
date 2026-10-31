@@ -1,0 +1,22 @@
+[
+  {
+    "file": "E:\\NYCTaxi\\NYCTaxi_DW\\NYCTaxi_ETL\\PKG_00_Master.dtsx",
+    "errors": []
+  },
+  {
+    "file": "E:\\NYCTaxi\\NYCTaxi_DW\\NYCTaxi_ETL\\PKG_01_Extract_Stage.dtsx",
+    "errors": []
+  },
+  {
+    "file": "E:\\NYCTaxi\\NYCTaxi_DW\\NYCTaxi_ETL\\PKG_02_Transform_Clean.dtsx",
+    "errors": []
+  },
+  {
+    "file": "E:\\NYCTaxi\\NYCTaxi_DW\\NYCTaxi_ETL\\PKG_03_Load_DWH.dtsx",
+    "errors": []
+  },
+  {
+    "file": "E:\\NYCTaxi\\NYCTaxi_DW\\NYCTaxi_ETL\\PKG_04_Load_Aggregates.dtsx",
+    "errors": []
+  }
+]

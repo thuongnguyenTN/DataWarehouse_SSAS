@@ -1,0 +1,94 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 338.992138728552,
+            "y": 334.59955993096855
+          },
+          "nodeIndex": "Zone Traffic Snapshot",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 587.50697534186622,
+            "y": 514.59983992388379
+          },
+          "nodeIndex": "Dim Service Type",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 821.50697534186611,
+            "y": 492.7311492326694
+          },
+          "nodeIndex": "Measures",
+          "size": {
+            "height": 72,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 328.370293535443,
+            "y": -50
+          },
+          "nodeIndex": "Snapshot Date",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 289.37284632789715,
+            "y": 707.46229846533879
+          },
+          "nodeIndex": "Snapshot Location",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 50,
+            "y": 313.3454270466213
+          },
+          "nodeIndex": "Snapshot Time",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

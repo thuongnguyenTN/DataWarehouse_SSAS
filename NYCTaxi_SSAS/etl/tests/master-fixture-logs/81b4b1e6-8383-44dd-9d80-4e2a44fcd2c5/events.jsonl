@@ -1,0 +1,2 @@
+{"Utc":"2026-10-31T10:27:15.4085038Z","RunId":"81b4b1e6-8383-44dd-9d80-4e2a44fcd2c5","Stage":"Dwh","Task":"StageAttempt","Status":"RUNNING","Detail":"Lần thử 1"}
+{"Utc":"2026-10-31T10:27:15.7568281Z","RunId":"81b4b1e6-8383-44dd-9d80-4e2a44fcd2c5","Stage":"Dwh","Task":"StartRunner","Status":"FAILED","Detail":"fixture stderr"}

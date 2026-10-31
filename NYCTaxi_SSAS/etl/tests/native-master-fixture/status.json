@@ -1,0 +1,1 @@
+{"RunId":"cd1afa09-d196-45e9-9ac4-efa43976c327","Stage":"Extract","Task":"FixtureSql","Status":"FAILED","Message":"fixture original SQL error","HeartbeatUtc":"2026-10-31T08:42:49.4424741Z","TaskStartedUtc":"2026-10-31T08:42:49.4424741Z","Rows":0,"TotalRows":0,"LogFolder":"E:\\NYCTaxi\\NYCTaxi_SSAS\\etl\\logs\\cd1afa09-d196-45e9-9ac4-efa43976c327"}

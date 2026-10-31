@@ -1,0 +1,1 @@
+﻿EVALUATE TOPN(20,SUMMARIZECOLUMNS('Pickup Location'[Borough],'Pickup Location'[Borough.UniqueName],"M1",[Congestion Surcharge]))

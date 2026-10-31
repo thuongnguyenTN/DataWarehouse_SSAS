@@ -1,0 +1,1 @@
+{"InvocationId":"a3297c6e-b43a-41aa-860a-9665e1c3846f","RunId":"605ab00f-bb25-4076-a2f3-94fb774d7d11","Stage":"Preflight","Task":"Invocation","Message":"Unfinished run exists. Inspect logs and resume the same RunId.","SqlNumber":55900,"Retryable":false,"Logs":"E:\\NYCTaxi\\NYCTaxi_SSAS\\etl\\logs\\605ab00f-bb25-4076-a2f3-94fb774d7d11","Utc":"2026-10-31T09:21:57.3291375Z"}

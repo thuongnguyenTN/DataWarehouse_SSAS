@@ -1,0 +1,1 @@
+﻿EVALUATE TOPN(20,SUMMARIZECOLUMNS('Dim Payment Type'[Payment Type Key],'Dim Payment Type'[Payment Type Key.Key0]))

@@ -1,0 +1,7 @@
+YellowGreen Trips: visual queries checked
+HVFHV Trips: visual queries checked
+FHV Trips: visual queries checked
+Daily Financial: visual queries checked
+Zone Traffic: visual queries checked
+Base Performance: visual queries checked
+Visual queries=101; failures=0

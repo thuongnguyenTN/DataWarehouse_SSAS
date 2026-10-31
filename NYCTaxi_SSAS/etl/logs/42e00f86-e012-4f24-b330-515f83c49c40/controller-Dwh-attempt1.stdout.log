@@ -1,0 +1,17 @@
+[17:01:55] [Dwh] RUNNING: EST_00_Precheck_DWH
+[17:02:06] [Dwh] SUCCEEDED: EST_00_Precheck_DWH
+[17:02:06] [Dwh] RUNNING: EST_01_Load_Dimensions
+[Dwh] EST_01_Load_Dimensions: SQL vẫn đang xử lý; elapsed=1s
+[17:02:08] [Dwh] SUCCEEDED: EST_01_Load_Dimensions
+[17:02:08] [Dwh] RUNNING: EST_02_Load_FactYellowGreen
+[17:02:09] [Dwh] SUCCEEDED: EST_02_Load_FactYellowGreen
+[17:02:09] [Dwh] RUNNING: EST_03_Load_FactFHV
+[17:02:10] [Dwh] SUCCEEDED: EST_03_Load_FactFHV
+[17:02:10] [Dwh] RUNNING: EST_04_Load_FactHVFHV
+[17:02:11] [Dwh] SUCCEEDED: EST_04_Load_FactHVFHV
+[17:02:11] [Dwh] RUNNING: EST_05_Validate_DWH
+[17:02:12] [Dwh] SUCCEEDED: EST_05_Validate_DWH
+[17:02:12] [Dwh] RUNNING: StageComplete
+[17:02:13] [Dwh] SUCCEEDED: StageComplete
+[17:02:13] [Dwh] SUCCEEDED: Invocation
+ETL Dwh completed. RunId=42e00f86-e012-4f24-b330-515f83c49c40; logs=E:\NYCTaxi\NYCTaxi_SSAS\etl\logs\42e00f86-e012-4f24-b330-515f83c49c40

@@ -1,0 +1,1 @@
+﻿EVALUATE TOPN(20,SUMMARIZECOLUMNS('Pickup Location'[Zone Name],'Pickup Location'[Zone Name.Key0],"M1",[YellowGreen Tip Percentage]))

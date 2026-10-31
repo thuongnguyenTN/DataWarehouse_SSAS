@@ -1,0 +1,207 @@
+<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine" dwd:design-time-name="6ecdc50f-b376-4a9d-ae2f-a1659d8b0837">
+  <ID>Daily_Financial</ID>
+  <Name>Daily Financial</Name>
+  <Dimensions>
+    <Dimension dwd:design-time-name="6847c9a9-68a6-4267-b3bc-f64f7209af7f">
+      <ID>Dim Service Type</ID>
+      <Name>Dim Service Type</Name>
+      <DimensionID>Dim Service Type</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="91a9fec3-ff29-49db-98c0-f7c99d1baf46">
+          <AttributeID>Service Type Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fe20c020-92eb-40dd-99a9-2f4113dd9d87">
+          <AttributeID>Service Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6cdfad3c-b4f7-45d2-b2ca-b1b0974e32ac">
+          <AttributeID>Service Name</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="07636964-e0ae-45bc-b2cf-22c4e06f72a9">
+      <ID>Snapshot Date</ID>
+      <Name>Snapshot Date</Name>
+      <DimensionID>Dim Date</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="4f479cee-45be-4eb9-9f8e-8a497ced209d">
+          <AttributeID>Date Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="345707e4-8174-4a01-9e98-b239362d4586">
+          <AttributeID>Day Of Week Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="92665ad2-65a2-42c6-89bf-95aedede2ddf">
+          <AttributeID>Day Of Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0640f3a9-9c71-4bd6-8f0c-e94ccf1cb225">
+          <AttributeID>Month Number</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="08d51928-a12d-42e5-a6bd-af54f3e26b1a">
+          <AttributeID>Month Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9fe55fb9-f270-46a8-b796-5afbce12cdf8">
+          <AttributeID>Quarter Number</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="281df7a6-7da7-4bd1-9d50-69fde75d4f42">
+          <AttributeID>Year Number</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="18c85e38-ff3c-40af-a24b-0d003b3eaa33">
+          <AttributeID>Is Weekend</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f951db52-4afd-4cce-85f0-713cd42ab479">
+          <AttributeID>Is Holiday</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4a445052-2cc0-4049-ad35-7bd82c2e5672">
+          <AttributeID>Full Date</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="5f78f3fb-8554-466d-b1b2-a4c7e3119324">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="dadccf2e-edd9-4eda-99f5-bda082282b7b">
+      <ID>Daily Financial Snapshot</ID>
+      <Name>Daily Financial Snapshot</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="ebbc7b48-e6e0-4732-ba09-e10108393720">
+          <ID>Daily Financial Snapshot TotalTrips</ID>
+          <Name>Daily Financial Snapshot TotalTrips</Name>
+          <Source dwd:design-time-name="359e5c99-5c69-400a-b90b-056c5e554044">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="9a9de670-e9a4-4448-a75e-c4fff26fd5b6">
+              <TableID>dbo_Fact_Daily_Financial_Snapshot</TableID>
+              <ColumnID>TotalTrips</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Daily Financial Snapshot</DisplayFolder>
+        </Measure>
+        <Measure dwd:design-time-name="74b8ba7f-f458-4a8a-8b85-bb80e729ff31">
+          <ID>Daily Financial Snapshot TotalDistanceMiles</ID>
+          <Name>Daily Financial Snapshot TotalDistanceMiles</Name>
+          <Source dwd:design-time-name="1f6ef43e-b25b-4a7d-af63-31f8429fcff0">
+            <DataType>Currency</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="07158358-d98f-4109-8f9a-5cbb960779ca">
+              <TableID>dbo_Fact_Daily_Financial_Snapshot</TableID>
+              <ColumnID>TotalDistanceMiles</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Daily Financial Snapshot</DisplayFolder>
+        </Measure>
+        <Measure dwd:design-time-name="7c9a29e1-784d-4dca-aba2-aa794a8fae21">
+          <ID>Daily Financial Snapshot TotalPassengerCharges</ID>
+          <Name>Daily Financial Snapshot TotalPassengerCharges</Name>
+          <Source dwd:design-time-name="22aa3026-873f-4c64-b7f4-7857e0e4a9b0">
+            <DataType>Currency</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="18600b2b-10e3-415a-93a8-d2849bea8451">
+              <TableID>dbo_Fact_Daily_Financial_Snapshot</TableID>
+              <ColumnID>TotalPassengerCharges</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Daily Financial Snapshot</DisplayFolder>
+        </Measure>
+        <Measure dwd:design-time-name="8d3515ff-d6c5-41e1-82cb-b3cfe6f31739">
+          <ID>Daily Financial Snapshot TotalTips</ID>
+          <Name>Daily Financial Snapshot TotalTips</Name>
+          <Source dwd:design-time-name="608520d0-9b93-41d4-bf2e-2c087981f95f">
+            <DataType>Currency</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="7c059359-7021-4fcf-999a-bb79cde9706d">
+              <TableID>dbo_Fact_Daily_Financial_Snapshot</TableID>
+              <ColumnID>TotalTips</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Daily Financial Snapshot</DisplayFolder>
+        </Measure>
+        <Measure dwd:design-time-name="4268ed27-5bb1-4937-be78-8317d11cbe85">
+          <ID>Daily Financial Snapshot TotalTaxesAndFees</ID>
+          <Name>Daily Financial Snapshot TotalTaxesAndFees</Name>
+          <Source dwd:design-time-name="0688331c-18d8-4fc0-9f69-1df9b1fcc07b">
+            <DataType>Currency</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="a42d56dc-5ac4-4788-8eb0-28a4def97e5b">
+              <TableID>dbo_Fact_Daily_Financial_Snapshot</TableID>
+              <ColumnID>TotalTaxesAndFees</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Daily Financial Snapshot</DisplayFolder>
+        </Measure>
+        <Measure dwd:design-time-name="6dd8af23-dc9f-4515-9967-6dbf08c2d0c6">
+          <ID>Daily Financial Snapshot TotalDriverPay</ID>
+          <Name>Daily Financial Snapshot TotalDriverPay</Name>
+          <Source dwd:design-time-name="bf013376-7d05-45c3-9095-fed051fa54e6">
+            <DataType>Currency</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="9ffb5f47-709b-454f-9e55-5d2c30e90e5d">
+              <TableID>dbo_Fact_Daily_Financial_Snapshot</TableID>
+              <ColumnID>TotalDriverPay</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Daily Financial Snapshot</DisplayFolder>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <IgnoreUnrelatedDimensions>false</IgnoreUnrelatedDimensions>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ff0f96ac-16d7-4049-8b9a-52944c40390b">
+          <CubeDimensionID>Snapshot Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="72d6988c-0be0-44dd-99cb-e353164322f3">
+              <AttributeID>Date Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="4168754b-300a-4c64-b58f-9cd61fe7d5a3">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6b683644-7bce-4f25-bc20-e02dc2951093">
+                    <TableID>dbo_Fact_Daily_Financial_Snapshot</TableID>
+                    <ColumnID>DateKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="97bf786c-715d-48ac-8931-57eb14a362b5">
+          <CubeDimensionID>Dim Service Type</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1e419b77-8ee1-41af-80ee-ffbb943f6a78">
+              <AttributeID>Service Type Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a6e55e20-c751-434f-8782-7ccad9eac920">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4b7a4463-c3fa-483f-a2c1-0313741092e1">
+                    <TableID>dbo_Fact_Daily_Financial_Snapshot</TableID>
+                    <ColumnID>ServiceTypeKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions/>
+      <AggregationDesigns/>
+    </MeasureGroup>
+    </MeasureGroups>
+  <Source dwd:design-time-name="a3fd343a-82e0-4ce0-9a66-74345514f5a5">
+    <DataSourceViewID>DSV_NYCTaxi_DWH</DataSourceViewID>
+  </Source>
+  <MdxScripts>
+    <MdxScript dwd:design-time-name="429486c0-b30d-4084-a2b3-bfdf265c4c72">
+      <ID>MdxScript</ID>
+      <Name>MdxScript</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Commands>
+        <Command>
+          <Text>CALCULATE;</Text>
+        </Command>
+      </Commands>
+    </MdxScript>
+  </MdxScripts>
+</Cube>

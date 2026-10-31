@@ -1,0 +1,33 @@
+[16:57:54] [Transform] RUNNING: EST_01_Setup_Clean
+[16:57:55] [Transform] SUCCEEDED: EST_01_Setup_Clean
+[16:57:55] [Transform] RUNNING: EST_02_Transform_TaxiZone
+[16:57:56] [Transform] SUCCEEDED: EST_02_Transform_TaxiZone
+[16:57:56] [Transform] RUNNING: EST_03_Transform_YELLOW
+[Transform] EST_03_Transform_YELLOW: SQL vẫn đang xử lý; elapsed=10s
+[Transform] EST_03_Transform_YELLOW: SQL vẫn đang xử lý; elapsed=26s
+[Transform] EST_03_Transform_YELLOW: SQL vẫn đang xử lý; elapsed=41s
+[Transform] EST_03_Transform_YELLOW: SQL vẫn đang xử lý; elapsed=56s
+[Transform] EST_03_Transform_YELLOW: SQL vẫn đang xử lý; elapsed=71s
+[Transform] EST_03_Transform_YELLOW: SQL vẫn đang xử lý; elapsed=86s
+[Transform] EST_03_Transform_YELLOW: SQL vẫn đang xử lý; elapsed=101s
+[Transform] EST_03_Transform_YELLOW: SQL vẫn đang xử lý; elapsed=116s
+[Transform] EST_03_Transform_YELLOW: SQL vẫn đang xử lý; elapsed=131s
+[Transform] EST_03_Transform_YELLOW: SQL vẫn đang xử lý; elapsed=146s
+[Transform] EST_03_Transform_YELLOW: SQL vẫn đang xử lý; elapsed=162s
+[Transform] EST_03_Transform_YELLOW: SQL vẫn đang xử lý; elapsed=177s
+[Transform] EST_03_Transform_YELLOW: SQL vẫn đang xử lý; elapsed=192s
+[Transform] EST_03_Transform_YELLOW: SQL vẫn đang xử lý; elapsed=207s
+[Transform] EST_03_Transform_YELLOW: SQL vẫn đang xử lý; elapsed=223s
+[17:01:42] [Transform] SUCCEEDED: EST_03_Transform_YELLOW
+[17:01:42] [Transform] RUNNING: EST_04_Transform_GREEN
+[17:01:43] [Transform] SUCCEEDED: EST_04_Transform_GREEN
+[17:01:43] [Transform] RUNNING: EST_05_Transform_FHV
+[17:01:45] [Transform] SUCCEEDED: EST_05_Transform_FHV
+[17:01:45] [Transform] RUNNING: EST_06_Transform_FHVHV
+[17:01:46] [Transform] SUCCEEDED: EST_06_Transform_FHVHV
+[17:01:46] [Transform] RUNNING: EST_07_Validate_Transform
+[17:01:47] [Transform] SUCCEEDED: EST_07_Validate_Transform
+[17:01:47] [Transform] RUNNING: StageComplete
+[17:01:48] [Transform] SUCCEEDED: StageComplete
+[17:01:48] [Transform] SUCCEEDED: Invocation
+ETL Transform completed. RunId=42e00f86-e012-4f24-b330-515f83c49c40; logs=E:\NYCTaxi\NYCTaxi_SSAS\etl\logs\42e00f86-e012-4f24-b330-515f83c49c40

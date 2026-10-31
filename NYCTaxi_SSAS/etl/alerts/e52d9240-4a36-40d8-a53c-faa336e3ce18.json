@@ -1,0 +1,8 @@
+﻿{
+    "RunId":  "e52d9240-4a36-40d8-a53c-faa336e3ce18",
+    "Status":  "FAILED",
+    "Stage":  "Preflight",
+    "Error":  "System.Management.Automation.RuntimeException: Invalid month range",
+    "Logs":  "E:\\NYCTaxi\\NYCTaxi_SSAS\\etl\\logs\\e52d9240-4a36-40d8-a53c-faa336e3ce18",
+    "Utc":  "2026-10-31T07:58:04.3561225Z"
+}

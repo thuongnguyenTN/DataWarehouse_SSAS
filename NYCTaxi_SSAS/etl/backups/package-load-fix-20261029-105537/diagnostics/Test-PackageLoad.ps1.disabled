@@ -1,0 +1,53 @@
+﻿param([string]$PackagePath='E:\NYCTaxi\NYCTaxi_DW\NYCTaxi_ETL\PKG_00_Master.dtsx')
+$ErrorActionPreference='Stop'
+$bin='C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\SSIS\170\Binn'
+$ErrorActionPreference='Stop'
+$bin='C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\SSIS\170\Binn'
+Add-Type @'
+using System; using System.IO; using System.Reflection;
+public static class SsisResolver {
+ public static string Bin;
+ public static void Install(string bin) {Bin=bin; AppDomain.CurrentDomain.AssemblyResolve += Resolve;}
+ static Assembly Resolve(object sender, ResolveEventArgs e) {string path=Path.Combine(Bin,new AssemblyName(e.Name).Name+".dll");return File.Exists(path)?Assembly.LoadFrom(path):null;}
+}
+'@
+[SsisResolver]::Install($bin)
+$env:PATH=$bin+';'+$env:PATH
+$null=[Reflection.Assembly]::LoadFrom((Join-Path $bin 'Microsoft.SqlServer.ManagedDTS.dll'))
+
+Add-Type -ReferencedAssemblies (Join-Path $bin 'Microsoft.SqlServer.ManagedDTS.dll') -TypeDefinition @'
+using System; using System.IO; using System.Reflection; using System.Runtime.InteropServices; using System.Collections.Generic;
+using Microsoft.SqlServer.Dts.Runtime;
+public class PackageLoadEvents:DefaultEvents {
+ public readonly List<string> Messages=new List<string>();
+ public override bool OnError(DtsObject source,int code,string component,string description,string help,int context,string iface) {Messages.Add(code.ToString("X8")+" "+component+": "+description);return false;}
+}
+public static class SsisPackageProbe {
+ [StructLayout(LayoutKind.Sequential,CharSet=CharSet.Unicode)] struct ACTCTX { public int cbSize;public uint flags;public string source;public ushort processorArchitecture;public ushort lang;public string assemblyDirectory;public string resourceName;public string applicationName;public IntPtr module; }
+ [DllImport("kernel32",CharSet=CharSet.Unicode,SetLastError=true)] static extern IntPtr CreateActCtx(ref ACTCTX a);
+ [DllImport("kernel32",SetLastError=true)] static extern bool ActivateActCtx(IntPtr h,out UIntPtr cookie);
+ [DllImport("kernel32")] static extern bool DeactivateActCtx(uint flags,UIntPtr cookie);
+ [DllImport("kernel32")] static extern void ReleaseActCtx(IntPtr h);
+ public static string Bin;
+ public static void Install(string bin) {Bin=bin;AppDomain.CurrentDomain.AssemblyResolve+=(s,e)=> {string p=Path.Combine(Bin,new AssemblyName(e.Name).Name+".dll");return File.Exists(p)?Assembly.LoadFrom(p):null;};}
+ public static string[] Load(string manifest,string path) {
+  ACTCTX a=new ACTCTX();a.cbSize=Marshal.SizeOf(a);a.source=manifest;a.flags=4;a.assemblyDirectory=Path.GetDirectoryName(Bin);
+  IntPtr h=CreateActCtx(ref a);if(h==new IntPtr(-1))throw new System.ComponentModel.Win32Exception(Marshal.GetLastWin32Error());
+  UIntPtr cookie;if(!ActivateActCtx(h,out cookie))throw new System.ComponentModel.Win32Exception(Marshal.GetLastWin32Error());
+  var events=new PackageLoadEvents();
+  var registrations=new List<int>();var reg=new RegistrationServices();
+  foreach(string name in new[]{"DTSManagedXmlSerializationHelper","ManagedHelper","ManagerSerializer","ManagedWrapper","ManagedForEachEnumeratorWrapper"}) {
+   Type type=typeof(Application).Assembly.GetType("Microsoft.SqlServer.Dts.Runtime."+name);
+   if(type!=null)try{registrations.Add(reg.RegisterTypeForComClients(type,RegistrationClassContext.InProcessServer,RegistrationConnectionType.MultipleUse));}catch(Exception e){events.Messages.Add("FACTORY "+name+": "+e.Message);}
+  }
+  try {var app=new Application();app.TargetServerVersion=DTSTargetServerVersion.SQLServer2025;var package=new Package();package.LoadFromXML(File.ReadAllText(path),events);events.Messages.Add("LOADED "+package.Name+" tasks="+package.Executables.Count+" handlers="+package.EventHandlers.Count);}
+  catch(Exception e){events.Messages.Add(e.ToString());}
+  finally {foreach(int registration in registrations)reg.UnregisterTypeForComClients(registration);DeactivateActCtx(0,cookie);ReleaseActCtx(h);}
+  return events.Messages.ToArray();
+ }
+}
+'@
+[SsisPackageProbe]::Install($bin)
+[SsisPackageProbe]::Load((Join-Path (Split-Path $bin) 'SSIS.manifest'),$PackagePath)
+
+

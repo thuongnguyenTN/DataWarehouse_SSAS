@@ -1,0 +1,7 @@
+[17:54:55] [Aggregates] RUNNING: AtomicRebuildAndValidateSnapshots
+[Aggregates] AtomicRebuildAndValidateSnapshots: SQL vẫn đang xử lý; elapsed=13s
+[17:55:13] [Aggregates] SUCCEEDED: AtomicRebuildAndValidateSnapshots
+[17:55:13] [Aggregates] RUNNING: StageComplete
+[17:55:14] [Aggregates] SUCCEEDED: StageComplete
+[17:55:14] [Aggregates] SUCCEEDED: Invocation
+ETL Aggregates completed. RunId=7871e8ed-65e1-42d3-b871-9a5f4b73a1e7; logs=E:\NYCTaxi\NYCTaxi_SSAS\etl\logs\7871e8ed-65e1-42d3-b871-9a5f4b73a1e7

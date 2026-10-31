@@ -1,0 +1,1 @@
+﻿EVALUATE TOPN(20,SUMMARIZECOLUMNS('Pickup Date'[Full Date],'Pickup Date'[Full Date.Key0],"M1",[Gross Passenger Amount],"M2",[Driver Pay Amount]))

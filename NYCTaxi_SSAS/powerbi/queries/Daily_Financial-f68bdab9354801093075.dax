@@ -1,0 +1,1 @@
+﻿EVALUATE TOPN(20,SUMMARIZECOLUMNS('Snapshot Date'[Full Date],'Snapshot Date'[Full Date.Key0],"M1",[Daily Financial Snapshot TotalDriverPay]))

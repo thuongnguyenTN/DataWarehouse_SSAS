@@ -1,0 +1,12 @@
+{
+  "ServerReachable": true,
+  "DatabaseState": "Unprocessed",
+  "ValidConnectionReferences": 6,
+  "ExistingReports": 6,
+  "CubeDataReady": 0,
+  "EtlStarted": false,
+  "ProcessExecuted": false,
+  "MenuUiChecked": true,
+  "PendingSourceGuardChecked": true,
+  "MenuSha256": "47FFFCBE20AC58F616BDA560E00038F08D117E90015678D0A9790CD9DA45F7AD"
+}

@@ -1,0 +1,12 @@
+﻿[
+    {
+        "Test":  "Out-of-order stage stops and logs FAILED",
+        "Passed":  true,
+        "RunId":  "8c47e54f-dc2a-46c4-9251-4f5fcc65e03e"
+    },
+    {
+        "Test":  "Concurrent run rejected before data changes",
+        "Passed":  true,
+        "RunId":  "9f9a9eb3-c343-410e-8c3a-9422d677d20c"
+    }
+]

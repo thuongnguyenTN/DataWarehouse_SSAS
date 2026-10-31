@@ -1,0 +1,1 @@
+﻿EVALUATE TOPN(20,SUMMARIZECOLUMNS('Snapshot Location'[Borough],'Snapshot Location'[Borough.UniqueName],"M1",[Zone Traffic Snapshot TotalPickups],"M2",[Zone Traffic Snapshot TotalDropoffs]))

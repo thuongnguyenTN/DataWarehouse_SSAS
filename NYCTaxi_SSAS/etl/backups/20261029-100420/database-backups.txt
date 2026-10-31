@@ -1,0 +1,2 @@
+C:\Program Files\Microsoft SQL Server\MSSQL16.MSSQLSV\MSSQL\Backup\NYCTaxi_DWH_before_pipeline_20261029-100420.bak
+C:\Program Files\Microsoft SQL Server\MSSQL16.MSSQLSV\MSSQL\Backup\NYCTaxi_Staging_before_pipeline_20261029-100420.bak

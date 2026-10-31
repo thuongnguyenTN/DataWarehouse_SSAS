@@ -1,0 +1,3 @@
+PASS FHV SourceSRFlag='1' -> Y
+PASS FHV SourceSRFlag='0' -> N
+PASS FHV SourceSRFlag=NULL -> U

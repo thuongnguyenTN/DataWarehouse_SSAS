@@ -1,4 +1,4 @@
-param(
+﻿param(
     [ValidateSet('Deploy','Update','Dimensions','Process','Status')][string]$Action = 'Status',
     [string]$XmlaPath
 )
@@ -16,7 +16,7 @@ try {
         $db = $server.Databases.Find('NYCTaxi_SSAS')
         if ($db) {
             $db.Dimensions | Select-Object ID,State | Format-Table
-            foreach ($g in $db.Cubes[0].MeasureGroups) { $g.Partitions | Select-Object @{n='Group';e={$g.ID}},ID,State,LastProcessed | Format-Table }
+            foreach ($cube in $db.Cubes) { foreach ($g in $cube.MeasureGroups) { $g.Partitions | Select-Object @{n='Group';e={$g.ID}},ID,State,LastProcessed | Format-Table } }
         }
         return
     }
@@ -25,7 +25,7 @@ try {
         $XmlaPath = Join-Path $root 'deployment/Create-Database.xmla'
     } elseif ($Action -eq 'Update') {
         $db=$server.Databases.Find('NYCTaxi_SSAS')
-        if (-not $db -or -not $db.Cubes.Find('DSV_NYCTaxi')) {throw 'Expected existing NYC Taxi cube was not found.'}
+        if (-not $db) {throw 'Expected existing NYC Taxi cube was not found.'}
         $settings=New-Object Xml.XmlWriterSettings;$settings.Indent=$true
         $backup=Join-Path $root ('backups/server-before-update-'+(Get-Date -Format 'yyyyMMdd-HHmmss')+'.xmla')
         $writer=[Xml.XmlWriter]::Create($backup,$settings)

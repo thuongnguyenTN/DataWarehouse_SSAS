@@ -1,0 +1,28 @@
+NYC TAXI ANALYTICS — MENU BÁO CÁO POWER BI LIVE
+
+1. Mở "NYCTaxi Analytics.exe" trong thư mục này.
+2. Nếu nguồn báo Sẵn sàng, chọn nghiệp vụ để mở báo cáo Power BI tương ứng.
+3. Trong Power BI, chọn Năm, Tháng và Dịch vụ; bấm Refresh khi SSAS có dữ liệu mới.
+
+GIỮ LIVE CONNECTION
+Sáu báo cáo vẫn kết nối trực tiếp sáu cube SSAS riêng. Menu chỉ giúp mở file,
+không gộp các cube, không Import và không chạy ETL.
+
+SAU KHI CLEAR DỮ LIỆU
+Thông báo "Chờ process SSAS" là đúng nếu cube đang Unprocessed.
+Bạn tự chạy PKG_00_Master tới EPT_05_Ssas thành công, sau đó chọn
+"Kiểm tra kết nối" trên menu và Refresh trong Power BI.
+Không thể kiểm chứng biểu đồ có dữ liệu khi cube chưa được process.
+Menu sẽ giải thích trạng thái này và không mở báo cáo vào nguồn chưa sẵn sàng.
+
+LỖI CẤU HÌNH / KẾT NỐI
+Server: THUONGNGUYEN\MSSQLSV
+Database: NYCTaxi_SSAS
+Kiểu kết nối project: analysisServicesDatabaseLive
+Mỗi project có Cube riêng và isMultiDimentional=true.
+Giữ cả thư mục .Report và .SemanticModel cạnh file .pbip.
+Nếu Windows chưa biết mở .pbip, chọn Power BI Desktop để mở loại file này.
+Không thay bằng Import hoặc local model nếu yêu cầu đồ án là Live.
+
+Menu không tự chuyển/đồng bộ bộ lọc giữa các báo cáo. Mỗi báo cáo mở trong
+một cửa sổ Power BI riêng. Xem README.md và BUSINESS_QUESTIONS.md để demo đồ án.

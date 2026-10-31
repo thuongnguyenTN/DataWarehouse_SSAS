@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.1.0/schema.json",
+  "themeCollection": {},
+  "settings": {
+    "useStylableVisualContainerHeader": true
+  },
+  "annotations": [
+    {
+      "name": "Source",
+      "value": "SSAS Multidimensional Live; no imported data"
+    }
+  ]
+}

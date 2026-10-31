@@ -1,0 +1,1 @@
+﻿EVALUATE TOPN(20,SUMMARIZECOLUMNS('Pickup Time'[Hour Number],'Pickup Time'[Hour Number.UniqueName],"M1",[YellowGreen Tip Percentage]))

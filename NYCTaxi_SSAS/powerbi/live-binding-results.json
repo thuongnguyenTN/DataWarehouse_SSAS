@@ -1,0 +1,632 @@
+﻿[
+    {
+        "Cube":  "FHV Trips",
+        "Table":  "Dim Service Type",
+        "Field":  "Service Code",
+        "Passed":  true,
+        "Rows":  3,
+        "FirstValue":  "Unknown (unresolved key)",
+        "Error":  null
+    },
+    {
+        "Cube":  "FHV Trips",
+        "Table":  "Dispatch Base",
+        "Field":  "Base Key",
+        "Passed":  true,
+        "Rows":  3,
+        "FirstValue":  "Unknown (unresolved key)",
+        "Error":  null
+    },
+    {
+        "Cube":  "FHV Trips",
+        "Table":  "Fact FHV Trips",
+        "Field":  "Fact FHV Trips TripDurationSecondsValidTrips",
+        "Passed":  true,
+        "Rows":  1,
+        "FirstValue":  139970,
+        "Error":  null
+    },
+    {
+        "Cube":  "FHV Trips",
+        "Table":  "Fact FHV Trips",
+        "Field":  "Trip Count",
+        "Passed":  true,
+        "Rows":  1,
+        "FirstValue":  139970,
+        "Error":  null
+    },
+    {
+        "Cube":  "FHV Trips",
+        "Table":  "Fact FHV Trips",
+        "Field":  "Trip Duration Seconds",
+        "Passed":  true,
+        "Rows":  1,
+        "FirstValue":  194792264,
+        "Error":  null
+    },
+    {
+        "Cube":  "FHV Trips",
+        "Table":  "Measures",
+        "Field":  "FHV Average Trip Duration Minutes",
+        "Passed":  true,
+        "Rows":  1,
+        "FirstValue":  23.194525493558146,
+        "Error":  null
+    },
+    {
+        "Cube":  "FHV Trips",
+        "Table":  "Pickup Date",
+        "Field":  "Full Date",
+        "Passed":  true,
+        "Rows":  3,
+        "FirstValue":  "Unknown (unresolved key)",
+        "Error":  null
+    },
+    {
+        "Cube":  "FHV Trips",
+        "Table":  "Pickup Date",
+        "Field":  "Month Number",
+        "Passed":  true,
+        "Rows":  3,
+        "FirstValue":  "Unknown (unresolved key)",
+        "Error":  null
+    },
+    {
+        "Cube":  "FHV Trips",
+        "Table":  "Pickup Date",
+        "Field":  "Year Number",
+        "Passed":  true,
+        "Rows":  3,
+        "FirstValue":  null,
+        "Error":  null
+    },
+    {
+        "Cube":  "FHV Trips",
+        "Table":  "Pickup Location",
+        "Field":  "Borough",
+        "Passed":  true,
+        "Rows":  3,
+        "FirstValue":  "Unknown (unresolved key)",
+        "Error":  null
+    },
+    {
+        "Cube":  "FHV Trips",
+        "Table":  "Pickup Time",
+        "Field":  "Hour Number",
+        "Passed":  true,
+        "Rows":  3,
+        "FirstValue":  "Unknown (unresolved key)",
+        "Error":  null
+    },
+    {
+        "Cube":  "HVFHV Trips",
+        "Table":  "Dim HVFHS Provider",
+        "Field":  "License Number",
+        "Passed":  true,
+        "Rows":  3,
+        "FirstValue":  "Unknown (unresolved key)",
+        "Error":  null
+    },
+    {
+        "Cube":  "HVFHV Trips",
+        "Table":  "Dim Service Type",
+        "Field":  "Service Code",
+        "Passed":  true,
+        "Rows":  3,
+        "FirstValue":  "Unknown (unresolved key)",
+        "Error":  null
+    },
+    {
+        "Cube":  "HVFHV Trips",
+        "Table":  "Fact HVFHV Trips",
+        "Field":  "CBD Congestion Fee",
+        "Passed":  true,
+        "Rows":  1,
+        "FirstValue":  59310,
+        "Error":  null
+    },
+    {
+        "Cube":  "HVFHV Trips",
+        "Table":  "Fact HVFHV Trips",
+        "Field":  "Congestion Surcharge",
+        "Passed":  true,
+        "Rows":  1,
+        "FirstValue":  133258.75,
+        "Error":  null
+    },
+    {
+        "Cube":  "HVFHV Trips",
+        "Table":  "Fact HVFHV Trips",
+        "Field":  "Driver Pay Amount",
+        "Passed":  true,
+        "Rows":  1,
+        "FirstValue":  2811773.3200000017,
+        "Error":  null
+    },
+    {
+        "Cube":  "HVFHV Trips",
+        "Table":  "Fact HVFHV Trips",
+        "Field":  "Gross Passenger Amount",
+        "Passed":  true,
+        "Rows":  1,
+        "FirstValue":  3939518.1999999732,
+        "Error":  null
+    },
+    {
+        "Cube":  "HVFHV Trips",
+        "Table":  "Fact HVFHV Trips",
+        "Field":  "Trip Count - Fact HVFHV Trips",
+        "Passed":  true,
+        "Rows":  1,
+        "FirstValue":  140000,
+        "Error":  null
+    },
+    {
+        "Cube":  "HVFHV Trips",
+        "Table":  "Measures",
+        "Field":  "HVFHV Average Fare Per Trip",
+        "Passed":  true,
+        "Rows":  1,
+        "FirstValue":  25.456015000000036,
+        "Error":  null
+    },
+    {
+        "Cube":  "HVFHV Trips",
+        "Table":  "Measures",
+        "Field":  "HVFHV Average Waiting Minutes",
+        "Passed":  true,
+        "Rows":  1,
+        "FirstValue":  5.8358285076197358,
+        "Error":  null
+    },
+    {
+        "Cube":  "HVFHV Trips",
+        "Table":  "Pickup Date",
+        "Field":  "Full Date",
+        "Passed":  true,
+        "Rows":  3,
+        "FirstValue":  "Unknown (unresolved key)",
+        "Error":  null
+    },
+    {
+        "Cube":  "HVFHV Trips",
+        "Table":  "Pickup Date",
+        "Field":  "Month Number",
+        "Passed":  true,
+        "Rows":  3,
+        "FirstValue":  "Unknown (unresolved key)",
+        "Error":  null
+    },
+    {
+        "Cube":  "HVFHV Trips",
+        "Table":  "Pickup Date",
+        "Field":  "Year Number",
+        "Passed":  true,
+        "Rows":  3,
+        "FirstValue":  null,
+        "Error":  null
+    },
+    {
+        "Cube":  "HVFHV Trips",
+        "Table":  "Pickup Location",
+        "Field":  "Borough",
+        "Passed":  true,
+        "Rows":  3,
+        "FirstValue":  "Unknown (unresolved key)",
+        "Error":  null
+    },
+    {
+        "Cube":  "HVFHV Trips",
+        "Table":  "Pickup Time",
+        "Field":  "Hour Number",
+        "Passed":  true,
+        "Rows":  3,
+        "FirstValue":  "Unknown (unresolved key)",
+        "Error":  null
+    },
+    {
+        "Cube":  "HVFHV Trips",
+        "Table":  "Pickup Time",
+        "Field":  "Time Band",
+        "Passed":  true,
+        "Rows":  3,
+        "FirstValue":  "Unknown (unresolved key)",
+        "Error":  null
+    },
+    {
+        "Cube":  "YellowGreen Trips",
+        "Table":  "Dim Payment Type",
+        "Field":  "Payment Type Key",
+        "Passed":  true,
+        "Rows":  3,
+        "FirstValue":  "Unknown (unresolved key)",
+        "Error":  null
+    },
+    {
+        "Cube":  "YellowGreen Trips",
+        "Table":  "Dim Service Type",
+        "Field":  "Service Code",
+        "Passed":  true,
+        "Rows":  3,
+        "FirstValue":  "Unknown (unresolved key)",
+        "Error":  null
+    },
+    {
+        "Cube":  "YellowGreen Trips",
+        "Table":  "Fact Yellow Green Trips",
+        "Field":  "Tip Amount - Fact Yellow Green Trips",
+        "Passed":  true,
+        "Rows":  1,
+        "FirstValue":  811668.58000000054,
+        "Error":  null
+    },
+    {
+        "Cube":  "YellowGreen Trips",
+        "Table":  "Fact Yellow Green Trips",
+        "Field":  "Total Amount",
+        "Passed":  true,
+        "Rows":  1,
+        "FirstValue":  7094090.7299999977,
+        "Error":  null
+    },
+    {
+        "Cube":  "YellowGreen Trips",
+        "Table":  "Fact Yellow Green Trips",
+        "Field":  "Trip Count - Fact Yellow Green Trips",
+        "Passed":  true,
+        "Rows":  1,
+        "FirstValue":  278213,
+        "Error":  null
+    },
+    {
+        "Cube":  "YellowGreen Trips",
+        "Table":  "Measures",
+        "Field":  "YellowGreen Average Fare Per Trip",
+        "Passed":  true,
+        "Rows":  1,
+        "FirstValue":  18.354417658412796,
+        "Error":  null
+    },
+    {
+        "Cube":  "YellowGreen Trips",
+        "Table":  "Measures",
+        "Field":  "YellowGreen Average Tip Per Trip",
+        "Passed":  true,
+        "Rows":  1,
+        "FirstValue":  2.917435849510988,
+        "Error":  null
+    },
+    {
+        "Cube":  "YellowGreen Trips",
+        "Table":  "Measures",
+        "Field":  "YellowGreen Average Trip Duration Minutes",
+        "Passed":  true,
+        "Rows":  1,
+        "FirstValue":  18.224391802923179,
+        "Error":  null
+    },
+    {
+        "Cube":  "YellowGreen Trips",
+        "Table":  "Measures",
+        "Field":  "YellowGreen Tip Percentage",
+        "Passed":  true,
+        "Rows":  1,
+        "FirstValue":  0.15895006334748918,
+        "Error":  null
+    },
+    {
+        "Cube":  "YellowGreen Trips",
+        "Table":  "Pickup Date",
+        "Field":  "Full Date",
+        "Passed":  true,
+        "Rows":  3,
+        "FirstValue":  "Unknown (unresolved key)",
+        "Error":  null
+    },
+    {
+        "Cube":  "YellowGreen Trips",
+        "Table":  "Pickup Date",
+        "Field":  "Is Weekend",
+        "Passed":  true,
+        "Rows":  3,
+        "FirstValue":  null,
+        "Error":  null
+    },
+    {
+        "Cube":  "YellowGreen Trips",
+        "Table":  "Pickup Date",
+        "Field":  "Month Number",
+        "Passed":  true,
+        "Rows":  3,
+        "FirstValue":  "Unknown (unresolved key)",
+        "Error":  null
+    },
+    {
+        "Cube":  "YellowGreen Trips",
+        "Table":  "Pickup Date",
+        "Field":  "Year Number",
+        "Passed":  true,
+        "Rows":  3,
+        "FirstValue":  null,
+        "Error":  null
+    },
+    {
+        "Cube":  "YellowGreen Trips",
+        "Table":  "Pickup Location",
+        "Field":  "Borough",
+        "Passed":  true,
+        "Rows":  3,
+        "FirstValue":  "Unknown (unresolved key)",
+        "Error":  null
+    },
+    {
+        "Cube":  "YellowGreen Trips",
+        "Table":  "Pickup Location",
+        "Field":  "Zone Name",
+        "Passed":  true,
+        "Rows":  3,
+        "FirstValue":  "Unknown (unresolved key)",
+        "Error":  null
+    },
+    {
+        "Cube":  "YellowGreen Trips",
+        "Table":  "Pickup Time",
+        "Field":  "Hour Number",
+        "Passed":  true,
+        "Rows":  3,
+        "FirstValue":  "Unknown (unresolved key)",
+        "Error":  null
+    },
+    {
+        "Cube":  "Daily Financial",
+        "Table":  "Daily Financial Snapshot",
+        "Field":  "Daily Financial Snapshot TotalDriverPay",
+        "Passed":  true,
+        "Rows":  1,
+        "FirstValue":  2811773.32,
+        "Error":  null
+    },
+    {
+        "Cube":  "Daily Financial",
+        "Table":  "Daily Financial Snapshot",
+        "Field":  "Daily Financial Snapshot TotalPassengerCharges",
+        "Passed":  true,
+        "Rows":  1,
+        "FirstValue":  11033608.93,
+        "Error":  null
+    },
+    {
+        "Cube":  "Daily Financial",
+        "Table":  "Daily Financial Snapshot",
+        "Field":  "Daily Financial Snapshot TotalTaxesAndFees",
+        "Passed":  true,
+        "Rows":  1,
+        "FirstValue":  1784347.66,
+        "Error":  null
+    },
+    {
+        "Cube":  "Daily Financial",
+        "Table":  "Daily Financial Snapshot",
+        "Field":  "Daily Financial Snapshot TotalTips",
+        "Passed":  true,
+        "Rows":  1,
+        "FirstValue":  935961.67,
+        "Error":  null
+    },
+    {
+        "Cube":  "Daily Financial",
+        "Table":  "Daily Financial Snapshot",
+        "Field":  "Daily Financial Snapshot TotalTrips",
+        "Passed":  true,
+        "Rows":  1,
+        "FirstValue":  418213,
+        "Error":  null
+    },
+    {
+        "Cube":  "Daily Financial",
+        "Table":  "Dim Service Type",
+        "Field":  "Service Code",
+        "Passed":  true,
+        "Rows":  3,
+        "FirstValue":  "Unknown (unresolved key)",
+        "Error":  null
+    },
+    {
+        "Cube":  "Daily Financial",
+        "Table":  "Snapshot Date",
+        "Field":  "Full Date",
+        "Passed":  true,
+        "Rows":  3,
+        "FirstValue":  "Unknown (unresolved key)",
+        "Error":  null
+    },
+    {
+        "Cube":  "Daily Financial",
+        "Table":  "Snapshot Date",
+        "Field":  "Month Number",
+        "Passed":  true,
+        "Rows":  3,
+        "FirstValue":  "Unknown (unresolved key)",
+        "Error":  null
+    },
+    {
+        "Cube":  "Daily Financial",
+        "Table":  "Snapshot Date",
+        "Field":  "Year Number",
+        "Passed":  true,
+        "Rows":  3,
+        "FirstValue":  null,
+        "Error":  null
+    },
+    {
+        "Cube":  "Zone Traffic",
+        "Table":  "Dim Service Type",
+        "Field":  "Service Code",
+        "Passed":  true,
+        "Rows":  3,
+        "FirstValue":  "Unknown (unresolved key)",
+        "Error":  null
+    },
+    {
+        "Cube":  "Zone Traffic",
+        "Table":  "Snapshot Date",
+        "Field":  "Full Date",
+        "Passed":  true,
+        "Rows":  3,
+        "FirstValue":  "Unknown (unresolved key)",
+        "Error":  null
+    },
+    {
+        "Cube":  "Zone Traffic",
+        "Table":  "Snapshot Date",
+        "Field":  "Month Number",
+        "Passed":  true,
+        "Rows":  3,
+        "FirstValue":  "Unknown (unresolved key)",
+        "Error":  null
+    },
+    {
+        "Cube":  "Zone Traffic",
+        "Table":  "Snapshot Date",
+        "Field":  "Year Number",
+        "Passed":  true,
+        "Rows":  3,
+        "FirstValue":  null,
+        "Error":  null
+    },
+    {
+        "Cube":  "Zone Traffic",
+        "Table":  "Snapshot Location",
+        "Field":  "Borough",
+        "Passed":  true,
+        "Rows":  3,
+        "FirstValue":  "Unknown (unresolved key)",
+        "Error":  null
+    },
+    {
+        "Cube":  "Zone Traffic",
+        "Table":  "Snapshot Location",
+        "Field":  "Zone Name",
+        "Passed":  true,
+        "Rows":  3,
+        "FirstValue":  "Unknown (unresolved key)",
+        "Error":  null
+    },
+    {
+        "Cube":  "Zone Traffic",
+        "Table":  "Snapshot Time",
+        "Field":  "Hour Number",
+        "Passed":  true,
+        "Rows":  3,
+        "FirstValue":  "Unknown (unresolved key)",
+        "Error":  null
+    },
+    {
+        "Cube":  "Zone Traffic",
+        "Table":  "Zone Traffic Snapshot",
+        "Field":  "Zone Traffic Snapshot TotalDropoffs",
+        "Passed":  true,
+        "Rows":  1,
+        "FirstValue":  558183,
+        "Error":  null
+    },
+    {
+        "Cube":  "Zone Traffic",
+        "Table":  "Zone Traffic Snapshot",
+        "Field":  "Zone Traffic Snapshot TotalPickups",
+        "Passed":  true,
+        "Rows":  1,
+        "FirstValue":  558183,
+        "Error":  null
+    },
+    {
+        "Cube":  "Base Performance",
+        "Table":  "Base Performance Snapshot",
+        "Field":  "Base Performance Snapshot TotalTrips",
+        "Passed":  true,
+        "Rows":  1,
+        "FirstValue":  279970,
+        "Error":  null
+    },
+    {
+        "Cube":  "Base Performance",
+        "Table":  "Dim HVFHS Provider",
+        "Field":  "License Number",
+        "Passed":  true,
+        "Rows":  3,
+        "FirstValue":  "Unknown (unresolved key)",
+        "Error":  null
+    },
+    {
+        "Cube":  "Base Performance",
+        "Table":  "Dim Service Type",
+        "Field":  "Service Code",
+        "Passed":  true,
+        "Rows":  3,
+        "FirstValue":  "Unknown (unresolved key)",
+        "Error":  null
+    },
+    {
+        "Cube":  "Base Performance",
+        "Table":  "Dispatch Base",
+        "Field":  "Base Key",
+        "Passed":  true,
+        "Rows":  3,
+        "FirstValue":  "Unknown (unresolved key)",
+        "Error":  null
+    },
+    {
+        "Cube":  "Base Performance",
+        "Table":  "Measures",
+        "Field":  "Base Average Duration Minutes",
+        "Passed":  true,
+        "Rows":  1,
+        "FirstValue":  20.254793608839044,
+        "Error":  null
+    },
+    {
+        "Cube":  "Base Performance",
+        "Table":  "Measures",
+        "Field":  "Base Average Waiting Minutes",
+        "Passed":  true,
+        "Rows":  1,
+        "FirstValue":  5.8358285076197358,
+        "Error":  null
+    },
+    {
+        "Cube":  "Base Performance",
+        "Table":  "Measures",
+        "Field":  "Shared Request Rate",
+        "Passed":  true,
+        "Rows":  1,
+        "FirstValue":  0.042042857142857146,
+        "Error":  null
+    },
+    {
+        "Cube":  "Base Performance",
+        "Table":  "Snapshot Date",
+        "Field":  "Full Date",
+        "Passed":  true,
+        "Rows":  3,
+        "FirstValue":  "Unknown (unresolved key)",
+        "Error":  null
+    },
+    {
+        "Cube":  "Base Performance",
+        "Table":  "Snapshot Date",
+        "Field":  "Month Number",
+        "Passed":  true,
+        "Rows":  3,
+        "FirstValue":  "Unknown (unresolved key)",
+        "Error":  null
+    },
+    {
+        "Cube":  "Base Performance",
+        "Table":  "Snapshot Date",
+        "Field":  "Year Number",
+        "Passed":  true,
+        "Rows":  3,
+        "FirstValue":  null,
+        "Error":  null
+    }
+]

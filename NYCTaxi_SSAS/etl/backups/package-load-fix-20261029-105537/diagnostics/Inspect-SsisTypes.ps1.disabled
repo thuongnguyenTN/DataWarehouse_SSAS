@@ -1,0 +1,5 @@
+$scriptText=Get-Content (Join-Path $PSScriptRoot 'Test-SsisRuntime.ps1') -Raw
+Invoke-Expression $scriptText.Substring(0,$scriptText.IndexOf('$app='))
+$assembly=[Microsoft.SqlServer.Dts.Runtime.Application].Assembly
+try {$types=$assembly.GetTypes()}catch[Reflection.ReflectionTypeLoadException]{$types=$_.Exception.Types}
+$types | Where-Object {$_.FullName -match 'Helper|Serializer|XmlSerialization'} | Select-Object -ExpandProperty FullName

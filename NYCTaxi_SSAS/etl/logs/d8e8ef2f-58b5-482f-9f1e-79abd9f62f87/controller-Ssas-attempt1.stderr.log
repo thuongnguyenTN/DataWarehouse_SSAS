@@ -1,0 +1,23 @@
+E:\NYCTaxi\NYCTaxi_SSAS\etl\Invoke-NYCTaxiPipeline.ps1 : ETL FAILED. RunId=d8e8ef2f-58b5-482f-9f1e-79abd9f62f87. 
+Process sql-mdx-reconciliation exited 1: Exception calling "ExecuteScalar" with "0" argument(s): "Execution Timeout 
+Expired.  The timeout period elapsed prior 
+to completion of the operation or the server is not responding."
+At E:\NYCTaxi\NYCTaxi_SSAS\scripts\Verify-Results.ps1:16 char:2
++  $expected=$cmd.ExecuteScalar()
++  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : SqlException
+ 
+ 
+CUBE_NAME         CUBE_CAPTION     
+---------         ------------     
+Base Performance  Base Performance 
+Daily Financial   Daily Financial  
+FHV Trips         FHV Trips        
+HVFHV Trips       HVFHV Trips      
+YellowGreen Trips YellowGreen Trips
+Zone Traffic      Zone Traffic     
+. Logs=E:\NYCTaxi\NYCTaxi_SSAS\etl\logs\d8e8ef2f-58b5-482f-9f1e-79abd9f62f87
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,Invoke-NYCTaxiPipeline.ps1
+ 

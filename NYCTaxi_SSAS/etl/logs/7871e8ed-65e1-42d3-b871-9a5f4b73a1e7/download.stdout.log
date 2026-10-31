@@ -1,0 +1,9 @@
+Khoang thang: 2021-03 -> 2021-03
+Thu muc raw : D:\Kho_Du_lieu\NYCTaxi\raw
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\yellow\year=2021\month=03\yellow_tripdata_2021-03.parquet
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\green\year=2021\month=03\green_tripdata_2021-03.parquet
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\fhv\year=2021\month=03\fhv_tripdata_2021-03.parquet
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\fhvhv\year=2021\month=03\fhvhv_tripdata_2021-03.parquet
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\lookup\taxi_zone_lookup.csv
+
+TONG KET: downloaded=0, skipped=5, missing=0, failed=0

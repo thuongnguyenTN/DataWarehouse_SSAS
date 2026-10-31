@@ -1,0 +1,1 @@
+{"RunId":"15f3ff0e-0c96-437e-9d19-3bcb0985111a","Stage":"Dwh","Task":"FixtureSql","Status":"FAILED","Message":"fixture original SQL error","HeartbeatUtc":"2026-10-31T10:27:02.3040674Z","TaskStartedUtc":"2026-10-31T10:27:02.3040674Z","Rows":0,"TotalRows":0,"LogFolder":"E:\\NYCTaxi\\NYCTaxi_SSAS\\etl\\tests\\master-fixture-logs\\15f3ff0e-0c96-437e-9d19-3bcb0985111a"}

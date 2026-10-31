@@ -1,0 +1,181 @@
+{"Utc":"2026-10-31T09:12:48.2341211Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"Monitor","Status":"INFO","Detail":"Cửa sổ theo dõi đã mở; đóng cửa sổ này không dừng ETL."}
+{"Utc":"2026-10-31T09:12:49.4549379Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"StageAttempt","Status":"RUNNING","Detail":"Lần thử 1"}
+{"Utc":"2026-10-31T09:12:51.2085798Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Transform","Task":"StageComplete","Status":"INVALIDATED","Detail":"Rerunning Extract"}
+{"Utc":"2026-10-31T09:12:51.5565444Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Dwh","Task":"StageComplete","Status":"INVALIDATED","Detail":"Rerunning Extract"}
+{"Utc":"2026-10-31T09:12:51.8825201Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Aggregates","Task":"StageComplete","Status":"INVALIDATED","Detail":"Rerunning Extract"}
+{"Utc":"2026-10-31T09:12:52.1945884Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Ssas","Task":"StageComplete","Status":"INVALIDATED","Detail":"Rerunning Extract"}
+{"Utc":"2026-10-31T09:12:52.5112270Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"Download","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:12:53.3719096Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"Download","Status":"SUCCEEDED","Detail":null}
+{"Utc":"2026-10-31T09:12:53.3913691Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"Convert","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:12:54.5422260Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"Convert","Status":"SUCCEEDED","Detail":null}
+{"Utc":"2026-10-31T09:12:54.6173179Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"PrepareStaging","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:12:55.5750959Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"PrepareStaging","Status":"SUCCEEDED","Detail":null}
+{"Utc":"2026-10-31T09:12:55.6149272Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2021-01.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:12:56.6729446Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2021-01.csv","Status":"SUCCEEDED","Detail":"SKIPPED_ALREADY_LOADED"}
+{"Utc":"2026-10-31T09:12:56.7048458Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2025-01.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:12:57.4545220Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2025-01.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T09:12:57.4686219Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2025-02.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:12:58.1872932Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2025-02.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T09:12:58.1941995Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2025-03.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:12:58.9621292Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2025-03.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T09:12:58.9900379Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2025-04.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:12:59.8053074Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2025-04.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T09:12:59.8481666Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2025-05.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:00.5700353Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2025-05.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T09:13:00.5935646Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2025-06.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:01.3224586Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2025-06.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T09:13:01.3453546Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2025-07.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:02.0961656Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2025-07.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T09:13:02.1168713Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2025-08.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:02.9179800Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2025-08.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T09:13:02.9338579Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2025-09.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:03.6603775Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2025-09.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T09:13:03.6761545Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2025-10.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:04.4138161Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2025-10.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T09:13:04.4378909Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2025-11.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:05.1980706Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2025-11.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T09:13:05.2167294Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2025-12.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:05.9530733Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2025-12.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T09:13:05.9831435Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:green:green_tripdata_2021-01.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:07.0447950Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:green:green_tripdata_2021-01.csv","Status":"SUCCEEDED","Detail":"SKIPPED_ALREADY_LOADED"}
+{"Utc":"2026-10-31T09:13:07.0723320Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:green:green_tripdata_2025-01.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:07.7984125Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:green:green_tripdata_2025-01.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T09:13:07.8045831Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:green:green_tripdata_2025-02.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:08.5178985Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:green:green_tripdata_2025-02.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T09:13:08.5339086Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:green:green_tripdata_2025-03.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:09.2646939Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:green:green_tripdata_2025-03.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T09:13:09.2782870Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:green:green_tripdata_2025-04.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:10.0130532Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:green:green_tripdata_2025-04.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T09:13:10.0287658Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:green:green_tripdata_2025-05.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:10.7524223Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:green:green_tripdata_2025-05.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T09:13:10.7670863Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:green:green_tripdata_2025-06.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:11.4929659Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:green:green_tripdata_2025-06.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T09:13:11.5160006Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:green:green_tripdata_2025-07.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:12.2380079Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:green:green_tripdata_2025-07.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T09:13:12.2475980Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:green:green_tripdata_2025-08.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:13.0458625Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:green:green_tripdata_2025-08.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T09:13:13.0623316Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:green:green_tripdata_2025-09.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:13.7955062Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:green:green_tripdata_2025-09.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T09:13:13.8111726Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:green:green_tripdata_2025-10.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:14.5895032Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:green:green_tripdata_2025-10.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T09:13:14.6127267Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:green:green_tripdata_2025-11.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:15.3677326Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:green:green_tripdata_2025-11.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T09:13:15.3835309Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:green:green_tripdata_2025-12.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:16.1553939Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:green:green_tripdata_2025-12.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T09:13:16.1713462Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2021-01.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:17.2368696Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2021-01.csv","Status":"SUCCEEDED","Detail":"SKIPPED_ALREADY_LOADED"}
+{"Utc":"2026-10-31T09:13:17.2456279Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2025-01.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:17.9915735Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2025-01.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T09:13:18.0029148Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2025-02.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:18.7729573Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2025-02.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T09:13:18.7927523Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2025-03.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:19.4959646Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2025-03.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T09:13:19.5180845Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2025-04.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:20.2405114Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2025-04.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T09:13:20.2713379Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2025-05.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:21.0175570Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2025-05.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T09:13:21.0332193Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2025-06.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:21.7536732Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2025-06.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T09:13:21.7671202Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2025-07.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:22.4857847Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2025-07.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T09:13:22.5155117Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2025-08.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:23.2414268Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2025-08.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T09:13:23.2590207Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2025-09.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:23.9767847Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2025-09.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T09:13:23.9918425Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2025-10.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:24.7475093Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2025-10.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T09:13:24.7629742Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2025-11.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:25.5185253Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2025-11.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T09:13:25.5385390Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2025-12.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:26.2753027Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2025-12.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T09:13:26.2767477Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2021-01.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:27.3452012Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2021-01.csv","Status":"SUCCEEDED","Detail":"SKIPPED_ALREADY_LOADED"}
+{"Utc":"2026-10-31T09:13:27.3657739Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2025-01.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:28.0899106Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2025-01.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T09:13:28.1106121Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2025-02.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:28.8254740Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2025-02.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T09:13:28.8423078Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2025-03.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:29.5473636Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2025-03.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T09:13:29.5730631Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2025-04.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:30.2908841Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2025-04.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T09:13:30.3062857Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2025-05.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:31.0472152Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2025-05.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T09:13:31.0658194Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2025-06.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:31.7905189Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2025-06.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T09:13:31.8481236Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2025-07.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:32.6185161Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2025-07.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T09:13:32.6370474Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2025-08.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:33.4209244Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2025-08.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T09:13:33.4356344Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2025-09.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:34.1429826Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2025-09.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T09:13:34.1587760Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2025-10.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:34.8803113Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2025-10.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T09:13:34.8996016Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2025-11.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:35.6177577Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2025-11.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T09:13:35.6326962Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2025-12.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:36.3612515Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2025-12.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T09:13:36.3789080Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:lookup:taxi_zone_lookup.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:37.4061228Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"File:lookup:taxi_zone_lookup.csv","Status":"SUCCEEDED","Detail":"SKIPPED_ALREADY_LOADED"}
+{"Utc":"2026-10-31T09:13:37.4279640Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"ValidateStaging","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:38.3922178Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"ValidateStaging","Status":"SUCCEEDED","Detail":null}
+{"Utc":"2026-10-31T09:13:38.7149938Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"StageComplete","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:39.3451383Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"StageComplete","Status":"SUCCEEDED","Detail":null}
+{"Utc":"2026-10-31T09:13:39.3600885Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"Invocation","Status":"SUCCEEDED","Detail":""}
+{"Utc":"2026-10-31T09:13:39.4156450Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Extract","Task":"StageReturned","Status":"INFO","Detail":"Runner hoàn tất stage."}
+{"Utc":"2026-10-31T09:13:41.3659867Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Transform","Task":"StageAttempt","Status":"RUNNING","Detail":"Lần thử 1"}
+{"Utc":"2026-10-31T09:13:43.3870572Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Dwh","Task":"StageComplete","Status":"INVALIDATED","Detail":"Rerunning Transform"}
+{"Utc":"2026-10-31T09:13:43.7016247Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Aggregates","Task":"StageComplete","Status":"INVALIDATED","Detail":"Rerunning Transform"}
+{"Utc":"2026-10-31T09:13:44.0184554Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Ssas","Task":"StageComplete","Status":"INVALIDATED","Detail":"Rerunning Transform"}
+{"Utc":"2026-10-31T09:13:44.3674227Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Transform","Task":"EST_01_Setup_Clean","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:45.3390841Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Transform","Task":"EST_01_Setup_Clean","Status":"SUCCEEDED","Detail":null}
+{"Utc":"2026-10-31T09:13:45.3536234Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Transform","Task":"EST_02_Transform_TaxiZone","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:46.3379212Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Transform","Task":"EST_02_Transform_TaxiZone","Status":"SUCCEEDED","Detail":null}
+{"Utc":"2026-10-31T09:13:46.3536181Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Transform","Task":"EST_03_Transform_YELLOW","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:47.6324487Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Transform","Task":"EST_03_Transform_YELLOW","Status":"SUCCEEDED","Detail":null}
+{"Utc":"2026-10-31T09:13:47.6484601Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Transform","Task":"EST_04_Transform_GREEN","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:48.5910865Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Transform","Task":"EST_04_Transform_GREEN","Status":"SUCCEEDED","Detail":null}
+{"Utc":"2026-10-31T09:13:48.6165388Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Transform","Task":"EST_05_Transform_FHV","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:49.5768249Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Transform","Task":"EST_05_Transform_FHV","Status":"SUCCEEDED","Detail":null}
+{"Utc":"2026-10-31T09:13:49.5973575Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Transform","Task":"EST_06_Transform_FHVHV","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:50.8683261Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Transform","Task":"EST_06_Transform_FHVHV","Status":"SUCCEEDED","Detail":null}
+{"Utc":"2026-10-31T09:13:50.8949953Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Transform","Task":"EST_07_Validate_Transform","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:51.8619104Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Transform","Task":"EST_07_Validate_Transform","Status":"SUCCEEDED","Detail":null}
+{"Utc":"2026-10-31T09:13:52.1882587Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Transform","Task":"StageComplete","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:52.8261924Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Transform","Task":"StageComplete","Status":"SUCCEEDED","Detail":null}
+{"Utc":"2026-10-31T09:13:52.8462783Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Transform","Task":"Invocation","Status":"SUCCEEDED","Detail":""}
+{"Utc":"2026-10-31T09:13:52.9040966Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Transform","Task":"StageReturned","Status":"INFO","Detail":"Runner hoàn tất stage."}
+{"Utc":"2026-10-31T09:13:54.8413372Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Dwh","Task":"StageAttempt","Status":"RUNNING","Detail":"Lần thử 1"}
+{"Utc":"2026-10-31T09:13:56.5808688Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Aggregates","Task":"StageComplete","Status":"INVALIDATED","Detail":"Rerunning Dwh"}
+{"Utc":"2026-10-31T09:13:56.9155317Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Ssas","Task":"StageComplete","Status":"INVALIDATED","Detail":"Rerunning Dwh"}
+{"Utc":"2026-10-31T09:13:57.2399137Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Dwh","Task":"EST_00_Precheck_DWH","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:58.5340982Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Dwh","Task":"EST_00_Precheck_DWH","Status":"SUCCEEDED","Detail":null}
+{"Utc":"2026-10-31T09:13:58.5593336Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Dwh","Task":"EST_01_Load_Dimensions","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:13:59.5092713Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Dwh","Task":"EST_01_Load_Dimensions","Status":"SUCCEEDED","Detail":"[{\"PendingFiles\":0,\"DimensionInputRows\":0}]"}
+{"Utc":"2026-10-31T09:13:59.5251066Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Dwh","Task":"EST_02_Load_FactYellowGreen","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:14:00.4866597Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Dwh","Task":"EST_02_Load_FactYellowGreen","Status":"SUCCEEDED","Detail":"[{\"ProcessedFiles\":0,\"ValidInputRows\":0}]"}
+{"Utc":"2026-10-31T09:14:00.4993953Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Dwh","Task":"EST_03_Load_FactFHV","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:14:01.4524148Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Dwh","Task":"EST_03_Load_FactFHV","Status":"SUCCEEDED","Detail":"[{\"ProcessedFiles\":0,\"ValidInputRows\":0}]"}
+{"Utc":"2026-10-31T09:14:01.4575798Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Dwh","Task":"EST_04_Load_FactHVFHV","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:14:02.4253046Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Dwh","Task":"EST_04_Load_FactHVFHV","Status":"SUCCEEDED","Detail":"[{\"ProcessedFiles\":0,\"ValidInputRows\":0}]"}
+{"Utc":"2026-10-31T09:14:02.4516227Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Dwh","Task":"EST_05_Validate_DWH","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:14:03.4019009Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Dwh","Task":"EST_05_Validate_DWH","Status":"SUCCEEDED","Detail":"[{\"CompletedFiles\":52,\"CheckpointFactRows\":518212}]"}
+{"Utc":"2026-10-31T09:14:03.7267205Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Dwh","Task":"StageComplete","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:14:04.3784152Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Dwh","Task":"StageComplete","Status":"SUCCEEDED","Detail":null}
+{"Utc":"2026-10-31T09:14:04.3998819Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Dwh","Task":"Invocation","Status":"SUCCEEDED","Detail":""}
+{"Utc":"2026-10-31T09:14:06.0928430Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Dwh","Task":"StageReturned","Status":"INFO","Detail":"Runner hoàn tất stage."}
+{"Utc":"2026-10-31T09:14:08.0964316Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Aggregates","Task":"StageAttempt","Status":"RUNNING","Detail":"Lần thử 1"}
+{"Utc":"2026-10-31T09:14:09.7795441Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Ssas","Task":"StageComplete","Status":"INVALIDATED","Detail":"Rerunning Aggregates"}
+{"Utc":"2026-10-31T09:14:10.1312342Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Aggregates","Task":"AtomicRebuildAndValidateSnapshots","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:14:25.0644036Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Aggregates","Task":"AtomicRebuildAndValidateSnapshots","Status":"SUCCEEDED","Detail":null}
+{"Utc":"2026-10-31T09:14:25.4109767Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Aggregates","Task":"StageComplete","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:14:26.0484783Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Aggregates","Task":"StageComplete","Status":"SUCCEEDED","Detail":null}
+{"Utc":"2026-10-31T09:14:26.0682683Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Aggregates","Task":"Invocation","Status":"SUCCEEDED","Detail":""}
+{"Utc":"2026-10-31T09:14:27.7497900Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Aggregates","Task":"StageReturned","Status":"INFO","Detail":"Runner hoàn tất stage."}
+{"Utc":"2026-10-31T09:14:29.7406734Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Ssas","Task":"StageAttempt","Status":"RUNNING","Detail":"Lần thử 1"}
+{"Utc":"2026-10-31T09:14:31.4892647Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Ssas","Task":"ProcessAndVerifySixCubes","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:15:12.5890553Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Ssas","Task":"ProcessAndVerifySixCubes","Status":"SUCCEEDED","Detail":null}
+{"Utc":"2026-10-31T09:15:12.9191455Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Ssas","Task":"StageComplete","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T09:15:13.5610035Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Ssas","Task":"StageComplete","Status":"SUCCEEDED","Detail":null}
+{"Utc":"2026-10-31T09:15:13.8960553Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Ssas","Task":"Invocation","Status":"SUCCEEDED","Detail":""}
+{"Utc":"2026-10-31T09:15:13.9353599Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Ssas","Task":"StageReturned","Status":"INFO","Detail":"Runner hoàn tất stage."}
+{"Utc":"2026-10-31T09:15:16.0128852Z","RunId":"006f5fdf-a15c-4353-a5a0-ce9172f6c1ef","Stage":"Master","Task":"MasterComplete","Status":"SUCCEEDED","Detail":"Toàn luồng đã hoàn tất và đối soát thành công."}

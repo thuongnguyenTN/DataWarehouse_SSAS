@@ -1,0 +1,29 @@
+{
+  "artifact": "E:\\NYCTaxi\\NYCTaxi_DW\\NYCTaxi_ETL\\bin\\Development\\NYCTaxi_ETL.ispac",
+  "modified": 1793246841.675642,
+  "zip_valid": true,
+  "master_tasks": 5,
+  "typed_parameters": [
+    {
+      "name": "pEndMonth",
+      "type": "8",
+      "value": "2025-12"
+    },
+    {
+      "name": "pMaxRows",
+      "type": "3",
+      "value": "100000"
+    },
+    {
+      "name": "pRunnerPath",
+      "type": "8",
+      "value": "E:\\NYCTaxi\\NYCTaxi_SSAS\\etl\\Invoke-NYCTaxiPipeline.ps1"
+    },
+    {
+      "name": "pStartMonth",
+      "type": "8",
+      "value": "2025-01"
+    }
+  ],
+  "sha256": "8600f4eda5204d455d8d772fc86975f4366d367f3c3b2002bf39e10f89f1453b"
+}

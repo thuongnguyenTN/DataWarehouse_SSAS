@@ -1,0 +1,11 @@
+............
+----------------------------------------------------------------------
+Ran 12 tests in 1.693s
+
+OK
+[XONG] C:\Users\ADMIN\AppData\Local\Temp\tmpbqc5jbbu\yellow_tripdata_2025-01.csv: 3/3 dong
+[XONG] C:\Users\ADMIN\AppData\Local\Temp\tmpnwg430m4\yellow_tripdata_2025-01.csv: 2/3 dong
+[XONG] C:\Users\ADMIN\AppData\Local\Temp\tmpnwg430m4\yellow_tripdata_2025-01.csv: 3/3 dong
+[XONG] C:\Users\ADMIN\AppData\Local\Temp\tmp6uumcanu\yellow_tripdata_2025-01.csv: 3/3 dong
+[XONG] C:\Users\ADMIN\AppData\Local\Temp\tmpc6p23xox\yellow_tripdata_2025-01.csv: 3/3 dong
+[BO QUA] CSV hop le: C:\Users\ADMIN\AppData\Local\Temp\tmpc6p23xox\yellow_tripdata_2025-01.csv (3 dong)

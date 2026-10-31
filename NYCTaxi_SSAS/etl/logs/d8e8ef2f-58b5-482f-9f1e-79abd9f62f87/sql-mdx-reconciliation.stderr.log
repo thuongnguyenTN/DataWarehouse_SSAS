@@ -1,0 +1,8 @@
+Exception calling "ExecuteScalar" with "0" argument(s): "Execution Timeout Expired.  The timeout period elapsed prior 
+to completion of the operation or the server is not responding."
+At E:\NYCTaxi\NYCTaxi_SSAS\scripts\Verify-Results.ps1:16 char:2
++  $expected=$cmd.ExecuteScalar()
++  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : SqlException
+ 

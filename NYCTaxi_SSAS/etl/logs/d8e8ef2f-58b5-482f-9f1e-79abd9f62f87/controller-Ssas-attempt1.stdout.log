@@ -1,0 +1,4 @@
+[16:50:40] [Ssas] RUNNING: ProcessAndVerifySixCubes
+[16:55:07] [Ssas] FAILED: ProcessAndVerifySixCubes
+[Ssas] ProcessAndVerifySixCubes: SQL vẫn đang xử lý; elapsed=267s
+[16:55:08] [Ssas] FAILED: Invocation

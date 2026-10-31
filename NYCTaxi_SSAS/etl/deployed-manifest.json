@@ -1,0 +1,42 @@
+[
+  {
+    "target": "E:\\NYCTaxi\\NYCTaxi_DW\\NYCTaxi_ETL\\NYCTaxi_ETL.dtproj",
+    "sha256": "767be68133afd0f1f710367ccfcbbaa6b44ebfec1c272ce62e9724df3d301ec9"
+  },
+  {
+    "target": "E:\\NYCTaxi\\NYCTaxi_DW\\NYCTaxi_ETL\\PKG_00_Master.dtsx",
+    "sha256": "e85047beb7ac53bf5fe8832c7b4ad1577b0910b90587b999f648f2cf4f1a7d44"
+  },
+  {
+    "target": "E:\\NYCTaxi\\NYCTaxi_DW\\NYCTaxi_ETL\\PKG_01_Extract_Stage.dtsx",
+    "sha256": "1147b2eddf591ca7354d19a895c70fbea47723740720d459ab9333e5cfff000f"
+  },
+  {
+    "target": "E:\\NYCTaxi\\NYCTaxi_DW\\NYCTaxi_ETL\\PKG_02_Transform_Clean.dtsx",
+    "sha256": "3d94a5831559112d615e080083e5bac39938cf0a7825383632f7845144173ad1"
+  },
+  {
+    "target": "E:\\NYCTaxi\\NYCTaxi_DW\\NYCTaxi_ETL\\PKG_03_Load_DWH.dtsx",
+    "sha256": "a34c1592452c2687ebf42920901acb36b30bca5ced8df42a182f5d270beb2b3c"
+  },
+  {
+    "target": "E:\\NYCTaxi\\NYCTaxi_DW\\NYCTaxi_ETL\\PKG_04_Load_Aggregates.dtsx",
+    "sha256": "a93f5cc9c00034bf62feba66d9f50803f978dd6be0f8f20e383eeb9b1d63ec92"
+  },
+  {
+    "target": "D:\\Kho_Du_lieu\\NYCTaxi\\script\\convert_nyc_parquet_to_csv.py",
+    "sha256": "7fb0a78cd91056cd2e960483b0b1562baff79f083c447eed7733a68bd30226a8"
+  },
+  {
+    "target": "D:\\Kho_Du_lieu\\NYCTaxi\\script\\download_nyc_parquet.py",
+    "sha256": "e52d8501cc939b00cec4e839e664b67667b9d260ef16bad39753eaf22757747c"
+  },
+  {
+    "target": "D:\\Kho_Du_lieu\\NYCTaxi\\script\\extract_contract.py",
+    "sha256": "44090ac6ab9c366a8e88710cbabd29af84e25ccfde74e203c7ed386903d22bbb"
+  },
+  {
+    "target": "D:\\Kho_Du_lieu\\NYCTaxi\\script\\inspect_extract_file.py",
+    "sha256": "984508fb05abaaedc0dd1f6da517e586aec8e59ae0c0dcae444fce349c256bed"
+  }
+]

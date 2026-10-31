@@ -1,0 +1,324 @@
+<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine" dwd:design-time-name="6ecdc50f-b376-4a9d-ae2f-a1659d8b0837">
+  <ID>Base_Performance</ID>
+  <Name>Base Performance</Name>
+  <Dimensions>
+    <Dimension dwd:design-time-name="65d85246-3f05-4831-a9b0-3591c4cd863f">
+      <ID>Dispatch Base</ID>
+      <Name>Dispatch Base</Name>
+      <DimensionID>Dim Base</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="af7f57e1-47bd-4668-93fd-076b3cf3ca22">
+          <AttributeID>Base Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1336c888-b3e3-487a-9c1f-f57d29aced80">
+          <AttributeID>Base Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5fd1e4ad-948e-4e95-9f9d-bea2e0dbeb75">
+          <AttributeID>Base Category</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="6847c9a9-68a6-4267-b3bc-f64f7209af7f">
+      <ID>Dim Service Type</ID>
+      <Name>Dim Service Type</Name>
+      <DimensionID>Dim Service Type</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="91a9fec3-ff29-49db-98c0-f7c99d1baf46">
+          <AttributeID>Service Type Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fe20c020-92eb-40dd-99a9-2f4113dd9d87">
+          <AttributeID>Service Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6cdfad3c-b4f7-45d2-b2ca-b1b0974e32ac">
+          <AttributeID>Service Name</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="20953c29-490e-42bb-83eb-de48cd49fd09">
+      <ID>Dim HVFHS Provider</ID>
+      <Name>Dim HVFHS Provider</Name>
+      <DimensionID>Dim HVFHS Provider</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="7b170bb5-1df6-4996-9f44-b4bd4b05d2ad">
+          <AttributeID>HVFHS Provider Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ffa190c8-e261-40e9-baeb-3142a4240932">
+          <AttributeID>License Number</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="07636964-e0ae-45bc-b2cf-22c4e06f72a9">
+      <ID>Snapshot Date</ID>
+      <Name>Snapshot Date</Name>
+      <DimensionID>Dim Date</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="4f479cee-45be-4eb9-9f8e-8a497ced209d">
+          <AttributeID>Date Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="345707e4-8174-4a01-9e98-b239362d4586">
+          <AttributeID>Day Of Week Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="92665ad2-65a2-42c6-89bf-95aedede2ddf">
+          <AttributeID>Day Of Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0640f3a9-9c71-4bd6-8f0c-e94ccf1cb225">
+          <AttributeID>Month Number</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="08d51928-a12d-42e5-a6bd-af54f3e26b1a">
+          <AttributeID>Month Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9fe55fb9-f270-46a8-b796-5afbce12cdf8">
+          <AttributeID>Quarter Number</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="281df7a6-7da7-4bd1-9d50-69fde75d4f42">
+          <AttributeID>Year Number</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="18c85e38-ff3c-40af-a24b-0d003b3eaa33">
+          <AttributeID>Is Weekend</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f951db52-4afd-4cce-85f0-713cd42ab479">
+          <AttributeID>Is Holiday</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4a445052-2cc0-4049-ad35-7bd82c2e5672">
+          <AttributeID>Full Date</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="5f78f3fb-8554-466d-b1b2-a4c7e3119324">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="75fac32a-2900-4c69-a3a9-949bc654b0e0">
+      <ID>Base Performance Snapshot</ID>
+      <Name>Base Performance Snapshot</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="ff64ee74-8e79-4b72-9ad8-4202f98d5daa">
+          <ID>Base Performance Snapshot TotalTrips</ID>
+          <Name>Base Performance Snapshot TotalTrips</Name>
+          <Source dwd:design-time-name="e0ef0ceb-9c58-49ea-8841-be4cc6797994">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="788ddd34-54fd-4057-a32d-e57079d61f34">
+              <TableID>dbo_Fact_Base_Performance_Snapshot</TableID>
+              <ColumnID>TotalTrips</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Base Performance Snapshot</DisplayFolder>
+        </Measure>
+        <Measure dwd:design-time-name="bbd459bf-b087-4f05-92ee-3cb44e071066">
+          <ID>Base Performance Snapshot TotalTripDurationSeconds</ID>
+          <Name>Base Performance Snapshot TotalTripDurationSeconds</Name>
+          <Source dwd:design-time-name="ac859bf8-fa1a-4a30-ba3f-b9587414afe8">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="e25862c7-ae24-491a-bce1-e0d7c6ab8889">
+              <TableID>dbo_Fact_Base_Performance_Snapshot</TableID>
+              <ColumnID>TotalTripDurationSeconds</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Base Performance Snapshot</DisplayFolder>
+        </Measure>
+        <Measure dwd:design-time-name="3470e454-4064-48ce-9405-e08b618e9b65">
+          <ID>Base Performance Snapshot DurationTripCount</ID>
+          <Name>Base Performance Snapshot DurationTripCount</Name>
+          <Source dwd:design-time-name="40750a57-5f8e-47a3-a017-cb47304c201b">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="c26e82c3-ffa3-4cea-a1ed-d86773ec5d49">
+              <TableID>dbo_Fact_Base_Performance_Snapshot</TableID>
+              <ColumnID>DurationTripCount</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Base Performance Snapshot</DisplayFolder>
+        </Measure>
+        <Measure dwd:design-time-name="c91b0529-e92d-403b-a4a8-547bf2260b2b">
+          <ID>Base Performance Snapshot TotalWaitingTimeSeconds</ID>
+          <Name>Base Performance Snapshot TotalWaitingTimeSeconds</Name>
+          <Source dwd:design-time-name="f9583d2b-67f4-4bc8-a4c1-4f7e069576e3">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="6557a3d4-6aa3-4dd4-9314-364e606f92fb">
+              <TableID>dbo_Fact_Base_Performance_Snapshot</TableID>
+              <ColumnID>TotalWaitingTimeSeconds</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Base Performance Snapshot</DisplayFolder>
+        </Measure>
+        <Measure dwd:design-time-name="925ca42d-a6c3-4557-805e-1b059e293ada">
+          <ID>Base Performance Snapshot WaitingTripCount</ID>
+          <Name>Base Performance Snapshot WaitingTripCount</Name>
+          <Source dwd:design-time-name="934e0e65-7992-4e65-869f-23f61c42ff7a">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b14f89da-559a-4808-89dc-c296538c1014">
+              <TableID>dbo_Fact_Base_Performance_Snapshot</TableID>
+              <ColumnID>WaitingTripCount</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Base Performance Snapshot</DisplayFolder>
+        </Measure>
+        <Measure dwd:design-time-name="28f4ea2c-908a-4b59-8b0c-bfc4dd8ff12c">
+          <ID>Base Performance Snapshot TotalSharedRequests</ID>
+          <Name>Base Performance Snapshot TotalSharedRequests</Name>
+          <Source dwd:design-time-name="418fd92f-b470-4cd1-afe3-54e9395956e6">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="bb899020-d218-4753-8022-b46561147a04">
+              <TableID>dbo_Fact_Base_Performance_Snapshot</TableID>
+              <ColumnID>TotalSharedRequests</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Base Performance Snapshot</DisplayFolder>
+        </Measure>
+        <Measure dwd:design-time-name="71c98793-9ef7-4784-9962-eee0d913fdca">
+          <ID>Base Performance Snapshot TotalSharedMatches</ID>
+          <Name>Base Performance Snapshot TotalSharedMatches</Name>
+          <Source dwd:design-time-name="bbdb6aa6-b94d-4e6b-90d9-b4da11b5f1c1">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="82714a41-4862-4e35-8e47-85597dd1e0a7">
+              <TableID>dbo_Fact_Base_Performance_Snapshot</TableID>
+              <ColumnID>TotalSharedMatches</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Base Performance Snapshot</DisplayFolder>
+        </Measure>
+        <Measure dwd:design-time-name="be3481ce-ba22-4f76-b1d1-563f9fa8ea91">
+          <ID>Base Performance Snapshot TotalWAVRequests</ID>
+          <Name>Base Performance Snapshot TotalWAVRequests</Name>
+          <Source dwd:design-time-name="8d073d3d-6ba1-4d6d-9a45-9ee6c99f4e2f">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="5680912a-5858-43c2-8cf8-2ef4f38227fd">
+              <TableID>dbo_Fact_Base_Performance_Snapshot</TableID>
+              <ColumnID>TotalWAVRequests</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Base Performance Snapshot</DisplayFolder>
+        </Measure>
+        <Measure dwd:design-time-name="0d6391bf-97b7-489a-b6f4-2696c81a0ab5">
+          <ID>Base Performance Snapshot TotalWAVMatches</ID>
+          <Name>Base Performance Snapshot TotalWAVMatches</Name>
+          <Source dwd:design-time-name="e6add43b-622e-48a8-9fe1-f8ef3aeee152">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d6020e84-3bcb-4172-bfda-0d2a14a5bb03">
+              <TableID>dbo_Fact_Base_Performance_Snapshot</TableID>
+              <ColumnID>TotalWAVMatches</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Base Performance Snapshot</DisplayFolder>
+        </Measure>
+        <Measure dwd:design-time-name="90c51494-b23e-4af5-82a4-e40d49071f52">
+          <ID>Base Performance Snapshot TotalDriverPay</ID>
+          <Name>Base Performance Snapshot TotalDriverPay</Name>
+          <Source dwd:design-time-name="7df0afa0-da1e-489e-a6a9-ceacd2b240a1">
+            <DataType>Currency</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="33d0b185-e6f1-4f91-8e19-a6db4174b0f5">
+              <TableID>dbo_Fact_Base_Performance_Snapshot</TableID>
+              <ColumnID>TotalDriverPay</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Base Performance Snapshot</DisplayFolder>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <IgnoreUnrelatedDimensions>false</IgnoreUnrelatedDimensions>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="8a3f3403-8a82-4864-a7dc-e37dd9b3e926">
+          <CubeDimensionID>Snapshot Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d2d0a2fe-2e63-4fd8-b2b5-5434e84b0bd5">
+              <AttributeID>Date Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="91e8a487-7fd9-4c4c-ad8a-fdfb97c2201c">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6937cdb4-9e85-400d-8af4-65acda32f5d2">
+                    <TableID>dbo_Fact_Base_Performance_Snapshot</TableID>
+                    <ColumnID>DateKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="04490c4b-9c35-4fb8-a3f7-aee426c8b17f">
+          <CubeDimensionID>Dim Service Type</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e6d9b184-f976-49c4-9cd8-efa416553561">
+              <AttributeID>Service Type Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1148a213-2dea-446d-ad6c-cbfb83745d44">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="891bc722-ec4d-4571-a02d-6071cf8c6cbd">
+                    <TableID>dbo_Fact_Base_Performance_Snapshot</TableID>
+                    <ColumnID>ServiceTypeKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e72f8bbf-078c-42e1-9c3e-2aedb2183edb">
+          <CubeDimensionID>Dim HVFHS Provider</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="27dc4163-f25e-483c-9d51-472be260e506">
+              <AttributeID>HVFHS Provider Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="da6e66b7-0c99-4d16-9152-e9ba21253ad9">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="478e854b-d474-477d-8c7a-bf500f8f3bfd">
+                    <TableID>dbo_Fact_Base_Performance_Snapshot</TableID>
+                    <ColumnID>HVFHSProviderKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="eedb7de8-4a90-474e-8590-7799d60ce3ae">
+          <CubeDimensionID>Dispatch Base</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="fa9f2c68-0167-464b-839a-3f08af7e6d14">
+              <AttributeID>Base Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="149d754d-3a09-455d-bf3f-7c009a271a75">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="bae8bd7f-4660-422b-bcb0-2431e445d3a3">
+                    <TableID>dbo_Fact_Base_Performance_Snapshot</TableID>
+                    <ColumnID>DispatchBaseKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions/>
+      <AggregationDesigns/>
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="a3fd343a-82e0-4ce0-9a66-74345514f5a5">
+    <DataSourceViewID>DSV_NYCTaxi_DWH</DataSourceViewID>
+  </Source>
+  <MdxScripts>
+    <MdxScript dwd:design-time-name="429486c0-b30d-4084-a2b3-bfdf265c4c72">
+      <ID>MdxScript</ID>
+      <Name>MdxScript</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Commands>
+        <Command>
+          <Text>CALCULATE;
+CREATE MEMBER CURRENTCUBE.[Measures].[Base Average Duration Minutes] AS IIF(IsEmpty([Measures].[Base Performance Snapshot DurationTripCount]) OR [Measures].[Base Performance Snapshot DurationTripCount] = 0, NULL, ([Measures].[Base Performance Snapshot TotalTripDurationSeconds]) / ([Measures].[Base Performance Snapshot DurationTripCount]) * 0.016666666666666666), FORMAT_STRING = '#,##0.00', DISPLAY_FOLDER = 'Base Performance', VISIBLE = 1;
+CREATE MEMBER CURRENTCUBE.[Measures].[Base Average Waiting Minutes] AS IIF(IsEmpty([Measures].[Base Performance Snapshot WaitingTripCount]) OR [Measures].[Base Performance Snapshot WaitingTripCount] = 0, NULL, ([Measures].[Base Performance Snapshot TotalWaitingTimeSeconds]) / ([Measures].[Base Performance Snapshot WaitingTripCount]) * 0.016666666666666666), FORMAT_STRING = '#,##0.00', DISPLAY_FOLDER = 'Base Performance', VISIBLE = 1;
+CREATE MEMBER CURRENTCUBE.[Measures].[Shared Request Rate] AS IIF(IsEmpty(([Measures].[Base Performance Snapshot TotalTrips], [Dim Service Type].[Service Code].&amp;[FHVHV])) OR ([Measures].[Base Performance Snapshot TotalTrips], [Dim Service Type].[Service Code].&amp;[FHVHV]) = 0, NULL, (([Measures].[Base Performance Snapshot TotalSharedRequests], [Dim Service Type].[Service Code].&amp;[FHVHV])) / (([Measures].[Base Performance Snapshot TotalTrips], [Dim Service Type].[Service Code].&amp;[FHVHV])) * 1), FORMAT_STRING = '0.00%', DISPLAY_FOLDER = 'Base Performance', VISIBLE = 1;
+CREATE MEMBER CURRENTCUBE.[Measures].[WAV Match Rate] AS IIF(IsEmpty([Measures].[Base Performance Snapshot TotalWAVRequests]) OR [Measures].[Base Performance Snapshot TotalWAVRequests] = 0, NULL, ([Measures].[Base Performance Snapshot TotalWAVMatches]) / ([Measures].[Base Performance Snapshot TotalWAVRequests]) * 1), FORMAT_STRING = '0.00%', DISPLAY_FOLDER = 'Base Performance', VISIBLE = 1;</Text>
+        </Command>
+      </Commands>
+    </MdxScript>
+  </MdxScripts>
+</Cube>

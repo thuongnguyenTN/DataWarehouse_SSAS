@@ -1,0 +1,19 @@
+[15:53:16] [Transform] RUNNING: EST_01_Setup_Clean
+[15:53:18] [Transform] SUCCEEDED: EST_01_Setup_Clean
+[15:53:18] [Transform] RUNNING: EST_02_Transform_TaxiZone
+[15:53:21] [Transform] SUCCEEDED: EST_02_Transform_TaxiZone
+[15:53:21] [Transform] RUNNING: EST_03_Transform_YELLOW
+[15:53:24] [Transform] SUCCEEDED: EST_03_Transform_YELLOW
+[15:53:24] [Transform] RUNNING: EST_04_Transform_GREEN
+[15:53:27] [Transform] SUCCEEDED: EST_04_Transform_GREEN
+[15:53:27] [Transform] RUNNING: EST_05_Transform_FHV
+[Transform] EST_05_Transform_FHV: SQL vẫn đang xử lý; elapsed=2s
+[15:53:34] [Transform] SUCCEEDED: EST_05_Transform_FHV
+[15:53:34] [Transform] RUNNING: EST_06_Transform_FHVHV
+[15:53:37] [Transform] SUCCEEDED: EST_06_Transform_FHVHV
+[15:53:37] [Transform] RUNNING: EST_07_Validate_Transform
+[15:53:38] [Transform] SUCCEEDED: EST_07_Validate_Transform
+[15:53:39] [Transform] RUNNING: StageComplete
+[15:53:39] [Transform] SUCCEEDED: StageComplete
+[15:53:39] [Transform] SUCCEEDED: Invocation
+ETL Transform completed. RunId=5eb41803-6fa2-4faa-9ebb-cbe56c0f3111; logs=E:\NYCTaxi\NYCTaxi_SSAS\etl\logs\5eb41803-6fa2-4faa-9ebb-cbe56c0f3111

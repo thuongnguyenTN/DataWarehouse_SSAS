@@ -1,0 +1,55 @@
+﻿Input: D:\Kho_Du_lieu\NYCTaxi\raw
+Output: D:\Kho_Du_lieu\NYCTaxi\csv
+Schema: ssis; max-rows: 10000
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\fhv\year=2025\month=01\fhv_tripdata_2025-01.csv: 10,000/1,898,108 dong
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\fhv\year=2025\month=02\fhv_tripdata_2025-02.csv: 10,000/1,578,722 dong
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\fhv\year=2025\month=03\fhv_tripdata_2025-03.csv: 10,000/2,182,992 dong
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\fhv\year=2025\month=04\fhv_tripdata_2025-04.csv: 10,000/1,699,478 dong
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\fhv\year=2025\month=05\fhv_tripdata_2025-05.csv: 10,000/2,210,721 dong
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\fhv\year=2025\month=06\fhv_tripdata_2025-06.csv: 10,000/2,231,731 dong
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\fhv\year=2025\month=07\fhv_tripdata_2025-07.csv: 10,000/2,187,536 dong
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\fhv\year=2025\month=08\fhv_tripdata_2025-08.csv: 10,000/2,256,854 dong
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\fhv\year=2025\month=09\fhv_tripdata_2025-09.csv: 10,000/2,149,292 dong
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\fhv\year=2025\month=10\fhv_tripdata_2025-10.csv: 10,000/2,446,615 dong
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\fhv\year=2025\month=11\fhv_tripdata_2025-11.csv: 10,000/2,278,604 dong
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\fhv\year=2025\month=12\fhv_tripdata_2025-12.csv: 10,000/1,926,891 dong
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\fhvhv\year=2025\month=01\fhvhv_tripdata_2025-01.csv: 10,000/20,405,666 dong
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\fhvhv\year=2025\month=02\fhvhv_tripdata_2025-02.csv: 10,000/19,339,461 dong
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\fhvhv\year=2025\month=03\fhvhv_tripdata_2025-03.csv: 10,000/20,536,879 dong
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\fhvhv\year=2025\month=04\fhvhv_tripdata_2025-04.csv: 10,000/19,753,983 dong
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\fhvhv\year=2025\month=05\fhvhv_tripdata_2025-05.csv: 10,000/21,091,193 dong
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\fhvhv\year=2025\month=06\fhvhv_tripdata_2025-06.csv: 10,000/19,868,009 dong
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\fhvhv\year=2025\month=07\fhvhv_tripdata_2025-07.csv: 10,000/19,653,012 dong
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\fhvhv\year=2025\month=08\fhvhv_tripdata_2025-08.csv: 10,000/19,271,461 dong
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\fhvhv\year=2025\month=09\fhvhv_tripdata_2025-09.csv: 10,000/19,434,641 dong
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\fhvhv\year=2025\month=10\fhvhv_tripdata_2025-10.csv: 10,000/21,308,701 dong
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\fhvhv\year=2025\month=11\fhvhv_tripdata_2025-11.csv: 10,000/20,818,240 dong
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\fhvhv\year=2025\month=12\fhvhv_tripdata_2025-12.csv: 10,000/22,108,438 dong
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\green\year=2025\month=01\green_tripdata_2025-01.csv: 10,000/48,326 dong
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\green\year=2025\month=02\green_tripdata_2025-02.csv: 10,000/46,621 dong
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\green\year=2025\month=03\green_tripdata_2025-03.csv: 10,000/51,539 dong
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\green\year=2025\month=04\green_tripdata_2025-04.csv: 10,000/52,132 dong
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\green\year=2025\month=05\green_tripdata_2025-05.csv: 10,000/55,399 dong
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\green\year=2025\month=06\green_tripdata_2025-06.csv: 10,000/49,390 dong
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\green\year=2025\month=07\green_tripdata_2025-07.csv: 10,000/48,205 dong
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\green\year=2025\month=08\green_tripdata_2025-08.csv: 10,000/46,306 dong
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\green\year=2025\month=09\green_tripdata_2025-09.csv: 10,000/48,893 dong
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\green\year=2025\month=10\green_tripdata_2025-10.csv: 10,000/49,416 dong
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\green\year=2025\month=11\green_tripdata_2025-11.csv: 10,000/46,912 dong
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\green\year=2025\month=12\green_tripdata_2025-12.csv: 10,000/48,236 dong
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\yellow\year=2025\month=01\yellow_tripdata_2025-01.csv: 10,000/3,475,226 dong
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\yellow\year=2025\month=02\yellow_tripdata_2025-02.csv: 10,000/3,577,543 dong
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\yellow\year=2025\month=03\yellow_tripdata_2025-03.csv: 10,000/4,145,257 dong
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\yellow\year=2025\month=04\yellow_tripdata_2025-04.csv: 10,000/3,970,553 dong
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\yellow\year=2025\month=05\yellow_tripdata_2025-05.csv: 10,000/4,591,845 dong
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\yellow\year=2025\month=06\yellow_tripdata_2025-06.csv: 10,000/4,322,960 dong
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\yellow\year=2025\month=07\yellow_tripdata_2025-07.csv: 10,000/3,898,963 dong
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\yellow\year=2025\month=08\yellow_tripdata_2025-08.csv: 10,000/3,574,091 dong
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\yellow\year=2025\month=09\yellow_tripdata_2025-09.csv: 10,000/4,251,015 dong
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\yellow\year=2025\month=10\yellow_tripdata_2025-10.csv: 10,000/4,428,699 dong
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\yellow\year=2025\month=11\yellow_tripdata_2025-11.csv: 10,000/4,181,444 dong
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\yellow\year=2025\month=12\yellow_tripdata_2025-12.csv: 10,000/4,305,006 dong
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\lookup\taxi_zone_lookup.csv: 265 dong
+
+TONG KET: converted=49, skipped=0, failed=0, missing=0, rows=480,265
+

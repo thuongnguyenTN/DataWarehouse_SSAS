@@ -1,0 +1,7 @@
+﻿{
+    "Test":  "Bad metadata stops before staging mutation and quarantines CSV+metadata+error",
+    "Passed":  true,
+    "RunId":  "94ddf222-28d7-4bd4-8342-180ade7dce5a",
+    "StagingBefore":  1200000,
+    "StagingAfter":  1200000
+}

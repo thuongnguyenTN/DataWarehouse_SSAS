@@ -1,8 +1,7 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 $modelPath = Join-Path $PSScriptRoot '../NYCTaxi_SSAS'
 $files = Get-ChildItem $modelPath -File | Where-Object Extension -in '.cube','.dim','.dsv','.ds','.partitions','.database','.dwproj'
 foreach ($file in $files) { $null = [xml](Get-Content -LiteralPath $file.FullName -Raw) }
-$cube = [xml](Get-Content (Join-Path $modelPath 'DSV_NYCTaxi.cube') -Raw)
 $dsv = [xml](Get-Content (Join-Path $modelPath 'DSV_NYCTaxi.dsv') -Raw)
 $tables = @{}
 foreach ($table in $dsv.SelectNodes('//*[local-name()="element"][@name]')) {
@@ -19,6 +18,8 @@ foreach ($file in @($files | Where-Object Extension -in '.cube','.dim')) {
         }
     }
 }
+foreach ($cubeFile in $files | Where-Object Extension -eq '.cube') {
+$cube = [xml](Get-Content $cubeFile.FullName -Raw)
 $dimensionIds = @($cube.Cube.Dimensions.Dimension | ForEach-Object { $_.ID })
 foreach ($group in $cube.Cube.MeasureGroups.MeasureGroup) {
     foreach ($dimension in $group.Dimensions.Dimension) {
@@ -30,6 +31,7 @@ $mdx = $cube.Cube.MdxScripts.MdxScript.Commands.Command.Text
 $calculatedNames = @([regex]::Matches($mdx, 'CREATE MEMBER CURRENTCUBE\.\[Measures\]\.\[([^\]]+)\]') | ForEach-Object { $_.Groups[1].Value })
 foreach ($match in [regex]::Matches($mdx, '\[Measures\]\.\[([^\]]+)\]')) {
     if ($match.Groups[1].Value -notin ($measureNames + $calculatedNames)) { throw "Unknown MDX measure: $($match.Groups[1].Value)" }
+}
 }
 Write-Output "PASS: $($files.Count) XML files; source bindings, cube dimension references and MDX measure references."
 Write-Output 'SSAS compilation and processing must still be checked on the target server.'

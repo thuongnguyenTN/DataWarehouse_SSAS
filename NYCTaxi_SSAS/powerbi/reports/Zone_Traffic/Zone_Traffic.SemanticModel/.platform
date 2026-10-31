@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Zone_Traffic"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "7d121d0e-0955-430c-8d67-4006144c15bb"
+  }
+}

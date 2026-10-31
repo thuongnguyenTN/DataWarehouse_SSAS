@@ -1,0 +1,1 @@
+﻿EVALUATE TOPN(20,SUMMARIZECOLUMNS('Dim Service Type'[Service Code],'Dim Service Type'[Service Code.UniqueName],"M1",[Daily Financial Snapshot TotalTrips]))

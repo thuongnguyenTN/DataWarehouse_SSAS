@@ -6,19 +6,7 @@
     <Name>NYCTaxi_SSAS.database</Name>
     <FullPath>NYCTaxi_SSAS.database</FullPath>
   </Database>
-  <Cubes>
-    <ProjectItem>
-      <Name>DSV_NYCTaxi.cube</Name>
-      <FullPath>DSV_NYCTaxi.cube</FullPath>
-      <Dependencies>
-        <ProjectItem>
-          <Name>DSV_NYCTaxi.partitions</Name>
-          <FullPath>DSV_NYCTaxi.partitions</FullPath>
-        </ProjectItem>
-      </Dependencies>
-    </ProjectItem>
-  </Cubes>
-  <Dimensions>
+  <Cubes><ProjectItem><Name>FHV_Trips.cube</Name><FullPath>FHV_Trips.cube</FullPath><Dependencies><ProjectItem><Name>FHV_Trips.partitions</Name><FullPath>FHV_Trips.partitions</FullPath></ProjectItem></Dependencies></ProjectItem><ProjectItem><Name>HVFHV_Trips.cube</Name><FullPath>HVFHV_Trips.cube</FullPath><Dependencies><ProjectItem><Name>HVFHV_Trips.partitions</Name><FullPath>HVFHV_Trips.partitions</FullPath></ProjectItem></Dependencies></ProjectItem><ProjectItem><Name>YellowGreen_Trips.cube</Name><FullPath>YellowGreen_Trips.cube</FullPath><Dependencies><ProjectItem><Name>YellowGreen_Trips.partitions</Name><FullPath>YellowGreen_Trips.partitions</FullPath></ProjectItem></Dependencies></ProjectItem><ProjectItem><Name>Daily_Financial.cube</Name><FullPath>Daily_Financial.cube</FullPath><Dependencies><ProjectItem><Name>Daily_Financial.partitions</Name><FullPath>Daily_Financial.partitions</FullPath></ProjectItem></Dependencies></ProjectItem><ProjectItem><Name>Zone_Traffic.cube</Name><FullPath>Zone_Traffic.cube</FullPath><Dependencies><ProjectItem><Name>Zone_Traffic.partitions</Name><FullPath>Zone_Traffic.partitions</FullPath></ProjectItem></Dependencies></ProjectItem><ProjectItem><Name>Base_Performance.cube</Name><FullPath>Base_Performance.cube</FullPath><Dependencies><ProjectItem><Name>Base_Performance.partitions</Name><FullPath>Base_Performance.partitions</FullPath></ProjectItem></Dependencies></ProjectItem></Cubes><Dimensions>
     <ProjectItem>
       <Name>Dim Time.dim</Name>
       <FullPath>Dim Time.dim</FullPath>

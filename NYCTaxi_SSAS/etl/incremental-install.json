@@ -1,0 +1,8 @@
+﻿{
+    "InstalledAt":  "2026-10-31T13:52:31.5503336+07:00",
+    "Package":  "E:\\NYCTaxi\\NYCTaxi_DW\\NYCTaxi_ETL\\PKG_03_Load_DWH.dtsx",
+    "Backup":  "E:\\NYCTaxi\\NYCTaxi_SSAS\\etl\\backups\\incremental-20261031-135139",
+    "FactLoadExecuted":  false,
+    "BaselineCheckpoints":  0,
+    "Sha256":  "722AA3C3E1EE7601DF9E55AD33B9BC46CDB8DA5539CD71D6A1CF9628D3D7268E"
+}

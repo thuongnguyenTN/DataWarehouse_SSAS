@@ -1,0 +1,59 @@
+[17:43:42] [Dwh] RUNNING: EST_00_Precheck_DWH
+[Dwh] EST_00_Precheck_DWH: SQL vẫn đang xử lý; elapsed=12s
+[Dwh] EST_00_Precheck_DWH: SQL vẫn đang xử lý; elapsed=28s
+[Dwh] EST_00_Precheck_DWH: SQL vẫn đang xử lý; elapsed=43s
+[Dwh] EST_00_Precheck_DWH: SQL vẫn đang xử lý; elapsed=58s
+[Dwh] EST_00_Precheck_DWH: SQL vẫn đang xử lý; elapsed=73s
+[Dwh] EST_00_Precheck_DWH: SQL vẫn đang xử lý; elapsed=88s
+[Dwh] EST_00_Precheck_DWH: SQL vẫn đang xử lý; elapsed=104s
+[Dwh] EST_00_Precheck_DWH: SQL vẫn đang xử lý; elapsed=119s
+[Dwh] EST_00_Precheck_DWH: SQL vẫn đang xử lý; elapsed=134s
+[Dwh] EST_00_Precheck_DWH: SQL vẫn đang xử lý; elapsed=149s
+[Dwh] EST_00_Precheck_DWH: SQL vẫn đang xử lý; elapsed=164s
+[Dwh] EST_00_Precheck_DWH: SQL vẫn đang xử lý; elapsed=179s
+[Dwh] EST_00_Precheck_DWH: SQL vẫn đang xử lý; elapsed=194s
+[Dwh] EST_00_Precheck_DWH: SQL vẫn đang xử lý; elapsed=210s
+[Dwh] EST_00_Precheck_DWH: SQL vẫn đang xử lý; elapsed=225s
+[Dwh] EST_00_Precheck_DWH: SQL vẫn đang xử lý; elapsed=240s
+[Dwh] EST_00_Precheck_DWH: SQL vẫn đang xử lý; elapsed=256s
+[Dwh] EST_00_Precheck_DWH: SQL vẫn đang xử lý; elapsed=271s
+[Dwh] EST_00_Precheck_DWH: SQL vẫn đang xử lý; elapsed=286s
+[17:48:28] [Dwh] SUCCEEDED: EST_00_Precheck_DWH
+[17:48:28] [Dwh] RUNNING: EST_01_Load_Dimensions
+[17:48:34] [Dwh] SUCCEEDED: EST_01_Load_Dimensions
+[17:48:34] [Dwh] RUNNING: EST_02_Load_FactYellowGreen
+[17:48:40] [Dwh] SUCCEEDED: EST_02_Load_FactYellowGreen
+[17:48:40] [Dwh] RUNNING: EST_03_Load_FactFHV
+[Dwh] EST_03_Load_FactFHV: SQL vẫn đang xử lý; elapsed=2s
+[Dwh] EST_03_Load_FactFHV: SQL vẫn đang xử lý; elapsed=17s
+[Dwh] EST_03_Load_FactFHV: SQL vẫn đang xử lý; elapsed=32s
+[Dwh] EST_03_Load_FactFHV: SQL vẫn đang xử lý; elapsed=48s
+[Dwh] EST_03_Load_FactFHV: SQL vẫn đang xử lý; elapsed=63s
+[Dwh] EST_03_Load_FactFHV: SQL vẫn đang xử lý; elapsed=78s
+[Dwh] EST_03_Load_FactFHV: SQL vẫn đang xử lý; elapsed=93s
+[Dwh] EST_03_Load_FactFHV: SQL vẫn đang xử lý; elapsed=109s
+[Dwh] EST_03_Load_FactFHV: SQL vẫn đang xử lý; elapsed=124s
+[Dwh] EST_03_Load_FactFHV: SQL vẫn đang xử lý; elapsed=139s
+[Dwh] EST_03_Load_FactFHV: SQL vẫn đang xử lý; elapsed=154s
+[Dwh] EST_03_Load_FactFHV: SQL vẫn đang xử lý; elapsed=169s
+[Dwh] EST_03_Load_FactFHV: SQL vẫn đang xử lý; elapsed=185s
+[Dwh] EST_03_Load_FactFHV: SQL vẫn đang xử lý; elapsed=200s
+[Dwh] EST_03_Load_FactFHV: SQL vẫn đang xử lý; elapsed=215s
+[Dwh] EST_03_Load_FactFHV: SQL vẫn đang xử lý; elapsed=230s
+[Dwh] EST_03_Load_FactFHV: SQL vẫn đang xử lý; elapsed=246s
+[Dwh] EST_03_Load_FactFHV: SQL vẫn đang xử lý; elapsed=261s
+[Dwh] EST_03_Load_FactFHV: SQL vẫn đang xử lý; elapsed=276s
+[Dwh] EST_03_Load_FactFHV: SQL vẫn đang xử lý; elapsed=291s
+[Dwh] EST_03_Load_FactFHV: SQL vẫn đang xử lý; elapsed=307s
+[Dwh] EST_03_Load_FactFHV: SQL vẫn đang xử lý; elapsed=322s
+[Dwh] EST_03_Load_FactFHV: SQL vẫn đang xử lý; elapsed=337s
+[Dwh] EST_03_Load_FactFHV: SQL vẫn đang xử lý; elapsed=352s
+[17:54:44] [Dwh] SUCCEEDED: EST_03_Load_FactFHV
+[17:54:44] [Dwh] RUNNING: EST_04_Load_FactHVFHV
+[17:54:46] [Dwh] SUCCEEDED: EST_04_Load_FactHVFHV
+[17:54:46] [Dwh] RUNNING: EST_05_Validate_DWH
+[17:54:47] [Dwh] SUCCEEDED: EST_05_Validate_DWH
+[17:54:47] [Dwh] RUNNING: StageComplete
+[17:54:48] [Dwh] SUCCEEDED: StageComplete
+[17:54:48] [Dwh] SUCCEEDED: Invocation
+ETL Dwh completed. RunId=7871e8ed-65e1-42d3-b871-9a5f4b73a1e7; logs=E:\NYCTaxi\NYCTaxi_SSAS\etl\logs\7871e8ed-65e1-42d3-b871-9a5f4b73a1e7

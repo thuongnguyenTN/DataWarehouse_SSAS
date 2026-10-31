@@ -1,0 +1,1 @@
+{"RunId":"618e0935-779b-4819-9b31-075d8cdd67b5","Stage":"Dwh","Task":"StartRunner","Status":"FAILED","Message":"fixture stderr","HeartbeatUtc":"2026-10-31T08:43:48.7342437Z","TaskStartedUtc":"2026-10-31T08:43:48.7342437Z","Rows":0,"TotalRows":0,"LogFolder":"E:\\NYCTaxi\\NYCTaxi_SSAS\\etl\\tests\\master-fixture-logs\\618e0935-779b-4819-9b31-075d8cdd67b5"}

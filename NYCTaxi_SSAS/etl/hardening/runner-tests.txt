@@ -1,0 +1,2 @@
+PASS async SQL scalar, reader, heartbeat, native stdout
+PASS structured transient SQL error survives child process

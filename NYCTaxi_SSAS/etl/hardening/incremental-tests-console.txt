@@ -1,0 +1,22 @@
+PASS: Taxi zone lookup is excluded from Fact checkpoint planning
+PASS: Initial load creates five file checkpoints across all services
+PASS: Duplicate payload within and across files is preserved
+PASS: New 1000-row file scopes dimension input to one pending file
+PASS: New 1000-row file processes one file only
+PASS: New file preserves 1000 identical business rows
+PASS: Unchanged rerun processes zero files
+PASS: Correction processes only the changed historical file
+PASS: Unrelated duplicate file retains its Fact key
+PASS: Rejected historical row removed and audit retained
+PASS: Corrected duration matches valid Clean payload
+PASS: Zero-valid-row file removes old facts and checkpoints zero
+PASS: Injected failure rolls back Fact writes
+PASS: Failed file is logged and retried
+PASS: Retry completion becomes a no-op checkpoint
+PASS: Missing non-null location is tracked for remapping
+PASS: New dimension mapping reprocesses affected Unknown file
+PASS: SCD1 label change does not reload Fact
+PASS: Explicit force request reloads one file
+PASS: Legacy hash adoption touches only uncheckpointed file
+PASS: Legacy hash adoption preserves counts and business total
+PASS: Final file coverage validation passes

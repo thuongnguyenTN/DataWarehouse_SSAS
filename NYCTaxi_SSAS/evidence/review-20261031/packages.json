@@ -1,0 +1,63 @@
+[
+  {
+    "package": "PKG_00_Master.dtsx",
+    "tasks": [
+      "EPT_00_Open_Monitor",
+      "EPT_01_Extract",
+      "EPT_02_Transform",
+      "EPT_03_Dwh",
+      "EPT_04_Aggregates",
+      "EPT_05_Ssas",
+      "EPT_99_Complete",
+      "EST_90_Report_Original_Error"
+    ],
+    "sha256": "303537404096b923ca807925325f7751c151ae1dfb1e5d8465d710a47447d1df"
+  },
+  {
+    "package": "PKG_01_Extract_Stage.dtsx",
+    "tasks": [
+      "EPT_01_Download_Parquet",
+      "EPT_02_Convert_To_CSV",
+      "EST_03_Prepare_Staging",
+      "FLC_04_Load_Yellow_Files",
+      "FLC_05_Load_Green_Files",
+      "FLC_06_Load_FHV_Files",
+      "FLC_07_Load_FHVHV_Files",
+      "FLC_08_Load_TaxiZone_Files",
+      "EST_09_Validate_Staging"
+    ],
+    "sha256": "1147b2eddf591ca7354d19a895c70fbea47723740720d459ab9333e5cfff000f"
+  },
+  {
+    "package": "PKG_02_Transform_Clean.dtsx",
+    "tasks": [
+      "EST_01_Setup_Clean",
+      "EST_02_Transform_TaxiZone",
+      "EST_03_Transform_YELLOW",
+      "EST_04_Transform_GREEN",
+      "EST_05_Transform_FHV",
+      "EST_06_Transform_FHVHV",
+      "EST_07_Validate_Transform"
+    ],
+    "sha256": "3d94a5831559112d615e080083e5bac39938cf0a7825383632f7845144173ad1"
+  },
+  {
+    "package": "PKG_03_Load_DWH.dtsx",
+    "tasks": [
+      "EST_00_Precheck_DWH",
+      "EST_01_Load_Dimensions",
+      "EST_02_Load_FactYellowGreen",
+      "EST_03_Load_FactFHV",
+      "EST_04_Load_FactHVFHV",
+      "EST_05_Validate_DWH"
+    ],
+    "sha256": "a34c1592452c2687ebf42920901acb36b30bca5ced8df42a182f5d270beb2b3c"
+  },
+  {
+    "package": "PKG_04_Load_Aggregates.dtsx",
+    "tasks": [
+      "EST_00_Atomic_Rebuild_And_Validate"
+    ],
+    "sha256": "a93f5cc9c00034bf62feba66d9f50803f978dd6be0f8f20e383eeb9b1d63ec92"
+  }
+]

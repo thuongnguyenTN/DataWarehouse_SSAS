@@ -1,0 +1,7 @@
+FHV Trips: bindings tested
+HVFHV Trips: bindings tested
+YellowGreen Trips: bindings tested
+Daily Financial: bindings tested
+Zone Traffic: bindings tested
+Base Performance: bindings tested
+Checks=70; failures=0

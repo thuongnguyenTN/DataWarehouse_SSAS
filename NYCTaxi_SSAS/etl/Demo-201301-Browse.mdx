@@ -1,0 +1,5 @@
+-- SSMS: connect to Analysis Services, select NYCTaxi_SSAS, New MDX Query.
+SELECT {[Measures].[Trip Count - Fact Yellow Green Trips],
+        [Measures].[Total Amount]} ON COLUMNS
+FROM [YellowGreen Trips]
+WHERE ([Pickup Date].[Month Number].&[2013]&[1]);

@@ -1,0 +1,1 @@
+{"RunId":"42e00f86-e012-4f24-b330-515f83c49c40","Stage":"Master","Task":"MasterComplete","Status":"SUCCEEDED","Message":"Toàn luồng hoàn tất.","HeartbeatUtc":"2026-10-31T10:08:25.7923578Z","TaskStartedUtc":"2026-10-31T10:08:25.7923578Z","Rows":0,"TotalRows":0,"LogFolder":"E:\\NYCTaxi\\NYCTaxi_SSAS\\etl\\logs\\42e00f86-e012-4f24-b330-515f83c49c40"}

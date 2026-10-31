@@ -1,0 +1,62 @@
+﻿{
+    "CompletedAt":  "2026-10-31T14:22:49.9052486+07:00",
+    "RawPreserved":  true,
+    "RawFiles":  142,
+    "RawBytes":  19818519269,
+    "SsasState":  "Unprocessed",
+    "ClearedFolders":  [
+                           {
+                               "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\csv",
+                               "RemovedTopLevelEntries":  5
+                           },
+                           {
+                               "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\quarantine",
+                               "RemovedTopLevelEntries":  0
+                           },
+                           {
+                               "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\archive",
+                               "RemovedTopLevelEntries":  0
+                           },
+                           {
+                               "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\reject",
+                               "RemovedTopLevelEntries":  0
+                           },
+                           {
+                               "Path":  "E:\\NYCTaxi\\NYCTaxi_SSAS\\etl\\logs",
+                               "RemovedTopLevelEntries":  17
+                           },
+                           {
+                               "Path":  "E:\\NYCTaxi\\NYCTaxi_SSAS\\etl\\alerts",
+                               "RemovedTopLevelEntries":  10
+                           },
+                           {
+                               "Path":  "E:\\NYCTaxi\\NYCTaxi_SSAS\\etl\\monthly-logs",
+                               "RemovedTopLevelEntries":  0
+                           }
+                       ],
+    "DroppedFixtureDatabases":  [
+                                    "NYCTaxi_DWH_IncTest_20261031134244",
+                                    "NYCTaxi_DWH_IncTest_20261031134810",
+                                    "NYCTaxi_DWH_IncTest_20261031134919",
+                                    "NYCTaxi_DWH_IncTest_20261031135525",
+                                    "NYCTaxi_Staging_IncTest_20261031134244",
+                                    "NYCTaxi_Staging_IncTest_20261031134810",
+                                    "NYCTaxi_Staging_IncTest_20261031134919",
+                                    "NYCTaxi_Staging_IncTest_20261031135525"
+                                ],
+    "ReferenceSeedsPreserved":  {
+                                    "Dim_Date":  5849,
+                                    "Dim_RateCode":  8,
+                                    "Dim_TaxiFlags":  3,
+                                    "Dim_HVFHSProvider":  4,
+                                    "Dim_PassengerGroup":  6,
+                                    "Dim_FHVFlags":  3,
+                                    "Dim_PaymentType":  8,
+                                    "Dim_ServiceType":  5,
+                                    "Dim_HVFHVFlags":  18,
+                                    "Dim_TripType":  3,
+                                    "Dim_Vendor":  5,
+                                    "Dim_Time":  1441
+                                },
+    "EtlStarted":  false
+}

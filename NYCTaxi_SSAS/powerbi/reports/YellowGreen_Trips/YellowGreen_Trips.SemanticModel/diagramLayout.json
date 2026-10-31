@@ -1,0 +1,214 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 757.09793200538638,
+            "y": 763.85376163083106
+          },
+          "nodeIndex": "Fact Yellow Green Trips",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1533.8857816573386,
+            "y": 773.53724011486861
+          },
+          "nodeIndex": "Measures",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1230.5290373905007,
+            "y": 1062.8723416717644
+          },
+          "nodeIndex": "Dim Load Batch",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1299.8857816573386,
+            "y": 831.99235557534587
+          },
+          "nodeIndex": "Dim Passenger Group",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 393.21938185171916,
+            "y": 328.88016304918824
+          },
+          "nodeIndex": "Dim Payment Type",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1194.8771463906007,
+            "y": 627.06324735447288
+          },
+          "nodeIndex": "Dim Rate Code",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 683.05104282232423,
+            "y": 109.37463552252666
+          },
+          "nodeIndex": "Dim Service Type",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1093.0077231282844,
+            "y": 1418.3251396168589
+          },
+          "nodeIndex": "Dim Taxi Flags",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 172.88133457642516,
+            "y": 662.84984256548637
+          },
+          "nodeIndex": "Dim Trip Type",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 818.775166408355,
+            "y": 1189.1763296958331
+          },
+          "nodeIndex": "Dim Vendor",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 980.93961663286234,
+            "y": 208.67345276640003
+          },
+          "nodeIndex": "Dropoff Date",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 50,
+            "y": 307.18152443577515
+          },
+          "nodeIndex": "Dropoff Location",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 550.2586801022386,
+            "y": 1421.0744802297372
+          },
+          "nodeIndex": "Dropoff Time",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 54.531831171861086,
+            "y": -50
+          },
+          "nodeIndex": "Pickup Date",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 470.91595316348406,
+            "y": 1065.2913415717903
+          },
+          "nodeIndex": "Pickup Location",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 694.19339403173581,
+            "y": 387.32323256887889
+          },
+          "nodeIndex": "Pickup Time",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

@@ -1,0 +1,1 @@
+﻿EVALUATE TOPN(20,SUMMARIZECOLUMNS('Pickup Time'[Time Band],'Pickup Time'[Time Band.UniqueName],"M1",[Trip Count - Fact HVFHV Trips]))

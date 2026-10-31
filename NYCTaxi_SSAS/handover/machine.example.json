@@ -1,0 +1,9 @@
+{
+  "Server": "MAYMOI\\MSSQLSV",
+  "RepoRoot": "C:\\NYCTaxi\\NYCTaxi_SSAS",
+  "SsisRoot": "C:\\NYCTaxi\\NYCTaxi_ETL",
+  "DataRoot": "C:\\NYCTaxi\\data",
+  "PythonExe": "C:\\Users\\TEN_USER\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+  "AmoRoot": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Business Intelligence Semantic Model\\1.0",
+  "AdomdDll": "C:\\Program Files\\Microsoft.NET\\ADOMD.NET\\160\\Microsoft.AnalysisServices.AdomdClient.dll"
+}

@@ -1,0 +1,1 @@
+DECLARE @r nvarchar(64)=?, @e nvarchar(4000)=?; INSERT etl.PackageError(ExecutionId,PackageName,SourceName,ErrorCode,ErrorDescription) VALUES(@r,N'PKG_00_Master',N'Master failure branch',55990,@e); DECLARE @m nvarchar(2047)=LEFT(CONCAT(N'Master failed. RunId=',@r,N'. ',COALESCE(NULLIF(@e,N''),N'See local ETL monitor/logs.')),2000); RAISERROR(N'%s',16,1,@m);

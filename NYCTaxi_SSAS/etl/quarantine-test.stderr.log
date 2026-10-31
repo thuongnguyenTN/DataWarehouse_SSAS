@@ -1,0 +1,7 @@
+﻿E:\NYCTaxi\NYCTaxi_SSAS\etl\Invoke-NYCTaxiPipeline.ps1 : ETL FAILED. RunId=94ddf222-28d7-4bd4-8342-180ade7dce5a. 
+Process inspect-yellow-yellow_tripdata_2025-01 exited 1: Invalid CSV metadata
+ . Logs=E:\NYCTaxi\NYCTaxi_SSAS\etl\logs\94ddf222-28d7-4bd4-8342-180ade7dce5a
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,Invoke-NYCTaxiPipeline.ps1
+ 
+

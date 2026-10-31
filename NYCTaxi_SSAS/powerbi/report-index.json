@@ -1,0 +1,80 @@
+[
+  {
+    "cube": "YellowGreen_Trips",
+    "title": "YellowGreen Trips",
+    "path": "reports\\YellowGreen_Trips\\YellowGreen_Trips.pbip",
+    "pages": [
+      {
+        "name": "taxi_overview",
+        "label": "Taxi truyền thống"
+      },
+      {
+        "name": "taxi_tips",
+        "label": "Hành vi & tiền tip"
+      }
+    ]
+  },
+  {
+    "cube": "HVFHV_Trips",
+    "title": "HVFHV Trips",
+    "path": "reports\\HVFHV_Trips\\HVFHV_Trips.pbip",
+    "pages": [
+      {
+        "name": "hvfhv_overview",
+        "label": "Xe công nghệ"
+      },
+      {
+        "name": "hvfhv_fees",
+        "label": "Phí & thu nhập"
+      }
+    ]
+  },
+  {
+    "cube": "FHV_Trips",
+    "title": "FHV Trips",
+    "path": "reports\\FHV_Trips\\FHV_Trips.pbip",
+    "pages": [
+      {
+        "name": "fhv_overview",
+        "label": "FHV truyền thống"
+      }
+    ]
+  },
+  {
+    "cube": "Daily_Financial",
+    "title": "Daily Financial",
+    "path": "reports\\Daily_Financial\\Daily_Financial.pbip",
+    "pages": [
+      {
+        "name": "financial",
+        "label": "Tài chính theo ngày"
+      }
+    ]
+  },
+  {
+    "cube": "Zone_Traffic",
+    "title": "Zone Traffic",
+    "path": "reports\\Zone_Traffic\\Zone_Traffic.pbip",
+    "pages": [
+      {
+        "name": "traffic",
+        "label": "Nhu cầu theo khu vực"
+      },
+      {
+        "name": "traffic_detail",
+        "label": "Chi tiết không gian & giờ"
+      }
+    ]
+  },
+  {
+    "cube": "Base_Performance",
+    "title": "Base Performance",
+    "path": "reports\\Base_Performance\\Base_Performance.pbip",
+    "pages": [
+      {
+        "name": "base",
+        "label": "Hiệu suất điều phối"
+      }
+    ]
+  }
+]

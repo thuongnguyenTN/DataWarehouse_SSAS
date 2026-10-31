@@ -1,0 +1,2 @@
+Confirmed: Processed; 15 dimensions, 6 groups, 45 processed partitions. Edition=Developer64.
+Browse MDX: 6 queries passed.

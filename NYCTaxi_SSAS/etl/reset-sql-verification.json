@@ -1,0 +1,182 @@
+[
+  {
+    "DbName": "DWH",
+    "SchemaName": "etl",
+    "TableName": "AggregateWatermark",
+    "RowCount": 7
+  },
+  {
+    "DbName": "DWH",
+    "SchemaName": "etl",
+    "TableName": "DwhFileLog",
+    "RowCount": 0
+  },
+  {
+    "DbName": "DWH",
+    "SchemaName": "dbo",
+    "TableName": "Fact_Base_Performance_Snapshot",
+    "RowCount": 0
+  },
+  {
+    "DbName": "DWH",
+    "SchemaName": "dbo",
+    "TableName": "Fact_Daily_Financial_Snapshot",
+    "RowCount": 0
+  },
+  {
+    "DbName": "DWH",
+    "SchemaName": "dbo",
+    "TableName": "Fact_FHV_Trips",
+    "RowCount": 0
+  },
+  {
+    "DbName": "DWH",
+    "SchemaName": "dbo",
+    "TableName": "Fact_HVFHV_Trips",
+    "RowCount": 0
+  },
+  {
+    "DbName": "DWH",
+    "SchemaName": "dbo",
+    "TableName": "Fact_YellowGreen_Trips",
+    "RowCount": 0
+  },
+  {
+    "DbName": "DWH",
+    "SchemaName": "dbo",
+    "TableName": "Fact_Zone_Traffic_Snapshot",
+    "RowCount": 0
+  },
+  {
+    "DbName": "DWH",
+    "SchemaName": "etl",
+    "TableName": "FactChangeAudit",
+    "RowCount": 0
+  },
+  {
+    "DbName": "DWH",
+    "SchemaName": "etl",
+    "TableName": "LoadStepLog",
+    "RowCount": 0
+  },
+  {
+    "DbName": "DWH",
+    "SchemaName": "etl",
+    "TableName": "PackageError",
+    "RowCount": 0
+  },
+  {
+    "DbName": "DWH",
+    "SchemaName": "etl",
+    "TableName": "PipelineRun",
+    "RowCount": 0
+  },
+  {
+    "DbName": "DWH",
+    "SchemaName": "etl",
+    "TableName": "PipelineStep",
+    "RowCount": 0
+  },
+  {
+    "DbName": "Staging",
+    "SchemaName": "etl",
+    "TableName": "ExtractFileLog",
+    "RowCount": 0
+  },
+  {
+    "DbName": "Staging",
+    "SchemaName": "stg",
+    "TableName": "FHVHVTrip",
+    "RowCount": 0
+  },
+  {
+    "DbName": "Staging",
+    "SchemaName": "wrk",
+    "TableName": "FHVHVTrip",
+    "RowCount": 0
+  },
+  {
+    "DbName": "Staging",
+    "SchemaName": "stg",
+    "TableName": "FHVTrip",
+    "RowCount": 0
+  },
+  {
+    "DbName": "Staging",
+    "SchemaName": "wrk",
+    "TableName": "FHVTrip",
+    "RowCount": 0
+  },
+  {
+    "DbName": "Staging",
+    "SchemaName": "stg",
+    "TableName": "GreenTrip",
+    "RowCount": 0
+  },
+  {
+    "DbName": "Staging",
+    "SchemaName": "wrk",
+    "TableName": "GreenTrip",
+    "RowCount": 0
+  },
+  {
+    "DbName": "Staging",
+    "SchemaName": "etl",
+    "TableName": "LoadedFile",
+    "RowCount": 0
+  },
+  {
+    "DbName": "Staging",
+    "SchemaName": "clean",
+    "TableName": "TaxiZone",
+    "RowCount": 0
+  },
+  {
+    "DbName": "Staging",
+    "SchemaName": "stg",
+    "TableName": "TaxiZone",
+    "RowCount": 0
+  },
+  {
+    "DbName": "Staging",
+    "SchemaName": "wrk",
+    "TableName": "TaxiZone",
+    "RowCount": 0
+  },
+  {
+    "DbName": "Staging",
+    "SchemaName": "clean",
+    "TableName": "TaxiZoneReject",
+    "RowCount": 0
+  },
+  {
+    "DbName": "Staging",
+    "SchemaName": "etl",
+    "TableName": "TransformFileLog",
+    "RowCount": 0
+  },
+  {
+    "DbName": "Staging",
+    "SchemaName": "etl",
+    "TableName": "TransformHistory",
+    "RowCount": 0
+  },
+  {
+    "DbName": "Staging",
+    "SchemaName": "clean",
+    "TableName": "Trip",
+    "RowCount": 0
+  },
+  {
+    "DbName": "Staging",
+    "SchemaName": "stg",
+    "TableName": "YellowTrip",
+    "RowCount": 0
+  },
+  {
+    "DbName": "Staging",
+    "SchemaName": "wrk",
+    "TableName": "YellowTrip",
+    "RowCount": 0
+  }
+]

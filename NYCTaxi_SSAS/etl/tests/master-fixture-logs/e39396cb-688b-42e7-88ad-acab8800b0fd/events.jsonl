@@ -1,0 +1,1 @@
+{"Utc":"2026-10-31T10:27:17.3649112Z","RunId":"e39396cb-688b-42e7-88ad-acab8800b0fd","Stage":"Extract","Task":"MasterController","Status":"FAILED","Detail":"Không thể bỏ qua stage trước: checkpoint missing\r\n"}

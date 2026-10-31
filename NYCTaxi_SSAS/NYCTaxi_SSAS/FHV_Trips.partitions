@@ -1,0 +1,307 @@
+<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine" dwd:design-time-name="ef3e0b90-8a10-4de6-8af8-8b12486e959a">
+  <ID>FHV_Trips</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Fact FHV Trips</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="834f509b-1fd8-43ba-aeb1-92c65310280a">
+          <ID>Fact FHV Trips 202501</ID>
+          <Name>Fact FHV Trips 202501</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="f98f1d28-163b-4fdd-b34e-a1b3a10a5034">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_FHV_Trips] WHERE PickupDateKey &gt;= 20250101 AND PickupDateKey &lt; 20250201</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="ef497b27-4e47-4612-87ca-121a08e61701">
+          <ID>Fact FHV Trips 202502</ID>
+          <Name>Fact FHV Trips 202502</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="3a8dc84e-27f5-4de1-84c8-9d744451867b">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_FHV_Trips] WHERE PickupDateKey &gt;= 20250201 AND PickupDateKey &lt; 20250301</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="3a4db0e8-27d1-4798-a6f5-79411662e9bc">
+          <ID>Fact FHV Trips 202503</ID>
+          <Name>Fact FHV Trips 202503</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="16cd065c-e74e-4995-b9a2-39dbb5bfb86f">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_FHV_Trips] WHERE PickupDateKey &gt;= 20250301 AND PickupDateKey &lt; 20250401</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="2d6e9356-4b1b-4952-8137-c6fdf9a45aa0">
+          <ID>Fact FHV Trips 202504</ID>
+          <Name>Fact FHV Trips 202504</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="70a9acb8-808d-4bf5-9d79-04a59495563d">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_FHV_Trips] WHERE PickupDateKey &gt;= 20250401 AND PickupDateKey &lt; 20250501</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="37d9bcf1-6c3a-4113-9b14-c06e2b453b8b">
+          <ID>Fact FHV Trips 202505</ID>
+          <Name>Fact FHV Trips 202505</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="b1000ee3-5dac-4e6a-b870-bae73899ebd6">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_FHV_Trips] WHERE PickupDateKey &gt;= 20250501 AND PickupDateKey &lt; 20250601</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="2fce5140-2205-4e83-b525-565deacf2965">
+          <ID>Fact FHV Trips 202506</ID>
+          <Name>Fact FHV Trips 202506</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="0e186267-ab67-4e51-9b69-e1a17a259704">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_FHV_Trips] WHERE PickupDateKey &gt;= 20250601 AND PickupDateKey &lt; 20250701</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="a9665daf-3cbe-466b-9618-82bbbbdb74cc">
+          <ID>Fact FHV Trips 202507</ID>
+          <Name>Fact FHV Trips 202507</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="b1632dd4-1fbf-4513-9699-40d284850386">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_FHV_Trips] WHERE PickupDateKey &gt;= 20250701 AND PickupDateKey &lt; 20250801</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="a93317e9-507c-4bdc-bdca-d14d59aba445">
+          <ID>Fact FHV Trips 202508</ID>
+          <Name>Fact FHV Trips 202508</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="b27faae7-741f-419f-822a-93a6ce710107">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_FHV_Trips] WHERE PickupDateKey &gt;= 20250801 AND PickupDateKey &lt; 20250901</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="92be4393-daeb-464b-bd8d-db2743f55a2f">
+          <ID>Fact FHV Trips 202509</ID>
+          <Name>Fact FHV Trips 202509</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="5f1a5c7f-8d54-445c-a7df-dbb390ff28b0">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_FHV_Trips] WHERE PickupDateKey &gt;= 20250901 AND PickupDateKey &lt; 20251001</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="5b7bdd7f-33b3-4e6b-809f-e2fee1f49e2f">
+          <ID>Fact FHV Trips 202510</ID>
+          <Name>Fact FHV Trips 202510</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="60b31237-ae77-42b0-abe0-145dcabbb88f">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_FHV_Trips] WHERE PickupDateKey &gt;= 20251001 AND PickupDateKey &lt; 20251101</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="26f01038-5d96-419e-90d4-67cc1baa0593">
+          <ID>Fact FHV Trips 202511</ID>
+          <Name>Fact FHV Trips 202511</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="ed215e35-6217-4bc4-a30f-fdb9ecaf4531">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_FHV_Trips] WHERE PickupDateKey &gt;= 20251101 AND PickupDateKey &lt; 20251201</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="8b4184e8-40f4-4ce0-af92-e76540e544d0">
+          <ID>Fact FHV Trips 202512</ID>
+          <Name>Fact FHV Trips 202512</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="fa620538-c58d-4350-bc03-8e9116d25e49">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_FHV_Trips] WHERE PickupDateKey &gt;= 20251201 AND PickupDateKey &lt; 20260101</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="0ba83aa4-7552-4353-ab6c-fa0cd66ce241">
+          <ID>Fact FHV Trips Other Dates</ID>
+          <Name>Fact FHV Trips Other Dates</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="cee5dcdc-902f-40c0-b928-51ef5f42583c">
+            <DataSourceID>DS_NYCTaxi_DWH</DataSourceID>
+            <QueryDefinition>SELECT * FROM dbo.[Fact_FHV_Trips] WHERE NOT ((PickupDateKey &gt;= 20250101 AND PickupDateKey &lt; 20250201) OR (PickupDateKey &gt;= 20250201 AND PickupDateKey &lt; 20250301) OR (PickupDateKey &gt;= 20250301 AND PickupDateKey &lt; 20250401) OR (PickupDateKey &gt;= 20250401 AND PickupDateKey &lt; 20250501) OR (PickupDateKey &gt;= 20250501 AND PickupDateKey &lt; 20250601) OR (PickupDateKey &gt;= 20250601 AND PickupDateKey &lt; 20250701) OR (PickupDateKey &gt;= 20250701 AND PickupDateKey &lt; 20250801) OR (PickupDateKey &gt;= 20250801 AND PickupDateKey &lt; 20250901) OR (PickupDateKey &gt;= 20250901 AND PickupDateKey &lt; 20251001) OR (PickupDateKey &gt;= 20251001 AND PickupDateKey &lt; 20251101) OR (PickupDateKey &gt;= 20251101 AND PickupDateKey &lt; 20251201) OR (PickupDateKey &gt;= 20251201 AND PickupDateKey &lt; 20260101))</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>Operational</AggregationDesignID>
+        </Partition>
+      </Partitions>
+      <AggregationDesigns>
+        <AggregationDesign>
+          <ID>Operational</ID>
+          <Name>Operational</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <Dimensions>
+            <Dimension>
+              <CubeDimensionID>Pickup Date</CubeDimensionID>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Dropoff Date</CubeDimensionID>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Pickup Time</CubeDimensionID>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Dropoff Time</CubeDimensionID>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Pickup Location</CubeDimensionID>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Dropoff Location</CubeDimensionID>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Dim Service Type</CubeDimensionID>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Dispatch Base</CubeDimensionID>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Affiliated Base</CubeDimensionID>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Dim FHV Flags</CubeDimensionID>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Dim Load Batch</CubeDimensionID>
+            </Dimension>
+          </Dimensions>
+          <Aggregations>
+            <Aggregation>
+              <ID>Month Service</ID>
+              <Name>Month Service</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Pickup Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Month Number</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Dim Service Type</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Service Type Key</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Date Borough</ID>
+              <Name>Date Borough</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Pickup Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Date Key</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Pickup Location</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Borough</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+          </Aggregations>
+        </AggregationDesign>
+      </AggregationDesigns>
+    </MeasureGroup>
+    </MeasureGroups>
+</Cube>

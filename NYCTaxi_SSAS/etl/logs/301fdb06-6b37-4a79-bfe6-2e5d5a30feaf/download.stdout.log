@@ -1,0 +1,54 @@
+﻿Khoang thang: 2025-01 -> 2025-12
+Thu muc raw : D:\Kho_Du_lieu\NYCTaxi\raw
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\yellow\year=2025\month=01\yellow_tripdata_2025-01.parquet
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\yellow\year=2025\month=02\yellow_tripdata_2025-02.parquet
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\yellow\year=2025\month=03\yellow_tripdata_2025-03.parquet
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\yellow\year=2025\month=04\yellow_tripdata_2025-04.parquet
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\yellow\year=2025\month=05\yellow_tripdata_2025-05.parquet
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\yellow\year=2025\month=06\yellow_tripdata_2025-06.parquet
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\yellow\year=2025\month=07\yellow_tripdata_2025-07.parquet
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\yellow\year=2025\month=08\yellow_tripdata_2025-08.parquet
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\yellow\year=2025\month=09\yellow_tripdata_2025-09.parquet
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\yellow\year=2025\month=10\yellow_tripdata_2025-10.parquet
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\yellow\year=2025\month=11\yellow_tripdata_2025-11.parquet
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\yellow\year=2025\month=12\yellow_tripdata_2025-12.parquet
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\green\year=2025\month=01\green_tripdata_2025-01.parquet
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\green\year=2025\month=02\green_tripdata_2025-02.parquet
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\green\year=2025\month=03\green_tripdata_2025-03.parquet
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\green\year=2025\month=04\green_tripdata_2025-04.parquet
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\green\year=2025\month=05\green_tripdata_2025-05.parquet
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\green\year=2025\month=06\green_tripdata_2025-06.parquet
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\green\year=2025\month=07\green_tripdata_2025-07.parquet
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\green\year=2025\month=08\green_tripdata_2025-08.parquet
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\green\year=2025\month=09\green_tripdata_2025-09.parquet
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\green\year=2025\month=10\green_tripdata_2025-10.parquet
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\green\year=2025\month=11\green_tripdata_2025-11.parquet
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\green\year=2025\month=12\green_tripdata_2025-12.parquet
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\fhv\year=2025\month=01\fhv_tripdata_2025-01.parquet
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\fhv\year=2025\month=02\fhv_tripdata_2025-02.parquet
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\fhv\year=2025\month=03\fhv_tripdata_2025-03.parquet
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\fhv\year=2025\month=04\fhv_tripdata_2025-04.parquet
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\fhv\year=2025\month=05\fhv_tripdata_2025-05.parquet
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\fhv\year=2025\month=06\fhv_tripdata_2025-06.parquet
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\fhv\year=2025\month=07\fhv_tripdata_2025-07.parquet
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\fhv\year=2025\month=08\fhv_tripdata_2025-08.parquet
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\fhv\year=2025\month=09\fhv_tripdata_2025-09.parquet
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\fhv\year=2025\month=10\fhv_tripdata_2025-10.parquet
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\fhv\year=2025\month=11\fhv_tripdata_2025-11.parquet
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\fhv\year=2025\month=12\fhv_tripdata_2025-12.parquet
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\fhvhv\year=2025\month=01\fhvhv_tripdata_2025-01.parquet
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\fhvhv\year=2025\month=02\fhvhv_tripdata_2025-02.parquet
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\fhvhv\year=2025\month=03\fhvhv_tripdata_2025-03.parquet
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\fhvhv\year=2025\month=04\fhvhv_tripdata_2025-04.parquet
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\fhvhv\year=2025\month=05\fhvhv_tripdata_2025-05.parquet
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\fhvhv\year=2025\month=06\fhvhv_tripdata_2025-06.parquet
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\fhvhv\year=2025\month=07\fhvhv_tripdata_2025-07.parquet
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\fhvhv\year=2025\month=08\fhvhv_tripdata_2025-08.parquet
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\fhvhv\year=2025\month=09\fhvhv_tripdata_2025-09.parquet
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\fhvhv\year=2025\month=10\fhvhv_tripdata_2025-10.parquet
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\fhvhv\year=2025\month=11\fhvhv_tripdata_2025-11.parquet
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\fhvhv\year=2025\month=12\fhvhv_tripdata_2025-12.parquet
+[BO QUA] Da co file hop le: D:\Kho_Du_lieu\NYCTaxi\raw\lookup\taxi_zone_lookup.csv
+
+TONG KET: downloaded=0, skipped=49, missing=0, failed=0
+

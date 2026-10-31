@@ -1,0 +1,1147 @@
+[
+  {
+    "cube": "YellowGreen_Trips",
+    "table": "Pickup Date",
+    "property": "Year Number",
+    "measure": false,
+    "groupBy": []
+  },
+  {
+    "cube": "YellowGreen_Trips",
+    "table": "Pickup Date",
+    "property": "Month Number",
+    "measure": false,
+    "groupBy": [
+      "Month Number.Key0",
+      "Month Number.Key1"
+    ]
+  },
+  {
+    "cube": "YellowGreen_Trips",
+    "table": "Dim Service Type",
+    "property": "Service Code",
+    "measure": false,
+    "groupBy": [
+      "Service Code.UniqueName"
+    ]
+  },
+  {
+    "cube": "YellowGreen_Trips",
+    "table": "Pickup Location",
+    "property": "Borough",
+    "measure": false,
+    "groupBy": [
+      "Borough.UniqueName"
+    ]
+  },
+  {
+    "cube": "YellowGreen_Trips",
+    "table": "Fact Yellow Green Trips",
+    "property": "Trip Count - Fact Yellow Green Trips",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "YellowGreen_Trips",
+    "table": "Fact Yellow Green Trips",
+    "property": "Total Amount",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "YellowGreen_Trips",
+    "table": "Measures",
+    "property": "YellowGreen Average Fare Per Trip",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "YellowGreen_Trips",
+    "table": "Measures",
+    "property": "YellowGreen Tip Percentage",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "YellowGreen_Trips",
+    "table": "Pickup Date",
+    "property": "Full Date",
+    "measure": false,
+    "groupBy": [
+      "Full Date.Key0"
+    ]
+  },
+  {
+    "cube": "YellowGreen_Trips",
+    "table": "Fact Yellow Green Trips",
+    "property": "Trip Count - Fact Yellow Green Trips",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "YellowGreen_Trips",
+    "table": "Pickup Time",
+    "property": "Hour Number",
+    "measure": false,
+    "groupBy": [
+      "Hour Number.UniqueName"
+    ]
+  },
+  {
+    "cube": "YellowGreen_Trips",
+    "table": "Fact Yellow Green Trips",
+    "property": "Trip Count - Fact Yellow Green Trips",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "YellowGreen_Trips",
+    "table": "Pickup Location",
+    "property": "Borough",
+    "measure": false,
+    "groupBy": [
+      "Borough.UniqueName"
+    ]
+  },
+  {
+    "cube": "YellowGreen_Trips",
+    "table": "Fact Yellow Green Trips",
+    "property": "Trip Count - Fact Yellow Green Trips",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "YellowGreen_Trips",
+    "table": "Dim Service Type",
+    "property": "Service Code",
+    "measure": false,
+    "groupBy": [
+      "Service Code.UniqueName"
+    ]
+  },
+  {
+    "cube": "YellowGreen_Trips",
+    "table": "Fact Yellow Green Trips",
+    "property": "Total Amount",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "YellowGreen_Trips",
+    "table": "Pickup Date",
+    "property": "Year Number",
+    "measure": false,
+    "groupBy": []
+  },
+  {
+    "cube": "YellowGreen_Trips",
+    "table": "Pickup Date",
+    "property": "Month Number",
+    "measure": false,
+    "groupBy": [
+      "Month Number.Key0",
+      "Month Number.Key1"
+    ]
+  },
+  {
+    "cube": "YellowGreen_Trips",
+    "table": "Dim Service Type",
+    "property": "Service Code",
+    "measure": false,
+    "groupBy": [
+      "Service Code.UniqueName"
+    ]
+  },
+  {
+    "cube": "YellowGreen_Trips",
+    "table": "Dim Payment Type",
+    "property": "Payment Type Key",
+    "measure": false,
+    "groupBy": [
+      "Payment Type Key.Key0"
+    ]
+  },
+  {
+    "cube": "YellowGreen_Trips",
+    "table": "Fact Yellow Green Trips",
+    "property": "Tip Amount - Fact Yellow Green Trips",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "YellowGreen_Trips",
+    "table": "Measures",
+    "property": "YellowGreen Tip Percentage",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "YellowGreen_Trips",
+    "table": "Measures",
+    "property": "YellowGreen Average Tip Per Trip",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "YellowGreen_Trips",
+    "table": "Measures",
+    "property": "YellowGreen Average Trip Duration Minutes",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "YellowGreen_Trips",
+    "table": "Pickup Location",
+    "property": "Zone Name",
+    "measure": false,
+    "groupBy": [
+      "Zone Name.Key0"
+    ]
+  },
+  {
+    "cube": "YellowGreen_Trips",
+    "table": "Measures",
+    "property": "YellowGreen Tip Percentage",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "YellowGreen_Trips",
+    "table": "Dim Payment Type",
+    "property": "Payment Type Key",
+    "measure": false,
+    "groupBy": [
+      "Payment Type Key.Key0"
+    ]
+  },
+  {
+    "cube": "YellowGreen_Trips",
+    "table": "Measures",
+    "property": "YellowGreen Tip Percentage",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "YellowGreen_Trips",
+    "table": "Pickup Date",
+    "property": "Is Weekend",
+    "measure": false,
+    "groupBy": []
+  },
+  {
+    "cube": "YellowGreen_Trips",
+    "table": "Measures",
+    "property": "YellowGreen Tip Percentage",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "YellowGreen_Trips",
+    "table": "Pickup Time",
+    "property": "Hour Number",
+    "measure": false,
+    "groupBy": [
+      "Hour Number.UniqueName"
+    ]
+  },
+  {
+    "cube": "YellowGreen_Trips",
+    "table": "Measures",
+    "property": "YellowGreen Tip Percentage",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "HVFHV_Trips",
+    "table": "Pickup Date",
+    "property": "Year Number",
+    "measure": false,
+    "groupBy": []
+  },
+  {
+    "cube": "HVFHV_Trips",
+    "table": "Pickup Date",
+    "property": "Month Number",
+    "measure": false,
+    "groupBy": [
+      "Month Number.Key0",
+      "Month Number.Key1"
+    ]
+  },
+  {
+    "cube": "HVFHV_Trips",
+    "table": "Dim Service Type",
+    "property": "Service Code",
+    "measure": false,
+    "groupBy": [
+      "Service Code.UniqueName"
+    ]
+  },
+  {
+    "cube": "HVFHV_Trips",
+    "table": "Dim HVFHS Provider",
+    "property": "License Number",
+    "measure": false,
+    "groupBy": [
+      "License Number.UniqueName"
+    ]
+  },
+  {
+    "cube": "HVFHV_Trips",
+    "table": "Fact HVFHV Trips",
+    "property": "Trip Count - Fact HVFHV Trips",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "HVFHV_Trips",
+    "table": "Fact HVFHV Trips",
+    "property": "Driver Pay Amount",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "HVFHV_Trips",
+    "table": "Measures",
+    "property": "HVFHV Average Waiting Minutes",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "HVFHV_Trips",
+    "table": "Measures",
+    "property": "HVFHV Average Fare Per Trip",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "HVFHV_Trips",
+    "table": "Pickup Date",
+    "property": "Full Date",
+    "measure": false,
+    "groupBy": [
+      "Full Date.Key0"
+    ]
+  },
+  {
+    "cube": "HVFHV_Trips",
+    "table": "Fact HVFHV Trips",
+    "property": "Trip Count - Fact HVFHV Trips",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "HVFHV_Trips",
+    "table": "Pickup Time",
+    "property": "Hour Number",
+    "measure": false,
+    "groupBy": [
+      "Hour Number.UniqueName"
+    ]
+  },
+  {
+    "cube": "HVFHV_Trips",
+    "table": "Fact HVFHV Trips",
+    "property": "Trip Count - Fact HVFHV Trips",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "HVFHV_Trips",
+    "table": "Pickup Location",
+    "property": "Borough",
+    "measure": false,
+    "groupBy": [
+      "Borough.UniqueName"
+    ]
+  },
+  {
+    "cube": "HVFHV_Trips",
+    "table": "Measures",
+    "property": "HVFHV Average Waiting Minutes",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "HVFHV_Trips",
+    "table": "Dim HVFHS Provider",
+    "property": "License Number",
+    "measure": false,
+    "groupBy": [
+      "License Number.UniqueName"
+    ]
+  },
+  {
+    "cube": "HVFHV_Trips",
+    "table": "Fact HVFHV Trips",
+    "property": "Trip Count - Fact HVFHV Trips",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "HVFHV_Trips",
+    "table": "Pickup Date",
+    "property": "Year Number",
+    "measure": false,
+    "groupBy": []
+  },
+  {
+    "cube": "HVFHV_Trips",
+    "table": "Pickup Date",
+    "property": "Month Number",
+    "measure": false,
+    "groupBy": [
+      "Month Number.Key0",
+      "Month Number.Key1"
+    ]
+  },
+  {
+    "cube": "HVFHV_Trips",
+    "table": "Dim Service Type",
+    "property": "Service Code",
+    "measure": false,
+    "groupBy": [
+      "Service Code.UniqueName"
+    ]
+  },
+  {
+    "cube": "HVFHV_Trips",
+    "table": "Pickup Location",
+    "property": "Borough",
+    "measure": false,
+    "groupBy": [
+      "Borough.UniqueName"
+    ]
+  },
+  {
+    "cube": "HVFHV_Trips",
+    "table": "Fact HVFHV Trips",
+    "property": "Congestion Surcharge",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "HVFHV_Trips",
+    "table": "Fact HVFHV Trips",
+    "property": "CBD Congestion Fee",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "HVFHV_Trips",
+    "table": "Fact HVFHV Trips",
+    "property": "Gross Passenger Amount",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "HVFHV_Trips",
+    "table": "Fact HVFHV Trips",
+    "property": "Driver Pay Amount",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "HVFHV_Trips",
+    "table": "Pickup Date",
+    "property": "Full Date",
+    "measure": false,
+    "groupBy": [
+      "Full Date.Key0"
+    ]
+  },
+  {
+    "cube": "HVFHV_Trips",
+    "table": "Fact HVFHV Trips",
+    "property": "Congestion Surcharge",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "HVFHV_Trips",
+    "table": "Fact HVFHV Trips",
+    "property": "CBD Congestion Fee",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "HVFHV_Trips",
+    "table": "Pickup Date",
+    "property": "Full Date",
+    "measure": false,
+    "groupBy": [
+      "Full Date.Key0"
+    ]
+  },
+  {
+    "cube": "HVFHV_Trips",
+    "table": "Fact HVFHV Trips",
+    "property": "Gross Passenger Amount",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "HVFHV_Trips",
+    "table": "Fact HVFHV Trips",
+    "property": "Driver Pay Amount",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "HVFHV_Trips",
+    "table": "Pickup Location",
+    "property": "Borough",
+    "measure": false,
+    "groupBy": [
+      "Borough.UniqueName"
+    ]
+  },
+  {
+    "cube": "HVFHV_Trips",
+    "table": "Fact HVFHV Trips",
+    "property": "Congestion Surcharge",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "HVFHV_Trips",
+    "table": "Pickup Time",
+    "property": "Time Band",
+    "measure": false,
+    "groupBy": [
+      "Time Band.UniqueName"
+    ]
+  },
+  {
+    "cube": "HVFHV_Trips",
+    "table": "Fact HVFHV Trips",
+    "property": "Trip Count - Fact HVFHV Trips",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "FHV_Trips",
+    "table": "Pickup Date",
+    "property": "Year Number",
+    "measure": false,
+    "groupBy": []
+  },
+  {
+    "cube": "FHV_Trips",
+    "table": "Pickup Date",
+    "property": "Month Number",
+    "measure": false,
+    "groupBy": [
+      "Month Number.Key0",
+      "Month Number.Key1"
+    ]
+  },
+  {
+    "cube": "FHV_Trips",
+    "table": "Dim Service Type",
+    "property": "Service Code",
+    "measure": false,
+    "groupBy": [
+      "Service Code.UniqueName"
+    ]
+  },
+  {
+    "cube": "FHV_Trips",
+    "table": "Pickup Location",
+    "property": "Borough",
+    "measure": false,
+    "groupBy": [
+      "Borough.UniqueName"
+    ]
+  },
+  {
+    "cube": "FHV_Trips",
+    "table": "Fact FHV Trips",
+    "property": "Trip Count",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "FHV_Trips",
+    "table": "Measures",
+    "property": "FHV Average Trip Duration Minutes",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "FHV_Trips",
+    "table": "Fact FHV Trips",
+    "property": "Trip Duration Seconds",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "FHV_Trips",
+    "table": "Fact FHV Trips",
+    "property": "Fact FHV Trips TripDurationSecondsValidTrips",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "FHV_Trips",
+    "table": "Pickup Date",
+    "property": "Full Date",
+    "measure": false,
+    "groupBy": [
+      "Full Date.Key0"
+    ]
+  },
+  {
+    "cube": "FHV_Trips",
+    "table": "Fact FHV Trips",
+    "property": "Trip Count",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "FHV_Trips",
+    "table": "Pickup Time",
+    "property": "Hour Number",
+    "measure": false,
+    "groupBy": [
+      "Hour Number.UniqueName"
+    ]
+  },
+  {
+    "cube": "FHV_Trips",
+    "table": "Fact FHV Trips",
+    "property": "Trip Count",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "FHV_Trips",
+    "table": "Pickup Location",
+    "property": "Borough",
+    "measure": false,
+    "groupBy": [
+      "Borough.UniqueName"
+    ]
+  },
+  {
+    "cube": "FHV_Trips",
+    "table": "Fact FHV Trips",
+    "property": "Trip Count",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "FHV_Trips",
+    "table": "Dispatch Base",
+    "property": "Base Key",
+    "measure": false,
+    "groupBy": [
+      "Base Key.Key0"
+    ]
+  },
+  {
+    "cube": "FHV_Trips",
+    "table": "Fact FHV Trips",
+    "property": "Trip Count",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "Daily_Financial",
+    "table": "Snapshot Date",
+    "property": "Year Number",
+    "measure": false,
+    "groupBy": []
+  },
+  {
+    "cube": "Daily_Financial",
+    "table": "Snapshot Date",
+    "property": "Month Number",
+    "measure": false,
+    "groupBy": [
+      "Month Number.Key0",
+      "Month Number.Key1"
+    ]
+  },
+  {
+    "cube": "Daily_Financial",
+    "table": "Dim Service Type",
+    "property": "Service Code",
+    "measure": false,
+    "groupBy": [
+      "Service Code.UniqueName"
+    ]
+  },
+  {
+    "cube": "Daily_Financial",
+    "table": "Daily Financial Snapshot",
+    "property": "Daily Financial Snapshot TotalTrips",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "Daily_Financial",
+    "table": "Daily Financial Snapshot",
+    "property": "Daily Financial Snapshot TotalPassengerCharges",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "Daily_Financial",
+    "table": "Daily Financial Snapshot",
+    "property": "Daily Financial Snapshot TotalTips",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "Daily_Financial",
+    "table": "Daily Financial Snapshot",
+    "property": "Daily Financial Snapshot TotalDriverPay",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "Daily_Financial",
+    "table": "Snapshot Date",
+    "property": "Full Date",
+    "measure": false,
+    "groupBy": [
+      "Full Date.Key0"
+    ]
+  },
+  {
+    "cube": "Daily_Financial",
+    "table": "Daily Financial Snapshot",
+    "property": "Daily Financial Snapshot TotalPassengerCharges",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "Daily_Financial",
+    "table": "Dim Service Type",
+    "property": "Service Code",
+    "measure": false,
+    "groupBy": [
+      "Service Code.UniqueName"
+    ]
+  },
+  {
+    "cube": "Daily_Financial",
+    "table": "Dim Service Type",
+    "property": "Service Code",
+    "measure": false,
+    "groupBy": [
+      "Service Code.UniqueName"
+    ]
+  },
+  {
+    "cube": "Daily_Financial",
+    "table": "Daily Financial Snapshot",
+    "property": "Daily Financial Snapshot TotalTrips",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "Daily_Financial",
+    "table": "Dim Service Type",
+    "property": "Service Code",
+    "measure": false,
+    "groupBy": [
+      "Service Code.UniqueName"
+    ]
+  },
+  {
+    "cube": "Daily_Financial",
+    "table": "Daily Financial Snapshot",
+    "property": "Daily Financial Snapshot TotalTips",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "Daily_Financial",
+    "table": "Daily Financial Snapshot",
+    "property": "Daily Financial Snapshot TotalTaxesAndFees",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "Daily_Financial",
+    "table": "Snapshot Date",
+    "property": "Full Date",
+    "measure": false,
+    "groupBy": [
+      "Full Date.Key0"
+    ]
+  },
+  {
+    "cube": "Daily_Financial",
+    "table": "Daily Financial Snapshot",
+    "property": "Daily Financial Snapshot TotalDriverPay",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "Zone_Traffic",
+    "table": "Snapshot Date",
+    "property": "Year Number",
+    "measure": false,
+    "groupBy": []
+  },
+  {
+    "cube": "Zone_Traffic",
+    "table": "Snapshot Date",
+    "property": "Month Number",
+    "measure": false,
+    "groupBy": [
+      "Month Number.Key0",
+      "Month Number.Key1"
+    ]
+  },
+  {
+    "cube": "Zone_Traffic",
+    "table": "Dim Service Type",
+    "property": "Service Code",
+    "measure": false,
+    "groupBy": [
+      "Service Code.UniqueName"
+    ]
+  },
+  {
+    "cube": "Zone_Traffic",
+    "table": "Snapshot Location",
+    "property": "Borough",
+    "measure": false,
+    "groupBy": [
+      "Borough.UniqueName"
+    ]
+  },
+  {
+    "cube": "Zone_Traffic",
+    "table": "Zone Traffic Snapshot",
+    "property": "Zone Traffic Snapshot TotalPickups",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "Zone_Traffic",
+    "table": "Zone Traffic Snapshot",
+    "property": "Zone Traffic Snapshot TotalDropoffs",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "Zone_Traffic",
+    "table": "Snapshot Date",
+    "property": "Full Date",
+    "measure": false,
+    "groupBy": [
+      "Full Date.Key0"
+    ]
+  },
+  {
+    "cube": "Zone_Traffic",
+    "table": "Zone Traffic Snapshot",
+    "property": "Zone Traffic Snapshot TotalPickups",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "Zone_Traffic",
+    "table": "Dim Service Type",
+    "property": "Service Code",
+    "measure": false,
+    "groupBy": [
+      "Service Code.UniqueName"
+    ]
+  },
+  {
+    "cube": "Zone_Traffic",
+    "table": "Snapshot Time",
+    "property": "Hour Number",
+    "measure": false,
+    "groupBy": [
+      "Hour Number.UniqueName"
+    ]
+  },
+  {
+    "cube": "Zone_Traffic",
+    "table": "Zone Traffic Snapshot",
+    "property": "Zone Traffic Snapshot TotalPickups",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "Zone_Traffic",
+    "table": "Dim Service Type",
+    "property": "Service Code",
+    "measure": false,
+    "groupBy": [
+      "Service Code.UniqueName"
+    ]
+  },
+  {
+    "cube": "Zone_Traffic",
+    "table": "Snapshot Location",
+    "property": "Borough",
+    "measure": false,
+    "groupBy": [
+      "Borough.UniqueName"
+    ]
+  },
+  {
+    "cube": "Zone_Traffic",
+    "table": "Zone Traffic Snapshot",
+    "property": "Zone Traffic Snapshot TotalPickups",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "Zone_Traffic",
+    "table": "Zone Traffic Snapshot",
+    "property": "Zone Traffic Snapshot TotalDropoffs",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "Zone_Traffic",
+    "table": "Dim Service Type",
+    "property": "Service Code",
+    "measure": false,
+    "groupBy": [
+      "Service Code.UniqueName"
+    ]
+  },
+  {
+    "cube": "Zone_Traffic",
+    "table": "Zone Traffic Snapshot",
+    "property": "Zone Traffic Snapshot TotalPickups",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "Zone_Traffic",
+    "table": "Snapshot Date",
+    "property": "Year Number",
+    "measure": false,
+    "groupBy": []
+  },
+  {
+    "cube": "Zone_Traffic",
+    "table": "Snapshot Date",
+    "property": "Month Number",
+    "measure": false,
+    "groupBy": [
+      "Month Number.Key0",
+      "Month Number.Key1"
+    ]
+  },
+  {
+    "cube": "Zone_Traffic",
+    "table": "Dim Service Type",
+    "property": "Service Code",
+    "measure": false,
+    "groupBy": [
+      "Service Code.UniqueName"
+    ]
+  },
+  {
+    "cube": "Zone_Traffic",
+    "table": "Snapshot Location",
+    "property": "Borough",
+    "measure": false,
+    "groupBy": [
+      "Borough.UniqueName"
+    ]
+  },
+  {
+    "cube": "Zone_Traffic",
+    "table": "Zone Traffic Snapshot",
+    "property": "Zone Traffic Snapshot TotalPickups",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "Zone_Traffic",
+    "table": "Zone Traffic Snapshot",
+    "property": "Zone Traffic Snapshot TotalDropoffs",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "Zone_Traffic",
+    "table": "Snapshot Location",
+    "property": "Borough",
+    "measure": false,
+    "groupBy": [
+      "Borough.UniqueName"
+    ]
+  },
+  {
+    "cube": "Zone_Traffic",
+    "table": "Snapshot Time",
+    "property": "Hour Number",
+    "measure": false,
+    "groupBy": [
+      "Hour Number.UniqueName"
+    ]
+  },
+  {
+    "cube": "Zone_Traffic",
+    "table": "Zone Traffic Snapshot",
+    "property": "Zone Traffic Snapshot TotalPickups",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "Zone_Traffic",
+    "table": "Snapshot Location",
+    "property": "Zone Name",
+    "measure": false,
+    "groupBy": [
+      "Zone Name.Key0"
+    ]
+  },
+  {
+    "cube": "Zone_Traffic",
+    "table": "Zone Traffic Snapshot",
+    "property": "Zone Traffic Snapshot TotalPickups",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "Base_Performance",
+    "table": "Snapshot Date",
+    "property": "Year Number",
+    "measure": false,
+    "groupBy": []
+  },
+  {
+    "cube": "Base_Performance",
+    "table": "Snapshot Date",
+    "property": "Month Number",
+    "measure": false,
+    "groupBy": [
+      "Month Number.Key0",
+      "Month Number.Key1"
+    ]
+  },
+  {
+    "cube": "Base_Performance",
+    "table": "Dim Service Type",
+    "property": "Service Code",
+    "measure": false,
+    "groupBy": [
+      "Service Code.UniqueName"
+    ]
+  },
+  {
+    "cube": "Base_Performance",
+    "table": "Dispatch Base",
+    "property": "Base Key",
+    "measure": false,
+    "groupBy": [
+      "Base Key.Key0"
+    ]
+  },
+  {
+    "cube": "Base_Performance",
+    "table": "Base Performance Snapshot",
+    "property": "Base Performance Snapshot TotalTrips",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "Base_Performance",
+    "table": "Measures",
+    "property": "Base Average Duration Minutes",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "Base_Performance",
+    "table": "Measures",
+    "property": "Base Average Waiting Minutes",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "Base_Performance",
+    "table": "Measures",
+    "property": "Shared Request Rate",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "Base_Performance",
+    "table": "Dispatch Base",
+    "property": "Base Key",
+    "measure": false,
+    "groupBy": [
+      "Base Key.Key0"
+    ]
+  },
+  {
+    "cube": "Base_Performance",
+    "table": "Base Performance Snapshot",
+    "property": "Base Performance Snapshot TotalTrips",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "Base_Performance",
+    "table": "Dispatch Base",
+    "property": "Base Key",
+    "measure": false,
+    "groupBy": [
+      "Base Key.Key0"
+    ]
+  },
+  {
+    "cube": "Base_Performance",
+    "table": "Measures",
+    "property": "Base Average Waiting Minutes",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "Base_Performance",
+    "table": "Snapshot Date",
+    "property": "Full Date",
+    "measure": false,
+    "groupBy": [
+      "Full Date.Key0"
+    ]
+  },
+  {
+    "cube": "Base_Performance",
+    "table": "Base Performance Snapshot",
+    "property": "Base Performance Snapshot TotalTrips",
+    "measure": true,
+    "groupBy": []
+  },
+  {
+    "cube": "Base_Performance",
+    "table": "Dim Service Type",
+    "property": "Service Code",
+    "measure": false,
+    "groupBy": [
+      "Service Code.UniqueName"
+    ]
+  },
+  {
+    "cube": "Base_Performance",
+    "table": "Dim HVFHS Provider",
+    "property": "License Number",
+    "measure": false,
+    "groupBy": [
+      "License Number.UniqueName"
+    ]
+  },
+  {
+    "cube": "Base_Performance",
+    "table": "Measures",
+    "property": "Shared Request Rate",
+    "measure": true,
+    "groupBy": []
+  }
+]

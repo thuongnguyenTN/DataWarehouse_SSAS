@@ -1,0 +1,249 @@
+<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine" dwd:design-time-name="6ecdc50f-b376-4a9d-ae2f-a1659d8b0837">
+  <ID>Zone_Traffic</ID>
+  <Name>Zone Traffic</Name>
+  <Dimensions>
+    <Dimension dwd:design-time-name="6847c9a9-68a6-4267-b3bc-f64f7209af7f">
+      <ID>Dim Service Type</ID>
+      <Name>Dim Service Type</Name>
+      <DimensionID>Dim Service Type</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="91a9fec3-ff29-49db-98c0-f7c99d1baf46">
+          <AttributeID>Service Type Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fe20c020-92eb-40dd-99a9-2f4113dd9d87">
+          <AttributeID>Service Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6cdfad3c-b4f7-45d2-b2ca-b1b0974e32ac">
+          <AttributeID>Service Name</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="07636964-e0ae-45bc-b2cf-22c4e06f72a9">
+      <ID>Snapshot Date</ID>
+      <Name>Snapshot Date</Name>
+      <DimensionID>Dim Date</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="4f479cee-45be-4eb9-9f8e-8a497ced209d">
+          <AttributeID>Date Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="345707e4-8174-4a01-9e98-b239362d4586">
+          <AttributeID>Day Of Week Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="92665ad2-65a2-42c6-89bf-95aedede2ddf">
+          <AttributeID>Day Of Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0640f3a9-9c71-4bd6-8f0c-e94ccf1cb225">
+          <AttributeID>Month Number</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="08d51928-a12d-42e5-a6bd-af54f3e26b1a">
+          <AttributeID>Month Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9fe55fb9-f270-46a8-b796-5afbce12cdf8">
+          <AttributeID>Quarter Number</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="281df7a6-7da7-4bd1-9d50-69fde75d4f42">
+          <AttributeID>Year Number</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="18c85e38-ff3c-40af-a24b-0d003b3eaa33">
+          <AttributeID>Is Weekend</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f951db52-4afd-4cce-85f0-713cd42ab479">
+          <AttributeID>Is Holiday</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4a445052-2cc0-4049-ad35-7bd82c2e5672">
+          <AttributeID>Full Date</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="5f78f3fb-8554-466d-b1b2-a4c7e3119324">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="de6a4ef4-ee4a-4dbd-b987-c0222674acd2">
+      <ID>Snapshot Time</ID>
+      <Name>Snapshot Time</Name>
+      <DimensionID>Dim Time</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="01ce7159-9363-4980-8a18-dc07152cbc9b">
+          <AttributeID>Time Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0273bd84-127d-484e-8a24-987304f8cf6e">
+          <AttributeID>Hour Number</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a9922369-6745-476d-b8f4-9c9fed9df962">
+          <AttributeID>Time Band</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="23409fff-4825-4418-974d-2c62e55534c5">
+          <AttributeID>Is Peak Hour</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5ef79f0e-20cb-48c5-b005-2212886f7435">
+          <AttributeID>Time Label</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="91dd085c-8cf4-4b4a-8655-43ee6eaf0ef6">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="57d1fbc7-46c1-4c92-a504-f251a1b16cd6">
+      <ID>Snapshot Location</ID>
+      <Name>Snapshot Location</Name>
+      <DimensionID>Dim Location</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="e609dd1d-39b9-4c39-9310-976596694a98">
+          <AttributeID>Location Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d373deb4-7260-4983-aeaf-972d71d66f0f">
+          <AttributeID>Location ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5df00e9c-b51f-4a31-b89c-dbf2c23cfe34">
+          <AttributeID>Borough</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4a2be2a9-54e6-4c6c-a088-ca5ea836c23d">
+          <AttributeID>Service Zone</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3221ae2d-c77f-4855-a90e-f3592771d3f9">
+          <AttributeID>Zone Name</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="f77f6a19-9ac1-4818-9407-45b59e744aee">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="37bd47aa-34f1-4039-9399-b43e95828c91">
+      <ID>Zone Traffic Snapshot</ID>
+      <Name>Zone Traffic Snapshot</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="97f7d6d1-de90-4d80-803e-6531cf4abe1f">
+          <ID>Zone Traffic Snapshot TotalPickups</ID>
+          <Name>Zone Traffic Snapshot TotalPickups</Name>
+          <Source dwd:design-time-name="02a31707-10f5-4d83-b0ce-737573405377">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="1c05bdfa-1c9c-4120-9d76-e87d7b0758c1">
+              <TableID>dbo_Fact_Zone_Traffic_Snapshot</TableID>
+              <ColumnID>TotalPickups</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Zone Traffic Snapshot</DisplayFolder>
+        </Measure>
+        <Measure dwd:design-time-name="f68a2634-f2bd-4fc6-9e87-66bd22505b99">
+          <ID>Zone Traffic Snapshot TotalDropoffs</ID>
+          <Name>Zone Traffic Snapshot TotalDropoffs</Name>
+          <Source dwd:design-time-name="d640cc68-19da-4ca4-9e37-9dc9e73f70ef">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="f87b2a01-7175-4eab-a0e3-ca8e504d5e76">
+              <TableID>dbo_Fact_Zone_Traffic_Snapshot</TableID>
+              <ColumnID>TotalDropoffs</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Zone Traffic Snapshot</DisplayFolder>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <IgnoreUnrelatedDimensions>false</IgnoreUnrelatedDimensions>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="25733bf8-58d1-45a2-b62b-25e3acb9530c">
+          <CubeDimensionID>Snapshot Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="939bfe68-7b29-428c-af48-e93ef693fa15">
+              <AttributeID>Date Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="48c98381-7f62-48a1-b014-98815ef19944">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d4bacbb2-aa3b-40b0-a3b0-b6618d7f8c97">
+                    <TableID>dbo_Fact_Zone_Traffic_Snapshot</TableID>
+                    <ColumnID>DateKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="bfdeaff4-1b29-47d0-8aed-b237a10aedae">
+          <CubeDimensionID>Snapshot Time</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="a39a2819-2579-4b8d-983c-bd5f39173039">
+              <AttributeID>Time Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b3b142ff-a973-4b4e-bc97-08905a06ff25">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a4c59cc0-e71f-4b15-8bc9-edfe35c6098d">
+                    <TableID>dbo_Fact_Zone_Traffic_Snapshot</TableID>
+                    <ColumnID>TimeKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="85fcd284-c677-4f0f-bda6-87770907aea1">
+          <CubeDimensionID>Snapshot Location</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="82172c17-bc0b-45ac-8c1c-6732746d55b1">
+              <AttributeID>Location Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c11aeccc-792f-45fa-8620-028ef3c2e924">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="61fd7a22-22b6-41ce-a678-d3abe2675e03">
+                    <TableID>dbo_Fact_Zone_Traffic_Snapshot</TableID>
+                    <ColumnID>LocationKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="f9349f8a-ee91-4c22-9619-6cb4855f5789">
+          <CubeDimensionID>Dim Service Type</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="73205d01-1c6b-45df-9082-a614244873dc">
+              <AttributeID>Service Type Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a0d90cf9-0dff-4f6e-8197-75bc95871c3f">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="074011d6-d683-4326-a1e6-2901d67a006a">
+                    <TableID>dbo_Fact_Zone_Traffic_Snapshot</TableID>
+                    <ColumnID>ServiceTypeKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions/>
+      <AggregationDesigns/>
+    </MeasureGroup>
+    </MeasureGroups>
+  <Source dwd:design-time-name="a3fd343a-82e0-4ce0-9a66-74345514f5a5">
+    <DataSourceViewID>DSV_NYCTaxi_DWH</DataSourceViewID>
+  </Source>
+  <MdxScripts>
+    <MdxScript dwd:design-time-name="429486c0-b30d-4084-a2b3-bfdf265c4c72">
+      <ID>MdxScript</ID>
+      <Name>MdxScript</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Commands>
+        <Command>
+          <Text>CALCULATE;</Text>
+        </Command>
+      </Commands>
+    </MdxScript>
+  </MdxScripts>
+</Cube>

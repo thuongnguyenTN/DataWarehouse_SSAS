@@ -1,0 +1,7 @@
+PASS success Dwh start=Extract
+PASS permanent Dwh start=Extract
+PASS transient Dwh start=Extract
+PASS exhaust Dwh start=Extract
+PASS stale Dwh start=Extract
+PASS success Extract start=Dwh
+PASS skipfail Extract start=Dwh

@@ -1,0 +1,3 @@
+{"Utc":"2026-10-31T08:40:17.0186139Z","RunId":"51a4b6a1-b29e-4f42-8600-d85dbd27acb5","Stage":"Dwh","Task":"StageAttempt","Status":"RUNNING","Detail":"Lần thử 1"}
+{"Utc":"2026-10-31T08:40:17.7908014Z","RunId":"51a4b6a1-b29e-4f42-8600-d85dbd27acb5","Stage":"Dwh","Task":"FixtureSql","Status":"FAILED","Detail":"fixture original SQL error"}
+{"Utc":"2026-10-31T08:40:17.8132535Z","RunId":"51a4b6a1-b29e-4f42-8600-d85dbd27acb5","Stage":"Dwh","Task":"MasterController","Status":"FAILED","Detail":"Exception calling \"Replace\" with \"3\" argument(s): \"The path is not of a legal form.\""}

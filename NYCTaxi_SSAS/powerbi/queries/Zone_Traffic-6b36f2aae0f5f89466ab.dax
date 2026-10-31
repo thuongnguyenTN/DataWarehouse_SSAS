@@ -1,0 +1,1 @@
+﻿EVALUATE TOPN(20,SUMMARIZECOLUMNS('Snapshot Time'[Hour Number],'Snapshot Time'[Hour Number.UniqueName],'Dim Service Type'[Service Code],'Dim Service Type'[Service Code.UniqueName],"M1",[Zone Traffic Snapshot TotalPickups]))

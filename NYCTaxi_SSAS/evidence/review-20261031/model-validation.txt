@@ -1,0 +1,2 @@
+PASS: 32 XML files; source bindings, cube dimension references and MDX measure references.
+SSAS compilation and processing must still be checked on the target server.

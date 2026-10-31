@@ -1,0 +1,7 @@
+﻿{
+    "Test":  "All three snapshots and watermarks rollback on injected SQL error",
+    "Passed":  true,
+    "RunId":  "365050fc-8e8f-4f07-839c-ed36b5278ee9",
+    "Before":  "411|-1226713888|3564940|-1152039030|8015|480847118|-1988169218",
+    "After":  "411|-1226713888|3564940|-1152039030|8015|480847118|-1988169218"
+}

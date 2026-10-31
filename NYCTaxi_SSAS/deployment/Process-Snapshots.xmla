@@ -3,7 +3,7 @@
     <Process>
       <Object>
         <DatabaseID>NYCTaxi_SSAS</DatabaseID>
-        <CubeID>DSV_NYCTaxi</CubeID>
+        <CubeID>Daily_Financial</CubeID>
         <MeasureGroupID>Daily Financial Snapshot</MeasureGroupID>
         <PartitionID>Daily Financial Snapshot All</PartitionID>
       </Object>
@@ -12,7 +12,7 @@
     <Process>
       <Object>
         <DatabaseID>NYCTaxi_SSAS</DatabaseID>
-        <CubeID>DSV_NYCTaxi</CubeID>
+        <CubeID>Zone_Traffic</CubeID>
         <MeasureGroupID>Zone Traffic Snapshot</MeasureGroupID>
         <PartitionID>Zone Traffic Snapshot All</PartitionID>
       </Object>
@@ -21,7 +21,7 @@
     <Process>
       <Object>
         <DatabaseID>NYCTaxi_SSAS</DatabaseID>
-        <CubeID>DSV_NYCTaxi</CubeID>
+        <CubeID>Base_Performance</CubeID>
         <MeasureGroupID>Base Performance Snapshot</MeasureGroupID>
         <PartitionID>Base Performance Snapshot All</PartitionID>
       </Object>

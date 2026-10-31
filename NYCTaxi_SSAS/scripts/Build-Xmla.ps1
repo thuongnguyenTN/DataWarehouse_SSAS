@@ -15,15 +15,19 @@ $null = $db.DataSourceViews.Add((Read-Object (Join-Path $model 'DSV_NYCTaxi.dsv'
 foreach ($file in Get-ChildItem $model -Filter '*.dim') {
     $null = $db.Dimensions.Add((Read-Object $file.FullName (New-Object Microsoft.AnalysisServices.Dimension)))
 }
-$cubeXml = [xml](Get-Content (Join-Path $model 'DSV_NYCTaxi.cube') -Raw)
-$partitions = [xml](Get-Content (Join-Path $model 'DSV_NYCTaxi.partitions') -Raw)
+foreach ($cubeFile in Get-ChildItem $model -Filter '*.cube') {
+$cubeXml = [xml](Get-Content $cubeFile.FullName -Raw)
+$partitions = [xml](Get-Content ([IO.Path]::ChangeExtension($cubeFile.FullName, '.partitions')) -Raw)
 foreach ($group in $partitions.Cube.MeasureGroups.MeasureGroup) {
     $targetGroup = $cubeXml.Cube.MeasureGroups.MeasureGroup | Where-Object ID -eq $group.ID
     $null = $targetGroup.AppendChild($cubeXml.ImportNode($group.Partitions,$true))
+    if ($targetGroup.AggregationDesigns) { $null = $targetGroup.RemoveChild($targetGroup.AggregationDesigns) }
+    if ($group.AggregationDesigns) { $null = $targetGroup.AppendChild($cubeXml.ImportNode($group.AggregationDesigns,$true)) }
 }
 $reader = New-Object Xml.XmlNodeReader $cubeXml
 try { $cube = [Microsoft.AnalysisServices.Utils]::Deserialize($reader,(New-Object Microsoft.AnalysisServices.Cube)) } finally { $reader.Close() }
 $null = $db.Cubes.Add($cube)
+}
 $localServer = New-Object Microsoft.AnalysisServices.Server
 $null = $localServer.Databases.Add($db)
 $results = New-Object Microsoft.AnalysisServices.ValidationResultCollection
@@ -44,5 +48,6 @@ $obj=$deploy.CreateElement('ObjectDefinition',$ns);$null=$create.AppendChild($ob
 $null=$obj.AppendChild($deploy.ImportNode($definition.DocumentElement,$true))
 $deploy.Save((Join-Path $out 'Create-Database.xmla'))
 Write-Output "AMO model validation passed. Database definition and create XMLA saved to $out."
+
 
 

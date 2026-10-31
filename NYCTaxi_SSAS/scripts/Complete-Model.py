@@ -18,6 +18,9 @@ for p in MODEL.iterdir():
 for p in (ROOT / 'README.md', ROOT / 'queries/smoke.mdx'):
     if p.exists(): shutil.copy2(p, BACKUP / p.name)
 
+for seed in ('DSV_NYCTaxi.cube', 'DSV_NYCTaxi.partitions'):
+    if not (MODEL/seed).exists(): shutil.copy2(ROOT/'scripts/templates'/seed, MODEL/seed)
+
 A='http://schemas.microsoft.com/analysisservices/2003/engine'
 X='http://www.w3.org/2001/XMLSchema'
 I='http://www.w3.org/2001/XMLSchema-instance'
@@ -258,7 +261,8 @@ for g in groups:
 def ref(table,col):return '[Measures].['+measuremap[(table,col)]+']'
 mdx=['CALCULATE;']
 def calc(name,expr,folder='Analysis',fmt='#,##0.00'):
-    mdx.append(f"CREATE MEMBER CURRENTCUBE.[Measures].[{name}] AS {expr}, FORMAT_STRING = '{fmt}', DISPLAY_FOLDER = '{folder}', VISIBLE = 1;")
+    visible=0 if name=='WAV Match Rate' else 1
+    mdx.append(f"CREATE MEMBER CURRENTCUBE.[Measures].[{name}] AS {expr}, FORMAT_STRING = '{fmt}', DISPLAY_FOLDER = '{folder}', VISIBLE = {visible};")
 def ratio(name,num,den,folder,scale=1,fmt='#,##0.00'):
     calc(name,f'IIF(IsEmpty({den}) OR {den} = 0, NULL, ({num}) / ({den}) * {scale})',folder,fmt)
 trans=['Fact_FHV_Trips','Fact_HVFHV_Trips','Fact_YellowGreen_Trips']
@@ -359,3 +363,7 @@ for name,value in [('DeploymentServerName','THUONGNGUYEN\\MSSQLSV'),('Deployment
 save(proj,'NYCTaxi_SSAS.dwproj')
 print('Backup:',BACKUP)
 print('Updated: 15 dimensions, 21 DSV tables, 6 measure groups; SQL-derived PK/FK usage.')
+
+# Keep the generated project separated by business process.
+import subprocess, sys
+subprocess.run([sys.executable, str(ROOT/"scripts/Split-Business-Cubes.py")], check=True)

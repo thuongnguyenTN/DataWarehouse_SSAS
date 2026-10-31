@@ -1,0 +1,37 @@
+﻿[
+    {
+        "TaxiType":  "FHV",
+        "IsCoreValid":  true,
+        "Rows":  1199560
+    },
+    {
+        "TaxiType":  "YELLOW",
+        "IsCoreValid":  true,
+        "Rows":  1183234
+    },
+    {
+        "TaxiType":  "GREEN",
+        "IsCoreValid":  true,
+        "Rows":  589465
+    },
+    {
+        "TaxiType":  "GREEN",
+        "IsCoreValid":  false,
+        "Rows":  1910
+    },
+    {
+        "TaxiType":  "YELLOW",
+        "IsCoreValid":  false,
+        "Rows":  16766
+    },
+    {
+        "TaxiType":  "FHV",
+        "IsCoreValid":  false,
+        "Rows":  440
+    },
+    {
+        "TaxiType":  "FHVHV",
+        "IsCoreValid":  true,
+        "Rows":  1200000
+    }
+]

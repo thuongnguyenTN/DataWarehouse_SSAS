@@ -1,0 +1,712 @@
+﻿[
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhv\\year=2021\\month=01\\fhv_tripdata_2021-01.parquet",
+        "Length":  11886281,
+        "MtimeTicks":  639289419965755790
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhv\\year=2021\\month=02\\fhv_tripdata_2021-02.parquet",
+        "Length":  10645466,
+        "MtimeTicks":  639289427496611604
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhv\\year=2021\\month=03\\fhv_tripdata_2021-03.parquet",
+        "Length":  13167110,
+        "MtimeTicks":  639289468715573731
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhv\\year=2024\\month=01\\fhv_tripdata_2024-01.parquet",
+        "Length":  15023585,
+        "MtimeTicks":  639271165450090349
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhv\\year=2024\\month=02\\fhv_tripdata_2024-02.parquet",
+        "Length":  13608941,
+        "MtimeTicks":  639271165525914864
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhv\\year=2024\\month=03\\fhv_tripdata_2024-03.parquet",
+        "Length":  16743352,
+        "MtimeTicks":  639271165613018097
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhv\\year=2024\\month=04\\fhv_tripdata_2024-04.parquet",
+        "Length":  16515459,
+        "MtimeTicks":  639271165687689619
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhv\\year=2024\\month=05\\fhv_tripdata_2024-05.parquet",
+        "Length":  15958984,
+        "MtimeTicks":  639271165769506195
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhv\\year=2024\\month=06\\fhv_tripdata_2024-06.parquet",
+        "Length":  16029924,
+        "MtimeTicks":  639271165851826414
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhv\\year=2024\\month=07\\fhv_tripdata_2024-07.parquet",
+        "Length":  15957854,
+        "MtimeTicks":  639271165930309933
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhv\\year=2024\\month=08\\fhv_tripdata_2024-08.parquet",
+        "Length":  16895389,
+        "MtimeTicks":  639271166004865055
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhv\\year=2024\\month=09\\fhv_tripdata_2024-09.parquet",
+        "Length":  19146083,
+        "MtimeTicks":  639271166094261336
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhv\\year=2024\\month=10\\fhv_tripdata_2024-10.parquet",
+        "Length":  16560601,
+        "MtimeTicks":  639271166164228231
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhv\\year=2024\\month=11\\fhv_tripdata_2024-11.parquet",
+        "Length":  18117293,
+        "MtimeTicks":  639271166240470102
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhv\\year=2024\\month=12\\fhv_tripdata_2024-12.parquet",
+        "Length":  20680547,
+        "MtimeTicks":  639271166327318362
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhv\\year=2025\\month=01\\fhv_tripdata_2025-01.parquet",
+        "Length":  20585814,
+        "MtimeTicks":  639271166429018407
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhv\\year=2025\\month=02\\fhv_tripdata_2025-02.parquet",
+        "Length":  17299771,
+        "MtimeTicks":  639271166501687762
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhv\\year=2025\\month=03\\fhv_tripdata_2025-03.parquet",
+        "Length":  23014056,
+        "MtimeTicks":  639271166597961747
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhv\\year=2025\\month=04\\fhv_tripdata_2025-04.parquet",
+        "Length":  18967682,
+        "MtimeTicks":  639271166685023485
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhv\\year=2025\\month=05\\fhv_tripdata_2025-05.parquet",
+        "Length":  24172970,
+        "MtimeTicks":  639271166789243662
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhv\\year=2025\\month=06\\fhv_tripdata_2025-06.parquet",
+        "Length":  24298912,
+        "MtimeTicks":  639271166924485514
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhv\\year=2025\\month=07\\fhv_tripdata_2025-07.parquet",
+        "Length":  23874627,
+        "MtimeTicks":  639271167160160119
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhv\\year=2025\\month=08\\fhv_tripdata_2025-08.parquet",
+        "Length":  24384797,
+        "MtimeTicks":  639271167440839093
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhv\\year=2025\\month=09\\fhv_tripdata_2025-09.parquet",
+        "Length":  23141694,
+        "MtimeTicks":  639271167819068493
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhv\\year=2025\\month=10\\fhv_tripdata_2025-10.parquet",
+        "Length":  26307894,
+        "MtimeTicks":  639271168395784214
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhv\\year=2025\\month=11\\fhv_tripdata_2025-11.parquet",
+        "Length":  25077773,
+        "MtimeTicks":  639271168594568196
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhv\\year=2025\\month=12\\fhv_tripdata_2025-12.parquet",
+        "Length":  21370122,
+        "MtimeTicks":  639271168710177359
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhv\\year=2026\\month=01\\fhv_tripdata_2026-01.parquet",
+        "Length":  21571309,
+        "MtimeTicks":  639271168818242201
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhv\\year=2026\\month=02\\fhv_tripdata_2026-02.parquet",
+        "Length":  20855385,
+        "MtimeTicks":  639271168917639348
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhv\\year=2026\\month=03\\fhv_tripdata_2026-03.parquet",
+        "Length":  25607058,
+        "MtimeTicks":  639271169058823731
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhv\\year=2026\\month=04\\fhv_tripdata_2026-04.parquet",
+        "Length":  23176841,
+        "MtimeTicks":  639271169182754524
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhv\\year=2026\\month=05\\fhv_tripdata_2026-05.parquet",
+        "Length":  26239909,
+        "MtimeTicks":  639271169341387756
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhv\\year=2026\\month=06\\fhv_tripdata_2026-06.parquet",
+        "Length":  21203617,
+        "MtimeTicks":  639271169447169120
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhv\\year=2026\\month=07\\fhv_tripdata_2026-07.parquet",
+        "Length":  23200182,
+        "MtimeTicks":  639271169592331028
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhvhv\\year=2021\\month=01\\fhvhv_tripdata_2021-01.parquet",
+        "Length":  308924937,
+        "MtimeTicks":  639289420534870195
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhvhv\\year=2021\\month=02\\fhvhv_tripdata_2021-02.parquet",
+        "Length":  302633211,
+        "MtimeTicks":  639289427915448560
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhvhv\\year=2021\\month=03\\fhvhv_tripdata_2021-03.parquet",
+        "Length":  368370915,
+        "MtimeTicks":  639289469171794124
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhvhv\\year=2024\\month=01\\fhvhv_tripdata_2024-01.parquet",
+        "Length":  472757547,
+        "MtimeTicks":  639271171968353878
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhvhv\\year=2024\\month=02\\fhvhv_tripdata_2024-02.parquet",
+        "Length":  462475428,
+        "MtimeTicks":  639271174898739866
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhvhv\\year=2024\\month=03\\fhvhv_tripdata_2024-03.parquet",
+        "Length":  507940560,
+        "MtimeTicks":  639271177425472017
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhvhv\\year=2024\\month=04\\fhvhv_tripdata_2024-04.parquet",
+        "Length":  476115643,
+        "MtimeTicks":  639271180164411079
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhvhv\\year=2024\\month=05\\fhvhv_tripdata_2024-05.parquet",
+        "Length":  498575918,
+        "MtimeTicks":  639271186321493796
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhvhv\\year=2024\\month=06\\fhvhv_tripdata_2024-06.parquet",
+        "Length":  484417715,
+        "MtimeTicks":  639272264416964009
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhvhv\\year=2024\\month=07\\fhvhv_tripdata_2024-07.parquet",
+        "Length":  468437522,
+        "MtimeTicks":  639272264532673187
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhvhv\\year=2024\\month=08\\fhvhv_tripdata_2024-08.parquet",
+        "Length":  465991646,
+        "MtimeTicks":  639272264645426544
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhvhv\\year=2024\\month=09\\fhvhv_tripdata_2024-09.parquet",
+        "Length":  466470118,
+        "MtimeTicks":  639272264924341788
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhvhv\\year=2024\\month=10\\fhvhv_tripdata_2024-10.parquet",
+        "Length":  485102359,
+        "MtimeTicks":  639272265221489222
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhvhv\\year=2024\\month=11\\fhvhv_tripdata_2024-11.parquet",
+        "Length":  480228052,
+        "MtimeTicks":  639272265525653665
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhvhv\\year=2024\\month=12\\fhvhv_tripdata_2024-12.parquet",
+        "Length":  507534115,
+        "MtimeTicks":  639272265837426572
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhvhv\\year=2025\\month=01\\fhvhv_tripdata_2025-01.parquet",
+        "Length":  491076642,
+        "MtimeTicks":  639272265952806802
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhvhv\\year=2025\\month=02\\fhvhv_tripdata_2025-02.parquet",
+        "Length":  461632254,
+        "MtimeTicks":  639272266063086549
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhvhv\\year=2025\\month=03\\fhvhv_tripdata_2025-03.parquet",
+        "Length":  501783767,
+        "MtimeTicks":  639272266182055305
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhvhv\\year=2025\\month=04\\fhvhv_tripdata_2025-04.parquet",
+        "Length":  487219586,
+        "MtimeTicks":  639272266303795277
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhvhv\\year=2025\\month=05\\fhvhv_tripdata_2025-05.parquet",
+        "Length":  517386544,
+        "MtimeTicks":  639272266436720898
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhvhv\\year=2025\\month=06\\fhvhv_tripdata_2025-06.parquet",
+        "Length":  490819474,
+        "MtimeTicks":  639272266553663617
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhvhv\\year=2025\\month=07\\fhvhv_tripdata_2025-07.parquet",
+        "Length":  487222980,
+        "MtimeTicks":  639272266678014867
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhvhv\\year=2025\\month=08\\fhvhv_tripdata_2025-08.parquet",
+        "Length":  479574607,
+        "MtimeTicks":  639272266802013616
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhvhv\\year=2025\\month=09\\fhvhv_tripdata_2025-09.parquet",
+        "Length":  480851341,
+        "MtimeTicks":  639272266921325448
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhvhv\\year=2025\\month=10\\fhvhv_tripdata_2025-10.parquet",
+        "Length":  518486063,
+        "MtimeTicks":  639272267248991665
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhvhv\\year=2025\\month=11\\fhvhv_tripdata_2025-11.parquet",
+        "Length":  507485661,
+        "MtimeTicks":  639272267374284859
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhvhv\\year=2025\\month=12\\fhvhv_tripdata_2025-12.parquet",
+        "Length":  535754793,
+        "MtimeTicks":  639272267689876915
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhvhv\\year=2026\\month=01\\fhvhv_tripdata_2026-01.parquet",
+        "Length":  505868728,
+        "MtimeTicks":  639272267842783105
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhvhv\\year=2026\\month=02\\fhvhv_tripdata_2026-02.parquet",
+        "Length":  476780037,
+        "MtimeTicks":  639272267959794436
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhvhv\\year=2026\\month=03\\fhvhv_tripdata_2026-03.parquet",
+        "Length":  532615621,
+        "MtimeTicks":  639272268095815658
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhvhv\\year=2026\\month=04\\fhvhv_tripdata_2026-04.parquet",
+        "Length":  509865567,
+        "MtimeTicks":  639272268241453061
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhvhv\\year=2026\\month=05\\fhvhv_tripdata_2026-05.parquet",
+        "Length":  537576484,
+        "MtimeTicks":  639272268409286979
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhvhv\\year=2026\\month=06\\fhvhv_tripdata_2026-06.parquet",
+        "Length":  506800012,
+        "MtimeTicks":  639272268537878964
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhvhv\\year=2026\\month=07\\fhvhv_tripdata_2026-07.parquet",
+        "Length":  511176663,
+        "MtimeTicks":  639272268663499147
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\fhvhv\\year=2026\\month=08\\fhvhv_tripdata_2026-08.parquet",
+        "Length":  502392134,
+        "MtimeTicks":  639272268782492493
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\green\\year=2021\\month=01\\green_tripdata_2021-01.parquet",
+        "Length":  1333519,
+        "MtimeTicks":  639289419929463317
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\green\\year=2021\\month=02\\green_tripdata_2021-02.parquet",
+        "Length":  1145679,
+        "MtimeTicks":  639289427476684114
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\green\\year=2021\\month=03\\green_tripdata_2021-03.parquet",
+        "Length":  1474538,
+        "MtimeTicks":  639289468686800462
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\green\\year=2024\\month=01\\green_tripdata_2024-01.parquet",
+        "Length":  1362284,
+        "MtimeTicks":  639271164892295337
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\green\\year=2024\\month=02\\green_tripdata_2024-02.parquet",
+        "Length":  1283805,
+        "MtimeTicks":  639271164901469972
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\green\\year=2024\\month=03\\green_tripdata_2024-03.parquet",
+        "Length":  1372372,
+        "MtimeTicks":  639271164922317608
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\green\\year=2024\\month=04\\green_tripdata_2024-04.parquet",
+        "Length":  1346502,
+        "MtimeTicks":  639271164943863887
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\green\\year=2024\\month=05\\green_tripdata_2024-05.parquet",
+        "Length":  1453912,
+        "MtimeTicks":  639271164964472669
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\green\\year=2024\\month=06\\green_tripdata_2024-06.parquet",
+        "Length":  1326194,
+        "MtimeTicks":  639271164984659640
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\green\\year=2024\\month=07\\green_tripdata_2024-07.parquet",
+        "Length":  1250973,
+        "MtimeTicks":  639271165005090224
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\green\\year=2024\\month=08\\green_tripdata_2024-08.parquet",
+        "Length":  1267079,
+        "MtimeTicks":  639271165025876643
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\green\\year=2024\\month=09\\green_tripdata_2024-09.parquet",
+        "Length":  1326186,
+        "MtimeTicks":  639271165047599321
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\green\\year=2024\\month=10\\green_tripdata_2024-10.parquet",
+        "Length":  1353731,
+        "MtimeTicks":  639271165069079995
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\green\\year=2024\\month=11\\green_tripdata_2024-11.parquet",
+        "Length":  1264688,
+        "MtimeTicks":  639271165089962458
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\green\\year=2024\\month=12\\green_tripdata_2024-12.parquet",
+        "Length":  1312306,
+        "MtimeTicks":  639271165112572540
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\green\\year=2025\\month=01\\green_tripdata_2025-01.parquet",
+        "Length":  1178451,
+        "MtimeTicks":  639271165133313113
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\green\\year=2025\\month=02\\green_tripdata_2025-02.parquet",
+        "Length":  1117474,
+        "MtimeTicks":  639271165137906401
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\green\\year=2025\\month=03\\green_tripdata_2025-03.parquet",
+        "Length":  1253510,
+        "MtimeTicks":  639271165157054236
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\green\\year=2025\\month=04\\green_tripdata_2025-04.parquet",
+        "Length":  1269227,
+        "MtimeTicks":  639271165161939512
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\green\\year=2025\\month=05\\green_tripdata_2025-05.parquet",
+        "Length":  1338798,
+        "MtimeTicks":  639271165169077594
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\green\\year=2025\\month=06\\green_tripdata_2025-06.parquet",
+        "Length":  1212934,
+        "MtimeTicks":  639271165174328443
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\green\\year=2025\\month=07\\green_tripdata_2025-07.parquet",
+        "Length":  1188380,
+        "MtimeTicks":  639271165178656914
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\green\\year=2025\\month=08\\green_tripdata_2025-08.parquet",
+        "Length":  1149707,
+        "MtimeTicks":  639271165184916220
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\green\\year=2025\\month=09\\green_tripdata_2025-09.parquet",
+        "Length":  1209831,
+        "MtimeTicks":  639271165189292077
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\green\\year=2025\\month=10\\green_tripdata_2025-10.parquet",
+        "Length":  1205685,
+        "MtimeTicks":  639271165210073423
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\green\\year=2025\\month=11\\green_tripdata_2025-11.parquet",
+        "Length":  1164775,
+        "MtimeTicks":  639271165231774912
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\green\\year=2025\\month=12\\green_tripdata_2025-12.parquet",
+        "Length":  1171145,
+        "MtimeTicks":  639271165243589254
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\green\\year=2026\\month=01\\green_tripdata_2026-01.parquet",
+        "Length":  991656,
+        "MtimeTicks":  639271165256688765
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\green\\year=2026\\month=02\\green_tripdata_2026-02.parquet",
+        "Length":  920753,
+        "MtimeTicks":  639271165267471669
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\green\\year=2026\\month=03\\green_tripdata_2026-03.parquet",
+        "Length":  1082530,
+        "MtimeTicks":  639271165288990007
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\green\\year=2026\\month=04\\green_tripdata_2026-04.parquet",
+        "Length":  1075896,
+        "MtimeTicks":  639271165309189505
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\green\\year=2026\\month=05\\green_tripdata_2026-05.parquet",
+        "Length":  1102947,
+        "MtimeTicks":  639271165335549220
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\green\\year=2026\\month=06\\green_tripdata_2026-06.parquet",
+        "Length":  1075836,
+        "MtimeTicks":  639271165357841629
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\green\\year=2026\\month=07\\green_tripdata_2026-07.parquet",
+        "Length":  1018250,
+        "MtimeTicks":  639271165368553703
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\green\\year=2026\\month=08\\green_tripdata_2026-08.parquet",
+        "Length":  1007530,
+        "MtimeTicks":  639271165388690963
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\lookup\\taxi_zone_lookup.csv",
+        "Length":  12331,
+        "MtimeTicks":  639261288395745495
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\yellow\\year=2013\\month=01\\yellow_tripdata_2013-01.parquet",
+        "Length":  184736650,
+        "MtimeTicks":  639289410789053850
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\yellow\\year=2020\\month=01\\yellow_tripdata_2020-01.parquet.6e27bbfaec3f471e8b2a3bbb6b66b2a6.part",
+        "Length":  13631488,
+        "MtimeTicks":  639280933128432327
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\yellow\\year=2021\\month=01\\yellow_tripdata_2021-01.parquet",
+        "Length":  21686067,
+        "MtimeTicks":  639289419922986603
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\yellow\\year=2021\\month=02\\yellow_tripdata_2021-02.parquet",
+        "Length":  21777258,
+        "MtimeTicks":  639289427456665615
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\yellow\\year=2021\\month=03\\yellow_tripdata_2021-03.parquet",
+        "Length":  30007852,
+        "MtimeTicks":  639289468676394535
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\yellow\\year=2024\\month=01\\yellow_tripdata_2024-01.parquet",
+        "Length":  49961641,
+        "MtimeTicks":  639271132350941247
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\yellow\\year=2024\\month=02\\yellow_tripdata_2024-02.parquet",
+        "Length":  50349284,
+        "MtimeTicks":  639271132603054810
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\yellow\\year=2024\\month=03\\yellow_tripdata_2024-03.parquet",
+        "Length":  60078280,
+        "MtimeTicks":  639271133768004713
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\yellow\\year=2024\\month=04\\yellow_tripdata_2024-04.parquet",
+        "Length":  59133625,
+        "MtimeTicks":  639271134115395152
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\yellow\\year=2024\\month=05\\yellow_tripdata_2024-05.parquet",
+        "Length":  62553128,
+        "MtimeTicks":  639271134524683160
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\yellow\\year=2024\\month=06\\yellow_tripdata_2024-06.parquet",
+        "Length":  59859922,
+        "MtimeTicks":  639271135998811144
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\yellow\\year=2024\\month=07\\yellow_tripdata_2024-07.parquet",
+        "Length":  52299432,
+        "MtimeTicks":  639271136683641928
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\yellow\\year=2024\\month=08\\yellow_tripdata_2024-08.parquet",
+        "Length":  51067350,
+        "MtimeTicks":  639271138160068915
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\yellow\\year=2024\\month=09\\yellow_tripdata_2024-09.parquet",
+        "Length":  61170186,
+        "MtimeTicks":  639271139160684877
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\yellow\\year=2024\\month=10\\yellow_tripdata_2024-10.parquet",
+        "Length":  64346071,
+        "MtimeTicks":  639271140217172323
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\yellow\\year=2024\\month=11\\yellow_tripdata_2024-11.parquet",
+        "Length":  60658709,
+        "MtimeTicks":  639271140925206916
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\yellow\\year=2024\\month=12\\yellow_tripdata_2024-12.parquet",
+        "Length":  61524085,
+        "MtimeTicks":  639271141263697188
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\yellow\\year=2025\\month=01\\yellow_tripdata_2025-01.parquet",
+        "Length":  59158238,
+        "MtimeTicks":  639271141906716389
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\yellow\\year=2025\\month=02\\yellow_tripdata_2025-02.parquet",
+        "Length":  60343086,
+        "MtimeTicks":  639271142222918536
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\yellow\\year=2025\\month=03\\yellow_tripdata_2025-03.parquet",
+        "Length":  69964745,
+        "MtimeTicks":  639271142692796232
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\yellow\\year=2025\\month=04\\yellow_tripdata_2025-04.parquet",
+        "Length":  67352824,
+        "MtimeTicks":  639271143092181155
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\yellow\\year=2025\\month=05\\yellow_tripdata_2025-05.parquet",
+        "Length":  77837865,
+        "MtimeTicks":  639271143446739137
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\yellow\\year=2025\\month=06\\yellow_tripdata_2025-06.parquet",
+        "Length":  73542954,
+        "MtimeTicks":  639271143808501511
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\yellow\\year=2025\\month=07\\yellow_tripdata_2025-07.parquet",
+        "Length":  66943728,
+        "MtimeTicks":  639271144222975701
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\yellow\\year=2025\\month=08\\yellow_tripdata_2025-08.parquet",
+        "Length":  62293743,
+        "MtimeTicks":  639271144724126633
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\yellow\\year=2025\\month=09\\yellow_tripdata_2025-09.parquet",
+        "Length":  72432945,
+        "MtimeTicks":  639271145075806040
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\yellow\\year=2025\\month=10\\yellow_tripdata_2025-10.parquet",
+        "Length":  75267589,
+        "MtimeTicks":  639271145598808600
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\yellow\\year=2025\\month=11\\yellow_tripdata_2025-11.parquet",
+        "Length":  71134255,
+        "MtimeTicks":  639271146056584124
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\yellow\\year=2025\\month=12\\yellow_tripdata_2025-12.parquet",
+        "Length":  73701327,
+        "MtimeTicks":  639271146534703972
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\yellow\\year=2026\\month=01\\yellow_tripdata_2026-01.parquet",
+        "Length":  64165080,
+        "MtimeTicks":  639271146824858691
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\yellow\\year=2026\\month=02\\yellow_tripdata_2026-02.parquet",
+        "Length":  58683353,
+        "MtimeTicks":  639271147107974283
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\yellow\\year=2026\\month=03\\yellow_tripdata_2026-03.parquet",
+        "Length":  67891249,
+        "MtimeTicks":  639271147450013927
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\yellow\\year=2026\\month=04\\yellow_tripdata_2026-04.parquet",
+        "Length":  64818115,
+        "MtimeTicks":  639271147748244011
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\yellow\\year=2026\\month=05\\yellow_tripdata_2026-05.parquet",
+        "Length":  69699174,
+        "MtimeTicks":  639271148049768644
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\yellow\\year=2026\\month=06\\yellow_tripdata_2026-06.parquet",
+        "Length":  65465637,
+        "MtimeTicks":  639271148370587272
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\yellow\\year=2026\\month=07\\yellow_tripdata_2026-07.parquet",
+        "Length":  61685033,
+        "MtimeTicks":  639271148653270142
+    },
+    {
+        "Path":  "D:\\Kho_Du_lieu\\NYCTaxi\\raw\\yellow\\year=2026\\month=08\\yellow_tripdata_2026-08.parquet",
+        "Length":  59043961,
+        "MtimeTicks":  639271148997661733
+    }
+]

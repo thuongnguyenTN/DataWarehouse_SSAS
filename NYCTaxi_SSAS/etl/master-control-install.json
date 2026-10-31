@@ -1,0 +1,10 @@
+{
+  "InstalledAt": "2026-10-31T15:44:47.1705388+07:00",
+  "Backup": "E:\\NYCTaxi\\NYCTaxi_SSAS\\etl\\backups\\master-observability-20261031-152918",
+  "Project": "E:\\NYCTaxi\\NYCTaxi_DW\\NYCTaxi_ETL",
+  "ProductionEtlExecuted": false,
+  "Files": [
+    "PKG_00_Master.dtsx",
+    "NYCTaxi_ETL.dtproj"
+  ]
+}

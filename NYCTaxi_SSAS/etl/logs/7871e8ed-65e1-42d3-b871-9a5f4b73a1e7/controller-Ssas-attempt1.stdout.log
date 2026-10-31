@@ -1,0 +1,7 @@
+[17:55:19] [Ssas] RUNNING: ProcessAndVerifySixCubes
+[Ssas] ProcessAndVerifySixCubes: SQL vẫn đang xử lý; elapsed=208s
+[17:58:48] [Ssas] SUCCEEDED: ProcessAndVerifySixCubes
+[17:58:48] [Ssas] RUNNING: StageComplete
+[17:58:49] [Ssas] SUCCEEDED: StageComplete
+[17:58:49] [Ssas] SUCCEEDED: Invocation
+ETL Ssas completed. RunId=7871e8ed-65e1-42d3-b871-9a5f4b73a1e7; logs=E:\NYCTaxi\NYCTaxi_SSAS\etl\logs\7871e8ed-65e1-42d3-b871-9a5f4b73a1e7

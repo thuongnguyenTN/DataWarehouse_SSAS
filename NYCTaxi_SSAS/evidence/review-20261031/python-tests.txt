@@ -1,0 +1,26 @@
+[XONG] C:\Users\ADMIN\AppData\Local\Temp\tmpfs6tzgu7\yellow_tripdata_2025-01.csv: 3/3 dong
+........F...
+[XONG] C:\Users\ADMIN\AppData\Local\Temp\tmpfndg23gy\yellow_tripdata_2025-01.csv: 2/3 dong
+[XONG] C:\Users\ADMIN\AppData\Local\Temp\tmpfndg23gy\yellow_tripdata_2025-01.csv: 3/3 dong
+[XONG] C:\Users\ADMIN\AppData\Local\Temp\tmprqb1u_vk\yellow_tripdata_2025-01.csv: 3/3 dong
+[XONG] C:\Users\ADMIN\AppData\Local\Temp\tmpsdt_ym9z\yellow_tripdata_2025-01.csv: 3/3 dong
+[BO QUA] CSV hop le: C:\Users\ADMIN\AppData\Local\Temp\tmpsdt_ym9z\yellow_tripdata_2025-01.csv (3 dong)
+======================================================================
+FAIL: test_deployed_packages_have_required_metadata (test_package_metadata.PackageMetadataTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\NYCTaxi\NYCTaxi_SSAS\etl\tests\test_package_metadata.py", line 18, in test_deployed_packages_have_required_metadata
+    self.assertEqual(validator.check(p),[],str(p))
+AssertionError: Lists differ: ['OnError missing LoggingOptions'] != []
+
+First list contains 1 additional elements.
+First extra element 0:
+'OnError missing LoggingOptions'
+
+- ['OnError missing LoggingOptions']
++ [] : E:\NYCTaxi\NYCTaxi_DW\NYCTaxi_ETL\PKG_00_Master.dtsx
+
+----------------------------------------------------------------------
+Ran 12 tests in 1.309s
+
+FAILED (failures=1)

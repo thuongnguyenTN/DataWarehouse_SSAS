@@ -1,0 +1,195 @@
+<Batch xmlns="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Transaction="true">
+  <Process>
+    <Object>
+      <DatabaseID>NYCTaxi_SSAS</DatabaseID>
+      <DimensionID>Dim Base</DimensionID>
+    </Object>
+    <Type>ProcessUpdate</Type>
+  </Process>
+  <Process>
+    <Object>
+      <DatabaseID>NYCTaxi_SSAS</DatabaseID>
+      <DimensionID>Dim Date</DimensionID>
+    </Object>
+    <Type>ProcessUpdate</Type>
+  </Process>
+  <Process>
+    <Object>
+      <DatabaseID>NYCTaxi_SSAS</DatabaseID>
+      <DimensionID>Dim FHV Flags</DimensionID>
+    </Object>
+    <Type>ProcessUpdate</Type>
+  </Process>
+  <Process>
+    <Object>
+      <DatabaseID>NYCTaxi_SSAS</DatabaseID>
+      <DimensionID>Dim HVFHS Provider</DimensionID>
+    </Object>
+    <Type>ProcessUpdate</Type>
+  </Process>
+  <Process>
+    <Object>
+      <DatabaseID>NYCTaxi_SSAS</DatabaseID>
+      <DimensionID>Dim HVFHV Flags</DimensionID>
+    </Object>
+    <Type>ProcessUpdate</Type>
+  </Process>
+  <Process>
+    <Object>
+      <DatabaseID>NYCTaxi_SSAS</DatabaseID>
+      <DimensionID>Dim Load Batch</DimensionID>
+    </Object>
+    <Type>ProcessUpdate</Type>
+  </Process>
+  <Process>
+    <Object>
+      <DatabaseID>NYCTaxi_SSAS</DatabaseID>
+      <DimensionID>Dim Location</DimensionID>
+    </Object>
+    <Type>ProcessUpdate</Type>
+  </Process>
+  <Process>
+    <Object>
+      <DatabaseID>NYCTaxi_SSAS</DatabaseID>
+      <DimensionID>Dim Passenger Group</DimensionID>
+    </Object>
+    <Type>ProcessUpdate</Type>
+  </Process>
+  <Process>
+    <Object>
+      <DatabaseID>NYCTaxi_SSAS</DatabaseID>
+      <DimensionID>Dim Payment Type</DimensionID>
+    </Object>
+    <Type>ProcessUpdate</Type>
+  </Process>
+  <Process>
+    <Object>
+      <DatabaseID>NYCTaxi_SSAS</DatabaseID>
+      <DimensionID>Dim Rate Code</DimensionID>
+    </Object>
+    <Type>ProcessUpdate</Type>
+  </Process>
+  <Process>
+    <Object>
+      <DatabaseID>NYCTaxi_SSAS</DatabaseID>
+      <DimensionID>Dim Service Type</DimensionID>
+    </Object>
+    <Type>ProcessUpdate</Type>
+  </Process>
+  <Process>
+    <Object>
+      <DatabaseID>NYCTaxi_SSAS</DatabaseID>
+      <DimensionID>Dim Taxi Flags</DimensionID>
+    </Object>
+    <Type>ProcessUpdate</Type>
+  </Process>
+  <Process>
+    <Object>
+      <DatabaseID>NYCTaxi_SSAS</DatabaseID>
+      <DimensionID>Dim Time</DimensionID>
+    </Object>
+    <Type>ProcessUpdate</Type>
+  </Process>
+  <Process>
+    <Object>
+      <DatabaseID>NYCTaxi_SSAS</DatabaseID>
+      <DimensionID>Dim Trip Type</DimensionID>
+    </Object>
+    <Type>ProcessUpdate</Type>
+  </Process>
+  <Process>
+    <Object>
+      <DatabaseID>NYCTaxi_SSAS</DatabaseID>
+      <DimensionID>Dim Vendor</DimensionID>
+    </Object>
+    <Type>ProcessUpdate</Type>
+  </Process>
+  <Process>
+    <Object>
+      <DatabaseID>NYCTaxi_SSAS</DatabaseID>
+      <CubeID>DSV_NYCTaxi</CubeID>
+      <MeasureGroupID>Fact FHV Trips</MeasureGroupID>
+      <PartitionID>Fact FHV Trips 202501</PartitionID>
+    </Object>
+    <Type>ProcessFull</Type>
+  </Process>
+  <Process>
+    <Object>
+      <DatabaseID>NYCTaxi_SSAS</DatabaseID>
+      <CubeID>DSV_NYCTaxi</CubeID>
+      <MeasureGroupID>Fact FHV Trips</MeasureGroupID>
+      <PartitionID>Fact FHV Trips Other Dates</PartitionID>
+    </Object>
+    <Type>ProcessFull</Type>
+  </Process>
+  <Process>
+    <Object>
+      <DatabaseID>NYCTaxi_SSAS</DatabaseID>
+      <CubeID>DSV_NYCTaxi</CubeID>
+      <MeasureGroupID>Fact HVFHV Trips</MeasureGroupID>
+      <PartitionID>Fact HVFHV Trips 202501</PartitionID>
+    </Object>
+    <Type>ProcessFull</Type>
+  </Process>
+  <Process>
+    <Object>
+      <DatabaseID>NYCTaxi_SSAS</DatabaseID>
+      <CubeID>DSV_NYCTaxi</CubeID>
+      <MeasureGroupID>Fact HVFHV Trips</MeasureGroupID>
+      <PartitionID>Fact HVFHV Trips Other Dates</PartitionID>
+    </Object>
+    <Type>ProcessFull</Type>
+  </Process>
+  <Process>
+    <Object>
+      <DatabaseID>NYCTaxi_SSAS</DatabaseID>
+      <CubeID>DSV_NYCTaxi</CubeID>
+      <MeasureGroupID>Fact Yellow Green Trips</MeasureGroupID>
+      <PartitionID>Fact Yellow Green Trips 202501</PartitionID>
+    </Object>
+    <Type>ProcessFull</Type>
+  </Process>
+  <Process>
+    <Object>
+      <DatabaseID>NYCTaxi_SSAS</DatabaseID>
+      <CubeID>DSV_NYCTaxi</CubeID>
+      <MeasureGroupID>Fact Yellow Green Trips</MeasureGroupID>
+      <PartitionID>Fact Yellow Green Trips Other Dates</PartitionID>
+    </Object>
+    <Type>ProcessFull</Type>
+  </Process>
+  <Process>
+    <Object>
+      <DatabaseID>NYCTaxi_SSAS</DatabaseID>
+      <CubeID>DSV_NYCTaxi</CubeID>
+      <MeasureGroupID>Daily Financial Snapshot</MeasureGroupID>
+      <PartitionID>Daily Financial Snapshot All</PartitionID>
+    </Object>
+    <Type>ProcessFull</Type>
+  </Process>
+  <Process>
+    <Object>
+      <DatabaseID>NYCTaxi_SSAS</DatabaseID>
+      <CubeID>DSV_NYCTaxi</CubeID>
+      <MeasureGroupID>Zone Traffic Snapshot</MeasureGroupID>
+      <PartitionID>Zone Traffic Snapshot All</PartitionID>
+    </Object>
+    <Type>ProcessFull</Type>
+  </Process>
+  <Process>
+    <Object>
+      <DatabaseID>NYCTaxi_SSAS</DatabaseID>
+      <CubeID>DSV_NYCTaxi</CubeID>
+      <MeasureGroupID>Base Performance Snapshot</MeasureGroupID>
+      <PartitionID>Base Performance Snapshot All</PartitionID>
+    </Object>
+    <Type>ProcessFull</Type>
+  </Process>
+  <Process>
+    <Object>
+      <DatabaseID>NYCTaxi_SSAS</DatabaseID>
+      <CubeID>DSV_NYCTaxi</CubeID>
+    </Object>
+    <Type>ProcessIndexes</Type>
+  </Process>
+</Batch>

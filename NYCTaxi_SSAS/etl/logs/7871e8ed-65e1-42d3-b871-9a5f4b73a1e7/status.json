@@ -1,0 +1,1 @@
+{"RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Master","Task":"MasterComplete","Status":"SUCCEEDED","Message":"Toàn luồng hoàn tất.","HeartbeatUtc":"2026-10-31T10:58:54.4328383Z","TaskStartedUtc":"2026-10-31T10:58:54.4328383Z","Rows":0,"TotalRows":0,"LogFolder":"E:\\NYCTaxi\\NYCTaxi_SSAS\\etl\\logs\\7871e8ed-65e1-42d3-b871-9a5f4b73a1e7"}

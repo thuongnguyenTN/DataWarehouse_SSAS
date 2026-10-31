@@ -1,0 +1,554 @@
+<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine" dwd:design-time-name="6ecdc50f-b376-4a9d-ae2f-a1659d8b0837">
+  <ID>FHV_Trips</ID>
+  <Name>FHV Trips</Name>
+  <Dimensions>
+    <Dimension dwd:design-time-name="2e10a4c2-b64d-4153-8bc7-bbff1ddb5ee1">
+      <ID>Pickup Time</ID>
+      <Name>Pickup Time</Name>
+      <DimensionID>Dim Time</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="31eae733-5389-4dc4-9f08-7a78a8937cdb">
+          <AttributeID>Time Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1c602699-cc64-4ff4-81d5-ac1c6ed5cef3">
+          <AttributeID>Hour Number</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="29c949a4-7c2a-4cb8-8c2a-a54d53a5795e">
+          <AttributeID>Time Band</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4291b4f7-372c-4795-a4d7-52f8ecb7e36e">
+          <AttributeID>Is Peak Hour</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="09a9b115-d55f-4ad4-bf31-f74a4e0e47c2">
+          <AttributeID>Time Label</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="243e78fd-6cc3-4b9e-96de-a4df63a07210">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="62a6d399-7a2b-4979-85ba-552b3ae32349">
+      <ID>Dim FHV Flags</ID>
+      <Name>Dim FHV Flags</Name>
+      <DimensionID>Dim FHV Flags</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="85cf9bd2-ce0c-4445-b5e2-bcb0f24ea337">
+          <AttributeID>FHV Flag Key</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="9d9840ee-f8d3-4c08-8dff-52c17a22728c">
+      <ID>Dropoff Location</ID>
+      <Name>Dropoff Location</Name>
+      <DimensionID>Dim Location</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="87331cc0-6496-4b7d-8c84-527dc2544d2b">
+          <AttributeID>Location Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="415627d3-0632-4915-8196-3a3aaabb479e">
+          <AttributeID>Location ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ace8e571-20ca-4c47-87c5-ca8067781f27">
+          <AttributeID>Borough</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6516754d-c0cf-4b80-8d7d-a1dd655ac9ec">
+          <AttributeID>Service Zone</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="05088a1d-2314-4fbf-8952-571c18a31b30">
+          <AttributeID>Zone Name</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="ecee5f13-4e58-4afd-a42c-67ff6a90d966">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="79224860-597c-42a2-8cab-eea8e414e975">
+      <ID>Pickup Date</ID>
+      <Name>Pickup Date</Name>
+      <DimensionID>Dim Date</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="9e7325cf-6d82-4e66-a6bb-aae5e9d7e4d2">
+          <AttributeID>Date Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3de1c5ab-cada-490c-b35e-640d828b1fb9">
+          <AttributeID>Day Of Week Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d849dc6b-b1be-4d4b-a7b2-b1836fd23836">
+          <AttributeID>Day Of Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e31ecd9a-3672-4303-9bc1-90fd97cc940a">
+          <AttributeID>Month Number</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="37a83b6e-05f0-4f0d-b3b7-a8d2d8233c50">
+          <AttributeID>Month Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6a7cc8c9-d7bf-4b04-96ad-d182f85b7f62">
+          <AttributeID>Quarter Number</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="51b080a2-78f5-4123-9514-68ee4f14ab95">
+          <AttributeID>Year Number</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c1f94b8f-f7a2-4238-bf20-d9784bfefb83">
+          <AttributeID>Is Weekend</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b830e38e-c7a1-4c7d-9e80-119830969de7">
+          <AttributeID>Is Holiday</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ed4a236e-6959-4cb4-97fa-26fcbc55f68d">
+          <AttributeID>Full Date</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="ec9fc0a9-163a-48eb-ae15-84db7ce1ced5">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="8411cfc3-eaf3-45b6-ac9a-ca91aa66b88b">
+      <ID>Pickup Location</ID>
+      <Name>Pickup Location</Name>
+      <DimensionID>Dim Location</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="951e6d8f-d469-482c-9642-7309bf07eda6">
+          <AttributeID>Location Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="65242bd2-f89d-4353-ae1d-ad3a36223d02">
+          <AttributeID>Location ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3e9a0cc5-2dc8-44a8-b680-8fed097506fc">
+          <AttributeID>Borough</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6c1007a7-6fac-4819-9583-fe20e7aa1fc0">
+          <AttributeID>Service Zone</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9ac0e68c-2ee1-43d2-b11f-2ce7e7030408">
+          <AttributeID>Zone Name</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="f4f194c6-6cb7-41fe-a4f2-280bdb0fd5b2">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="65d85246-3f05-4831-a9b0-3591c4cd863f">
+      <ID>Dispatch Base</ID>
+      <Name>Dispatch Base</Name>
+      <DimensionID>Dim Base</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="af7f57e1-47bd-4668-93fd-076b3cf3ca22">
+          <AttributeID>Base Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1336c888-b3e3-487a-9c1f-f57d29aced80">
+          <AttributeID>Base Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5fd1e4ad-948e-4e95-9f9d-bea2e0dbeb75">
+          <AttributeID>Base Category</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="6847c9a9-68a6-4267-b3bc-f64f7209af7f">
+      <ID>Dim Service Type</ID>
+      <Name>Dim Service Type</Name>
+      <DimensionID>Dim Service Type</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="91a9fec3-ff29-49db-98c0-f7c99d1baf46">
+          <AttributeID>Service Type Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fe20c020-92eb-40dd-99a9-2f4113dd9d87">
+          <AttributeID>Service Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6cdfad3c-b4f7-45d2-b2ca-b1b0974e32ac">
+          <AttributeID>Service Name</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="8aa47617-ca65-4e36-b64c-78f69aa202b5">
+      <ID>Dropoff Time</ID>
+      <Name>Dropoff Time</Name>
+      <DimensionID>Dim Time</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="99aa0240-1981-4efb-8dad-f18cc08ab2ea">
+          <AttributeID>Time Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2674e5cd-236a-43f0-baad-4410a6d2d67f">
+          <AttributeID>Hour Number</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1050cbde-ed02-4cb2-9066-d683fa1a8d6b">
+          <AttributeID>Time Band</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b2aa122d-d1cd-4128-9691-4f659171061e">
+          <AttributeID>Is Peak Hour</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cee2ca84-8a24-4f86-b08c-2c5117bfafeb">
+          <AttributeID>Time Label</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="c1eb861d-6f52-45f3-a0b7-49931272d498">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="c6388229-716e-4b60-bbf3-5fa39c3f24e6">
+      <ID>Dropoff Date</ID>
+      <Name>Dropoff Date</Name>
+      <DimensionID>Dim Date</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="22cb91a1-fdb9-4bdc-b3b8-585aa4b5000a">
+          <AttributeID>Date Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8b742e55-1df4-416d-b460-4fe2094fe6f6">
+          <AttributeID>Day Of Week Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ce97071c-0022-4e6b-9eb6-3a5dedb56804">
+          <AttributeID>Day Of Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="61633995-61c8-4980-b079-b0a1665cbf07">
+          <AttributeID>Month Number</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e02e17da-c969-49a5-9412-0e8588c430e3">
+          <AttributeID>Month Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8d34c860-54ba-4f4f-a438-f5ed9d7058e8">
+          <AttributeID>Quarter Number</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a6461328-d108-4e81-a63f-754df0d01c53">
+          <AttributeID>Year Number</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6df1d363-a7b1-4a6d-9f95-8775ec1bd92c">
+          <AttributeID>Is Weekend</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="632044b4-5a3c-4214-87e0-da9a67797295">
+          <AttributeID>Is Holiday</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1b1e4670-a6e3-4a86-a830-0481f4bf902c">
+          <AttributeID>Full Date</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="e43e7cf7-b035-4f5b-a6c1-11058b7c55cb">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="a7d4f6a8-9b45-4b13-84e8-ac222f7fef74">
+      <ID>Affiliated Base</ID>
+      <Name>Affiliated Base</Name>
+      <DimensionID>Dim Base</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="ecef6a7a-9f37-48a3-8356-579a16bb362f">
+          <AttributeID>Base Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ae8d1b35-8301-45c5-af4c-f407403e0d4b">
+          <AttributeID>Base Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="020f0fe9-1da9-432a-a6cd-17afab5f0382">
+          <AttributeID>Base Category</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="5875c5bc-7c00-4f25-ab71-3ea9d93fdc82">
+      <ID>Dim Load Batch</ID>
+      <Name>Dim Load Batch</Name>
+      <DimensionID>Dim Load Batch</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="89282477-3724-4911-a99e-aff4d1855392">
+          <AttributeID>Load Batch Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f34a0095-a158-44a7-8d5d-a52089181470">
+          <AttributeID>BatchID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="81f85dd3-82b3-4b2d-8c2e-cddeeadbcfbc">
+          <AttributeID>Dataset Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cf9de92f-d893-4cb8-90cd-2c49a41e9654">
+          <AttributeID>Source File Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4408bd60-ee04-4f49-a303-9e60ac864bc9">
+          <AttributeID>Source Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="586db32e-681e-440d-92ac-2501652524b4">
+          <AttributeID>Source Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9c578fd5-3faa-4b71-8a3c-a4c78e46d8de">
+          <AttributeID>Batch Status</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="6e3a3697-c926-4312-9826-8fcb7ef00002">
+      <ID>Fact FHV Trips</ID>
+      <Name>Fact FHV Trips</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="133498bd-9c5f-4d41-ba13-7ace6fd1e295">
+          <ID>Trip Count</ID>
+          <Name>Trip Count</Name>
+          <Source dwd:design-time-name="63505583-dbcb-4e86-9e9f-abc8c82335cf">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="1f321ac4-57f2-4a04-a025-259464cbfbe9">
+              <TableID>dbo_Fact_FHV_Trips</TableID>
+              <ColumnID>TripCount</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Fact FHV Trips</DisplayFolder>
+        </Measure>
+        <Measure dwd:design-time-name="a971e825-b9a4-4d57-aa30-73f182c5f9b1">
+          <ID>Trip Duration Seconds</ID>
+          <Name>Trip Duration Seconds</Name>
+          <Source dwd:design-time-name="f10c2c84-709c-4eff-9da5-3bc39ff2ef78">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="8bb0d56e-5ed0-4947-882e-5f00360f46d4">
+              <TableID>dbo_Fact_FHV_Trips</TableID>
+              <ColumnID>TripDurationSeconds</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Fact FHV Trips</DisplayFolder>
+        </Measure>
+        <Measure dwd:design-time-name="0c6e7a2e-701b-4bb2-9ca6-0e0bf642bc45">
+          <ID>Fact FHV Trips TripDurationSecondsValidTrips</ID>
+          <Name>Fact FHV Trips TripDurationSecondsValidTrips</Name>
+          <Source dwd:design-time-name="00e5083d-11c0-4278-8ffd-b0f148ea3756">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="26eef878-7cc2-47c7-8668-b09f01d4a3ac">
+              <TableID>dbo_Fact_FHV_Trips</TableID>
+              <ColumnID>TripDurationSecondsValidTrips</ColumnID>
+            </Source>
+          </Source>
+          <Visible>false</Visible>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <IgnoreUnrelatedDimensions>false</IgnoreUnrelatedDimensions>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="25dd26a7-9f1b-444a-9bc5-a027511cdc6e">
+          <CubeDimensionID>Pickup Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="6a4c46b2-a767-4e4b-aae1-91dafb3fe459">
+              <AttributeID>Date Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f0373a73-cfd8-4830-af98-a812ab373b0b">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="deb28aec-30ec-4bb5-985c-6eda3a710d46">
+                    <TableID>dbo_Fact_FHV_Trips</TableID>
+                    <ColumnID>PickupDateKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="55a5cbe1-bf5a-4e67-af1c-fef7b99297d2">
+          <CubeDimensionID>Dropoff Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="65867602-ed7e-4711-8ec5-7da38fc9e74e">
+              <AttributeID>Date Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="9bb11efd-134b-4827-81cd-4c3ca6155854">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="97368815-0bcf-4849-9b78-6132b42e0ecd">
+                    <TableID>dbo_Fact_FHV_Trips</TableID>
+                    <ColumnID>DropoffDateKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="5908ff66-eec8-42e6-90e3-d54fb6dd946c">
+          <CubeDimensionID>Pickup Time</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d838e1fe-e0ac-4bf6-a011-77bd2bf7168d">
+              <AttributeID>Time Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="72ea0494-762b-428c-9a70-8342515c0ee1">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="389728ff-fa51-4a67-8074-19027ebc8c89">
+                    <TableID>dbo_Fact_FHV_Trips</TableID>
+                    <ColumnID>PickupTimeKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="6d753d9b-4a5e-4a73-9d21-c78270cb73b1">
+          <CubeDimensionID>Dropoff Time</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c3796cff-5031-4e32-b97a-1b12f0fde33c">
+              <AttributeID>Time Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="15e72fdc-3fea-40d8-9449-b6de0108508a">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="06e0658d-143a-472a-a2f7-70a020bcfb5d">
+                    <TableID>dbo_Fact_FHV_Trips</TableID>
+                    <ColumnID>DropoffTimeKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="283b48d6-a94f-4592-bdc9-3e8470cb8c9c">
+          <CubeDimensionID>Pickup Location</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="7a4da888-710c-489b-bc78-498e78d2e337">
+              <AttributeID>Location Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="99c8ab2e-aa50-45eb-9336-3282d88d9e6d">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3352859f-4a5a-431b-af88-0f92fb387ec1">
+                    <TableID>dbo_Fact_FHV_Trips</TableID>
+                    <ColumnID>PickupLocationKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="08f375c9-c77e-4f0e-b44a-b1e437a689c9">
+          <CubeDimensionID>Dropoff Location</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d271c83a-5d5e-4c94-84ea-116435eb6abb">
+              <AttributeID>Location Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="cc1412d6-6aa9-4fc5-b051-8653b03c2951">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8f65d3d0-7307-40d7-9a53-c5f4d13f00c7">
+                    <TableID>dbo_Fact_FHV_Trips</TableID>
+                    <ColumnID>DropoffLocationKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="3d6beda8-4c3e-4587-aa68-0de2deba7b49">
+          <CubeDimensionID>Dim Service Type</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e6f2e964-7540-4073-92e0-cc70fbd0e335">
+              <AttributeID>Service Type Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1d5b29c7-e950-452b-8041-788cd7352fdd">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a1532cc6-faaf-47a6-b75a-848eecc6af9a">
+                    <TableID>dbo_Fact_FHV_Trips</TableID>
+                    <ColumnID>ServiceTypeKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="777fd337-7597-4e0c-bba4-ff549bceec33">
+          <CubeDimensionID>Dispatch Base</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3914fdef-7967-4c2e-944d-4cdd6223751e">
+              <AttributeID>Base Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="6abaf619-45e6-48ec-8bfc-b27bcf175d83">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0e9426a9-b4fc-4254-98d6-79005710d612">
+                    <TableID>dbo_Fact_FHV_Trips</TableID>
+                    <ColumnID>DispatchBaseKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b197a586-f3d7-4359-884c-c7beb01052f1">
+          <CubeDimensionID>Affiliated Base</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d6650991-26f3-4851-8c1e-0f27b549911c">
+              <AttributeID>Base Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="543101d2-96f4-47c0-83a1-53141dda074e">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f5ba76ec-d7ac-40a5-b882-ecdcddba3f37">
+                    <TableID>dbo_Fact_FHV_Trips</TableID>
+                    <ColumnID>AffiliatedBaseKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="d31f2a35-731f-47b8-87a1-9b85f167a0e8">
+          <CubeDimensionID>Dim FHV Flags</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="7f72ad9c-1f17-4084-972f-7fc08e87db51">
+              <AttributeID>FHV Flag Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="745dc9be-be10-4e63-a40a-cb9d84da6f10">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3b245e2b-c95f-4831-b5a3-ae9281ac9cd3">
+                    <TableID>dbo_Fact_FHV_Trips</TableID>
+                    <ColumnID>FHVFlagKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="bfb47aac-94b7-4c9a-be50-733cbbac62f0">
+          <CubeDimensionID>Dim Load Batch</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9706cf32-bfc3-44b2-af49-fd55247c7ee5">
+              <AttributeID>Load Batch Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="44499b59-3676-47f8-9746-aabb5010bdd7">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="fe77e938-459d-4ca0-a9f4-0dbcc8c4d726">
+                    <TableID>dbo_Fact_FHV_Trips</TableID>
+                    <ColumnID>LoadBatchKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions/>
+      <AggregationDesigns/>
+    </MeasureGroup>
+    </MeasureGroups>
+  <Source dwd:design-time-name="a3fd343a-82e0-4ce0-9a66-74345514f5a5">
+    <DataSourceViewID>DSV_NYCTaxi_DWH</DataSourceViewID>
+  </Source>
+  <MdxScripts>
+    <MdxScript dwd:design-time-name="429486c0-b30d-4084-a2b3-bfdf265c4c72">
+      <ID>MdxScript</ID>
+      <Name>MdxScript</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Commands>
+        <Command>
+          <Text>CALCULATE;
+CREATE MEMBER CURRENTCUBE.[Measures].[FHV Average Trip Duration Minutes] AS IIF(IsEmpty([Measures].[Fact FHV Trips TripDurationSecondsValidTrips]) OR [Measures].[Fact FHV Trips TripDurationSecondsValidTrips] = 0, NULL, ([Measures].[Trip Duration Seconds]) / ([Measures].[Fact FHV Trips TripDurationSecondsValidTrips]) * 0.016666666666666666), FORMAT_STRING = '#,##0.00', DISPLAY_FOLDER = 'FHV', VISIBLE = 1;</Text>
+        </Command>
+      </Commands>
+    </MdxScript>
+  </MdxScripts>
+</Cube>

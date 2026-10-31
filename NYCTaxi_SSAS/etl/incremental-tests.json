@@ -1,0 +1,97 @@
+﻿{
+    "Passed":  true,
+    "DwhDatabase":  "NYCTaxi_DWH_IncTest_20261031173356",
+    "StagingDatabase":  "NYCTaxi_Staging_IncTest_20261031173356",
+    "NewFile1000RowsMilliseconds":  757,
+    "Checks":  [
+                   {
+                       "Test":  "Taxi zone lookup is excluded from Fact checkpoint planning",
+                       "Passed":  true
+                   },
+                   {
+                       "Test":  "Initial load creates five file checkpoints across all services",
+                       "Passed":  true
+                   },
+                   {
+                       "Test":  "Duplicate payload within and across files is preserved",
+                       "Passed":  true
+                   },
+                   {
+                       "Test":  "New 1000-row file scopes dimension input to one pending file",
+                       "Passed":  true
+                   },
+                   {
+                       "Test":  "New 1000-row file processes one file only",
+                       "Passed":  true
+                   },
+                   {
+                       "Test":  "New file preserves 1000 identical business rows",
+                       "Passed":  true
+                   },
+                   {
+                       "Test":  "Unchanged rerun processes zero files",
+                       "Passed":  true
+                   },
+                   {
+                       "Test":  "Correction processes only the changed historical file",
+                       "Passed":  true
+                   },
+                   {
+                       "Test":  "Unrelated duplicate file retains its Fact key",
+                       "Passed":  true
+                   },
+                   {
+                       "Test":  "Rejected historical row removed and audit retained",
+                       "Passed":  true
+                   },
+                   {
+                       "Test":  "Corrected duration matches valid Clean payload",
+                       "Passed":  true
+                   },
+                   {
+                       "Test":  "Zero-valid-row file removes old facts and checkpoints zero",
+                       "Passed":  true
+                   },
+                   {
+                       "Test":  "Injected failure rolls back Fact writes",
+                       "Passed":  true
+                   },
+                   {
+                       "Test":  "Failed file is logged and retried",
+                       "Passed":  true
+                   },
+                   {
+                       "Test":  "Retry completion becomes a no-op checkpoint",
+                       "Passed":  true
+                   },
+                   {
+                       "Test":  "Missing non-null location is tracked for remapping",
+                       "Passed":  true
+                   },
+                   {
+                       "Test":  "New dimension mapping reprocesses affected Unknown file",
+                       "Passed":  true
+                   },
+                   {
+                       "Test":  "SCD1 label change does not reload Fact",
+                       "Passed":  true
+                   },
+                   {
+                       "Test":  "Explicit force request reloads one file",
+                       "Passed":  true
+                   },
+                   {
+                       "Test":  "Legacy hash adoption touches only uncheckpointed file",
+                       "Passed":  true
+                   },
+                   {
+                       "Test":  "Legacy hash adoption preserves counts and business total",
+                       "Passed":  true
+                   },
+                   {
+                       "Test":  "Final file coverage validation passes",
+                       "Passed":  true
+                   }
+               ],
+    "ProductionDataModified":  false
+}

@@ -1,0 +1,2 @@
+{"Utc":"2026-10-31T08:40:15.6243879Z","RunId":"926c9baa-fdd1-48c6-8f99-67cd6335382e","Stage":"Dwh","Task":"StageAttempt","Status":"RUNNING","Detail":"Lần thử 1"}
+{"Utc":"2026-10-31T08:40:16.3679125Z","RunId":"926c9baa-fdd1-48c6-8f99-67cd6335382e","Stage":"Dwh","Task":"StageReturned","Status":"INFO","Detail":"Runner hoàn tất stage."}

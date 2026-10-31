@@ -1,0 +1,197 @@
+{"Utc":"2026-10-31T10:41:19.0113646Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"Monitor","Status":"INFO","Detail":"Cửa sổ theo dõi đã mở; đóng cửa sổ này không dừng ETL."}
+{"Utc":"2026-10-31T10:41:20.2123615Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"StageAttempt","Status":"RUNNING","Detail":"Lần thử 1"}
+{"Utc":"2026-10-31T10:41:21.9482541Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Transform","Task":"StageComplete","Status":"INVALIDATED","Detail":"Rerunning Extract"}
+{"Utc":"2026-10-31T10:41:22.2937360Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Dwh","Task":"StageComplete","Status":"INVALIDATED","Detail":"Rerunning Extract"}
+{"Utc":"2026-10-31T10:41:22.6110341Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Aggregates","Task":"StageComplete","Status":"INVALIDATED","Detail":"Rerunning Extract"}
+{"Utc":"2026-10-31T10:41:22.9225081Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Ssas","Task":"StageComplete","Status":"INVALIDATED","Detail":"Rerunning Extract"}
+{"Utc":"2026-10-31T10:41:23.2394210Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"Download","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:41:24.1759964Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"Download","Status":"SUCCEEDED","Detail":null}
+{"Utc":"2026-10-31T10:41:24.2138022Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"Convert","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:41:25.9233277Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"Convert","Status":"SUCCEEDED","Detail":null}
+{"Utc":"2026-10-31T10:41:25.9800136Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"PrepareStaging","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:41:26.9702875Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"PrepareStaging","Status":"SUCCEEDED","Detail":null}
+{"Utc":"2026-10-31T10:41:27.0133277Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2021-01.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:41:27.7974326Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2021-01.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:41:27.8201383Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2021-02.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:41:28.6307246Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2021-02.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:41:28.6462363Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2021-03.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:41:30.3685055Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2021-03.csv","Status":"SUCCEEDED","Detail":"LOADED_ROWS=1000"}
+{"Utc":"2026-10-31T10:41:30.3846121Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2025-01.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:41:31.1397639Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2025-01.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:41:31.1616378Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2025-02.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:41:31.9104888Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2025-02.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:41:31.9275718Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2025-03.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:41:32.6945689Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2025-03.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:41:32.7055857Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2025-04.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:41:33.4344068Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2025-04.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:41:33.4511258Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2025-05.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:41:34.2160749Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2025-05.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:41:34.2403524Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2025-06.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:41:34.9762762Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2025-06.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:41:34.9881132Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2025-07.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:41:35.7335028Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2025-07.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:41:35.7421906Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2025-08.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:41:36.4703720Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2025-08.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:41:36.4996369Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2025-09.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:41:37.2924899Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2025-09.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:41:37.2924899Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2025-10.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:41:38.0812878Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2025-10.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:41:38.0934521Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2025-11.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:41:38.8609389Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2025-11.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:41:38.8830546Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2025-12.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:41:39.6642056Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:yellow:yellow_tripdata_2025-12.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:41:39.7009411Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:green:green_tripdata_2021-01.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:41:40.4557920Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:green:green_tripdata_2021-01.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:41:40.4727340Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:green:green_tripdata_2021-02.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:41:41.2491319Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:green:green_tripdata_2021-02.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:41:41.2701946Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:green:green_tripdata_2021-03.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:41:42.6865508Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:green:green_tripdata_2021-03.csv","Status":"SUCCEEDED","Detail":"LOADED_ROWS=1000"}
+{"Utc":"2026-10-31T10:41:42.7087443Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:green:green_tripdata_2025-01.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:41:43.4935848Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:green:green_tripdata_2025-01.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:41:43.5258917Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:green:green_tripdata_2025-02.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:41:44.2685745Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:green:green_tripdata_2025-02.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:41:44.2841313Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:green:green_tripdata_2025-03.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:41:45.0684335Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:green:green_tripdata_2025-03.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:41:45.0905735Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:green:green_tripdata_2025-04.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:41:45.8226850Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:green:green_tripdata_2025-04.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:41:45.8429283Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:green:green_tripdata_2025-05.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:41:46.5742728Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:green:green_tripdata_2025-05.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:41:46.5856294Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:green:green_tripdata_2025-06.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:41:47.3719190Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:green:green_tripdata_2025-06.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:41:47.3899270Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:green:green_tripdata_2025-07.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:41:48.1251578Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:green:green_tripdata_2025-07.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:41:48.1410737Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:green:green_tripdata_2025-08.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:41:48.9147617Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:green:green_tripdata_2025-08.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:41:48.9251293Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:green:green_tripdata_2025-09.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:41:49.7346535Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:green:green_tripdata_2025-09.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:41:49.7531347Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:green:green_tripdata_2025-10.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:41:50.4649725Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:green:green_tripdata_2025-10.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:41:50.4975464Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:green:green_tripdata_2025-11.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:41:51.2397720Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:green:green_tripdata_2025-11.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:41:51.2577074Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:green:green_tripdata_2025-12.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:41:52.0547999Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:green:green_tripdata_2025-12.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:41:52.0900871Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2021-01.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:41:52.8247661Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2021-01.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:41:52.8564993Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2021-02.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:41:53.5908109Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2021-02.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:41:53.6084131Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2021-03.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:41:55.1209012Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2021-03.csv","Status":"SUCCEEDED","Detail":"LOADED_ROWS=1000"}
+{"Utc":"2026-10-31T10:41:55.1271031Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2025-01.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:41:55.9338460Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2025-01.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:41:55.9525361Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2025-02.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:41:56.7876104Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2025-02.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:41:56.8042053Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2025-03.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:41:57.5693113Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2025-03.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:41:57.6044130Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2025-04.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:41:58.3272379Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2025-04.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:41:58.3458867Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2025-05.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:41:59.1457247Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2025-05.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:41:59.1591629Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2025-06.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:41:59.8961424Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2025-06.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:41:59.9366101Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2025-07.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:42:00.6782415Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2025-07.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:42:00.6992787Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2025-08.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:42:01.5365850Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2025-08.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:42:01.5557663Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2025-09.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:42:02.3230340Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2025-09.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:42:02.3591520Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2025-10.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:42:03.0724640Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2025-10.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:42:03.0949606Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2025-11.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:42:03.8890554Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2025-11.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:42:03.9114595Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2025-12.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:42:04.6418102Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhv:fhv_tripdata_2025-12.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:42:04.6874320Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2021-01.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:42:05.4347929Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2021-01.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:42:05.4468069Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2021-02.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:42:06.2537284Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2021-02.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:42:06.2669952Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2021-03.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:42:07.7530062Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2021-03.csv","Status":"SUCCEEDED","Detail":"LOADED_ROWS=1000"}
+{"Utc":"2026-10-31T10:42:07.7696467Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2025-01.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:42:08.6022104Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2025-01.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:42:08.6126022Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2025-02.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:42:09.3475558Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2025-02.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:42:09.3684632Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2025-03.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:42:10.1283155Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2025-03.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:42:10.1477401Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2025-04.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:42:10.9501310Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2025-04.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:42:10.9719477Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2025-05.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:42:11.7283352Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2025-05.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:42:11.7572405Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2025-06.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:42:12.4660818Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2025-06.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:42:12.4794652Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2025-07.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:42:13.2602294Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2025-07.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:42:13.2791267Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2025-08.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:42:14.0124385Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2025-08.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:42:14.0345200Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2025-09.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:42:14.7853463Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2025-09.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:42:14.8015580Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2025-10.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:42:15.6295802Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2025-10.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:42:15.6456117Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2025-11.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:42:16.3903202Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2025-11.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:42:16.4185358Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2025-12.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:42:17.1631245Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:fhvhv:fhvhv_tripdata_2025-12.csv","Status":"SUCCEEDED","Detail":"SKIPPED_OUT_OF_RANGE"}
+{"Utc":"2026-10-31T10:42:17.1878877Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:lookup:taxi_zone_lookup.csv","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:42:18.3394990Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"File:lookup:taxi_zone_lookup.csv","Status":"SUCCEEDED","Detail":"SKIPPED_ALREADY_LOADED"}
+{"Utc":"2026-10-31T10:42:18.3564670Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"ValidateStaging","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:42:19.3102568Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"ValidateStaging","Status":"SUCCEEDED","Detail":null}
+{"Utc":"2026-10-31T10:42:19.6462834Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"StageComplete","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:42:20.3140905Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"StageComplete","Status":"SUCCEEDED","Detail":null}
+{"Utc":"2026-10-31T10:42:20.3350472Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"Invocation","Status":"SUCCEEDED","Detail":""}
+{"Utc":"2026-10-31T10:42:20.4091383Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Extract","Task":"StageReturned","Status":"INFO","Detail":"Runner hoàn tất stage."}
+{"Utc":"2026-10-31T10:42:22.7469886Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Transform","Task":"StageAttempt","Status":"RUNNING","Detail":"Lần thử 1"}
+{"Utc":"2026-10-31T10:42:24.8971165Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Dwh","Task":"StageComplete","Status":"INVALIDATED","Detail":"Rerunning Transform"}
+{"Utc":"2026-10-31T10:42:25.2287736Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Aggregates","Task":"StageComplete","Status":"INVALIDATED","Detail":"Rerunning Transform"}
+{"Utc":"2026-10-31T10:42:25.5432172Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Ssas","Task":"StageComplete","Status":"INVALIDATED","Detail":"Rerunning Transform"}
+{"Utc":"2026-10-31T10:42:26.0311758Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Transform","Task":"EST_01_Setup_Clean","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:42:27.0303448Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Transform","Task":"EST_01_Setup_Clean","Status":"SUCCEEDED","Detail":null}
+{"Utc":"2026-10-31T10:42:27.0796908Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Transform","Task":"EST_02_Transform_TaxiZone","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:42:28.0315860Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Transform","Task":"EST_02_Transform_TaxiZone","Status":"SUCCEEDED","Detail":null}
+{"Utc":"2026-10-31T10:42:28.0614549Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Transform","Task":"EST_03_Transform_YELLOW","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:43:27.1078985Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Transform","Task":"EST_03_Transform_YELLOW","Status":"SUCCEEDED","Detail":null}
+{"Utc":"2026-10-31T10:43:27.1330982Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Transform","Task":"EST_04_Transform_GREEN","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:43:28.7666404Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Transform","Task":"EST_04_Transform_GREEN","Status":"SUCCEEDED","Detail":null}
+{"Utc":"2026-10-31T10:43:28.8184111Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Transform","Task":"EST_05_Transform_FHV","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:43:30.4724887Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Transform","Task":"EST_05_Transform_FHV","Status":"SUCCEEDED","Detail":null}
+{"Utc":"2026-10-31T10:43:30.4963053Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Transform","Task":"EST_06_Transform_FHVHV","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:43:33.0392790Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Transform","Task":"EST_06_Transform_FHVHV","Status":"SUCCEEDED","Detail":null}
+{"Utc":"2026-10-31T10:43:33.0642197Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Transform","Task":"EST_07_Validate_Transform","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:43:34.0607758Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Transform","Task":"EST_07_Validate_Transform","Status":"SUCCEEDED","Detail":null}
+{"Utc":"2026-10-31T10:43:34.4194686Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Transform","Task":"StageComplete","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:43:35.0892600Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Transform","Task":"StageComplete","Status":"SUCCEEDED","Detail":null}
+{"Utc":"2026-10-31T10:43:35.1428101Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Transform","Task":"Invocation","Status":"SUCCEEDED","Detail":""}
+{"Utc":"2026-10-31T10:43:36.9369326Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Transform","Task":"StageReturned","Status":"INFO","Detail":"Runner hoàn tất stage."}
+{"Utc":"2026-10-31T10:43:39.2364464Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Dwh","Task":"StageAttempt","Status":"RUNNING","Detail":"Lần thử 1"}
+{"Utc":"2026-10-31T10:43:41.6411253Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Aggregates","Task":"StageComplete","Status":"INVALIDATED","Detail":"Rerunning Dwh"}
+{"Utc":"2026-10-31T10:43:41.9499808Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Ssas","Task":"StageComplete","Status":"INVALIDATED","Detail":"Rerunning Dwh"}
+{"Utc":"2026-10-31T10:43:42.3016023Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Dwh","Task":"EST_00_Precheck_DWH","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:48:28.6553049Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Dwh","Task":"EST_00_Precheck_DWH","Status":"SUCCEEDED","Detail":null}
+{"Utc":"2026-10-31T10:48:28.6963542Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Dwh","Task":"EST_01_Load_Dimensions","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:48:34.1865199Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Dwh","Task":"EST_01_Load_Dimensions","Status":"SUCCEEDED","Detail":"[{\"PendingFiles\":18,\"DimensionInputRows\":143965}]"}
+{"Utc":"2026-10-31T10:48:34.2262444Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Dwh","Task":"EST_02_Load_FactYellowGreen","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:48:40.9630731Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Dwh","Task":"EST_02_Load_FactYellowGreen","Status":"SUCCEEDED","Detail":"[{\"ProcessedFiles\":2,\"ValidInputRows\":1995}]"}
+{"Utc":"2026-10-31T10:48:40.9945928Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Dwh","Task":"EST_03_Load_FactFHV","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:54:44.1737369Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Dwh","Task":"EST_03_Load_FactFHV","Status":"SUCCEEDED","Detail":"[{\"ProcessedFiles\":15,\"ValidInputRows\":140970}]"}
+{"Utc":"2026-10-31T10:54:44.2002920Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Dwh","Task":"EST_04_Load_FactHVFHV","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:54:46.4210886Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Dwh","Task":"EST_04_Load_FactHVFHV","Status":"SUCCEEDED","Detail":"[{\"ProcessedFiles\":1,\"ValidInputRows\":1000}]"}
+{"Utc":"2026-10-31T10:54:46.4489860Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Dwh","Task":"EST_05_Validate_DWH","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:54:47.4185515Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Dwh","Task":"EST_05_Validate_DWH","Status":"SUCCEEDED","Detail":"[{\"CompletedFiles\":60,\"CheckpointFactRows\":562178}]"}
+{"Utc":"2026-10-31T10:54:47.7790006Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Dwh","Task":"StageComplete","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:54:48.4212248Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Dwh","Task":"StageComplete","Status":"SUCCEEDED","Detail":null}
+{"Utc":"2026-10-31T10:54:48.4536151Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Dwh","Task":"Invocation","Status":"SUCCEEDED","Detail":""}
+{"Utc":"2026-10-31T10:54:50.1495263Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Dwh","Task":"StageReturned","Status":"INFO","Detail":"Runner hoàn tất stage."}
+{"Utc":"2026-10-31T10:54:52.6379557Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Aggregates","Task":"StageAttempt","Status":"RUNNING","Detail":"Lần thử 1"}
+{"Utc":"2026-10-31T10:54:54.8058662Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Ssas","Task":"StageComplete","Status":"INVALIDATED","Detail":"Rerunning Aggregates"}
+{"Utc":"2026-10-31T10:54:55.1477423Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Aggregates","Task":"AtomicRebuildAndValidateSnapshots","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:55:13.0592588Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Aggregates","Task":"AtomicRebuildAndValidateSnapshots","Status":"SUCCEEDED","Detail":null}
+{"Utc":"2026-10-31T10:55:13.4216874Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Aggregates","Task":"StageComplete","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:55:14.1048833Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Aggregates","Task":"StageComplete","Status":"SUCCEEDED","Detail":null}
+{"Utc":"2026-10-31T10:55:14.1549606Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Aggregates","Task":"Invocation","Status":"SUCCEEDED","Detail":""}
+{"Utc":"2026-10-31T10:55:15.9274546Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Aggregates","Task":"StageReturned","Status":"INFO","Detail":"Runner hoàn tất stage."}
+{"Utc":"2026-10-31T10:55:18.0947993Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Ssas","Task":"StageAttempt","Status":"RUNNING","Detail":"Lần thử 1"}
+{"Utc":"2026-10-31T10:55:19.8658179Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Ssas","Task":"ProcessAndVerifySixCubes","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:58:48.6155607Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Ssas","Task":"ProcessAndVerifySixCubes","Status":"SUCCEEDED","Detail":null}
+{"Utc":"2026-10-31T10:58:48.9607961Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Ssas","Task":"StageComplete","Status":"RUNNING","Detail":""}
+{"Utc":"2026-10-31T10:58:49.6159897Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Ssas","Task":"StageComplete","Status":"SUCCEEDED","Detail":null}
+{"Utc":"2026-10-31T10:58:49.9607155Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Ssas","Task":"Invocation","Status":"SUCCEEDED","Detail":""}
+{"Utc":"2026-10-31T10:58:51.6409446Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Ssas","Task":"StageReturned","Status":"INFO","Detail":"Runner hoàn tất stage."}
+{"Utc":"2026-10-31T10:58:54.3589853Z","RunId":"7871e8ed-65e1-42d3-b871-9a5f4b73a1e7","Stage":"Master","Task":"MasterComplete","Status":"SUCCEEDED","Detail":"Toàn luồng đã hoàn tất và đối soát thành công."}

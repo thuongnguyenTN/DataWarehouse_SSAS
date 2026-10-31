@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Zone_Traffic"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "86cf9e2c-767d-41ac-aea3-be3859375c48"
+  }
+}

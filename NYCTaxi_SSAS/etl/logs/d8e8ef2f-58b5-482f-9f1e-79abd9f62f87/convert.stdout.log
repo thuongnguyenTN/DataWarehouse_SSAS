@@ -1,0 +1,9 @@
+Input: D:\Kho_Du_lieu\NYCTaxi\raw
+Output: D:\Kho_Du_lieu\NYCTaxi\csv
+Schema: ssis; max-rows: 10000
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\fhv\year=2021\month=02\fhv_tripdata_2021-02.csv: 10,000/1,037,692 dong
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\fhvhv\year=2021\month=02\fhvhv_tripdata_2021-02.csv: 10,000/11,613,942 dong
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\green\year=2021\month=02\green_tripdata_2021-02.csv: 10,000/64,572 dong
+[XONG] D:\Kho_Du_lieu\NYCTaxi\csv\yellow\year=2021\month=02\yellow_tripdata_2021-02.csv: 10,000/1,371,709 dong
+
+TONG KET: converted=4, skipped=1, failed=0, missing=0, rows=40,265

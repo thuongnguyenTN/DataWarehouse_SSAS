@@ -1,0 +1,7 @@
+﻿{
+    "InvocationId":  "e78addfe-79fe-47ff-ba4a-d7590d128db9",
+    "Message":  "fixture original SQL error",
+    "Retryable":  true,
+    "Task":  "FixtureSql",
+    "SqlNumber":  1205
+}

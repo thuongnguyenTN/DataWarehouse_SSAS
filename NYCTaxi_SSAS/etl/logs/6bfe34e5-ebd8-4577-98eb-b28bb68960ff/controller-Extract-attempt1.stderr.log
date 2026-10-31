@@ -1,0 +1,6 @@
+E:\NYCTaxi\NYCTaxi_SSAS\etl\Invoke-NYCTaxiPipeline.ps1 : ETL FAILED. RunId=6bfe34e5-ebd8-4577-98eb-b28bb68960ff. 
+Exception calling "GetResult" with "0" argument(s): "Unfinished run exists. Inspect logs and resume the same RunId.". 
+Logs=E:\NYCTaxi\NYCTaxi_SSAS\etl\logs\6bfe34e5-ebd8-4577-98eb-b28bb68960ff
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,Invoke-NYCTaxiPipeline.ps1
+ 

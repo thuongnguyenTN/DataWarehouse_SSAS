@@ -1,0 +1,16 @@
+[16:13:57] [Dwh] RUNNING: EST_00_Precheck_DWH
+[16:13:58] [Dwh] SUCCEEDED: EST_00_Precheck_DWH
+[16:13:58] [Dwh] RUNNING: EST_01_Load_Dimensions
+[16:13:59] [Dwh] SUCCEEDED: EST_01_Load_Dimensions
+[16:13:59] [Dwh] RUNNING: EST_02_Load_FactYellowGreen
+[16:14:00] [Dwh] SUCCEEDED: EST_02_Load_FactYellowGreen
+[16:14:00] [Dwh] RUNNING: EST_03_Load_FactFHV
+[16:14:01] [Dwh] SUCCEEDED: EST_03_Load_FactFHV
+[16:14:01] [Dwh] RUNNING: EST_04_Load_FactHVFHV
+[16:14:02] [Dwh] SUCCEEDED: EST_04_Load_FactHVFHV
+[16:14:02] [Dwh] RUNNING: EST_05_Validate_DWH
+[16:14:03] [Dwh] SUCCEEDED: EST_05_Validate_DWH
+[16:14:03] [Dwh] RUNNING: StageComplete
+[16:14:04] [Dwh] SUCCEEDED: StageComplete
+[16:14:04] [Dwh] SUCCEEDED: Invocation
+ETL Dwh completed. RunId=006f5fdf-a15c-4353-a5a0-ce9172f6c1ef; logs=E:\NYCTaxi\NYCTaxi_SSAS\etl\logs\006f5fdf-a15c-4353-a5a0-ce9172f6c1ef

@@ -1,0 +1,22 @@
+{
+  "source_file": "E:\\NYCTaxi\\NYCTaxi_SSAS\\etl\\tests\\quarantine-fixture\\raw\\lookup\\taxi_zone_lookup.csv",
+  "source_size": 61,
+  "source_mtime_ns": 1793244628668437900,
+  "dataset": "lookup",
+  "columns": [
+    "LocationID",
+    "Borough",
+    "Zone",
+    "service_zone"
+  ],
+  "schema_mode": "ssis",
+  "contract_version": 1,
+  "encoding": "utf-8",
+  "line_ending": "LF",
+  "rows": 1,
+  "source_rows": 1,
+  "row_limit": 0,
+  "csv_size": 59,
+  "csv_mtime_ns": 1793244628675048900,
+  "sha256": "72a5f52192dacedf8a644e668a179671063eb7a7d04261a39bc290521c7b1ae2"
+}
