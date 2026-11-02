@@ -1,93 +1,17 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "f68bdab9354801093075",
   "position": {
     "x": 728,
     "y": 610,
-    "z": 14,
-    "height": 256,
     "width": 688,
+    "height": 256,
+    "z": 14,
     "tabOrder": 14
   },
   "visual": {
     "visualType": "lineChart",
-    "query": {
-      "queryState": {
-        "Category": {
-          "projections": [
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Snapshot Date"
-                    }
-                  },
-                  "Property": "Full Date"
-                }
-              },
-              "queryRef": "Snapshot Date.Full Date",
-              "nativeQueryRef": "Full Date",
-              "active": true
-            }
-          ]
-        },
-        "Y": {
-          "projections": [
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Daily Financial Snapshot"
-                    }
-                  },
-                  "Property": "Daily Financial Snapshot TotalDriverPay"
-                }
-              },
-              "queryRef": "Daily Financial Snapshot.Daily Financial Snapshot TotalDriverPay",
-              "nativeQueryRef": "Daily Financial Snapshot TotalDriverPay"
-            }
-          ]
-        }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Snapshot Date"
-                  }
-                },
-                "Property": "Full Date"
-              }
-            },
-            "direction": "Ascending"
-          }
-        ]
-      }
-    },
-    "objects": {
-      "dataPoint": [
-        {
-          "properties": {
-            "defaultColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#1F7F64'"
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      ]
-    },
+    "drillFilterOtherVisuals": true,
     "visualContainerObjects": {
       "title": [
         {
@@ -190,6 +114,82 @@
         }
       ]
     },
-    "drillFilterOtherVisuals": true
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Snapshot Date"
+                    }
+                  },
+                  "Property": "Full Date"
+                }
+              },
+              "queryRef": "Snapshot Date.Full Date",
+              "nativeQueryRef": "Full Date"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Daily Financial Snapshot"
+                    }
+                  },
+                  "Property": "Daily Financial Snapshot TotalDriverPay"
+                }
+              },
+              "queryRef": "Daily Financial Snapshot.Daily Financial Snapshot TotalDriverPay",
+              "nativeQueryRef": "Daily Financial Snapshot TotalDriverPay"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Snapshot Date"
+                  }
+                },
+                "Property": "Full Date"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ],
+        "isDefaultSort": false
+      }
+    },
+    "objects": {
+      "dataPoint": [
+        {
+          "properties": {
+            "defaultColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#1F7F64'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
   }
 }

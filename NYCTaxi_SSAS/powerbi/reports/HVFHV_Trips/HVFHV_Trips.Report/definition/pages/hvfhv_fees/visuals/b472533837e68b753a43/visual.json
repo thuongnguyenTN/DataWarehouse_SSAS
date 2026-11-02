@@ -189,13 +189,34 @@
     "objects": {
       "dataPoint": [
         {
+          "selector": {
+            "metadata": "Fact HVFHV Trips.Gross Passenger Amount"
+          },
           "properties": {
-            "defaultColor": {
+            "fill": {
               "solid": {
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#087E8B'"
+                      "Value": "'#2765A8'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "selector": {
+            "metadata": "Fact HVFHV Trips.Driver Pay Amount"
+          },
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#E07B24'"
                     }
                   }
                 }

@@ -126,11 +126,11 @@
                       "Entity": "Pickup Date"
                     }
                   },
-                  "Property": "Month Number"
+                  "Property": "Month Name"
                 }
               },
-              "queryRef": "Pickup Date.Month Number",
-              "nativeQueryRef": "Month Number"
+              "queryRef": "Pickup Date.Month Name",
+              "nativeQueryRef": "Month Name"
             }
           ]
         }
@@ -157,6 +157,20 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
+                }
+              }
+            },
+            "selectAllCheckboxEnabled": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "multiSelect": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }

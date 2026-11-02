@@ -1,93 +1,17 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "2bc3699a0292e72f245f",
   "position": {
     "x": 24,
     "y": 338,
-    "z": 12,
-    "height": 256,
     "width": 688,
+    "height": 256,
+    "z": 12,
     "tabOrder": 12
   },
   "visual": {
     "visualType": "clusteredBarChart",
-    "query": {
-      "queryState": {
-        "Category": {
-          "projections": [
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Dispatch Base"
-                    }
-                  },
-                  "Property": "Base Key"
-                }
-              },
-              "queryRef": "Dispatch Base.Base Key",
-              "nativeQueryRef": "Base Key",
-              "active": true
-            }
-          ]
-        },
-        "Y": {
-          "projections": [
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Base Performance Snapshot"
-                    }
-                  },
-                  "Property": "Base Performance Snapshot TotalTrips"
-                }
-              },
-              "queryRef": "Base Performance Snapshot.Base Performance Snapshot TotalTrips",
-              "nativeQueryRef": "Base Performance Snapshot TotalTrips"
-            }
-          ]
-        }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Measure": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Base Performance Snapshot"
-                  }
-                },
-                "Property": "Base Performance Snapshot TotalTrips"
-              }
-            },
-            "direction": "Descending"
-          }
-        ]
-      }
-    },
-    "objects": {
-      "dataPoint": [
-        {
-          "properties": {
-            "defaultColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#AC5C32'"
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      ]
-    },
+    "drillFilterOtherVisuals": true,
     "visualContainerObjects": {
       "title": [
         {
@@ -190,6 +114,82 @@
         }
       ]
     },
-    "drillFilterOtherVisuals": true
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Dispatch Base"
+                    }
+                  },
+                  "Property": "Base Key"
+                }
+              },
+              "queryRef": "Dispatch Base.Base Key",
+              "nativeQueryRef": "Base Key"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Base Performance Snapshot"
+                    }
+                  },
+                  "Property": "Base Performance Snapshot TotalTrips"
+                }
+              },
+              "queryRef": "Base Performance Snapshot.Base Performance Snapshot TotalTrips",
+              "nativeQueryRef": "Base Performance Snapshot TotalTrips"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Base Performance Snapshot"
+                  }
+                },
+                "Property": "Base Performance Snapshot TotalTrips"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": false
+      }
+    },
+    "objects": {
+      "dataPoint": [
+        {
+          "properties": {
+            "defaultColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#AC5C32'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
   }
 }

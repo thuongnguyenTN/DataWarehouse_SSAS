@@ -1,111 +1,17 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "6b36f2aae0f5f89466ab",
   "position": {
     "x": 728,
     "y": 338,
-    "z": 11,
-    "height": 256,
     "width": 688,
+    "height": 256,
+    "z": 11,
     "tabOrder": 11
   },
   "visual": {
     "visualType": "clusteredColumnChart",
-    "query": {
-      "queryState": {
-        "Category": {
-          "projections": [
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Snapshot Time"
-                    }
-                  },
-                  "Property": "Hour Number"
-                }
-              },
-              "queryRef": "Snapshot Time.Hour Number",
-              "nativeQueryRef": "Hour Number",
-              "active": true
-            }
-          ]
-        },
-        "Series": {
-          "projections": [
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Dim Service Type"
-                    }
-                  },
-                  "Property": "Service Code"
-                }
-              },
-              "queryRef": "Dim Service Type.Service Code",
-              "nativeQueryRef": "Service Code"
-            }
-          ]
-        },
-        "Y": {
-          "projections": [
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Zone Traffic Snapshot"
-                    }
-                  },
-                  "Property": "Zone Traffic Snapshot TotalPickups"
-                }
-              },
-              "queryRef": "Zone Traffic Snapshot.Zone Traffic Snapshot TotalPickups",
-              "nativeQueryRef": "Zone Traffic Snapshot TotalPickups"
-            }
-          ]
-        }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Snapshot Time"
-                  }
-                },
-                "Property": "Hour Number"
-              }
-            },
-            "direction": "Ascending"
-          }
-        ]
-      }
-    },
-    "objects": {
-      "dataPoint": [
-        {
-          "properties": {
-            "defaultColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#2765A8'"
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      ]
-    },
+    "drillFilterOtherVisuals": true,
     "visualContainerObjects": {
       "title": [
         {
@@ -208,52 +114,249 @@
         }
       ]
     },
-    "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "efdcd0cf8a0361001ab3",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Snapshot Time"
-              }
-            },
-            "Property": "Hour Number"
-          }
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Snapshot Time"
+                    }
+                  },
+                  "Property": "Hour Number"
+                }
+              },
+              "queryRef": "Snapshot Time.Hour Number",
+              "nativeQueryRef": "Hour Number"
+            }
+          ]
         },
-        "type": "Categorical"
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Zone Traffic Snapshot"
+                    }
+                  },
+                  "Property": "Zone Traffic Snapshot TotalPickups"
+                }
+              },
+              "queryRef": "Zone Traffic Snapshot.Zone Traffic Snapshot TotalPickups",
+              "nativeQueryRef": "Zone Traffic Snapshot TotalPickups"
+            }
+          ]
+        },
+        "Series": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Dim Service Type"
+                    }
+                  },
+                  "Property": "Service Code"
+                }
+              },
+              "queryRef": "Dim Service Type.Service Code",
+              "nativeQueryRef": "Service Code"
+            }
+          ]
+        }
       },
-      {
-        "name": "50c1655fbb15a5000389",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Zone Traffic Snapshot"
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Snapshot Time"
+                  }
+                },
+                "Property": "Hour Number"
               }
             },
-            "Property": "Zone Traffic Snapshot TotalPickups"
+            "direction": "Ascending"
           }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "b5fb475a69d2256a40b7",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Dim Service Type"
-              }
-            },
-            "Property": "Service Code"
-          }
-        },
-        "type": "Categorical"
+        ],
+        "isDefaultSort": false
       }
-    ]
+    },
+    "objects": {
+      "dataPoint": [
+        {
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Dim Service Type"
+                          }
+                        },
+                        "Property": "Service Code"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'YELLOW'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#C99400'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Dim Service Type"
+                          }
+                        },
+                        "Property": "Service Code"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'GREEN'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#238B45'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Dim Service Type"
+                          }
+                        },
+                        "Property": "Service Code"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'FHV'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#7560B5'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Dim Service Type"
+                          }
+                        },
+                        "Property": "Service Code"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'FHVHV'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#087E8B'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
   }
 }

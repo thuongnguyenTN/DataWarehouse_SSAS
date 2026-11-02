@@ -1,0 +1,15 @@
+{
+  "tables": 215,
+  "captioned": 215,
+  "changed_parts": [
+    "word/settings.xml",
+    "word/styles.xml",
+    "word/document.xml"
+  ],
+  "reference_sha256": "16b9f1b19ace6209836ac2db1935d3e7bf9d022950889a549ee4617e9a7ae69b",
+  "render_engine": "Microsoft Word",
+  "page_count": 370,
+  "no_table_shading": true,
+  "final_word_render": true,
+  "blank_pages": []
+}

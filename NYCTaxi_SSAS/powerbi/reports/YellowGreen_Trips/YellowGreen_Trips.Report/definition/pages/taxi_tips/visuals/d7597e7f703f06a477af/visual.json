@@ -1,93 +1,17 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "d7597e7f703f06a477af",
   "position": {
     "x": 728,
     "y": 338,
-    "z": 28,
-    "height": 256,
     "width": 688,
+    "height": 256,
+    "z": 28,
     "tabOrder": 28
   },
   "visual": {
     "visualType": "clusteredColumnChart",
-    "query": {
-      "queryState": {
-        "Category": {
-          "projections": [
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Dim Payment Type"
-                    }
-                  },
-                  "Property": "Payment Type Key"
-                }
-              },
-              "queryRef": "Dim Payment Type.Payment Type Key",
-              "nativeQueryRef": "Payment Type Key",
-              "active": true
-            }
-          ]
-        },
-        "Y": {
-          "projections": [
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Measures"
-                    }
-                  },
-                  "Property": "YellowGreen Tip Percentage"
-                }
-              },
-              "queryRef": "Measures.YellowGreen Tip Percentage",
-              "nativeQueryRef": "YellowGreen Tip Percentage"
-            }
-          ]
-        }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Dim Payment Type"
-                  }
-                },
-                "Property": "Payment Type Key"
-              }
-            },
-            "direction": "Ascending"
-          }
-        ]
-      }
-    },
-    "objects": {
-      "dataPoint": [
-        {
-          "properties": {
-            "defaultColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#C78B12'"
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      ]
-    },
+    "drillFilterOtherVisuals": true,
     "visualContainerObjects": {
       "title": [
         {
@@ -190,6 +114,82 @@
         }
       ]
     },
-    "drillFilterOtherVisuals": true
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Dim Payment Type"
+                    }
+                  },
+                  "Property": "Payment Type Key"
+                }
+              },
+              "queryRef": "Dim Payment Type.Payment Type Key",
+              "nativeQueryRef": "Payment Type Key"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measures"
+                    }
+                  },
+                  "Property": "YellowGreen Tip Percentage"
+                }
+              },
+              "queryRef": "Measures.YellowGreen Tip Percentage",
+              "nativeQueryRef": "YellowGreen Tip Percentage"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Dim Payment Type"
+                  }
+                },
+                "Property": "Payment Type Key"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ],
+        "isDefaultSort": false
+      }
+    },
+    "objects": {
+      "dataPoint": [
+        {
+          "properties": {
+            "defaultColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#C78B12'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
   }
 }

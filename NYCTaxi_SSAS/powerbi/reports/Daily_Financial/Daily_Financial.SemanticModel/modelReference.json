@@ -1,6 +1,6 @@
 {
-  "version": "2.0",
-  "connectionString": "Data Source=THUONGNGUYEN\\MSSQLSV;Initial Catalog=NYCTaxi_SSAS;Cube=\"Daily Financial\"",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/semanticModel/modelReference/2.0.0/schema.json",
+  "connectionString": "Data Source=THUONGNGUYEN\\MSSQLSV;Initial Catalog=NYCTaxi_SSAS;Cube=\"Daily Financial\";Integrated Security=SSPI;",
   "isMultiDimentional": true,
   "connectionType": "analysisServicesDatabaseLive"
 }

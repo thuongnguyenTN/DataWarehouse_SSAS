@@ -1,93 +1,17 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "8b92b17b1beb2a9affe3",
   "position": {
     "x": 24,
     "y": 610,
-    "z": 29,
-    "height": 256,
     "width": 688,
+    "height": 256,
+    "z": 29,
     "tabOrder": 29
   },
   "visual": {
     "visualType": "clusteredColumnChart",
-    "query": {
-      "queryState": {
-        "Category": {
-          "projections": [
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Pickup Date"
-                    }
-                  },
-                  "Property": "Is Weekend"
-                }
-              },
-              "queryRef": "Pickup Date.Is Weekend",
-              "nativeQueryRef": "Is Weekend",
-              "active": true
-            }
-          ]
-        },
-        "Y": {
-          "projections": [
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Measures"
-                    }
-                  },
-                  "Property": "YellowGreen Tip Percentage"
-                }
-              },
-              "queryRef": "Measures.YellowGreen Tip Percentage",
-              "nativeQueryRef": "YellowGreen Tip Percentage"
-            }
-          ]
-        }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Pickup Date"
-                  }
-                },
-                "Property": "Is Weekend"
-              }
-            },
-            "direction": "Ascending"
-          }
-        ]
-      }
-    },
-    "objects": {
-      "dataPoint": [
-        {
-          "properties": {
-            "defaultColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#C78B12'"
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      ]
-    },
+    "drillFilterOtherVisuals": true,
     "visualContainerObjects": {
       "title": [
         {
@@ -190,6 +114,82 @@
         }
       ]
     },
-    "drillFilterOtherVisuals": true
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Pickup Date"
+                    }
+                  },
+                  "Property": "Is Weekend"
+                }
+              },
+              "queryRef": "Pickup Date.Is Weekend",
+              "nativeQueryRef": "Is Weekend"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measures"
+                    }
+                  },
+                  "Property": "YellowGreen Tip Percentage"
+                }
+              },
+              "queryRef": "Measures.YellowGreen Tip Percentage",
+              "nativeQueryRef": "YellowGreen Tip Percentage"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Pickup Date"
+                  }
+                },
+                "Property": "Is Weekend"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ],
+        "isDefaultSort": false
+      }
+    },
+    "objects": {
+      "dataPoint": [
+        {
+          "properties": {
+            "defaultColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#C78B12'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
   }
 }

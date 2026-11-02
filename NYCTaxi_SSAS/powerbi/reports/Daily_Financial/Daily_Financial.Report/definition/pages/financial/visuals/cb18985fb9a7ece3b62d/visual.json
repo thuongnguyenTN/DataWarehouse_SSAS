@@ -1,38 +1,17 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "cb18985fb9a7ece3b62d",
   "position": {
-    "x": 23.464312993295426,
-    "y": 66.482220147670375,
+    "x": 24,
+    "y": 66,
+    "width": 1392,
+    "height": 32,
     "z": 2,
-    "height": 31.285750657727235,
-    "width": 1392.215904268862,
     "tabOrder": 2
   },
   "visual": {
     "visualType": "textbox",
-    "objects": {
-      "general": [
-        {
-          "properties": {
-            "paragraphs": [
-              {
-                "textRuns": [
-                  {
-                    "value": "Tổng hợp Yellow / Green / HVFHV  •  SSAS Live Connection",
-                    "textStyle": {
-                      "fontFamily": "Segoe UI",
-                      "fontSize": "11pt",
-                      "color": "#516679"
-                    }
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
+    "drillFilterOtherVisuals": true,
     "visualContainerObjects": {
       "title": [
         {
@@ -135,6 +114,28 @@
         }
       ]
     },
-    "drillFilterOtherVisuals": true
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Tổng hợp Yellow / Green / HVFHV  •  SSAS Live Connection",
+                    "textStyle": {
+                      "fontFamily": "Segoe UI",
+                      "fontSize": "11pt",
+                      "fontWeight": "normal",
+                      "color": "#516679"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
   }
 }

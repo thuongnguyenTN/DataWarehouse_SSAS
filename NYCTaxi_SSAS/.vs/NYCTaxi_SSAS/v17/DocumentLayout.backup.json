@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{B35E5662-0AF0-402D-B134-0D9C0A0FFF23}|NYCTaxi_SSAS\\NYCTaxi_SSAS.dwproj|solutionrelative:NYCTaxi_SSAS\\Zone_Traffic.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{B35E5662-0AF0-402D-B134-0D9C0A0FFF23}|NYCTaxi_SSAS\\NYCTaxi_SSAS.dwproj|E:\\NYCTaxi\\NYCTaxi_SSAS\\NYCTaxi_SSAS\\YellowGreen_Trips.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{B35E5662-0AF0-402D-B134-0D9C0A0FFF23}|NYCTaxi_SSAS\\NYCTaxi_SSAS.dwproj|solutionrelative:NYCTaxi_SSAS\\YellowGreen_Trips.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B35E5662-0AF0-402D-B134-0D9C0A0FFF23}|NYCTaxi_SSAS\\NYCTaxi_SSAS.dwproj|E:\\NYCTaxi\\NYCTaxi_SSAS\\NYCTaxi_SSAS\\Base_Performance.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
       "RelativeMoniker": "D:0:0:{B35E5662-0AF0-402D-B134-0D9C0A0FFF23}|NYCTaxi_SSAS\\NYCTaxi_SSAS.dwproj|solutionrelative:NYCTaxi_SSAS\\Base_Performance.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B35E5662-0AF0-402D-B134-0D9C0A0FFF23}|NYCTaxi_SSAS\\NYCTaxi_SSAS.dwproj|E:\\NYCTaxi\\NYCTaxi_SSAS\\NYCTaxi_SSAS\\FHV_Trips.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
       "RelativeMoniker": "D:0:0:{B35E5662-0AF0-402D-B134-0D9C0A0FFF23}|NYCTaxi_SSAS\\NYCTaxi_SSAS.dwproj|solutionrelative:NYCTaxi_SSAS\\FHV_Trips.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B35E5662-0AF0-402D-B134-0D9C0A0FFF23}|NYCTaxi_SSAS\\NYCTaxi_SSAS.dwproj|E:\\NYCTaxi\\NYCTaxi_SSAS\\NYCTaxi_SSAS\\YellowGreen_Trips.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
-      "RelativeMoniker": "D:0:0:{B35E5662-0AF0-402D-B134-0D9C0A0FFF23}|NYCTaxi_SSAS\\NYCTaxi_SSAS.dwproj|solutionrelative:NYCTaxi_SSAS\\YellowGreen_Trips.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B35E5662-0AF0-402D-B134-0D9C0A0FFF23}|NYCTaxi_SSAS\\NYCTaxi_SSAS.dwproj|E:\\NYCTaxi\\NYCTaxi_SSAS\\NYCTaxi_SSAS\\HVFHV_Trips.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
@@ -94,35 +94,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Zone_Traffic.cube [Design]",
-              "DocumentMoniker": "E:\\NYCTaxi\\NYCTaxi_SSAS\\NYCTaxi_SSAS\\Zone_Traffic.cube",
-              "RelativeDocumentMoniker": "NYCTaxi_SSAS\\Zone_Traffic.cube",
-              "ToolTip": "E:\\NYCTaxi\\NYCTaxi_SSAS\\NYCTaxi_SSAS\\Zone_Traffic.cube [Design]",
-              "RelativeToolTip": "NYCTaxi_SSAS\\Zone_Traffic.cube [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-10-21T01:25:34.09Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Base_Performance.cube [Design]",
-              "DocumentMoniker": "E:\\NYCTaxi\\NYCTaxi_SSAS\\NYCTaxi_SSAS\\Base_Performance.cube",
-              "RelativeDocumentMoniker": "NYCTaxi_SSAS\\Base_Performance.cube",
-              "ToolTip": "E:\\NYCTaxi\\NYCTaxi_SSAS\\NYCTaxi_SSAS\\Base_Performance.cube [Design]",
-              "RelativeToolTip": "NYCTaxi_SSAS\\Base_Performance.cube [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-10-21T01:25:30.901Z",
-              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -138,7 +114,30 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "Zone_Traffic.cube [Design]",
+              "DocumentMoniker": "E:\\NYCTaxi\\NYCTaxi_SSAS\\NYCTaxi_SSAS\\Zone_Traffic.cube",
+              "RelativeDocumentMoniker": "NYCTaxi_SSAS\\Zone_Traffic.cube",
+              "ToolTip": "E:\\NYCTaxi\\NYCTaxi_SSAS\\NYCTaxi_SSAS\\Zone_Traffic.cube [Design]",
+              "RelativeToolTip": "NYCTaxi_SSAS\\Zone_Traffic.cube [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-10-21T01:25:34.09Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Base_Performance.cube [Design]",
+              "DocumentMoniker": "E:\\NYCTaxi\\NYCTaxi_SSAS\\NYCTaxi_SSAS\\Base_Performance.cube",
+              "RelativeDocumentMoniker": "NYCTaxi_SSAS\\Base_Performance.cube",
+              "ToolTip": "E:\\NYCTaxi\\NYCTaxi_SSAS\\NYCTaxi_SSAS\\Base_Performance.cube [Design]",
+              "RelativeToolTip": "NYCTaxi_SSAS\\Base_Performance.cube [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-10-21T01:25:30.901Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "YellowGreen_Trips.cube [Design]",
               "DocumentMoniker": "E:\\NYCTaxi\\NYCTaxi_SSAS\\NYCTaxi_SSAS\\YellowGreen_Trips.cube",
               "RelativeDocumentMoniker": "NYCTaxi_SSAS\\YellowGreen_Trips.cube",
@@ -161,15 +160,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "FHV_Trips.cube [Design]",
               "DocumentMoniker": "E:\\NYCTaxi\\NYCTaxi_SSAS\\NYCTaxi_SSAS\\FHV_Trips.cube",
               "RelativeDocumentMoniker": "NYCTaxi_SSAS\\FHV_Trips.cube",
               "ToolTip": "E:\\NYCTaxi\\NYCTaxi_SSAS\\NYCTaxi_SSAS\\FHV_Trips.cube [Design]",
               "RelativeToolTip": "NYCTaxi_SSAS\\FHV_Trips.cube [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-10-21T01:24:48.682Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-10-21T01:24:48.682Z"
             },
             {
               "$type": "Document",

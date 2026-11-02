@@ -189,13 +189,34 @@
     "objects": {
       "dataPoint": [
         {
+          "selector": {
+            "metadata": "Fact HVFHV Trips.Congestion Surcharge"
+          },
           "properties": {
-            "defaultColor": {
+            "fill": {
               "solid": {
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#087E8B'"
+                      "Value": "'#2765A8'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "selector": {
+            "metadata": "Fact HVFHV Trips.CBD Congestion Fee"
+          },
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#E07B24'"
                     }
                   }
                 }

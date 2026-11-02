@@ -1,107 +1,17 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "54e8d5fe47095ab322ef",
   "position": {
     "x": 24,
     "y": 610,
-    "z": 13,
-    "height": 256,
     "width": 688,
+    "height": 256,
+    "z": 13,
     "tabOrder": 13
   },
   "visual": {
     "visualType": "clusteredColumnChart",
-    "query": {
-      "queryState": {
-        "Category": {
-          "projections": [
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Dim Service Type"
-                    }
-                  },
-                  "Property": "Service Code"
-                }
-              },
-              "queryRef": "Dim Service Type.Service Code",
-              "nativeQueryRef": "Service Code",
-              "active": true
-            }
-          ]
-        },
-        "Y": {
-          "projections": [
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Daily Financial Snapshot"
-                    }
-                  },
-                  "Property": "Daily Financial Snapshot TotalTips"
-                }
-              },
-              "queryRef": "Daily Financial Snapshot.Daily Financial Snapshot TotalTips",
-              "nativeQueryRef": "Daily Financial Snapshot TotalTips"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Daily Financial Snapshot"
-                    }
-                  },
-                  "Property": "Daily Financial Snapshot TotalTaxesAndFees"
-                }
-              },
-              "queryRef": "Daily Financial Snapshot.Daily Financial Snapshot TotalTaxesAndFees",
-              "nativeQueryRef": "Daily Financial Snapshot TotalTaxesAndFees"
-            }
-          ]
-        }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Dim Service Type"
-                  }
-                },
-                "Property": "Service Code"
-              }
-            },
-            "direction": "Ascending"
-          }
-        ]
-      }
-    },
-    "objects": {
-      "dataPoint": [
-        {
-          "properties": {
-            "defaultColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#1F7F64'"
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      ]
-    },
+    "drillFilterOtherVisuals": true,
     "visualContainerObjects": {
       "title": [
         {
@@ -204,6 +114,245 @@
         }
       ]
     },
-    "drillFilterOtherVisuals": true
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Dim Service Type"
+                    }
+                  },
+                  "Property": "Service Code"
+                }
+              },
+              "queryRef": "Dim Service Type.Service Code",
+              "nativeQueryRef": "Service Code"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Daily Financial Snapshot"
+                    }
+                  },
+                  "Property": "Daily Financial Snapshot TotalTips"
+                }
+              },
+              "queryRef": "Daily Financial Snapshot.Daily Financial Snapshot TotalTips",
+              "nativeQueryRef": "Daily Financial Snapshot TotalTips"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Daily Financial Snapshot"
+                    }
+                  },
+                  "Property": "Daily Financial Snapshot TotalTaxesAndFees"
+                }
+              },
+              "queryRef": "Daily Financial Snapshot.Daily Financial Snapshot TotalTaxesAndFees",
+              "nativeQueryRef": "Daily Financial Snapshot TotalTaxesAndFees"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Dim Service Type"
+                  }
+                },
+                "Property": "Service Code"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ],
+        "isDefaultSort": false
+      }
+    },
+    "objects": {
+      "dataPoint": [
+        {
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Dim Service Type"
+                          }
+                        },
+                        "Property": "Service Code"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'YELLOW'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#C99400'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Dim Service Type"
+                          }
+                        },
+                        "Property": "Service Code"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'GREEN'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#238B45'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Dim Service Type"
+                          }
+                        },
+                        "Property": "Service Code"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'FHV'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#7560B5'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Dim Service Type"
+                          }
+                        },
+                        "Property": "Service Code"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'FHVHV'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#087E8B'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
   }
 }

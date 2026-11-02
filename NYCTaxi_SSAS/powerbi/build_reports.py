@@ -9,6 +9,8 @@ ROOT=Path(__file__).parent
 OUT=ROOT/'reports'
 BASE='https://developer.microsoft.com/json-schemas/fabric/item/'
 SERVER=r'THUONGNGUYEN\MSSQLSV'
+SERVICE_COLORS={'YELLOW':'#C99400','GREEN':'#238B45','FHV':'#7560B5','FHVHV':'#087E8B'}
+SERIES_COLORS=['#2765A8','#E07B24','#238B45','#7560B5','#C99400','#087E8B']
 BI='{http://schemas.microsoft.com/sqlbi/2010/10/edm/extensions}'
 ED='{http://schemas.microsoft.com/ado/2008/09/edm}'
 
@@ -88,9 +90,21 @@ class Report:
                           'categoryLabels':[{'properties':{'show':boolean(False)}}]}
         elif typ=='slicer':
             v['objects']={'data':[{'properties':{'mode':lit('Dropdown')}}],
-                          'selection':[{'properties':{'singleSelect':boolean(False)}}]}
+                          'selection':[{'properties':{'singleSelect':boolean(False),'selectAllCheckboxEnabled':boolean(True),'multiSelect':boolean(True)}}]}
         elif typ in ('lineChart','clusteredColumnChart','clusteredBarChart'):
-            v['objects']={'dataPoint':[{'properties':{'defaultColor':color(self.accent)}}]}
+            points=[]
+            series=(roles or {}).get('Series',[])
+            categories=(roles or {}).get('Category',[])
+            service=next((f for f in series+categories if f[:2]==('Dim Service Type','Service Code')),None)
+            if service:
+                for code,hexcolor in SERVICE_COLORS.items():
+                    points.append({'selector':{'data':[{'scopeId':{'Comparison':{'ComparisonKind':0,'Left':expr(*service),'Right':{'Literal':{'Value':"'"+code+"'"}}}}}]},'properties':{'fill':color(hexcolor)}})
+            elif len((roles or {}).get('Y',[]))>1:
+                for index,f in enumerate(roles['Y']):
+                    points.append({'selector':{'metadata':f[0]+'.'+f[1]},'properties':{'fill':color(SERIES_COLORS[index%len(SERIES_COLORS)])}})
+            else:
+                points.append({'properties':{'defaultColor':color(self.accent)}})
+            v['objects']={'dataPoint':points}
         o={'$schema':BASE+'report/definition/visualContainer/2.4.0/schema.json','name':name,
            'position':{'x':x,'y':y,'width':w,'height':h,'z':self.i,'tabOrder':self.i},'visual':v}
         dump(self.report/'definition/pages'/self.page/'visuals'/name/'visual.json',o)
@@ -109,7 +123,8 @@ class Report:
         self.text('NYC TAXI  /  '+label.upper(),24,18,1392,44,23,True,'#16364C')
         self.text(subtitle+'  •  SSAS Live Connection',24,66,1392,32,11)
         self.visual('slicer','Năm',24,110,220,82,{'Values':[self.col(date,'Year Number')]})
-        self.visual('slicer','Tháng',256,110,220,82,{'Values':[self.col(date,'Month Number')]})
+        # Month Name is keyed by month alone; Month Number is keyed by year/month.
+        self.visual('slicer','Tháng',256,110,220,82,{'Values':[self.col(date,'Month Name')]})
         self.visual('slicer','Dịch vụ',488,110,250,82,{'Values':[self.col('Dim Service Type','Service Code')]})
         if extra:self.visual('slicer',extra[0],750,110,350,82,{'Values':[self.col(*extra[1])]})
         self.text(notes,24,884,1392,58,10,False,'#6F591D')

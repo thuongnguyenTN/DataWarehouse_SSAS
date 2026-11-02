@@ -9,11 +9,10 @@
   {
     "cube": "YellowGreen_Trips",
     "table": "Pickup Date",
-    "property": "Month Number",
+    "property": "Month Name",
     "measure": false,
     "groupBy": [
-      "Month Number.Key0",
-      "Month Number.Key1"
+      "Month Name.Key0"
     ]
   },
   {
@@ -136,11 +135,10 @@
   {
     "cube": "YellowGreen_Trips",
     "table": "Pickup Date",
-    "property": "Month Number",
+    "property": "Month Name",
     "measure": false,
     "groupBy": [
-      "Month Number.Key0",
-      "Month Number.Key1"
+      "Month Name.Key0"
     ]
   },
   {
@@ -261,11 +259,10 @@
   {
     "cube": "HVFHV_Trips",
     "table": "Pickup Date",
-    "property": "Month Number",
+    "property": "Month Name",
     "measure": false,
     "groupBy": [
-      "Month Number.Key0",
-      "Month Number.Key1"
+      "Month Name.Key0"
     ]
   },
   {
@@ -388,11 +385,10 @@
   {
     "cube": "HVFHV_Trips",
     "table": "Pickup Date",
-    "property": "Month Number",
+    "property": "Month Name",
     "measure": false,
     "groupBy": [
-      "Month Number.Key0",
-      "Month Number.Key1"
+      "Month Name.Key0"
     ]
   },
   {
@@ -529,11 +525,10 @@
   {
     "cube": "FHV_Trips",
     "table": "Pickup Date",
-    "property": "Month Number",
+    "property": "Month Name",
     "measure": false,
     "groupBy": [
-      "Month Number.Key0",
-      "Month Number.Key1"
+      "Month Name.Key0"
     ]
   },
   {
@@ -656,11 +651,10 @@
   {
     "cube": "Daily_Financial",
     "table": "Snapshot Date",
-    "property": "Month Number",
+    "property": "Month Name",
     "measure": false,
     "groupBy": [
-      "Month Number.Key0",
-      "Month Number.Key1"
+      "Month Name.Key0"
     ]
   },
   {
@@ -790,11 +784,10 @@
   {
     "cube": "Zone_Traffic",
     "table": "Snapshot Date",
-    "property": "Month Number",
+    "property": "Month Name",
     "measure": false,
     "groupBy": [
-      "Month Number.Key0",
-      "Month Number.Key1"
+      "Month Name.Key0"
     ]
   },
   {
@@ -928,11 +921,10 @@
   {
     "cube": "Zone_Traffic",
     "table": "Snapshot Date",
-    "property": "Month Number",
+    "property": "Month Name",
     "measure": false,
     "groupBy": [
-      "Month Number.Key0",
-      "Month Number.Key1"
+      "Month Name.Key0"
     ]
   },
   {
@@ -1018,11 +1010,10 @@
   {
     "cube": "Base_Performance",
     "table": "Snapshot Date",
-    "property": "Month Number",
+    "property": "Month Name",
     "measure": false,
     "groupBy": [
-      "Month Number.Key0",
-      "Month Number.Key1"
+      "Month Name.Key0"
     ]
   },
   {
